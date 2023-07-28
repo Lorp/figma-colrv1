@@ -23,8 +23,10 @@ Be familiar with [Figma: Plugin Quickstart Guide](https://www.figma.com/plugin-d
 
 This plugin uses TypeScript and NPM, two standard tools in creating JavaScript applications.
 
-Open the project folder in Visual Studio Code.
+1. Open the project folder in Visual Studio Code.
 
-Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
+2. `npm install` to install the dependencies.
+
+3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
     then select "npm: watch". You will have to do this again every time
     you reopen Visual Studio Code.
