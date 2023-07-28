@@ -2,22 +2,29 @@
 
 Figma plugin to support COLRv1 fonts including variable fonts.
 
-It uses the [Samsa](https://github.com/Lorp/samsa) library, version 2, to parse the COLRv1 font data and render the glyphs as SVG. Version 2 can be tried in the browser using [RenderStack](https://lorp.github.io/renderstack/).
+## Installation
+
+* Download the repo.
+* In Figma, either:
+  * Click the Resources button, click the Plugins tab, then the + button. Click “Import plugin from manifest…” then select the manifest.json file from the repo.
+  * From the main “F” menu, select Plugins, Development, “Import plugin from manifest…” then select the manifest.json file from the repo.
+
+## Usage
+
+Click the Resources button, then click the Run button by the “figma-colrv1” plugin.
+
+## Notes
+
+It uses the [Samsa](https://github.com/Lorp/samsa) library, version 2, to parse the COLRv1 font data and render the glyphs as SVG. Samsa Version 2 can be tried in the browser using [RenderStack](https://lorp.github.io/renderstack/).
 
 ## Development
 
-*From original Figma template README.md:*
+Be familiar with [Figma: Plugin Quickstart Guide](https://www.figma.com/plugin-docs/plugin-quickstart-guide/).
 
-Below are the steps to get your plugin running. You can also find instructions at:
+This plugin uses TypeScript and NPM, two standard tools in creating JavaScript applications.
 
-  https://www.figma.com/plugin-docs/plugin-quickstart-guide/
+Open the project folder in Visual Studio Code.
 
-This plugin uses Typescript and NPM, two standard tools in creating JavaScript applications.
-
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
+Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
     then select "npm: watch". You will have to do this again every time
     you reopen Visual Studio Code.
-
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
