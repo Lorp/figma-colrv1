@@ -1,0 +1,540 @@
+<style>
+	:root {
+		--grey-outline: #dddddd;
+		--grey-background: #f7f7f7;
+		--grey-inactive-label: grey;
+		font-family: system-ui;
+		background-color: var(--grey-background);
+	}
+
+	/* body {
+
+	} */
+
+	/* section headings */
+	h2 {
+		font-size: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 0;
+		margin: 0;
+	}
+
+	#intro {
+		font-size: 0.75rem;
+	}
+
+	#color-strip {
+		width: 100%;
+		height: 20px;
+		display: grid;
+		grid-template-columns: repeat(100, 1fr);
+	}
+
+	#color-strip>div {
+		_display: inline-block;
+		height: 5px;
+		_width: 20px;
+	}
+
+	#controls {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr 3fr;
+		position: relative;
+		row-gap: 7px;
+	}
+
+	.reveal {
+		transform: rotate(-90deg);
+		position: relative;
+		transform-origin: center;
+	}
+
+	.reveal-open {
+		transform: rotate(0deg);
+	}
+
+	#axes-header {
+		display: none;
+	}
+
+	.axis {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 50px 50px 1fr;
+		align-items: center;
+	}
+
+	.axis label {
+		font-weight: bold;
+		font-size: 0.8em;
+	}
+
+	.axis input[type=range] {
+		width: 100%; /* shrink it from default, otherwise it ruins layout */
+	}
+
+	#palettes-select {
+		display: none;
+	}
+
+	.palette {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 20px repeat(14, 1fr);
+		column-gap: 2px;
+		align-items: center;
+	}
+
+	#about {
+		position: absolute;
+		left: 5px;
+		bottom: 5px;
+	}
+
+	#cancel {
+		position: absolute;
+		right: 5px;
+		bottom: 5px;
+	}
+
+	#color-picker-panel {
+		display: none;
+		position: absolute;
+		width: 100%;
+		height: 40px;
+		padding-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#color-picker {
+		width: 90%;
+		height: 25px;
+	}
+
+	.palette input[type=color] {
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		border: none;
+		position: absolute;
+		left: -10px;
+		top: -10px;
+	}
+
+	.palette .window {
+		width: 13px;
+		height: 13px;
+		border: 1px solid var(--grey-outline);
+		position: relative;
+		overflow: hidden;
+	}
+
+</style>
+
+<!-- <h2>figma-colrv1</h2> -->
+
+<div id="color-strip"></div>
+
+<div id="controls">
+
+
+<!-- these must be in groups of two, to fit with the grid definition -->
+
+<div id="spinner"></div>
+<div id="intro">Figma plugin for COLRv1 fonts.<br>Project maintained at <a href="https://github.com/Lorp/figma-colrv1" target="_blank">GitHub</a>.</div>
+	
+
+<label>Font</label>
+<select id="font-family-select"><option value="-1">select font…</option></select>
+
+<label>Text</label>
+<input id="text" value="test" placeholder="type your text">
+
+<label>Size</label>
+<input id="font-size" value="144">
+
+<label>Style</label>
+<select id="instances-select" disabled><option value="-1">select style…</option></select>
+
+<label>Axes</label>
+<div id="axes">
+	<div id="axes-header"></div>
+	<div id="axes-list"></div>
+</div>
+
+<label>Palettes</label>
+<div id="palettes">
+	<select id="palettes-select" disabled><option>none</option></select>
+	<div id="palettes-list"></div>
+</div>
+</div>
+
+<div id="color-picker-panel">
+	<input id="color-picker" type="color">
+	<button id="color-picker-close">Close</button>
+</div>
+
+<!-- <p>Count: <input id="count" value="5"></p> -->
+<!-- <button id="create">Create</button> -->
+<button id="about">About</button>
+<button id="cancel">Close</button>
+
+<script>
+
+
+function axisValues() {
+	const fvs = {};
+	document.querySelectorAll(".axis").forEach(axisDiv => {
+		const tag = axisDiv.querySelector("label").textContent;
+		const value = axisDiv.querySelector("input[type=text]").value;
+		fvs[tag] = parseFloat(value);
+	});
+	return fvs;
+}
+
+function changedAxisInput(e) {
+	const input = e.target;
+	const other = input.parentNode.querySelector(`input[type=${ input.type == "range" ? "text" : "range"} ]`);
+	other.value = input.value;
+	document.querySelector("#instances-select").value = "-2";
+
+	// TODO: set all other axes that have this tag to this new value
+	updateRendering();
+}
+
+function changedInstance(e) {
+
+	const selection = parseInt(e.target.value);
+	if (selection >= -1) { // default (-1) and the named instances (0 to instances.length-1)
+		document.querySelectorAll(".axis").forEach((axisDiv, a) => {
+			let coord;
+			if (selection == -1) {
+				coord = GLOBAL.fvar.axes[a].defaultValue;
+			}
+			else {
+				const instance = GLOBAL.fvar.instances[selection];
+				coord = instance.coordinates[a];
+			}
+			axisDiv.querySelectorAll("input").forEach(input => input.value = coord); // does the input[type=text] and the input[type=range]
+		});
+		updateRendering();
+	}
+	else if (selection == -2) { // custom instance
+		console.log("Custom"); // no action needed, maybe alert the user to try the sliders
+	}
+}
+
+function updateRendering(figmaNodeId) {
+	const options = {
+		fvs: axisValues(),
+		text: document.querySelector("#text").value,
+		fontSize: parseFloat(document.querySelector("#font-size").value),
+		//palette: document.querySelector("#palettes-select").value,
+		paletteId: parseInt(document.querySelector("input[name=palette-id]:checked").value),
+	}
+
+	console.log('GPING TO POST REBDER');
+	console.log(options);
+	parent.postMessage({ pluginMessage: { type: 'render', options: options } }, '*');
+}
+
+// populate color-strip
+const colorStrip = document.querySelector("#color-strip");
+colorStrip.innerHTML = "";
+const numColors = 100;
+for (let hue = 0; hue < numColors; hue++) {
+	let span = `<div style="background-color: hsl(${360/numColors * hue}, 100%, 50%)"></div>`;
+	colorStrip.innerHTML += span;
+}
+
+// list of fonts: key is family name, value is url of TTF file
+const fontList = {
+	"Blaka Ink": "https://raw.githubusercontent.com/google/fonts/main/ofl/blakaink/BlakaInk-Regular.ttf",
+	"Bungee Color": "https://raw.githubusercontent.com/google/fonts/main/ofl/bungeecolor/BungeeColor-Regular.ttf",
+	"Bungee Spice": "https://raw.githubusercontent.com/google/fonts/main/ofl/bungeespice/BungeeSpice-Regular.ttf",
+	"Foldit": "https://raw.githubusercontent.com/google/fonts/main/ofl/foldit/Foldit%5Bwght%5D.ttf",
+	"Nabla": "https://raw.githubusercontent.com/google/fonts/main/ofl/nabla/Nabla%5BEDPT%2CEHLT%5D.ttf",
+	"Rocher": "https://www.axis-praxis.org/samsa/fonts/RocherColorGX.ttf",
+};
+
+// populate font-family select
+const fontFamilySelect = document.querySelector("#font-family-select");
+Object.keys(fontList).forEach(fontFamily  => {
+	// let option;
+	// if (!fontFamilySelect.hasChildNodes()) {
+	// 	option = document.createElement("option");
+	// 	option.value = "0";
+	// 	option.text = "select a font";
+	// 	fontFamilySelect.append(option);
+	// }
+	const fontURL = fontList[fontFamily];
+	const option = document.createElement("option");
+	option.value = fontURL;
+	option.text = fontFamily;
+	fontFamilySelect.append(option);
+});
+
+GLOBAL = {};
+
+let svgSpinnerSrc = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+	<defs>
+		<path id="segment" d="m0 12 h-2 l-1 4 v12 l1 4 h4 l1 -4 v-12 l-1 -4 z"/>
+	</defs>
+	<g transform="translate(32 32)">
+		<g>
+			<use href="#segment" opacity="0.5"/>
+			<use href="#segment" transform="rotate(-30)" opacity="0.5"/>
+			<use href="#segment" transform="rotate(-60)" opacity="0.5"/>
+			<use href="#segment" transform="rotate(-90)"  opacity="0.5"/>
+			<use href="#segment" transform="rotate(-120)" opacity="0.45"/>
+			<use href="#segment" transform="rotate(-150)" opacity="0.4"/>
+			<use href="#segment" transform="rotate(-180)" opacity="0.35"/>
+			<use href="#segment" transform="rotate(-210)" opacity="0.3"/>
+			<use href="#segment" transform="rotate(-240)" opacity="0.25"/>
+			<use href="#segment" transform="rotate(-270)" opacity="0.2"/>
+			<use href="#segment" transform="rotate(-300)" opacity="0.15"/>
+			<use href="#segment" transform="rotate(-330)" opacity="0.1"/>
+			<animateTransform
+				attributeName="transform"
+				values="0;30;60;90;120;150;180;210;240;270;300;330"
+				type="rotate"
+				dur="1.5s"
+				calcMode="discrete"
+				repeatCount="indefinite"
+			/>
+		</g>
+	</g>  
+</svg>`;
+svgSpinnerSrc = "data:image/svg+xml," + svgSpinnerSrc
+	.replaceAll('"', "'")
+	.replaceAll("\n", " ")
+	.replaceAll("\t", " ")
+	.replaceAll("<", "%3c")
+	.replaceAll(">", "%3e")
+	.replaceAll("#", "%23");
+
+function spinner(startStop) {
+	if (startStop == true) {
+		document.querySelector("#spinner").innerHTML = `<img src="${svgSpinnerSrc}" width="25" height="25">`;
+	}
+	else {
+		document.querySelector("#spinner").innerHTML = "";
+	}
+}
+
+function editColor(e) {
+	const message = {
+		type: "palette-edit",
+		paletteId: e.target.dataset.paletteId,
+		entryId: e.target.dataset.entryId,
+		color: e.target.value,
+	}
+	parent.postMessage({ pluginMessage: message }, "*");
+	updateRendering();
+}
+
+fontFamilySelect.onchange = function () {
+
+	// load font and create a Samsa font object
+	console.log("Loading font file " + this.value);
+	spinner(true);
+	parent.postMessage({ pluginMessage: { type: 'fetch-font', url: this.value } }, "*")
+}
+
+document.querySelector("#text").oninput = updateRendering;
+
+
+/*
+document.getElementById('create').onclick = () => {
+	//const textbox = document.getElementById('count');
+	//const count = parseInt(textbox.value, 10);
+	//parent.postMessage({ pluginMessage: { type: 'create-rectangles', count } }, '*')
+}
+*/
+
+
+document.getElementById("about").onclick = () => {
+	alert ("This plugin is by Lorp. It is maintained at https://github.com/Lorp/figma-colrv1")
+}
+
+document.getElementById("cancel").onclick = () => {
+	parent.postMessage({ pluginMessage: { type: "cancel" } }, "*");
+}
+
+document.querySelector("#font-size").onchange = updateRendering;
+
+// receiving messages from the plugin code
+// https://www.figma.com/plugin-docs/creating-ui
+onmessage = (e) => {
+	const msg = e.data.pluginMessage;
+	switch (msg.type) {
+
+		case "fvar": {
+			spinner(false); // stop the spinner
+
+			const fvar = GLOBAL.fvar = msg.fvar;
+			console.log("got fvar message");
+			console.log(fvar);
+			console.log(document.querySelector("#controls"));
+
+			const axesDiv = document.querySelector("#axes");
+			const axesLabel = axesDiv.previousElementSibling;
+			const axesHeader = document.querySelector("#axes-header");
+			const axesList = document.querySelector("#axes-list");
+
+			const instancesSelect = document.querySelector("#instances-select");
+			const instancesLabel = instancesSelect.previousElementSibling;
+
+			axesHeader.innerHTML = `<div style="width: 1em; text-align: center;" class="reveal reveal-open">&#x25BC;</div>`; // Black Down-Pointing Triangle
+
+			const reveal = axesHeader.querySelector(".reveal");
+			reveal.onclick = function(e) {
+				console.log(document.querySelector("#axes-list"));
+
+				e.target.classList.toggle("reveal-open");
+				console.log(axesList.style.display);
+				axesList.style.display = axesList.style.display === "none" ? "block" : "none";
+
+				// hide or show axis list
+				console.log("toggle axis list");
+			}
+
+			// reset axes list
+			axesList.innerHTML = "";
+
+			// build axes list
+			if (fvar && fvar.axes) {
+				fvar.axes.forEach(axis => {
+					const axisDiv = document.createElement("div");
+					axisDiv.classList.add("axis");
+
+					const tag = document.createElement("label");
+					tag.textContent = axis.axisTag;
+					tag.title = axis.name;
+
+					const numeric = document.createElement("input");
+					numeric.type = "text";
+					numeric.value = axis.defaultValue;
+					numeric.oninput = changedAxisInput;
+
+					const slider = document.createElement("input");
+					slider.type = "range";
+					slider.min = axis.minValue;
+					slider.max = axis.maxValue;
+					slider.value = axis.defaultValue;
+					slider.step = 0.01;
+					slider.oninput = changedAxisInput;
+					axisDiv.append(tag, numeric, slider);
+					axesList.append(axisDiv);
+
+				});
+				axesLabel.style.color = "black";
+			}
+			else {
+				axesLabel.style.color = "var(--grey-inactive-label)";
+			}
+
+			// build instances, include Default even if static
+			instancesSelect.innerText = "";
+			let instanceOption = document.createElement("option");
+			instanceOption.value = "-1";
+			instanceOption.innerText = "Default";
+			instancesSelect.append(instanceOption);
+			instancesSelect.onchange = changedInstance;
+
+
+			if (fvar) {
+				fvar.instances.forEach((instance, i) => {
+					instanceOption = document.createElement("option");
+					instanceOption.value = i;
+					instanceOption.innerText = instance.name;
+					instancesSelect.append(instanceOption);
+				})
+
+				instanceOption = document.createElement("option");
+				instanceOption.value = "-2";
+				instanceOption.innerText = "Custom";
+				instancesSelect.append(instanceOption);
+			}
+
+			instancesLabel.style.color = "black";
+			instancesSelect.disabled = false;
+
+			break;
+		}
+
+		case "CPAL": {
+			// populate COLR info
+
+			// list palettes
+			console.log("got CPAL message");
+			console.log(msg.CPAL);
+			const CPAL = GLOBAL.CPAL = msg.CPAL;
+			const palettesSelect = document.querySelector("#palettes-select");
+			const palettesList = document.querySelector("#palettes-list");
+
+			const palettesDiv = document.querySelector("#palettes");
+			const palettesLabel = palettesDiv.previousElementSibling;
+
+			palettesSelect.innerHTML = "";
+			palettesList.innerHTML = "";
+			if (CPAL) {
+				CPAL.palettes.forEach((palette, p) => {
+
+					// select (it’s display:none for now)
+					paletteOption = document.createElement("option");
+					paletteOption.value = p;
+					paletteOption.innerText = palette.name || `#${p}`;
+					palettesSelect.append(paletteOption);
+
+					// list: each palette div needs n children for the grid to work
+					const paletteDiv = document.createElement("div");
+					paletteDiv.classList.add("palette");
+
+					// create each radio button
+					const radio = document.createElement("input");
+					radio.type = "radio";
+					radio.name = "palette-id";
+					radio.value = p;
+					paletteDiv.append(radio);
+					if (p==0) {
+						radio.checked = true;
+					}
+					radio.onchange = updateRendering;
+
+					// create the color inputs
+					palette.colors.forEach((color, c) => {
+						const window = document.createElement("div");
+						window.classList.add("window");
+						const hexColor = CPAL.hexColors[color];
+						const sample = document.createElement("input");
+						sample.type = "color";
+						sample.value = hexColor;
+						sample.dataset.paletteId = p;
+						sample.dataset.entryId = c;
+						if (c < 14) {
+							sample.oninput = editColor;
+							window.append(sample);
+							paletteDiv.append(window);
+						}
+					});
+					palettesList.append(paletteDiv);
+				});
+				palettesSelect.disabled = false;
+				palettesLabel.style.color = "black";
+			}
+			else {
+				palettesSelect.innerHTML = "<option>none</option>";
+				palettesSelect.disabled = true;
+				palettesLabel.style.color = "var(--grey-inactive-label)";
+			}
+			break;
+		}
+
+	}
+}
+
+</script>

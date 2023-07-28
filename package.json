@@ -1,0 +1,26 @@
+{
+  "name": "figma-colrv1",
+  "version": "0.0.1",
+  "description": "Figma plugin to support COLRv1 fonts including variable fonts",
+  "main": "code.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "npm run build -- --watch"
+  },
+  "author": "Laurence Penney <lorp@lorp.org>",
+  "license": "",
+  "browserslist": {
+    "production": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  },
+  "dependencies": {
+    "samsa-core": "^2.0.0"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.71.1",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
