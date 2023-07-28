@@ -1,7 +1,8 @@
 # Node
 *.log
 *.log.*
-node_modules
+node_modules/*
+!node_modules/samsa-core
 
 out/
 dist/
