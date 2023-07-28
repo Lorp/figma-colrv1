@@ -124,7 +124,7 @@
 		top: -10px;
 	}
 
-	.palette .window {
+	.palette .frame {
 		width: 13px;
 		height: 13px;
 		border: 1px solid var(--grey-outline);
@@ -509,8 +509,8 @@ onmessage = (e) => {
 
 					// create the color inputs
 					palette.colors.forEach((color, c) => {
-						const window = document.createElement("div");
-						window.classList.add("window");
+						const frame = document.createElement("div");
+						frame.classList.add("frame");
 						const hexColor = CPAL.hexColors[color];
 						const sample = document.createElement("input");
 						sample.type = "color";
@@ -519,8 +519,8 @@ onmessage = (e) => {
 						sample.dataset.entryId = c;
 						if (c < 14) {
 							sample.oninput = editColor;
-							window.append(sample);
-							paletteDiv.append(window);
+							frame.append(sample);
+							paletteDiv.append(frame);
 						}
 					});
 					palettesList.append(paletteDiv);
