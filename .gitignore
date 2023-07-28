@@ -4,8 +4,11 @@
 node_modules/*
 !node_modules/samsa-core
 
+# other
 out/
 dist/
 code.js
+package-lock.json
 
+# macOS
 .DS_Store
