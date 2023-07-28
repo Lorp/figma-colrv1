@@ -151,7 +151,7 @@
 <select id="font-family-select"><option value="-1">select font…</option></select>
 
 <label>Text</label>
-<input id="text" value="test" placeholder="type your text">
+<input id="text" value="" placeholder="type your text">
 
 <label>Size</label>
 <input id="font-size" value="144">
@@ -190,7 +190,7 @@ function axisValues() {
 	document.querySelectorAll(".axis").forEach(axisDiv => {
 		const tag = axisDiv.querySelector("label").textContent;
 		const value = axisDiv.querySelector("input[type=text]").value;
-		fvs[tag] = parseFloat(value);
+		fvs[tag] ??= parseFloat(value); // only assign if it’s unassigned, so if tags are repeated, we only use the first
 	});
 	return fvs;
 }
@@ -235,9 +235,6 @@ function updateRendering(figmaNodeId) {
 		//palette: document.querySelector("#palettes-select").value,
 		paletteId: parseInt(document.querySelector("input[name=palette-id]:checked").value),
 	}
-
-	console.log('GPING TO POST REBDER');
-	console.log(options);
 	parent.postMessage({ pluginMessage: { type: 'render', options: options } }, '*');
 }
 
@@ -253,9 +250,12 @@ for (let hue = 0; hue < numColors; hue++) {
 // list of fonts: key is family name, value is url of TTF file
 const fontList = {
 	"Blaka Ink": "https://raw.githubusercontent.com/google/fonts/main/ofl/blakaink/BlakaInk-Regular.ttf",
+	// "Bitter": "https://raw.githubusercontent.com/google/fonts/main/ofl/bitter/Bitter%5Bwght%5D.ttf",
+	// "Bitter-Italic": "https://raw.githubusercontent.com/google/fonts/main/ofl/bitter/Bitter-Italic%5Bwght%5D.ttf",
 	"Bungee Color": "https://raw.githubusercontent.com/google/fonts/main/ofl/bungeecolor/BungeeColor-Regular.ttf",
 	"Bungee Spice": "https://raw.githubusercontent.com/google/fonts/main/ofl/bungeespice/BungeeSpice-Regular.ttf",
 	"Foldit": "https://raw.githubusercontent.com/google/fonts/main/ofl/foldit/Foldit%5Bwght%5D.ttf",
+	"Gimme Constructo": "https://www.axis-praxis.org/samsa/fonts/GimmeConstructoVariablev03VF.ttf",
 	"Nabla": "https://raw.githubusercontent.com/google/fonts/main/ofl/nabla/Nabla%5BEDPT%2CEHLT%5D.ttf",
 	"Rocher": "https://www.axis-praxis.org/samsa/fonts/RocherColorGX.ttf",
 };
@@ -370,6 +370,8 @@ document.querySelector("#font-size").onchange = updateRendering;
 // https://www.figma.com/plugin-docs/creating-ui
 onmessage = (e) => {
 	const msg = e.data.pluginMessage;
+	console.log(msg);
+
 	switch (msg.type) {
 
 		case "fvar": {

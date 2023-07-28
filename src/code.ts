@@ -28,10 +28,14 @@ const { SamsaFont, SamsaGlyph, SamsaInstance, SamsaBuffer, SAMSAGLOBAL } = requi
 //   samsaFont: null,
 // };
 
+const GLOBAL:any = {
+	figmaNode: null,
+}
+
 // This shows the HTML page in "ui.html".
 const options = {
 	width: 300,
-	height: 400,
+	height: 500,
 	title: "COLRv1 fonts",
 }
 figma.showUI(__html__, options);
@@ -60,7 +64,7 @@ figma.ui.onmessage = msg => {
 			//   nodes.push(rect);
 			// }
 			figma.currentPage.selection = nodes;
-			figma.viewport.scrollAndZoomIntoView(nodes);
+			//figma.viewport.scrollAndZoomIntoView(nodes);
 
 			break;
 		}
@@ -106,6 +110,8 @@ figma.ui.onmessage = msg => {
 					});
 				}
 
+				// signal to the UI that we’ve got the font, by sending its names, fvar, CPAL
+				figma.ui.postMessage({type: "names", fvar: font.names});
 				figma.ui.postMessage({type: "fvar", fvar: font.fvar});
 				figma.ui.postMessage({type: "CPAL", CPAL: font.CPAL});
 
@@ -115,18 +121,9 @@ figma.ui.onmessage = msg => {
 		case "render": {
 
 			// get svg from text, font, size, axisSettings, palette
-			// const options = {
-			// 	fontFace: "samsa",
-			// 		allGlyphs: true,
-			// 		allTVTs: true,
-			//   };
-			//   const font = new SamsaFont(new SamsaBuffer(arrayBuffer), options);
-			console.log ("RENDER");
-			console.log (msg);
-
-
+			// console.log ("RENDER");
+			// console.log (msg);
 			const tuple = font.tupleFromFvs(msg.options.fvs);
-			//const tuple:Array<number> = [0.1, 0.2];
 			const instance:typeof SamsaInstance = new SamsaInstance(font, tuple);
 			if (!msg.options.text)
 				msg.options.text = "hello";
@@ -159,18 +156,20 @@ figma.ui.onmessage = msg => {
 			const gPreamble = `<g transform="scale(${scale} ${-scale}) translate(0 ${-upem})">`;
 			const gPostamble = `</g>`;
 
-
-			// //const renderDiv = document.querySelector("#render");
+			// this is where it comes together
 			const svgString = svgPreamble + (defs ? `<defs>${defs}</defs>` : "") + gPreamble + innerSVGComposition + gPostamble + svgPostamble; // build and insert final SVG
-			// //renderDiv.innerHTML = svgPreamble + (defs ? `<defs>${defs}</defs>` : "") + gPreamble + innerSVGComposition + gPostamble + svgPostamble; // build and insert final SVG
 
+
+			if (GLOBAL.figmaNode)
+				GLOBAL.figmaNode.remove();
 
 			let node = figma.createNodeFromSvg(svgString); // convert SVG to node and add it to the page
+			GLOBAL.figmaNode = node;
+
 			//node.setPluginData("samsa-render", msg); // this seems only to take string data
 			sceneNodes.push(node);
-			figma.currentPage.selection = sceneNodes;
-			figma.viewport.scrollAndZoomIntoView(sceneNodes);
-			figma.viewport.scrollAndZoomIntoView(sceneNodes);
+			//figma.currentPage.selection = sceneNodes;
+			//figma.viewport.scrollAndZoomIntoView(sceneNodes);
 
 
 
@@ -179,6 +178,7 @@ figma.ui.onmessage = msg => {
 			// add the node to the canvas
 			let node = figma.createNodeFromSvg(svgString); // convert SVG to node and add it to the page
 
+			// LATER, we can try this
 			// set metadata on the node
 			// also set the plugin that made it
 			// also set the date
@@ -205,9 +205,8 @@ figma.ui.onmessage = msg => {
 				const entryId:number = parseInt(msg.entryId);
 				const palette:any = font.CPAL.palettes[paletteId];
 				if (palette && palette.colors[entryId] !== undefined) {
-					const color:number = font.u32FromHexColor(msg.color);
-					palette.colors[entryId] = color;
-					console.log(`updated palette ${paletteId} entry ${entryId} to ${msg.color} as ${color}`);
+					palette.colors[entryId] = font.u32FromHexColor(msg.color);
+					//console.log(`updated palette ${paletteId} entry ${entryId} to ${msg.color} as ${color}`);
 				}
 			}
 			break;
