@@ -2,6 +2,7 @@
   "name": "figma-colrv1",
   "version": "0.0.1",
   "description": "Figma plugin to support COLRv1 fonts including variable fonts",
+  "homepage": "https://github.com/Lorp/figma-colrv1",
   "main": "code.js",
   "scripts": {
     "build": "webpack",
