@@ -15,7 +15,7 @@ Click the Resources button, then click the Run button by the “figma-colrv1” 
 
 ## Notes
 
-The plugin uses the [Samsa](https://github.com/Lorp/samsa) library, version 2, to parse the COLRv1 font data and render the glyphs as SVG. Samsa Version 2 can be tried in the browser using [RenderStack](https://lorp.github.io/renderstack/).
+The plugin uses the [Samsa](https://github.com/Lorp/samsa) library, version 2, to decode the COLRv1 font data and render the glyphs as SVG. Samsa Version 2 can be tried in the browser using [RenderStack](https://lorp.github.io/renderstack/).
 
 ## Development
 
