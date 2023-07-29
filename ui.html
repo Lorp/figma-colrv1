@@ -232,8 +232,7 @@ function updateRendering(figmaNodeId) {
 		fvs: axisValues(),
 		text: document.querySelector("#text").value,
 		fontSize: parseFloat(document.querySelector("#font-size").value),
-		//palette: document.querySelector("#palettes-select").value,
-		paletteId: parseInt(document.querySelector("input[name=palette-id]:checked").value),
+		paletteId: GLOBAL.CPAL ? parseInt(document.querySelector("input[name=palette-id]:checked").value) : -1,
 	}
 	parent.postMessage({ pluginMessage: { type: 'render', options: options } }, '*');
 }
@@ -249,9 +248,9 @@ for (let hue = 0; hue < numColors; hue++) {
 
 // list of fonts: key is family name, value is url of TTF file
 const fontList = {
+	"Bitter": "https://raw.githubusercontent.com/google/fonts/main/ofl/bitter/Bitter%5Bwght%5D.ttf",
+	"Bitter-Italic": "https://raw.githubusercontent.com/google/fonts/main/ofl/bitter/Bitter-Italic%5Bwght%5D.ttf",
 	"Blaka Ink": "https://raw.githubusercontent.com/google/fonts/main/ofl/blakaink/BlakaInk-Regular.ttf",
-	// "Bitter": "https://raw.githubusercontent.com/google/fonts/main/ofl/bitter/Bitter%5Bwght%5D.ttf",
-	// "Bitter-Italic": "https://raw.githubusercontent.com/google/fonts/main/ofl/bitter/Bitter-Italic%5Bwght%5D.ttf",
 	"Bungee Color": "https://raw.githubusercontent.com/google/fonts/main/ofl/bungeecolor/BungeeColor-Regular.ttf",
 	"Bungee Spice": "https://raw.githubusercontent.com/google/fonts/main/ofl/bungeespice/BungeeSpice-Regular.ttf",
 	"Foldit": "https://raw.githubusercontent.com/google/fonts/main/ofl/foldit/Foldit%5Bwght%5D.ttf",
