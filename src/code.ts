@@ -111,18 +111,17 @@ figma.ui.onmessage = msg => {
 				}
 
 				// signal to the UI that we’ve got the font, by sending its names, fvar, CPAL
-				figma.ui.postMessage({type: "names", fvar: font.names});
+				figma.ui.postMessage({type: "names", names: font.names}); // avoid sparseness
 				figma.ui.postMessage({type: "fvar", fvar: font.fvar});
 				figma.ui.postMessage({type: "CPAL", CPAL: font.CPAL});
 
 			});
+			break;
 		}
 
 		case "render": {
 
 			// get svg from text, font, size, axisSettings, palette
-			// console.log ("RENDER");
-			// console.log (msg);
 			const tuple = font.tupleFromFvs(msg.options.fvs);
 			const instance:typeof SamsaInstance = new SamsaInstance(font, tuple);
 			if (!msg.options.text)
