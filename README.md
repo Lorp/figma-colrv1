@@ -5,7 +5,7 @@ Figma plugin to support COLRv1 fonts including variable fonts.
 ## Installation
 
 1. Download and unzip this repo.
-2. Download [Figma Desktop app](https://www.figma.com/downloads/).
+2. Download and open [Figma Desktop app](https://www.figma.com/downloads/).
 3. In Figma, either:
   * Click the Resources button, click the Plugins tab, then the + button. Click “Import plugin from manifest…” then select the manifest.json file from the repo.
   * From the main “F” menu, select Plugins, Development, “Import plugin from manifest…” then select the manifest.json file from the repo.
