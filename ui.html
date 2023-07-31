@@ -45,6 +45,13 @@
 		row-gap: 7px;
 	}
 
+	.font-size {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 50px 1fr;
+		align-items: center;
+	}
+
 	.reveal {
 		transform: rotate(-90deg);
 		position: relative;
@@ -154,7 +161,12 @@
 <input id="text" value="" placeholder="type your text">
 
 <label>Size</label>
-<input id="font-size" value="144">
+<div class="font-size">
+	<input value="144" type="text">
+	<input value="144" type="range" min="1" max="200">
+</div>
+	
+
 
 <label>Style</label>
 <select id="instances-select" disabled><option value="-1">select style…</option></select>
@@ -231,7 +243,7 @@ function updateRendering(figmaNodeId) {
 	const options = {
 		fvs: axisValues(),
 		text: document.querySelector("#text").value,
-		fontSize: parseFloat(document.querySelector("#font-size").value),
+		fontSize: parseFloat(document.querySelector(".font-size input").value),
 		paletteId: GLOBAL.CPAL ? parseInt(document.querySelector("input[name=palette-id]:checked").value) : -1,
 	}
 	parent.postMessage({ pluginMessage: { type: 'render', options: options } }, '*');
@@ -364,7 +376,17 @@ document.getElementById("cancel").onclick = () => {
 	parent.postMessage({ pluginMessage: { type: "cancel" } }, "*");
 }
 
-document.querySelector("#font-size").onchange = updateRendering;
+document.querySelectorAll(".font-size input").forEach(input => {
+	function doTheFontSize(e) {
+		const input = e.target;
+		const sibling = input.parentNode.querySelector(`input[type=${ input.type == "text" ? "range" : "text"}]`); // get the "other" input
+		sibling.value = input.value;
+		updateRendering();
+	}
+	input.oninput = doTheFontSize;
+});
+
+//document.querySelector("#font-size").onchange = updateRendering;
 
 // receiving messages from the plugin code
 // https://www.figma.com/plugin-docs/creating-ui
