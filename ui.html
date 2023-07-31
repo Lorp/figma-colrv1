@@ -7,10 +7,6 @@
 		background-color: var(--grey-background);
 	}
 
-	/* body {
-
-	} */
-
 	/* section headings */
 	h2 {
 		font-size: 20px;
@@ -189,8 +185,6 @@
 	<button id="color-picker-close">Close</button>
 </div>
 
-<!-- <p>Count: <input id="count" value="5"></p> -->
-<!-- <button id="create">Create</button> -->
 <button id="about">About</button>
 <button id="cancel">Close</button>
 
@@ -243,7 +237,7 @@ function updateRendering(figmaNodeId) {
 	const options = {
 		fvs: axisValues(),
 		text: document.querySelector("#text").value,
-		fontSize: parseFloat(document.querySelector(".font-size input").value),
+		fontSize: parseFloat(document.querySelector(".font-size input[type=text]").value), // the numeric (text) input is the source of truth
 		paletteId: GLOBAL.CPAL ? parseInt(document.querySelector("input[name=palette-id]:checked").value) : -1,
 	}
 	parent.postMessage({ pluginMessage: { type: 'render', options: options } }, '*');
@@ -348,25 +342,17 @@ function editColor(e) {
 	updateRendering();
 }
 
+
+// UI event handlers
 fontFamilySelect.onchange = function () {
 
 	// load font and create a Samsa font object
 	console.log("Loading font file " + this.value);
 	spinner(true);
-	parent.postMessage({ pluginMessage: { type: 'fetch-font', url: this.value } }, "*")
+	parent.postMessage({ pluginMessage: { type: 'fetch-font', url: this.value } }, "*");
 }
 
 document.querySelector("#text").oninput = updateRendering;
-
-
-/*
-document.getElementById('create').onclick = () => {
-	//const textbox = document.getElementById('count');
-	//const count = parseInt(textbox.value, 10);
-	//parent.postMessage({ pluginMessage: { type: 'create-rectangles', count } }, '*')
-}
-*/
-
 
 document.getElementById("about").onclick = () => {
 	alert ("This plugin is by Lorp. It is maintained at https://github.com/Lorp/figma-colrv1")
@@ -377,18 +363,16 @@ document.getElementById("cancel").onclick = () => {
 }
 
 document.querySelectorAll(".font-size input").forEach(input => {
-	function doTheFontSize(e) {
+	function updateFontSize(e) {
 		const input = e.target;
 		const sibling = input.parentNode.querySelector(`input[type=${ input.type == "text" ? "range" : "text"}]`); // get the "other" input
 		sibling.value = input.value;
-		updateRendering();
+		updateFontSize();
 	}
 	input.oninput = doTheFontSize;
 });
 
-//document.querySelector("#font-size").onchange = updateRendering;
-
-// receiving messages from the plugin code
+// receive messages from the plugin code
 // https://www.figma.com/plugin-docs/creating-ui
 onmessage = (e) => {
 	const msg = e.data.pluginMessage;
