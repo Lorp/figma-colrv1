@@ -367,9 +367,9 @@ document.querySelectorAll(".font-size input").forEach(input => {
 		const input = e.target;
 		const sibling = input.parentNode.querySelector(`input[type=${ input.type == "text" ? "range" : "text"}]`); // get the "other" input
 		sibling.value = input.value;
-		updateFontSize();
+		updateRendering();
 	}
-	input.oninput = doTheFontSize;
+	input.oninput = updateFontSize;
 });
 
 // receive messages from the plugin code
