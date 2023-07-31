@@ -159,7 +159,8 @@
 <label>Size</label>
 <div class="font-size">
 	<input value="144" type="text">
-	<input value="144" type="range" min="1" max="200">
+	<!-- <input value="144" type="range" min="1" max="200"> -->
+	<input value="1" type="range" min="0" max="1" step="0.001">
 </div>
 	
 
@@ -365,8 +366,33 @@ document.getElementById("cancel").onclick = () => {
 document.querySelectorAll(".font-size input").forEach(input => {
 	function updateFontSize(e) {
 		const input = e.target;
+		const log2min = Math.log2(4);
+		const log2max = Math.log2(200);
+		const scale = "log"; // or "linear"
 		const sibling = input.parentNode.querySelector(`input[type=${ input.type == "text" ? "range" : "text"}]`); // get the "other" input
-		sibling.value = input.value;
+
+		if (scale == "log") {
+			if (input.type == "text") {
+				// convert from linear to log2 for the input[type=range]
+				const fontSize = parseFloat(input.value);
+				const log2 = Math.log2(fontSize);
+				const posOnLogScale = (log2 - log2min)/(log2max - log2min);
+				sibling.value = posOnLogScale;
+			}
+			else {
+				// convert from log2 to linear for the input[type=text]
+				const posOnLogScale = parseFloat(input.value);
+				const log2 = log2min + posOnLogScale * (log2max - log2min);
+				const fontSize = (Math.pow(2, log2)).toFixed(2);
+				sibling.value = fontSize;
+
+			}
+		}
+		else { // scale == "linear"
+			// we also need to use the linear min and max, not the 0 and 1 of the log method
+			sibling.value = input.value;
+		}
+
 		updateRendering();
 	}
 	input.oninput = updateFontSize;
