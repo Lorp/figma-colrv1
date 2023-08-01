@@ -5,7 +5,6 @@ node_modules/*
 !node_modules/samsa-core
 
 # other
-#dist/
 package-lock.json
 src/code.js
 
