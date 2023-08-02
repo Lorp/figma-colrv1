@@ -4011,7 +4011,17 @@ SamsaGlyph.prototype.paint = function (context={}) {
 // - the main switch statement selects between the 4 paint types; paint types group paint formats together, and are stored in PAINT_TYPES; PAINT_COMPOSE is the only non-recursive paint type (paint format=32 is a special case which needs to recurse 2 paint trees before the compose operation)
 // - the result of a paintSVG() still needs to be wrapped in a <svg> element, and <defs> needs to be constructed from .paths and .gradients
 SamsaGlyph.prototype.paintSVG = function (paint, context) {
+	function expandAttrs (attrs) {
+		let str = "";
+		for (let attr in attrs) {
+			if (attrs[attr] !== undefined)
+				str += ` ${attr}="${attrs[attr]}"`;
+		}
+		return str;
+	}
+
 	const font = context.font;
+	const extendModes = ["pad", "repeat", "reflect"];
 	const palette = font.CPAL.palettes[context.paletteId || 0];
 	if (context.color === undefined)
 		context.color = 0x000000ff; // black
@@ -4117,7 +4127,7 @@ SamsaGlyph.prototype.paintSVG = function (paint, context) {
 				}
 
 				case 4: case 5: { // PaintLinearGradient
-					if (!context.gradients[paint.offset]) { // we use paint.offset as gradientId
+					if (!context.gradients[paint.offset]) { // if we have not already stored this paint in this glyph run
 
 						// calculate the gradient line (p0x,p0y)..(finalX, finalY) from the 3 points by determining the projection vector via the dot product
 						const
@@ -4137,7 +4147,16 @@ SamsaGlyph.prototype.paintSVG = function (paint, context) {
 							finalX = p1x - magnitude * d2x,
 							finalY = p1y - magnitude * d2y;
 
-						let gradient = `<linearGradient id="f${paint.offset}" gradientUnits="userSpaceOnUse" x1="${p0x}" y1="${p0y}" x2="${finalX}" y2="${finalY}">`; // paint.offset is gradientId
+						const attrs = {
+							id: "f" + paint.offset,
+							x1: p0x,
+							y1: p0y,
+							x2: finalX,
+							y2: finalY,
+							gradientUnits: "userSpaceOnUse",
+							spreadMethod : paint.colorLine.extend ? extendModes[paint.colorLine.extend] : undefined, // we could allow "pad" here, but instead we ignore EXTEND_PAD (0) since it is default behaviour
+						};
+						let gradient = `<linearGradient${expandAttrs(attrs)}>`;
 						paint.colorLine.colorStops.forEach(colorStop => {
 							const paletteIndex = colorStop.paletteIndex;
 							const color = paletteIndex == 0xffff ? context.color : palette.colors[paletteIndex];
@@ -4152,16 +4171,21 @@ SamsaGlyph.prototype.paintSVG = function (paint, context) {
 				}
 
 				case 6: case 7: { // PaintRadialGradient, PaintVarRadialGradient
-
+					console.error("PaintRadialGradient not implemented yet");
+					console.log(paint);
 					break;
 				}
 
 				case 8: case 9: { // PaintSweepGradient, PaintVarSweepGradient
-
+					console.error("PaintSweepGradient not implemented yet");
+					console.log(paint);
 					break;
 				}
 
 				case 32: { // PaintComposite
+
+					console.error("PaintComposite not implemented yet");
+					console.log(paint);
 
 					const src = this.paintSVG(paint.children[0], context); // source
 					const dest = this.paintSVG(paint.children[1], context); // destination
