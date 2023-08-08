@@ -1,15 +1,3 @@
-//import { createRectangles } from "./rectangle-module";
-//import { SamsaFont, SamsaGlyph, SamsaInstance, SamsaBuffer, SAMSAGLOBAL } from "./samsa-core";
-//import { SamsaFont, SamsaGlyph, SamsaInstance, SamsaBuffer, SAMSAGLOBAL } from "samsa-core";
-// const samsa = require ("samsa-core");
-// const SamsaBuffer = samsa.SamsaBuffer;
-// const SamsaFont = samsa.SamsaFont;
-// const SamsaGlyph = samsa.SamsaGlyph;
-// const SamsaInstance = samsa.SamsaInstance;
-// const SAMSAGLOBAL = samsa.SAMSAGLOBAL
-
-const { SamsaFont, SamsaGlyph, SamsaInstance, SamsaBuffer, SAMSAGLOBAL } = require ("samsa-core");
-
 // Code in this file has access to the *figma document* via the figma global object.
 // Browser APIs in the <script> tag inside "ui.html" which has a
 // full browser environment (See https://www.figma.com/plugin-docs/how-plugins-run).
@@ -22,17 +10,13 @@ const { SamsaFont, SamsaGlyph, SamsaInstance, SamsaBuffer, SAMSAGLOBAL } = requi
 // Webpack and bundling
 // https://www.figma.com/plugin-docs/libraries-and-bundling/
 
-//let f = new SamsaFont();
 
-// const GLOBAL = {
-//   samsaFont: null,
-// };
-
+const { SamsaFont, SamsaGlyph, SamsaInstance, SamsaBuffer, SAMSAGLOBAL } = require ("samsa-core");
 const GLOBAL:any = {
 	figmaNode: null,
 }
 
-// This shows the HTML page in "ui.html".
+// show the HTML page in "ui.html"
 const options = {
 	width: 300,
 	height: 500,
@@ -48,26 +32,7 @@ let font:any= <any>{}; // skip type checking
 // posted message.
 figma.ui.onmessage = msg => {
 
-
-	// One way of distinguishing between different types of messages sent from
-	// your HTML page is to use an object with a "type" property like this.
-
 	switch (msg.type) {
-
-		case 'create-rectangles': {
-			const nodes: SceneNode[] = [];
-			// for (let i = 0; i < msg.count; i++) {
-			//   const rect = figma.createRectangle();
-			//   rect.x = i * 150;
-			//   rect.fills = [{type: 'SOLID', color: {r: 1, g: 0.5, b: 0}}];
-			//   figma.currentPage.appendChild(rect);
-			//   nodes.push(rect);
-			// }
-			figma.currentPage.selection = nodes;
-			//figma.viewport.scrollAndZoomIntoView(nodes);
-
-			break;
-		}
 
 		case "fetch-font": {
 			const temp: number = msg ?? 0;
@@ -171,13 +136,7 @@ figma.ui.onmessage = msg => {
 			//figma.viewport.scrollAndZoomIntoView(sceneNodes);
 
 
-
-
 			/*
-			// add the node to the canvas
-			let node = figma.createNodeFromSvg(svgString); // convert SVG to node and add it to the page
-
-			// LATER, we can try this
 			// set metadata on the node
 			// also set the plugin that made it
 			// also set the date
@@ -185,14 +144,6 @@ figma.ui.onmessage = msg => {
 			node.setPluginData("fontSize", msg.fontSize.toString());
 			node.setPluginData("text", msg.text);
 			node.setPluginData("fontVariationSettings", "");
-
-			// zoom to fit
-			sceneNodes.push(node);
-			figma.currentPage.selection = sceneNodes;
-			figma.viewport.scrollAndZoomIntoView(sceneNodes);
-
-			// TEST: add a new element to the UI by sending a message
-			figma.ui.postMessage({type: "AddAxis", tag: "wght"});
 			*/
 
 			break;
