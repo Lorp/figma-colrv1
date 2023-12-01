@@ -8,11 +8,15 @@
   "editorType": [
     "figma"
   ],
-  "ui": "ui.html",
+  "ui": {
+    "main": "ui.html"
+  },
   "networkAccess": {
     "allowedDomains": [
       "https://raw.githubusercontent.com",
-      "https://www.axis-praxis.org"
+      "https://www.axis-praxis.org",
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
     ]
   }
 }
