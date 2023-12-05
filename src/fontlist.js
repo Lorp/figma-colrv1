@@ -14,8 +14,8 @@ const fontList = {
 		"Snoese Color": "https://www.axis-praxis.org/samsa/fonts/figma/SnoeseColorVariable.woff2",
 	},
 	"emoji": {
-		"Noto Color Emoji": "https://www.axis-praxis.org/samsa/fonts/figma/NotoColorEmoji-COLRv1.woff2",
-		"Noto Mono Emoji": "https://www.axis-praxis.org/samsa/fonts/figma/NotoEmoji-VariableFont_wght.woff2",
+		"Noto Color Emoji": "https://fonts.gstatic.com/s/notocoloremoji/v25/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFWRxHy9WY8YXt1PQ.woff2",
+		"Noto Mono Emoji": "https://fonts.gstatic.com/s/notoemoji/v47/bMrymSyK7YY-MEu6aWjPJGaTe34h0Wq7.woff2",
 	},
 }
 
