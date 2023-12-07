@@ -62,10 +62,11 @@ figma.ui.onmessage = msg => {
 			
 			// we return an object of SVGs indexed by string
 			emojiMetadata[msg.emojiType].emoji.forEach((emojiChar:any) => {
+				const instance = font.instance(); // no axis settings for now, so we get the default instance
 				const str: string = String.fromCodePoint(...emojiChar.base);
 				const strings:string[] = [str];
 				emojiChar.alternates.forEach((alternate:any) => strings.push(String.fromCodePoint(...alternate))) // get the alternate strings as well
-				strings.forEach(str => emojiSVGs[str] = font.renderText({text: str, fontSize: 24, format: "svg"})); // render all the strings to svg, store the svg strings in the emojiSVGs object
+				strings.forEach(str => emojiSVGs[str] = instance.renderText({text: str, fontSize: 24, format: "svg"})); // render all the strings to svg, store the svg strings in the emojiSVGs object
 			});
 
 			// send the emoji svgs back to UI using message type "emoji-svgs"
@@ -142,19 +143,13 @@ figma.ui.onmessage = msg => {
 		case "render": {
 
 			// get svg from text, font, size, axisSettings, palette
-			const tuple = font.tupleFromFvs(msg.options.fvs); // degenerate case is correctly []
-			const instance:typeof SamsaInstance = new SamsaInstance(font, tuple);
-			let svgString = font.renderText({
+			const instance:typeof SamsaInstance = font.instance(msg.options.fvs);
+			let svgString = instance.renderText({
 				text: msg.options.text,
-				instance: instance,
 				fontSize: msg.options.fontSize,
 				paletteId: msg.options.paletteId ?? 0,
 				format: "svg",
 			});
-
-			// svgString = svgString.replace(/<svg[^>]*>/, "<svg>");
-			// svgString = svgString.replace(/<svg[^>]*>/, "");
-			// svgString = svgString.replace(/<\/svg[^>]*>/, "");
 
 			let node:any = null; // tried node:BaseNode|null = null but that didn’t work, thanks TypeScript!
 			let relativeTransform:Transform|null = null;
