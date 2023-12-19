@@ -56,6 +56,28 @@ figma.ui.onmessage = msg => {
 
 	switch (msg.type) {
 
+		case "font-upload": {
+			console.log("font-upload message received");
+
+			// de-base64 the font file
+
+			let binary = buffer.Buffer.from(msg.fontData, "base64");
+			//let binary = buffer.Buffer.from(msg.fontData, "utf8");
+
+			//let binaryString = atob(msg.fontData);
+			console.log("is this an arrayBuffer?")
+			//console.log(binary)
+			const options:any = {
+				fontFace: "DragDrop",
+				allGlyphs: true,
+				allTVTs: true,
+			};
+
+			setupFontFromArrayBuffer(binary.buffer, {excludes: []}, options); // binary.buffer is the Buffer’s underlying ArrayBuffer
+
+			break;
+		}
+
 		case "fetch-emojis": {
 
 			const emojiSVGs: {[key: string]: string} = {}; // we return an object of SVGs indexed by the string that invokes the emoji (the UI already knows about the arrangement of emojis)
@@ -88,6 +110,8 @@ figma.ui.onmessage = msg => {
 					allGlyphs: true,
 					allTVTs: true,
 				};
+
+				//fontSetupFromArrayBuffer(arrayBuffer)
 
 				// load the font, decompress it if necessary
 				const fingerprint = new DataView(arrayBuffer, 0, 4).getUint32(0);
@@ -179,6 +203,9 @@ figma.ui.onmessage = msg => {
 			node.setPluginData("text", msg.options.text);
 			node.setPluginData("tuple", `[${instance.tuple.join()}]`);
 
+			// inform UI that rendering is complete
+			figma.ui.postMessage({type: "render-complete"});
+
 			break;
 		}
 
@@ -202,3 +229,55 @@ figma.ui.onmessage = msg => {
 
 };
 
+
+function setupFontFromArrayBuffer(arrayBuffer:any, msg:any, options:any) {
+
+	// load the font, decompress it if necessary
+	const fingerprint = new DataView(arrayBuffer, 0, 4).getUint32(0);
+	let fontBuffer;
+	if (fingerprint === SAMSAGLOBAL.fingerprints.WOFF2) { // does the fingerprint indicate WOFF2?
+		console.log("WOFF2 font detected");
+		fontBuffer = new SamsaBuffer(arrayBuffer).decodeWOFF2({ // if woff2, convert to ttf here
+			bufferObject: buffer.Buffer, // Samsa doesn’t know about Buffer, so we pass it in
+			brotliDecompress: brotliDecompressFunction, // Samsa doesn’t know about Brotli, so we pass it in the decompress function
+			ignoreInstructions: true,
+			ignoreChecksums: true,
+		});
+		console.log(`WOFF2 font decompressed to TTF (${fontBuffer.byteLength} bytes)`);
+		// TODO: check it really is a TTF!
+	}
+	else {
+		fontBuffer = new SamsaBuffer(arrayBuffer);
+	}
+
+	// make a SamsaFont object from the uncompressed ttf
+	// - font is a global variable (TODO: have it as GLOBAL.font?)
+	font = new SamsaFont(fontBuffer, options);
+	console.log("TTF font loaded");
+	
+	// signal to the UI that we’ve got the font, by sending its names, fvar, CPAL
+	// - TODO: send these all as one message?
+	figma.ui.postMessage({type: "font-fetched"});
+
+	// variable font?
+	if (font.fvar && font.fvar.axisCount) {
+		font.fvar.axes.forEach((axis:any) => {
+			axis.name = font.names[axis.axisNameID];
+		});
+		figma.ui.postMessage({type: "fvar", fvar: { instances: font.fvar.instances, axes: font.fvar.axes}});	
+	}
+
+	// color font?
+	if (font.CPAL && (!msg.excludes || !msg.excludes.includes("CPAL"))) { // we might not need CPAL at the front end
+		font.CPAL.hexColors = {}; // must use an object here... (sparse arrays in JSON are HUGE!)
+		font.CPAL.palettes.forEach((palette:any) => {
+			palette.colors.forEach((color:number) => {
+				font.CPAL.hexColors[color] = font.hexColorFromU32(color);
+			});
+		});
+		figma.ui.postMessage({type: "CPAL", CPAL: { colors: font.CPAL.colors, palettes: font.CPAL.palettes, hexColors: font.CPAL.hexColors}});
+	}
+
+	figma.ui.postMessage({type: "font-data-delivered"});
+
+}

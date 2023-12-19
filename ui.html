@@ -360,6 +360,7 @@ const GLOBAL = {
 		emoji_flags: 8,
 	},
 	emojiPickerUsesSystemFont: false,
+	uiReady: true,
 };
 	
 const fontFamilySelect = document.querySelector("#font-family-select");
@@ -563,6 +564,15 @@ document.getElementById("cancel").onclick = () => {
 }
 
 document.querySelectorAll(".font-size input").forEach(input => {
+
+	// this one only sends the "input" event if the UI is ready
+	function updateFontSizePlease(e) {
+		if (GLOBAL.uiReady) {
+			GLOBAL.uiReady = false;
+			updateFontSize(e);
+		} 
+	}
+
 	function updateFontSize(e) {
 		const input = e.target;
 		const log2min = Math.log2(4);
@@ -593,7 +603,8 @@ document.querySelectorAll(".font-size input").forEach(input => {
 
 		updateRendering();
 	}
-	input.oninput = updateFontSize;
+	input.oninput = updateFontSizePlease;
+	input.onchange = updateFontSize;
 });
 
 // add event so we change group when we click on a group icon
@@ -602,6 +613,30 @@ document.querySelectorAll(".emoji-group-icon").forEach(el => {
 });
 
 
+// dragdrop
+// - handle the "dragover" event (this is needed, otherwise the "drop" event will not work!)
+document.querySelector("#spinner").ondragover = e => {
+	e.preventDefault();
+}
+// - handle the "drop" event
+document.querySelector("#spinner").ondrop = e => {
+	e.preventDefault();
+	const file = e.dataTransfer.files[0];
+	file.arrayBuffer().then(arrayBuffer => {
+
+		// send this data to the plugin as base64
+		let uint8 = new Uint8Array(arrayBuffer);
+		let str = "";
+		for (let i=0; i<arrayBuffer.byteLength; i++) {
+			str += String.fromCharCode(uint8[i]); // this worked for short blobs but gave error "Maximum call stack size exceeded" for longer ones: "btoa(String.fromCharCode(...new Uint8Array(arrayBuffer)));"
+		}
+		const message = {
+			type: "font-upload",
+			fontData: btoa(str), // base64 encoding of the ArrayBuffer
+		}
+		parent.postMessage({ pluginMessage: message }, "*");
+	});
+}
 
 // document.querySelector("#font-upload").onchange = function (e) {
 
@@ -644,6 +679,11 @@ onmessage = (e) => {
 				fontFamilySelect.append(option);
 			});
 			console.log("Got font-list message");
+			break;
+		}
+
+		case "render-complete": {
+			GLOBAL.uiReady = true;
 			break;
 		}
 
@@ -865,7 +905,6 @@ onmessage = (e) => {
 			}
 			break;
 		}
-
 	}
 }
 
