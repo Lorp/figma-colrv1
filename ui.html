@@ -44,17 +44,14 @@ h2 {
 	font-size: 0.75rem;
 }
 
-#color-strip {
-	width: 100%;
-	height: 20px;
+.mode-selector {
 	display: grid;
-	grid-template-columns: repeat(100, 1fr);
+	width: 100%;
+	grid-template-columns: 50% 50%;
 }
 
-#color-strip>div {
-	_display: inline-block;
-	height: 5px;
-	_width: 20px;
+.mode {
+	text-align: center;
 }
 
 #controls {
@@ -233,8 +230,6 @@ h2 {
 
 <!-- <h2>figma-colrv1</h2> -->
 
-<div id="color-strip"></div>
-
 <div id="controls">
 
 
@@ -345,7 +340,6 @@ const GLOBAL = {
 };
 	
 const fontFamilySelect = document.querySelector("#font-family-select");
-const colorStrip = document.querySelector("#color-strip");
 
 
 function axisValues() {
@@ -450,16 +444,6 @@ function changeMode(e) {
 		} }, "*");
 
 	}
-}
-
-
-
-// populate color-strip
-colorStrip.innerHTML = "";
-const numColors = 100;
-for (let hue = 0; hue < numColors; hue++) {
-	let span = `<div style="background-color: hsl(${360/numColors * hue}, 100%, 50%)"></div>`;
-	colorStrip.innerHTML += span;
 }
 
 // handle mode change text/emoji
