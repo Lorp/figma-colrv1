@@ -1,6 +1,6 @@
 "use strict";
 
-// This is copied from https://github.com/googlefonts/emoji-metadata/blob/main/emoji_15_0_ordering.json
+// This is copied from https://github.com/googlefonts/emoji-metadata/blob/main/emoji_15_1_ordering.json
 // The only chnage is to top and tail it to make it a js module that exports the object.
 const emojiMetadata = 
 [
@@ -18,7 +18,8 @@ const emojiMetadata =
         "shortcodes": [
           ":smile:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -31,7 +32,8 @@ const emojiMetadata =
         "shortcodes": [
           ":smile-with-big-eyes:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -44,7 +46,8 @@ const emojiMetadata =
         "shortcodes": [
           ":grin:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -57,7 +60,8 @@ const emojiMetadata =
         "shortcodes": [
           ":grinning:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -70,7 +74,8 @@ const emojiMetadata =
         "shortcodes": [
           ":laughing:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -83,7 +88,8 @@ const emojiMetadata =
         "shortcodes": [
           ":grin-sweat:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -96,7 +102,8 @@ const emojiMetadata =
         "shortcodes": [
           ":joy:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -109,7 +116,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rofl:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -122,7 +130,8 @@ const emojiMetadata =
         "shortcodes": [
           ":loudly-crying:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -135,7 +144,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wink:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -148,7 +158,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kissing:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -161,7 +172,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kissing-smiling-eyes:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -174,7 +186,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kissing-closed-eyes:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -187,7 +200,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kissing-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -201,7 +215,8 @@ const emojiMetadata =
           ":heart-face:",
           ":3-hearts:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -214,7 +229,8 @@ const emojiMetadata =
         "shortcodes": [
           ":heart-eyes:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -227,7 +243,8 @@ const emojiMetadata =
         "shortcodes": [
           ":star-struck:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -240,7 +257,8 @@ const emojiMetadata =
         "shortcodes": [
           ":partying-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -251,7 +269,8 @@ const emojiMetadata =
         "shortcodes": [
           ":melting:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -264,7 +283,8 @@ const emojiMetadata =
         "shortcodes": [
           ":upside-down-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -278,7 +298,8 @@ const emojiMetadata =
         "shortcodes": [
           ":slightly-happy:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -291,7 +312,8 @@ const emojiMetadata =
         "shortcodes": [
           ":happy-cry:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -304,7 +326,8 @@ const emojiMetadata =
         "shortcodes": [
           ":holding-back-tears:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -315,7 +338,8 @@ const emojiMetadata =
         "shortcodes": [
           ":blush:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -327,7 +351,8 @@ const emojiMetadata =
         "shortcodes": [
           ":warm-smile:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -338,7 +363,38 @@ const emojiMetadata =
         "shortcodes": [
           ":relieved:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128578,
+          8205,
+          8597,
+          65039
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":head-nod:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128578,
+          8205,
+          8596,
+          65039
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":head-shake:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -351,34 +407,8 @@ const emojiMetadata =
         "shortcodes": [
           ":smirk:"
         ],
-        "animated": true
-      },
-      {
-        "base": [
-          128564
-        ],
-        "alternates": [],
-        "emoticons": [
-          "Z_Z"
-        ],
-        "shortcodes": [
-          ":sleep:",
-          ":tired:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128554
-        ],
-        "alternates": [],
-        "emoticons": [
-          "(-.-)zzZZ"
-        ],
-        "shortcodes": [
-          ":sleepy:"
-        ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -391,7 +421,8 @@ const emojiMetadata =
         "shortcodes": [
           ":drool:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -402,7 +433,8 @@ const emojiMetadata =
         "shortcodes": [
           ":yum:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -418,7 +450,8 @@ const emojiMetadata =
         "shortcodes": [
           ":stuck-out-tongue:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -431,7 +464,8 @@ const emojiMetadata =
         "shortcodes": [
           ":squinting-tongue:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -444,7 +478,8 @@ const emojiMetadata =
         "shortcodes": [
           ":winky-tongue:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -455,7 +490,8 @@ const emojiMetadata =
         "shortcodes": [
           ":zany-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -468,7 +504,8 @@ const emojiMetadata =
         "shortcodes": [
           ":woozy:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -481,7 +518,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pensive:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -494,7 +532,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pleading:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -507,7 +546,8 @@ const emojiMetadata =
         "shortcodes": [
           ":grimacing:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -520,7 +560,8 @@ const emojiMetadata =
         "shortcodes": [
           ":expressionless:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -533,7 +574,8 @@ const emojiMetadata =
         "shortcodes": [
           ":neutral-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -544,7 +586,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mouth-none:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -559,7 +602,8 @@ const emojiMetadata =
           ":face-in-clouds:",
           ":lost:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -571,7 +615,8 @@ const emojiMetadata =
           ":dotted-line-face:",
           ":invisible:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -584,7 +629,8 @@ const emojiMetadata =
         "shortcodes": [
           ":zipper-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -597,7 +643,8 @@ const emojiMetadata =
         "shortcodes": [
           ":salute:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -610,7 +657,8 @@ const emojiMetadata =
         "shortcodes": [
           ":thinking-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -623,7 +671,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shushing-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -634,7 +683,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hand-over-mouth:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -646,7 +696,8 @@ const emojiMetadata =
           ":smiling-eyes-with-hand-over-mouth:",
           ":chuckling:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -659,7 +710,8 @@ const emojiMetadata =
         "shortcodes": [
           ":yawn:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -672,7 +724,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hug-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -685,7 +738,8 @@ const emojiMetadata =
         "shortcodes": [
           ":peeking:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -698,7 +752,8 @@ const emojiMetadata =
         "shortcodes": [
           ":screaming:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -713,7 +768,8 @@ const emojiMetadata =
         "shortcodes": [
           ":raised-eyebrow:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -726,7 +782,8 @@ const emojiMetadata =
         "shortcodes": [
           ":monocle:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -739,7 +796,8 @@ const emojiMetadata =
         "shortcodes": [
           ":unamused:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -750,7 +808,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rolling-eyes:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -763,7 +822,8 @@ const emojiMetadata =
         "shortcodes": [
           ":exhale:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -776,7 +836,8 @@ const emojiMetadata =
         "shortcodes": [
           ":triumph:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -789,7 +850,8 @@ const emojiMetadata =
         "shortcodes": [
           ":angry:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -802,7 +864,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rage:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -815,7 +878,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cursing:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -826,7 +890,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sad:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -840,7 +905,8 @@ const emojiMetadata =
           ":sweat:",
           ":downcast:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -853,7 +919,8 @@ const emojiMetadata =
         "shortcodes": [
           ":worried:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -866,7 +933,8 @@ const emojiMetadata =
         "shortcodes": [
           ":concerned:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -879,7 +947,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cry:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -893,7 +962,8 @@ const emojiMetadata =
         "shortcodes": [
           ":big-frown:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -906,7 +976,8 @@ const emojiMetadata =
         "shortcodes": [
           ":frown:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -919,7 +990,8 @@ const emojiMetadata =
         "shortcodes": [
           ":diagonal-mouth:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -932,7 +1004,8 @@ const emojiMetadata =
         "shortcodes": [
           ":slightly-frowning:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -945,7 +1018,8 @@ const emojiMetadata =
         "shortcodes": [
           ":anxious-with-sweat:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -958,7 +1032,8 @@ const emojiMetadata =
         "shortcodes": [
           ":scared:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -969,7 +1044,8 @@ const emojiMetadata =
         "shortcodes": [
           ":anguished:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -982,7 +1058,8 @@ const emojiMetadata =
         "shortcodes": [
           ":gasp:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -995,7 +1072,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mouth-open:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1009,7 +1087,8 @@ const emojiMetadata =
           ":surprised:",
           ":hushed:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1020,7 +1099,8 @@ const emojiMetadata =
         "shortcodes": [
           ":astonished:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1033,7 +1113,8 @@ const emojiMetadata =
         "shortcodes": [
           ":flushed:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1045,7 +1126,8 @@ const emojiMetadata =
           ":mind-blown:",
           ":exploding-head:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1060,7 +1142,8 @@ const emojiMetadata =
           ":confounded:",
           ":zigzag-mouth:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1074,7 +1157,8 @@ const emojiMetadata =
           ":scrunched-eyes:",
           ":persevering:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1087,7 +1171,8 @@ const emojiMetadata =
         "shortcodes": [
           ":weary:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1100,7 +1185,8 @@ const emojiMetadata =
         "shortcodes": [
           ":distraught:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1113,7 +1199,8 @@ const emojiMetadata =
         "shortcodes": [
           ":x-eyes:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1126,7 +1213,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dizzy-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1137,7 +1225,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shaking-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1148,7 +1237,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cold-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1160,7 +1250,8 @@ const emojiMetadata =
           ":hot-face:",
           ":sweat-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1174,7 +1265,8 @@ const emojiMetadata =
           ":sick:",
           ":nauseated:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1187,7 +1279,37 @@ const emojiMetadata =
         "shortcodes": [
           ":vomit:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128564
+        ],
+        "alternates": [],
+        "emoticons": [
+          "Z_Z"
+        ],
+        "shortcodes": [
+          ":sleep:",
+          ":tired:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128554
+        ],
+        "alternates": [],
+        "emoticons": [
+          "(-.-)zzZZ"
+        ],
+        "shortcodes": [
+          ":sleepy:"
+        ],
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1200,7 +1322,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sneeze:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1211,7 +1334,8 @@ const emojiMetadata =
         "shortcodes": [
           ":thermometer-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1222,7 +1346,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bandage-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1233,7 +1358,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mask:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1244,7 +1370,8 @@ const emojiMetadata =
         "shortcodes": [
           ":liar:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1258,7 +1385,8 @@ const emojiMetadata =
           ":halo:",
           ":innocent:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1271,7 +1399,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cowboy:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1284,7 +1413,8 @@ const emojiMetadata =
         "shortcodes": [
           ":money-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1297,7 +1427,8 @@ const emojiMetadata =
         "shortcodes": [
           ":nerd-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1310,7 +1441,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sunglasses-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1321,7 +1453,8 @@ const emojiMetadata =
         "shortcodes": [
           ":disguise:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1334,7 +1467,8 @@ const emojiMetadata =
         "shortcodes": [
           ":clown:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1347,7 +1481,8 @@ const emojiMetadata =
         "shortcodes": [
           ":imp-smile:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1360,7 +1495,8 @@ const emojiMetadata =
         "shortcodes": [
           ":imp-frown:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1373,7 +1509,57 @@ const emojiMetadata =
         "shortcodes": [
           ":ghost:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128128
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":skull:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          9760,
+          65039
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":skull-and-crossbones:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128121
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":ogre:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128122
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":goblin:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -1384,7 +1570,8 @@ const emojiMetadata =
         "shortcodes": [
           ":jack-o-lantern:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1397,7 +1584,8 @@ const emojiMetadata =
         "shortcodes": [
           ":poop:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1408,7 +1596,8 @@ const emojiMetadata =
         "shortcodes": [
           ":robot:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1421,7 +1610,8 @@ const emojiMetadata =
         "shortcodes": [
           ":alien:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1432,29 +1622,8 @@ const emojiMetadata =
         "shortcodes": [
           ":alien-monster:"
         ],
-        "animated": false
-      },
-      {
-        "base": [
-          127771
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":moon-face-first-quarter:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          127772
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":moon-face-last-quarter:"
-        ],
-        "animated": true
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -1467,7 +1636,8 @@ const emojiMetadata =
         "shortcodes": [
           ":moon-face-new:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -1480,7 +1650,8 @@ const emojiMetadata =
         "shortcodes": [
           ":moon-face-full:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -1491,41 +1662,288 @@ const emojiMetadata =
         "shortcodes": [
           ":sun-with-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
-          9760,
+          127771
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":moon-face-first-quarter:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          127772
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":moon-face-last-quarter:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128584
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":see-no-evil-monkey:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128585
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":hear-no-evil-monkey:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128586
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":speak-no-evil-monkey:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128570
+        ],
+        "alternates": [],
+        "emoticons": [
+          ":3"
+        ],
+        "shortcodes": [
+          ":smiley-cat:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128568
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":smile-cat:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128569
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":joy-cat:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128571
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":heart-eyes-cat:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128572
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":smirk-cat:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128573
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":kissing-cat:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128576
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":scream-cat:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128575
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":crying-cat-face:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128574
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":pouting-cat:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128171
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":dizzy:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          11088
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":star:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          127775
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":glowing-star:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          10024
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":sparkles:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128165
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":collision:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128168
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":dash:",
+          ":poof:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128166
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":sweat-droplets:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128164
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":zzz:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128371,
           65039
         ],
         "alternates": [],
         "emoticons": [],
         "shortcodes": [
-          ":skull-and-crossbones:"
+          ":hole:"
         ],
-        "animated": false
-      },
-      {
-        "base": [
-          128121
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":ogre:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128122
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":goblin:"
-        ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -1538,7 +1956,8 @@ const emojiMetadata =
           ":burn:",
           ":lit:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1552,108 +1971,8 @@ const emojiMetadata =
           ":hundred:",
           ":points:"
         ],
-        "animated": true
-      },
-      {
-        "base": [
-          128171
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":dizzy:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          11088
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":star:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          127775
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":glowing-star:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          10024
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":sparkles:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128165
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":collision:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128168
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":dash:",
-          ":poof:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128166
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":sweat-droplets:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128164
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":zzz:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128371,
-          65039
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":hole:"
-        ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1664,141 +1983,8 @@ const emojiMetadata =
         "shortcodes": [
           ":party-popper:"
         ],
-        "animated": true
-      },
-      {
-        "base": [
-          128584
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":see-no-evil-monkey:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128585
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":hear-no-evil-monkey:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128586
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":speak-no-evil-monkey:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128570
-        ],
-        "alternates": [],
-        "emoticons": [
-          ":3"
-        ],
-        "shortcodes": [
-          ":smiley-cat:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128568
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":smile-cat:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128569
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":joy-cat:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128571
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":heart-eyes-cat:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128572
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":smirk-cat:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128573
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":kissing-cat:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128576
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":scream-cat:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128575
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":crying-cat-face:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128574
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":pouting-cat:"
-        ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1812,7 +1998,8 @@ const emojiMetadata =
         "shortcodes": [
           ":red-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1823,7 +2010,8 @@ const emojiMetadata =
         "shortcodes": [
           ":orange-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1834,7 +2022,8 @@ const emojiMetadata =
         "shortcodes": [
           ":yellow-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1845,7 +2034,8 @@ const emojiMetadata =
         "shortcodes": [
           ":green-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1856,7 +2046,8 @@ const emojiMetadata =
         "shortcodes": [
           ":light-blue-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1867,7 +2058,8 @@ const emojiMetadata =
         "shortcodes": [
           ":blue-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1878,7 +2070,8 @@ const emojiMetadata =
         "shortcodes": [
           ":purple-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1889,7 +2082,8 @@ const emojiMetadata =
         "shortcodes": [
           ":brown-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1900,7 +2094,8 @@ const emojiMetadata =
         "shortcodes": [
           ":black-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1911,7 +2106,8 @@ const emojiMetadata =
         "shortcodes": [
           ":grey-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1922,7 +2118,8 @@ const emojiMetadata =
         "shortcodes": [
           ":white-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1933,7 +2130,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pink-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1944,7 +2142,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cupid:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1955,7 +2154,8 @@ const emojiMetadata =
         "shortcodes": [
           ":gift-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1966,7 +2166,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sparkling-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1977,7 +2178,8 @@ const emojiMetadata =
         "shortcodes": [
           ":heart-grow:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1988,7 +2190,8 @@ const emojiMetadata =
         "shortcodes": [
           ":beating-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -1999,7 +2202,8 @@ const emojiMetadata =
         "shortcodes": [
           ":revolving-hearts:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2012,7 +2216,8 @@ const emojiMetadata =
         "shortcodes": [
           ":two-hearts:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2023,7 +2228,8 @@ const emojiMetadata =
         "shortcodes": [
           ":love-letter:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2034,7 +2240,8 @@ const emojiMetadata =
         "shortcodes": [
           ":heart-box:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2046,7 +2253,8 @@ const emojiMetadata =
         "shortcodes": [
           ":heart:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2060,7 +2268,8 @@ const emojiMetadata =
         "shortcodes": [
           ":heart-exclamation-point:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2074,7 +2283,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bandaged-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2087,7 +2297,8 @@ const emojiMetadata =
         "shortcodes": [
           ":broken-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2101,7 +2312,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fire-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2112,7 +2324,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kiss:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2123,7 +2336,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hugging:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2134,7 +2348,8 @@ const emojiMetadata =
         "shortcodes": [
           ":busts-in-silhouette:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2145,7 +2360,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bust-in-silhouette:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2157,7 +2373,8 @@ const emojiMetadata =
         "shortcodes": [
           ":speaking-head:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2168,7 +2385,8 @@ const emojiMetadata =
         "shortcodes": [
           ":footprints:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2179,7 +2397,8 @@ const emojiMetadata =
         "shortcodes": [
           ":brain:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2190,7 +2409,8 @@ const emojiMetadata =
         "shortcodes": [
           ":anatomical-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2201,7 +2421,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lungs:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2212,7 +2433,8 @@ const emojiMetadata =
         "shortcodes": [
           ":blood:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2224,7 +2446,8 @@ const emojiMetadata =
           ":microbe:",
           ":virus:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2235,7 +2458,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tooth:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2246,18 +2470,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bone:"
         ],
-        "animated": false
-      },
-      {
-        "base": [
-          128128
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":skull:"
-        ],
-        "animated": true
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2268,7 +2482,8 @@ const emojiMetadata =
         "shortcodes": [
           ":eyes:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2280,7 +2495,8 @@ const emojiMetadata =
         "shortcodes": [
           ":eye:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2291,7 +2507,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mouth:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2302,7 +2519,8 @@ const emojiMetadata =
         "shortcodes": [
           ":biting-lip:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2313,7 +2531,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tongue:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2348,7 +2567,8 @@ const emojiMetadata =
         "shortcodes": [
           ":nose:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2383,7 +2603,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ear:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2418,7 +2639,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hearing-aid:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2453,7 +2675,8 @@ const emojiMetadata =
         "shortcodes": [
           ":foot:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2488,7 +2711,8 @@ const emojiMetadata =
         "shortcodes": [
           ":leg:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2499,7 +2723,8 @@ const emojiMetadata =
         "shortcodes": [
           ":leg-mechanical:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2510,7 +2735,8 @@ const emojiMetadata =
         "shortcodes": [
           ":arm-mechanical:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2548,7 +2774,8 @@ const emojiMetadata =
           ":bicep:",
           ":strong:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2583,7 +2810,8 @@ const emojiMetadata =
         "shortcodes": [
           ":clap:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2619,7 +2847,8 @@ const emojiMetadata =
           ":thumbs-up:",
           ":+1:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2654,7 +2883,8 @@ const emojiMetadata =
         "shortcodes": [
           ":thumbs-down:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2689,7 +2919,8 @@ const emojiMetadata =
         "shortcodes": [
           ":heart-hands:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2725,7 +2956,8 @@ const emojiMetadata =
           ":raising-hands:",
           ":hooray:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -2760,7 +2992,8 @@ const emojiMetadata =
         "shortcodes": [
           ":open-hands:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2795,7 +3028,1292 @@ const emojiMetadata =
         "shortcodes": [
           ":palms-up:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129308
+        ],
+        "alternates": [
+          [
+            129308
+          ],
+          [
+            129308,
+            127995
+          ],
+          [
+            129308,
+            127996
+          ],
+          [
+            129308,
+            127997
+          ],
+          [
+            129308,
+            127998
+          ],
+          [
+            129308,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":fist-rightwards:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129307
+        ],
+        "alternates": [
+          [
+            129307
+          ],
+          [
+            129307,
+            127995
+          ],
+          [
+            129307,
+            127996
+          ],
+          [
+            129307,
+            127997
+          ],
+          [
+            129307,
+            127998
+          ],
+          [
+            129307,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":fist-leftwards:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          9994
+        ],
+        "alternates": [
+          [
+            9994
+          ],
+          [
+            9994,
+            127995
+          ],
+          [
+            9994,
+            127996
+          ],
+          [
+            9994,
+            127997
+          ],
+          [
+            9994,
+            127998
+          ],
+          [
+            9994,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":raised-fist:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128074
+        ],
+        "alternates": [
+          [
+            128074
+          ],
+          [
+            128074,
+            127995
+          ],
+          [
+            128074,
+            127996
+          ],
+          [
+            128074,
+            127997
+          ],
+          [
+            128074,
+            127998
+          ],
+          [
+            128074,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":fist:",
+          ":bump:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129779
+        ],
+        "alternates": [
+          [
+            129779
+          ],
+          [
+            129779,
+            127995
+          ],
+          [
+            129779,
+            127996
+          ],
+          [
+            129779,
+            127997
+          ],
+          [
+            129779,
+            127998
+          ],
+          [
+            129779,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":palm-down:",
+          ":drop:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129780
+        ],
+        "alternates": [
+          [
+            129780
+          ],
+          [
+            129780,
+            127995
+          ],
+          [
+            129780,
+            127996
+          ],
+          [
+            129780,
+            127997
+          ],
+          [
+            129780,
+            127998
+          ],
+          [
+            129780,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":palm-up:",
+          ":throw:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129777
+        ],
+        "alternates": [
+          [
+            129777
+          ],
+          [
+            129777,
+            127995
+          ],
+          [
+            129777,
+            127996
+          ],
+          [
+            129777,
+            127997
+          ],
+          [
+            129777,
+            127998
+          ],
+          [
+            129777,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":rightwards-hand:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129778
+        ],
+        "alternates": [
+          [
+            129778
+          ],
+          [
+            129778,
+            127995
+          ],
+          [
+            129778,
+            127996
+          ],
+          [
+            129778,
+            127997
+          ],
+          [
+            129778,
+            127998
+          ],
+          [
+            129778,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":leftwards-hand:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129784
+        ],
+        "alternates": [
+          [
+            129784
+          ],
+          [
+            129784,
+            127995
+          ],
+          [
+            129784,
+            127996
+          ],
+          [
+            129784,
+            127997
+          ],
+          [
+            129784,
+            127998
+          ],
+          [
+            129784,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":push-rightwards:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129783
+        ],
+        "alternates": [
+          [
+            129783
+          ],
+          [
+            129783,
+            127995
+          ],
+          [
+            129783,
+            127996
+          ],
+          [
+            129783,
+            127997
+          ],
+          [
+            129783,
+            127998
+          ],
+          [
+            129783,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":push-leftwards:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128075
+        ],
+        "alternates": [
+          [
+            128075
+          ],
+          [
+            128075,
+            127995
+          ],
+          [
+            128075,
+            127996
+          ],
+          [
+            128075,
+            127997
+          ],
+          [
+            128075,
+            127998
+          ],
+          [
+            128075,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":wave:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          129306
+        ],
+        "alternates": [
+          [
+            129306
+          ],
+          [
+            129306,
+            127995
+          ],
+          [
+            129306,
+            127996
+          ],
+          [
+            129306,
+            127997
+          ],
+          [
+            129306,
+            127998
+          ],
+          [
+            129306,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":back-hand:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128400,
+          65039
+        ],
+        "alternates": [
+          [
+            128400,
+            65039
+          ],
+          [
+            128400,
+            127995
+          ],
+          [
+            128400,
+            127996
+          ],
+          [
+            128400,
+            127997
+          ],
+          [
+            128400,
+            127998
+          ],
+          [
+            128400,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":palm:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          9995
+        ],
+        "alternates": [
+          [
+            9995
+          ],
+          [
+            9995,
+            127995
+          ],
+          [
+            9995,
+            127996
+          ],
+          [
+            9995,
+            127997
+          ],
+          [
+            9995,
+            127998
+          ],
+          [
+            9995,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":raised-hand:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128406
+        ],
+        "alternates": [
+          [
+            128406
+          ],
+          [
+            128406,
+            127995
+          ],
+          [
+            128406,
+            127996
+          ],
+          [
+            128406,
+            127997
+          ],
+          [
+            128406,
+            127998
+          ],
+          [
+            128406,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":vulcan:",
+          ":prosper:",
+          ":spock:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129311
+        ],
+        "alternates": [
+          [
+            129311
+          ],
+          [
+            129311,
+            127995
+          ],
+          [
+            129311,
+            127996
+          ],
+          [
+            129311,
+            127997
+          ],
+          [
+            129311,
+            127998
+          ],
+          [
+            129311,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":love-you-gesture:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129304
+        ],
+        "alternates": [
+          [
+            129304
+          ],
+          [
+            129304,
+            127995
+          ],
+          [
+            129304,
+            127996
+          ],
+          [
+            129304,
+            127997
+          ],
+          [
+            129304,
+            127998
+          ],
+          [
+            129304,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":metal:",
+          ":horns:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          9996,
+          65039
+        ],
+        "alternates": [
+          [
+            9996,
+            65039
+          ],
+          [
+            9996,
+            127995
+          ],
+          [
+            9996,
+            127996
+          ],
+          [
+            9996,
+            127997
+          ],
+          [
+            9996,
+            127998
+          ],
+          [
+            9996,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":v:",
+          ":peace-hand:",
+          ":victory:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          129310
+        ],
+        "alternates": [
+          [
+            129310
+          ],
+          [
+            129310,
+            127995
+          ],
+          [
+            129310,
+            127996
+          ],
+          [
+            129310,
+            127997
+          ],
+          [
+            129310,
+            127998
+          ],
+          [
+            129310,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":crossed-fingers:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          129776
+        ],
+        "alternates": [
+          [
+            129776
+          ],
+          [
+            129776,
+            127995
+          ],
+          [
+            129776,
+            127996
+          ],
+          [
+            129776,
+            127997
+          ],
+          [
+            129776,
+            127998
+          ],
+          [
+            129776,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":hand-with-index-finger-and-thumb-crossed:",
+          ":snap:",
+          ":finger-heart:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129305
+        ],
+        "alternates": [
+          [
+            129305
+          ],
+          [
+            129305,
+            127995
+          ],
+          [
+            129305,
+            127996
+          ],
+          [
+            129305,
+            127997
+          ],
+          [
+            129305,
+            127998
+          ],
+          [
+            129305,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":call-me-hand:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129292
+        ],
+        "alternates": [
+          [
+            129292
+          ],
+          [
+            129292,
+            127995
+          ],
+          [
+            129292,
+            127996
+          ],
+          [
+            129292,
+            127997
+          ],
+          [
+            129292,
+            127998
+          ],
+          [
+            129292,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":pinched-fingers:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129295
+        ],
+        "alternates": [
+          [
+            129295
+          ],
+          [
+            129295,
+            127995
+          ],
+          [
+            129295,
+            127996
+          ],
+          [
+            129295,
+            127997
+          ],
+          [
+            129295,
+            127998
+          ],
+          [
+            129295,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":pinch:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128076
+        ],
+        "alternates": [
+          [
+            128076
+          ],
+          [
+            128076,
+            127995
+          ],
+          [
+            128076,
+            127996
+          ],
+          [
+            128076,
+            127997
+          ],
+          [
+            128076,
+            127998
+          ],
+          [
+            128076,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":ok:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129781
+        ],
+        "alternates": [
+          [
+            129781
+          ],
+          [
+            129781,
+            127995
+          ],
+          [
+            129781,
+            127996
+          ],
+          [
+            129781,
+            127997
+          ],
+          [
+            129781,
+            127998
+          ],
+          [
+            129781,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":pointing:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128073
+        ],
+        "alternates": [
+          [
+            128073
+          ],
+          [
+            128073,
+            127995
+          ],
+          [
+            128073,
+            127996
+          ],
+          [
+            128073,
+            127997
+          ],
+          [
+            128073,
+            127998
+          ],
+          [
+            128073,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":point-right:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128072
+        ],
+        "alternates": [
+          [
+            128072
+          ],
+          [
+            128072,
+            127995
+          ],
+          [
+            128072,
+            127996
+          ],
+          [
+            128072,
+            127997
+          ],
+          [
+            128072,
+            127998
+          ],
+          [
+            128072,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":point-left:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          9757,
+          65039
+        ],
+        "alternates": [
+          [
+            9757,
+            65039
+          ],
+          [
+            9757,
+            127995
+          ],
+          [
+            9757,
+            127996
+          ],
+          [
+            9757,
+            127997
+          ],
+          [
+            9757,
+            127998
+          ],
+          [
+            9757,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":index-finger:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128070
+        ],
+        "alternates": [
+          [
+            128070
+          ],
+          [
+            128070,
+            127995
+          ],
+          [
+            128070,
+            127996
+          ],
+          [
+            128070,
+            127997
+          ],
+          [
+            128070,
+            127998
+          ],
+          [
+            128070,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":point-up:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128071
+        ],
+        "alternates": [
+          [
+            128071
+          ],
+          [
+            128071,
+            127995
+          ],
+          [
+            128071,
+            127996
+          ],
+          [
+            128071,
+            127997
+          ],
+          [
+            128071,
+            127998
+          ],
+          [
+            128071,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":point-down:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128405
+        ],
+        "alternates": [
+          [
+            128405
+          ],
+          [
+            128405,
+            127995
+          ],
+          [
+            128405,
+            127996
+          ],
+          [
+            128405,
+            127997
+          ],
+          [
+            128405,
+            127998
+          ],
+          [
+            128405,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":middle-finger:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          9997,
+          65039
+        ],
+        "alternates": [
+          [
+            9997,
+            65039
+          ],
+          [
+            9997,
+            127995
+          ],
+          [
+            9997,
+            127996
+          ],
+          [
+            9997,
+            127997
+          ],
+          [
+            9997,
+            127998
+          ],
+          [
+            9997,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":writing-hand:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129331
+        ],
+        "alternates": [
+          [
+            129331
+          ],
+          [
+            129331,
+            127995
+          ],
+          [
+            129331,
+            127996
+          ],
+          [
+            129331,
+            127997
+          ],
+          [
+            129331,
+            127998
+          ],
+          [
+            129331,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":selfie:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128591
+        ],
+        "alternates": [
+          [
+            128591
+          ],
+          [
+            128591,
+            127995
+          ],
+          [
+            128591,
+            127996
+          ],
+          [
+            128591,
+            127997
+          ],
+          [
+            128591,
+            127998
+          ],
+          [
+            128591,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":folded-hands:",
+          ":please:",
+          ":pray:",
+          ":hope:",
+          ":wish:",
+          ":thank-you:",
+          ":high-five:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128133
+        ],
+        "alternates": [
+          [
+            128133
+          ],
+          [
+            128133,
+            127995
+          ],
+          [
+            128133,
+            127996
+          ],
+          [
+            128133,
+            127997
+          ],
+          [
+            128133,
+            127998
+          ],
+          [
+            128133,
+            127999
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":nail-care:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -2970,1256 +4488,8 @@ const emojiMetadata =
         "shortcodes": [
           ":handshake:"
         ],
-        "animated": false
-      },
-      {
-        "base": [
-          129308
-        ],
-        "alternates": [
-          [
-            129308
-          ],
-          [
-            129308,
-            127995
-          ],
-          [
-            129308,
-            127996
-          ],
-          [
-            129308,
-            127997
-          ],
-          [
-            129308,
-            127998
-          ],
-          [
-            129308,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":fist-rightwards:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129307
-        ],
-        "alternates": [
-          [
-            129307
-          ],
-          [
-            129307,
-            127995
-          ],
-          [
-            129307,
-            127996
-          ],
-          [
-            129307,
-            127997
-          ],
-          [
-            129307,
-            127998
-          ],
-          [
-            129307,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":fist-leftwards:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          9994
-        ],
-        "alternates": [
-          [
-            9994
-          ],
-          [
-            9994,
-            127995
-          ],
-          [
-            9994,
-            127996
-          ],
-          [
-            9994,
-            127997
-          ],
-          [
-            9994,
-            127998
-          ],
-          [
-            9994,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":raised-fist:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128074
-        ],
-        "alternates": [
-          [
-            128074
-          ],
-          [
-            128074,
-            127995
-          ],
-          [
-            128074,
-            127996
-          ],
-          [
-            128074,
-            127997
-          ],
-          [
-            128074,
-            127998
-          ],
-          [
-            128074,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":fist:",
-          ":bump:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129779
-        ],
-        "alternates": [
-          [
-            129779
-          ],
-          [
-            129779,
-            127995
-          ],
-          [
-            129779,
-            127996
-          ],
-          [
-            129779,
-            127997
-          ],
-          [
-            129779,
-            127998
-          ],
-          [
-            129779,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":palm-down:",
-          ":drop:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129780
-        ],
-        "alternates": [
-          [
-            129780
-          ],
-          [
-            129780,
-            127995
-          ],
-          [
-            129780,
-            127996
-          ],
-          [
-            129780,
-            127997
-          ],
-          [
-            129780,
-            127998
-          ],
-          [
-            129780,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":palm-up:",
-          ":throw:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129777
-        ],
-        "alternates": [
-          [
-            129777
-          ],
-          [
-            129777,
-            127995
-          ],
-          [
-            129777,
-            127996
-          ],
-          [
-            129777,
-            127997
-          ],
-          [
-            129777,
-            127998
-          ],
-          [
-            129777,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":rightwards-hand:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129778
-        ],
-        "alternates": [
-          [
-            129778
-          ],
-          [
-            129778,
-            127995
-          ],
-          [
-            129778,
-            127996
-          ],
-          [
-            129778,
-            127997
-          ],
-          [
-            129778,
-            127998
-          ],
-          [
-            129778,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":leftwards-hand:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129784
-        ],
-        "alternates": [
-          [
-            129784
-          ],
-          [
-            129784,
-            127995
-          ],
-          [
-            129784,
-            127996
-          ],
-          [
-            129784,
-            127997
-          ],
-          [
-            129784,
-            127998
-          ],
-          [
-            129784,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":push-rightwards:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129783
-        ],
-        "alternates": [
-          [
-            129783
-          ],
-          [
-            129783,
-            127995
-          ],
-          [
-            129783,
-            127996
-          ],
-          [
-            129783,
-            127997
-          ],
-          [
-            129783,
-            127998
-          ],
-          [
-            129783,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":push-leftwards:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128075
-        ],
-        "alternates": [
-          [
-            128075
-          ],
-          [
-            128075,
-            127995
-          ],
-          [
-            128075,
-            127996
-          ],
-          [
-            128075,
-            127997
-          ],
-          [
-            128075,
-            127998
-          ],
-          [
-            128075,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":wave:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          129306
-        ],
-        "alternates": [
-          [
-            129306
-          ],
-          [
-            129306,
-            127995
-          ],
-          [
-            129306,
-            127996
-          ],
-          [
-            129306,
-            127997
-          ],
-          [
-            129306,
-            127998
-          ],
-          [
-            129306,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":back-hand:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128400,
-          65039
-        ],
-        "alternates": [
-          [
-            128400,
-            65039
-          ],
-          [
-            128400,
-            127995
-          ],
-          [
-            128400,
-            127996
-          ],
-          [
-            128400,
-            127997
-          ],
-          [
-            128400,
-            127998
-          ],
-          [
-            128400,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":palm:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          9995
-        ],
-        "alternates": [
-          [
-            9995
-          ],
-          [
-            9995,
-            127995
-          ],
-          [
-            9995,
-            127996
-          ],
-          [
-            9995,
-            127997
-          ],
-          [
-            9995,
-            127998
-          ],
-          [
-            9995,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":raised-hand:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128406
-        ],
-        "alternates": [
-          [
-            128406
-          ],
-          [
-            128406,
-            127995
-          ],
-          [
-            128406,
-            127996
-          ],
-          [
-            128406,
-            127997
-          ],
-          [
-            128406,
-            127998
-          ],
-          [
-            128406,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":vulcan:",
-          ":prosper:",
-          ":spock:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129311
-        ],
-        "alternates": [
-          [
-            129311
-          ],
-          [
-            129311,
-            127995
-          ],
-          [
-            129311,
-            127996
-          ],
-          [
-            129311,
-            127997
-          ],
-          [
-            129311,
-            127998
-          ],
-          [
-            129311,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":love-you-gesture:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129304
-        ],
-        "alternates": [
-          [
-            129304
-          ],
-          [
-            129304,
-            127995
-          ],
-          [
-            129304,
-            127996
-          ],
-          [
-            129304,
-            127997
-          ],
-          [
-            129304,
-            127998
-          ],
-          [
-            129304,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":metal:",
-          ":horns:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          9996,
-          65039
-        ],
-        "alternates": [
-          [
-            9996,
-            65039
-          ],
-          [
-            9996,
-            127995
-          ],
-          [
-            9996,
-            127996
-          ],
-          [
-            9996,
-            127997
-          ],
-          [
-            9996,
-            127998
-          ],
-          [
-            9996,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":v:",
-          ":peace-hand:",
-          ":victory:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          129310
-        ],
-        "alternates": [
-          [
-            129310
-          ],
-          [
-            129310,
-            127995
-          ],
-          [
-            129310,
-            127996
-          ],
-          [
-            129310,
-            127997
-          ],
-          [
-            129310,
-            127998
-          ],
-          [
-            129310,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":crossed-fingers:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          129776
-        ],
-        "alternates": [
-          [
-            129776
-          ],
-          [
-            129776,
-            127995
-          ],
-          [
-            129776,
-            127996
-          ],
-          [
-            129776,
-            127997
-          ],
-          [
-            129776,
-            127998
-          ],
-          [
-            129776,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":hand-with-index-finger-and-thumb-crossed:",
-          ":snap:",
-          ":finger-heart:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129305
-        ],
-        "alternates": [
-          [
-            129305
-          ],
-          [
-            129305,
-            127995
-          ],
-          [
-            129305,
-            127996
-          ],
-          [
-            129305,
-            127997
-          ],
-          [
-            129305,
-            127998
-          ],
-          [
-            129305,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":call-me-hand:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129292
-        ],
-        "alternates": [
-          [
-            129292
-          ],
-          [
-            129292,
-            127995
-          ],
-          [
-            129292,
-            127996
-          ],
-          [
-            129292,
-            127997
-          ],
-          [
-            129292,
-            127998
-          ],
-          [
-            129292,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":pinched-fingers:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129295
-        ],
-        "alternates": [
-          [
-            129295
-          ],
-          [
-            129295,
-            127995
-          ],
-          [
-            129295,
-            127996
-          ],
-          [
-            129295,
-            127997
-          ],
-          [
-            129295,
-            127998
-          ],
-          [
-            129295,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":pinch:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128076
-        ],
-        "alternates": [
-          [
-            128076
-          ],
-          [
-            128076,
-            127995
-          ],
-          [
-            128076,
-            127996
-          ],
-          [
-            128076,
-            127997
-          ],
-          [
-            128076,
-            127998
-          ],
-          [
-            128076,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":ok:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129781
-        ],
-        "alternates": [
-          [
-            129781
-          ],
-          [
-            129781,
-            127995
-          ],
-          [
-            129781,
-            127996
-          ],
-          [
-            129781,
-            127997
-          ],
-          [
-            129781,
-            127998
-          ],
-          [
-            129781,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":pointing:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128073
-        ],
-        "alternates": [
-          [
-            128073
-          ],
-          [
-            128073,
-            127995
-          ],
-          [
-            128073,
-            127996
-          ],
-          [
-            128073,
-            127997
-          ],
-          [
-            128073,
-            127998
-          ],
-          [
-            128073,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":point-right:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128072
-        ],
-        "alternates": [
-          [
-            128072
-          ],
-          [
-            128072,
-            127995
-          ],
-          [
-            128072,
-            127996
-          ],
-          [
-            128072,
-            127997
-          ],
-          [
-            128072,
-            127998
-          ],
-          [
-            128072,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":point-left:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          9757,
-          65039
-        ],
-        "alternates": [
-          [
-            9757,
-            65039
-          ],
-          [
-            9757,
-            127995
-          ],
-          [
-            9757,
-            127996
-          ],
-          [
-            9757,
-            127997
-          ],
-          [
-            9757,
-            127998
-          ],
-          [
-            9757,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":index-finger:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128070
-        ],
-        "alternates": [
-          [
-            128070
-          ],
-          [
-            128070,
-            127995
-          ],
-          [
-            128070,
-            127996
-          ],
-          [
-            128070,
-            127997
-          ],
-          [
-            128070,
-            127998
-          ],
-          [
-            128070,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":point-up:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128071
-        ],
-        "alternates": [
-          [
-            128071
-          ],
-          [
-            128071,
-            127995
-          ],
-          [
-            128071,
-            127996
-          ],
-          [
-            128071,
-            127997
-          ],
-          [
-            128071,
-            127998
-          ],
-          [
-            128071,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":point-down:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128405
-        ],
-        "alternates": [
-          [
-            128405
-          ],
-          [
-            128405,
-            127995
-          ],
-          [
-            128405,
-            127996
-          ],
-          [
-            128405,
-            127997
-          ],
-          [
-            128405,
-            127998
-          ],
-          [
-            128405,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":middle-finger:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          9997,
-          65039
-        ],
-        "alternates": [
-          [
-            9997,
-            65039
-          ],
-          [
-            9997,
-            127995
-          ],
-          [
-            9997,
-            127996
-          ],
-          [
-            9997,
-            127997
-          ],
-          [
-            9997,
-            127998
-          ],
-          [
-            9997,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":writing-hand:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129331
-        ],
-        "alternates": [
-          [
-            129331
-          ],
-          [
-            129331,
-            127995
-          ],
-          [
-            129331,
-            127996
-          ],
-          [
-            129331,
-            127997
-          ],
-          [
-            129331,
-            127998
-          ],
-          [
-            129331,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":selfie:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128591
-        ],
-        "alternates": [
-          [
-            128591
-          ],
-          [
-            128591,
-            127995
-          ],
-          [
-            128591,
-            127996
-          ],
-          [
-            128591,
-            127997
-          ],
-          [
-            128591,
-            127998
-          ],
-          [
-            128591,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":folded-hands:",
-          ":please:",
-          ":pray:",
-          ":hope:",
-          ":wish:",
-          ":thank-you:",
-          ":high-five:"
-        ],
-        "animated": true
-      },
-      {
-        "base": [
-          128133
-        ],
-        "alternates": [
-          [
-            128133
-          ],
-          [
-            128133,
-            127995
-          ],
-          [
-            128133,
-            127996
-          ],
-          [
-            128133,
-            127997
-          ],
-          [
-            128133,
-            127998
-          ],
-          [
-            128133,
-            127999
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":nail-care:"
-        ],
-        "animated": false
+        "animated": false,
+        "directional": false
       }
     ]
   },
@@ -4341,7 +4611,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -4458,7 +4729,8 @@ const emojiMetadata =
         "shortcodes": [
           ":raising-hand:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -4575,7 +4847,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tipping-hand:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -4692,7 +4965,8 @@ const emojiMetadata =
         "shortcodes": [
           ":gesture-ok:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -4812,7 +5086,8 @@ const emojiMetadata =
           ":denied:",
           ":halt:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -4929,7 +5204,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shrug:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -5046,7 +5322,8 @@ const emojiMetadata =
         "shortcodes": [
           ":facepalm:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -5163,7 +5440,8 @@ const emojiMetadata =
         "shortcodes": [
           ":frowning:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -5280,7 +5558,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pouting:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -5397,7 +5676,8 @@ const emojiMetadata =
         "shortcodes": [
           ":deaf:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -5514,7 +5794,8 @@ const emojiMetadata =
         "shortcodes": [
           ":massage:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -5631,7 +5912,8 @@ const emojiMetadata =
         "shortcodes": [
           ":haircut:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -5749,7 +6031,8 @@ const emojiMetadata =
           ":sauna:",
           ":steamy:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -5784,7 +6067,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bathe:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -5819,7 +6103,8 @@ const emojiMetadata =
         "shortcodes": [
           ":in-bed:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -5938,482 +6223,8 @@ const emojiMetadata =
           ":meditation:",
           ":lotus-position:"
         ],
-        "animated": false
-      },
-      {
-        "base": [
-          129489,
-          8205,
-          129455
-        ],
-        "alternates": [
-          [
-            129489,
-            8205,
-            129455
-          ],
-          [
-            129489,
-            127995,
-            8205,
-            129455
-          ],
-          [
-            129489,
-            127996,
-            8205,
-            129455
-          ],
-          [
-            129489,
-            127997,
-            8205,
-            129455
-          ],
-          [
-            129489,
-            127998,
-            8205,
-            129455
-          ],
-          [
-            129489,
-            127999,
-            8205,
-            129455
-          ],
-          [
-            128105,
-            8205,
-            129455
-          ],
-          [
-            128105,
-            127995,
-            8205,
-            129455
-          ],
-          [
-            128105,
-            127996,
-            8205,
-            129455
-          ],
-          [
-            128105,
-            127997,
-            8205,
-            129455
-          ],
-          [
-            128105,
-            127998,
-            8205,
-            129455
-          ],
-          [
-            128105,
-            127999,
-            8205,
-            129455
-          ],
-          [
-            128104,
-            8205,
-            129455
-          ],
-          [
-            128104,
-            127995,
-            8205,
-            129455
-          ],
-          [
-            128104,
-            127996,
-            8205,
-            129455
-          ],
-          [
-            128104,
-            127997,
-            8205,
-            129455
-          ],
-          [
-            128104,
-            127998,
-            8205,
-            129455
-          ],
-          [
-            128104,
-            127999,
-            8205,
-            129455
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":walking-with-cane:",
-          ":blind:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129489,
-          8205,
-          129468
-        ],
-        "alternates": [
-          [
-            129489,
-            8205,
-            129468
-          ],
-          [
-            129489,
-            127995,
-            8205,
-            129468
-          ],
-          [
-            129489,
-            127996,
-            8205,
-            129468
-          ],
-          [
-            129489,
-            127997,
-            8205,
-            129468
-          ],
-          [
-            129489,
-            127998,
-            8205,
-            129468
-          ],
-          [
-            129489,
-            127999,
-            8205,
-            129468
-          ],
-          [
-            128105,
-            8205,
-            129468
-          ],
-          [
-            128105,
-            127995,
-            8205,
-            129468
-          ],
-          [
-            128105,
-            127996,
-            8205,
-            129468
-          ],
-          [
-            128105,
-            127997,
-            8205,
-            129468
-          ],
-          [
-            128105,
-            127998,
-            8205,
-            129468
-          ],
-          [
-            128105,
-            127999,
-            8205,
-            129468
-          ],
-          [
-            128104,
-            8205,
-            129468
-          ],
-          [
-            128104,
-            127995,
-            8205,
-            129468
-          ],
-          [
-            128104,
-            127996,
-            8205,
-            129468
-          ],
-          [
-            128104,
-            127997,
-            8205,
-            129468
-          ],
-          [
-            128104,
-            127998,
-            8205,
-            129468
-          ],
-          [
-            128104,
-            127999,
-            8205,
-            129468
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":person-in-motorized-wheelchair:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129489,
-          8205,
-          129469
-        ],
-        "alternates": [
-          [
-            129489,
-            8205,
-            129469
-          ],
-          [
-            129489,
-            127995,
-            8205,
-            129469
-          ],
-          [
-            129489,
-            127996,
-            8205,
-            129469
-          ],
-          [
-            129489,
-            127997,
-            8205,
-            129469
-          ],
-          [
-            129489,
-            127998,
-            8205,
-            129469
-          ],
-          [
-            129489,
-            127999,
-            8205,
-            129469
-          ],
-          [
-            128105,
-            8205,
-            129469
-          ],
-          [
-            128105,
-            127995,
-            8205,
-            129469
-          ],
-          [
-            128105,
-            127996,
-            8205,
-            129469
-          ],
-          [
-            128105,
-            127997,
-            8205,
-            129469
-          ],
-          [
-            128105,
-            127998,
-            8205,
-            129469
-          ],
-          [
-            128105,
-            127999,
-            8205,
-            129469
-          ],
-          [
-            128104,
-            8205,
-            129469
-          ],
-          [
-            128104,
-            127995,
-            8205,
-            129469
-          ],
-          [
-            128104,
-            127996,
-            8205,
-            129469
-          ],
-          [
-            128104,
-            127997,
-            8205,
-            129469
-          ],
-          [
-            128104,
-            127998,
-            8205,
-            129469
-          ],
-          [
-            128104,
-            127999,
-            8205,
-            129469
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":person-in-manual-wheelchair:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          129486
-        ],
-        "alternates": [
-          [
-            129486
-          ],
-          [
-            129486,
-            127995
-          ],
-          [
-            129486,
-            127996
-          ],
-          [
-            129486,
-            127997
-          ],
-          [
-            129486,
-            127998
-          ],
-          [
-            129486,
-            127999
-          ],
-          [
-            129486,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            129486,
-            127995,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            129486,
-            127996,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            129486,
-            127997,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            129486,
-            127998,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            129486,
-            127999,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            129486,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            129486,
-            127995,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            129486,
-            127996,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            129486,
-            127997,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            129486,
-            127998,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            129486,
-            127999,
-            8205,
-            9794,
-            65039
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":kneeling:"
-        ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -6530,241 +6341,8 @@ const emojiMetadata =
         "shortcodes": [
           ":standing:"
         ],
-        "animated": false
-      },
-      {
-        "base": [
-          128694
-        ],
-        "alternates": [
-          [
-            128694
-          ],
-          [
-            128694,
-            127995
-          ],
-          [
-            128694,
-            127996
-          ],
-          [
-            128694,
-            127997
-          ],
-          [
-            128694,
-            127998
-          ],
-          [
-            128694,
-            127999
-          ],
-          [
-            128694,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            128694,
-            127995,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            128694,
-            127996,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            128694,
-            127997,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            128694,
-            127998,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            128694,
-            127999,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            128694,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            128694,
-            127995,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            128694,
-            127996,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            128694,
-            127997,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            128694,
-            127998,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            128694,
-            127999,
-            8205,
-            9794,
-            65039
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":walking:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          127939
-        ],
-        "alternates": [
-          [
-            127939
-          ],
-          [
-            127939,
-            127995
-          ],
-          [
-            127939,
-            127996
-          ],
-          [
-            127939,
-            127997
-          ],
-          [
-            127939,
-            127998
-          ],
-          [
-            127939,
-            127999
-          ],
-          [
-            127939,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            127939,
-            127995,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            127939,
-            127996,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            127939,
-            127997,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            127939,
-            127998,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            127939,
-            127999,
-            8205,
-            9792,
-            65039
-          ],
-          [
-            127939,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            127939,
-            127995,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            127939,
-            127996,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            127939,
-            127997,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            127939,
-            127998,
-            8205,
-            9794,
-            65039
-          ],
-          [
-            127939,
-            127999,
-            8205,
-            9794,
-            65039
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":running:"
-        ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -6881,128 +6459,1677 @@ const emojiMetadata =
         "shortcodes": [
           ":cartwheel:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
-          127947,
-          65039
+          129486
         ],
         "alternates": [
           [
-            127947,
-            65039
+            129486
           ],
           [
-            127947,
+            129486,
             127995
           ],
           [
-            127947,
+            129486,
             127996
           ],
           [
-            127947,
+            129486,
             127997
           ],
           [
-            127947,
+            129486,
             127998
           ],
           [
-            127947,
+            129486,
             127999
           ],
           [
-            127947,
-            65039,
+            129486,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127995,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127996,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127997,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127998,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127999,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
             8205,
             9792,
             65039
           ],
           [
-            127947,
+            129486,
             127995,
             8205,
             9792,
             65039
           ],
           [
-            127947,
+            129486,
             127996,
             8205,
             9792,
             65039
           ],
           [
-            127947,
+            129486,
             127997,
             8205,
             9792,
             65039
           ],
           [
-            127947,
+            129486,
             127998,
             8205,
             9792,
             65039
           ],
           [
-            127947,
+            129486,
             127999,
             8205,
             9792,
             65039
           ],
           [
-            127947,
+            129486,
+            8205,
+            9792,
             65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127995,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127996,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127997,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127998,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127999,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
             8205,
             9794,
             65039
           ],
           [
-            127947,
+            129486,
             127995,
             8205,
             9794,
             65039
           ],
           [
-            127947,
+            129486,
             127996,
             8205,
             9794,
             65039
           ],
           [
-            127947,
+            129486,
             127997,
             8205,
             9794,
             65039
           ],
           [
-            127947,
+            129486,
             127998,
             8205,
             9794,
             65039
           ],
           [
-            127947,
+            129486,
             127999,
             8205,
             9794,
+            65039
+          ],
+          [
+            129486,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127995,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127996,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127997,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127998,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129486,
+            127999,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
             65039
           ]
         ],
         "emoticons": [],
         "shortcodes": [
-          ":lifting-weights:"
+          ":kneeling:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": true
+      },
+      {
+        "base": [
+          129489,
+          8205,
+          129468
+        ],
+        "alternates": [
+          [
+            129489,
+            8205,
+            129468
+          ],
+          [
+            129489,
+            127995,
+            8205,
+            129468
+          ],
+          [
+            129489,
+            127996,
+            8205,
+            129468
+          ],
+          [
+            129489,
+            127997,
+            8205,
+            129468
+          ],
+          [
+            129489,
+            127998,
+            8205,
+            129468
+          ],
+          [
+            129489,
+            127999,
+            8205,
+            129468
+          ],
+          [
+            129489,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127995,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127996,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127997,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127998,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127999,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            8205,
+            129468
+          ],
+          [
+            128105,
+            127995,
+            8205,
+            129468
+          ],
+          [
+            128105,
+            127996,
+            8205,
+            129468
+          ],
+          [
+            128105,
+            127997,
+            8205,
+            129468
+          ],
+          [
+            128105,
+            127998,
+            8205,
+            129468
+          ],
+          [
+            128105,
+            127999,
+            8205,
+            129468
+          ],
+          [
+            128105,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127995,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127996,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127997,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127998,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127999,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            8205,
+            129468
+          ],
+          [
+            128104,
+            127995,
+            8205,
+            129468
+          ],
+          [
+            128104,
+            127996,
+            8205,
+            129468
+          ],
+          [
+            128104,
+            127997,
+            8205,
+            129468
+          ],
+          [
+            128104,
+            127998,
+            8205,
+            129468
+          ],
+          [
+            128104,
+            127999,
+            8205,
+            129468
+          ],
+          [
+            128104,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127995,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127996,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127997,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127998,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127999,
+            8205,
+            129468,
+            8205,
+            10145,
+            65039
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":person-in-motorized-wheelchair:"
+        ],
+        "animated": false,
+        "directional": true
+      },
+      {
+        "base": [
+          129489,
+          8205,
+          129469
+        ],
+        "alternates": [
+          [
+            129489,
+            8205,
+            129469
+          ],
+          [
+            129489,
+            127995,
+            8205,
+            129469
+          ],
+          [
+            129489,
+            127996,
+            8205,
+            129469
+          ],
+          [
+            129489,
+            127997,
+            8205,
+            129469
+          ],
+          [
+            129489,
+            127998,
+            8205,
+            129469
+          ],
+          [
+            129489,
+            127999,
+            8205,
+            129469
+          ],
+          [
+            129489,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127995,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127996,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127997,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127998,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127999,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            8205,
+            129469
+          ],
+          [
+            128105,
+            127995,
+            8205,
+            129469
+          ],
+          [
+            128105,
+            127996,
+            8205,
+            129469
+          ],
+          [
+            128105,
+            127997,
+            8205,
+            129469
+          ],
+          [
+            128105,
+            127998,
+            8205,
+            129469
+          ],
+          [
+            128105,
+            127999,
+            8205,
+            129469
+          ],
+          [
+            128105,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127995,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127996,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127997,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127998,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127999,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            8205,
+            129469
+          ],
+          [
+            128104,
+            127995,
+            8205,
+            129469
+          ],
+          [
+            128104,
+            127996,
+            8205,
+            129469
+          ],
+          [
+            128104,
+            127997,
+            8205,
+            129469
+          ],
+          [
+            128104,
+            127998,
+            8205,
+            129469
+          ],
+          [
+            128104,
+            127999,
+            8205,
+            129469
+          ],
+          [
+            128104,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127995,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127996,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127997,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127998,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127999,
+            8205,
+            129469,
+            8205,
+            10145,
+            65039
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":person-in-manual-wheelchair:"
+        ],
+        "animated": false,
+        "directional": true
+      },
+      {
+        "base": [
+          129489,
+          8205,
+          129455
+        ],
+        "alternates": [
+          [
+            129489,
+            8205,
+            129455
+          ],
+          [
+            129489,
+            127995,
+            8205,
+            129455
+          ],
+          [
+            129489,
+            127996,
+            8205,
+            129455
+          ],
+          [
+            129489,
+            127997,
+            8205,
+            129455
+          ],
+          [
+            129489,
+            127998,
+            8205,
+            129455
+          ],
+          [
+            129489,
+            127999,
+            8205,
+            129455
+          ],
+          [
+            129489,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127995,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127996,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127997,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127998,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            129489,
+            127999,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            8205,
+            129455
+          ],
+          [
+            128105,
+            127995,
+            8205,
+            129455
+          ],
+          [
+            128105,
+            127996,
+            8205,
+            129455
+          ],
+          [
+            128105,
+            127997,
+            8205,
+            129455
+          ],
+          [
+            128105,
+            127998,
+            8205,
+            129455
+          ],
+          [
+            128105,
+            127999,
+            8205,
+            129455
+          ],
+          [
+            128105,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127995,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127996,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127997,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127998,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128105,
+            127999,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            8205,
+            129455
+          ],
+          [
+            128104,
+            127995,
+            8205,
+            129455
+          ],
+          [
+            128104,
+            127996,
+            8205,
+            129455
+          ],
+          [
+            128104,
+            127997,
+            8205,
+            129455
+          ],
+          [
+            128104,
+            127998,
+            8205,
+            129455
+          ],
+          [
+            128104,
+            127999,
+            8205,
+            129455
+          ],
+          [
+            128104,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127995,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127996,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127997,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127998,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128104,
+            127999,
+            8205,
+            129455,
+            8205,
+            10145,
+            65039
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":walking-with-cane:",
+          ":blind:"
+        ],
+        "animated": false,
+        "directional": true
+      },
+      {
+        "base": [
+          128694
+        ],
+        "alternates": [
+          [
+            128694
+          ],
+          [
+            128694,
+            127995
+          ],
+          [
+            128694,
+            127996
+          ],
+          [
+            128694,
+            127997
+          ],
+          [
+            128694,
+            127998
+          ],
+          [
+            128694,
+            127999
+          ],
+          [
+            128694,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127995,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127996,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127997,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127998,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127999,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            128694,
+            127995,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            128694,
+            127996,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            128694,
+            127997,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            128694,
+            127998,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            128694,
+            127999,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            128694,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127995,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127996,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127997,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127998,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127999,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            128694,
+            127995,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            128694,
+            127996,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            128694,
+            127997,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            128694,
+            127998,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            128694,
+            127999,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            128694,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127995,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127996,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127997,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127998,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            128694,
+            127999,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":walking:"
+        ],
+        "animated": false,
+        "directional": true
+      },
+      {
+        "base": [
+          127939
+        ],
+        "alternates": [
+          [
+            127939
+          ],
+          [
+            127939,
+            127995
+          ],
+          [
+            127939,
+            127996
+          ],
+          [
+            127939,
+            127997
+          ],
+          [
+            127939,
+            127998
+          ],
+          [
+            127939,
+            127999
+          ],
+          [
+            127939,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127995,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127996,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127997,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127998,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127999,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            127939,
+            127995,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            127939,
+            127996,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            127939,
+            127997,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            127939,
+            127998,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            127939,
+            127999,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            127939,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127995,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127996,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127997,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127998,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127999,
+            8205,
+            9792,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            127939,
+            127995,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            127939,
+            127996,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            127939,
+            127997,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            127939,
+            127998,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            127939,
+            127999,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            127939,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127995,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127996,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127997,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127998,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ],
+          [
+            127939,
+            127999,
+            8205,
+            9794,
+            65039,
+            8205,
+            10145,
+            65039
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":running:"
+        ],
+        "animated": false,
+        "directional": true
       },
       {
         "base": [
@@ -7123,7 +8250,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bouncing-ball:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -7240,7 +8368,8 @@ const emojiMetadata =
         "shortcodes": [
           ":handball:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -7357,7 +8486,8 @@ const emojiMetadata =
         "shortcodes": [
           ":biking:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -7474,7 +8604,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mountain-biking:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -7591,7 +8722,130 @@ const emojiMetadata =
         "shortcodes": [
           ":climbing:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          127947,
+          65039
+        ],
+        "alternates": [
+          [
+            127947,
+            65039
+          ],
+          [
+            127947,
+            127995
+          ],
+          [
+            127947,
+            127996
+          ],
+          [
+            127947,
+            127997
+          ],
+          [
+            127947,
+            127998
+          ],
+          [
+            127947,
+            127999
+          ],
+          [
+            127947,
+            65039,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            127947,
+            127995,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            127947,
+            127996,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            127947,
+            127997,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            127947,
+            127998,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            127947,
+            127999,
+            8205,
+            9792,
+            65039
+          ],
+          [
+            127947,
+            65039,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            127947,
+            127995,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            127947,
+            127996,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            127947,
+            127997,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            127947,
+            127998,
+            8205,
+            9794,
+            65039
+          ],
+          [
+            127947,
+            127999,
+            8205,
+            9794,
+            65039
+          ]
+        ],
+        "emoticons": [],
+        "shortcodes": [
+          ":lifting-weights:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -7618,7 +8872,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wrestling:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -7735,7 +8990,8 @@ const emojiMetadata =
         "shortcodes": [
           ":juggling:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -7856,7 +9112,8 @@ const emojiMetadata =
         "shortcodes": [
           ":golfing:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -7891,7 +9148,8 @@ const emojiMetadata =
         "shortcodes": [
           ":horse-racing:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -7902,7 +9160,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fencing:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -7914,7 +9173,8 @@ const emojiMetadata =
         "shortcodes": [
           ":skier:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -7949,7 +9209,8 @@ const emojiMetadata =
         "shortcodes": [
           ":snowboarder:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -7960,7 +9221,8 @@ const emojiMetadata =
         "shortcodes": [
           ":parachute:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -8077,7 +9339,8 @@ const emojiMetadata =
         "shortcodes": [
           ":surfing:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -8194,7 +9457,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rowing-boat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -8311,7 +9575,8 @@ const emojiMetadata =
         "shortcodes": [
           ":swimming:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -8428,7 +9693,8 @@ const emojiMetadata =
         "shortcodes": [
           ":water-polo:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -8545,7 +9811,8 @@ const emojiMetadata =
         "shortcodes": [
           ":merperson:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -8662,7 +9929,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fairy:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -8689,7 +9957,8 @@ const emojiMetadata =
         "shortcodes": [
           ":genie:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -8806,7 +10075,8 @@ const emojiMetadata =
         "shortcodes": [
           ":elf:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -8923,7 +10193,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mage:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -9040,7 +10311,8 @@ const emojiMetadata =
         "shortcodes": [
           ":vampire:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -9067,7 +10339,8 @@ const emojiMetadata =
         "shortcodes": [
           ":zombie:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -9078,7 +10351,8 @@ const emojiMetadata =
         "shortcodes": [
           ":troll:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -9195,7 +10469,8 @@ const emojiMetadata =
         "shortcodes": [
           ":superhero:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -9312,7 +10587,8 @@ const emojiMetadata =
         "shortcodes": [
           ":supervillain:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -9347,7 +10623,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ninja:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -9442,7 +10719,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mx-claus:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -9477,7 +10755,8 @@ const emojiMetadata =
         "shortcodes": [
           ":angel:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -9594,7 +10873,8 @@ const emojiMetadata =
         "shortcodes": [
           ":guard:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -9675,7 +10955,8 @@ const emojiMetadata =
         "shortcodes": [
           ":royalty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -9792,7 +11073,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tuxedo:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -9909,7 +11191,8 @@ const emojiMetadata =
         "shortcodes": [
           ":veil:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -10028,7 +11311,8 @@ const emojiMetadata =
         "shortcodes": [
           ":astronaut:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -10145,7 +11429,8 @@ const emojiMetadata =
         "shortcodes": [
           ":construction-worker:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -10262,7 +11547,8 @@ const emojiMetadata =
         "shortcodes": [
           ":police:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -10383,7 +11669,8 @@ const emojiMetadata =
         "shortcodes": [
           ":detective:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -10521,7 +11808,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pilot:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -10640,7 +11928,8 @@ const emojiMetadata =
         "shortcodes": [
           ":scientist:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -10780,7 +12069,8 @@ const emojiMetadata =
           ":doctor:",
           ":nurse:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -10899,7 +12189,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mechanic:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -11018,7 +12309,8 @@ const emojiMetadata =
         "shortcodes": [
           ":factory-worker:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -11137,7 +12429,8 @@ const emojiMetadata =
         "shortcodes": [
           ":firefighter:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -11256,7 +12549,8 @@ const emojiMetadata =
         "shortcodes": [
           ":farmer:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -11375,7 +12669,8 @@ const emojiMetadata =
         "shortcodes": [
           ":teacher:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -11494,7 +12789,8 @@ const emojiMetadata =
         "shortcodes": [
           ":student:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -11614,7 +12910,8 @@ const emojiMetadata =
           ":office-worker:",
           ":business-person:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -11752,7 +13049,8 @@ const emojiMetadata =
         "shortcodes": [
           ":judge:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -11872,7 +13170,8 @@ const emojiMetadata =
           ":technologist:",
           ":person-at-computer:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -11991,7 +13290,8 @@ const emojiMetadata =
         "shortcodes": [
           ":singer:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -12110,7 +13410,8 @@ const emojiMetadata =
         "shortcodes": [
           ":artist:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -12229,7 +13530,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cook:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -12346,7 +13648,8 @@ const emojiMetadata =
         "shortcodes": [
           ":turban:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -12381,7 +13684,8 @@ const emojiMetadata =
         "shortcodes": [
           ":headscarf:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -12416,7 +13720,8 @@ const emojiMetadata =
         "shortcodes": [
           ":gua-pi-mao:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -12451,7 +13756,8 @@ const emojiMetadata =
         "shortcodes": [
           ":baby:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -12532,7 +13838,8 @@ const emojiMetadata =
         "shortcodes": [
           ":child:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -12613,7 +13920,8 @@ const emojiMetadata =
         "shortcodes": [
           ":adult:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -12694,7 +14002,8 @@ const emojiMetadata =
         "shortcodes": [
           ":elder:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -12813,7 +14122,8 @@ const emojiMetadata =
         "shortcodes": [
           ":white-hair:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -12932,7 +14242,8 @@ const emojiMetadata =
         "shortcodes": [
           ":red-hair:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -13049,7 +14360,8 @@ const emojiMetadata =
         "shortcodes": [
           ":blond-hair:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -13168,7 +14480,8 @@ const emojiMetadata =
         "shortcodes": [
           ":curly-hair:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -13287,7 +14600,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bald:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -13404,7 +14718,8 @@ const emojiMetadata =
         "shortcodes": [
           ":beard:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -13441,7 +14756,8 @@ const emojiMetadata =
         "shortcodes": [
           ":levitating-suit:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -13478,7 +14794,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dancer-woman:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -13515,7 +14832,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dancer-man:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -13542,7 +14860,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bunny-ears:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -13790,7 +15109,8 @@ const emojiMetadata =
         "shortcodes": [
           ":holding-hands:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -14005,7 +15325,8 @@ const emojiMetadata =
         "shortcodes": [
           ":holding-hands-women:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -14220,7 +15541,8 @@ const emojiMetadata =
         "shortcodes": [
           ":holding-hands-men:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -14435,7 +15757,8 @@ const emojiMetadata =
         "shortcodes": [
           ":holding-hands-woman-and-man:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -14712,7 +16035,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kiss-people:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -15041,7 +16365,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kiss-woman-and-man:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -15370,7 +16695,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kiss-man-and-man:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -15699,7 +17025,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kiss-woman-and-woman:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -15934,7 +17261,8 @@ const emojiMetadata =
         "shortcodes": [
           ":people-with-heart:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -16209,7 +17537,8 @@ const emojiMetadata =
         "shortcodes": [
           ":heart-with-woman-and-man:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -16484,7 +17813,8 @@ const emojiMetadata =
         "shortcodes": [
           ":heart-with-man-and-man:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -16759,7 +18089,8 @@ const emojiMetadata =
         "shortcodes": [
           ":heart-with-woman-and-woman:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -16840,7 +18171,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pregnant:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -16875,7 +18207,8 @@ const emojiMetadata =
         "shortcodes": [
           ":breast-feeding:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -16994,207 +18327,8 @@ const emojiMetadata =
         "shortcodes": [
           ":person-feeding-baby:"
         ],
-        "animated": false
-      },
-      {
-        "base": [
-          128106
-        ],
-        "alternates": [
-          [
-            128106
-          ],
-          [
-            128104,
-            8205,
-            128105,
-            8205,
-            128102
-          ],
-          [
-            128104,
-            8205,
-            128105,
-            8205,
-            128103
-          ],
-          [
-            128104,
-            8205,
-            128105,
-            8205,
-            128103,
-            8205,
-            128102
-          ],
-          [
-            128104,
-            8205,
-            128105,
-            8205,
-            128102,
-            8205,
-            128102
-          ],
-          [
-            128104,
-            8205,
-            128105,
-            8205,
-            128103,
-            8205,
-            128103
-          ],
-          [
-            128104,
-            8205,
-            128104,
-            8205,
-            128102
-          ],
-          [
-            128104,
-            8205,
-            128104,
-            8205,
-            128103
-          ],
-          [
-            128104,
-            8205,
-            128104,
-            8205,
-            128103,
-            8205,
-            128102
-          ],
-          [
-            128104,
-            8205,
-            128104,
-            8205,
-            128102,
-            8205,
-            128102
-          ],
-          [
-            128104,
-            8205,
-            128104,
-            8205,
-            128103,
-            8205,
-            128103
-          ],
-          [
-            128104,
-            8205,
-            128102
-          ],
-          [
-            128104,
-            8205,
-            128103
-          ],
-          [
-            128104,
-            8205,
-            128103,
-            8205,
-            128102
-          ],
-          [
-            128104,
-            8205,
-            128102,
-            8205,
-            128102
-          ],
-          [
-            128104,
-            8205,
-            128103,
-            8205,
-            128103
-          ],
-          [
-            128105,
-            8205,
-            128105,
-            8205,
-            128102
-          ],
-          [
-            128105,
-            8205,
-            128105,
-            8205,
-            128103
-          ],
-          [
-            128105,
-            8205,
-            128105,
-            8205,
-            128103,
-            8205,
-            128102
-          ],
-          [
-            128105,
-            8205,
-            128105,
-            8205,
-            128102,
-            8205,
-            128102
-          ],
-          [
-            128105,
-            8205,
-            128105,
-            8205,
-            128103,
-            8205,
-            128103
-          ],
-          [
-            128105,
-            8205,
-            128102
-          ],
-          [
-            128105,
-            8205,
-            128103
-          ],
-          [
-            128105,
-            8205,
-            128103,
-            8205,
-            128102
-          ],
-          [
-            128105,
-            8205,
-            128102,
-            8205,
-            128102
-          ],
-          [
-            128105,
-            8205,
-            128103,
-            8205,
-            128103
-          ]
-        ],
-        "emoticons": [],
-        "shortcodes": [
-          ":family:"
-        ],
-        "animated": false
+        "animated": false,
+        "directional": false
       }
     ]
   },
@@ -17211,7 +18345,8 @@ const emojiMetadata =
           ":bouquet:",
           ":flowers:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17224,7 +18359,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rose:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17235,7 +18371,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wilted-flower:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17246,7 +18383,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hibiscus:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17257,7 +18395,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tulip:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17268,7 +18407,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lotus:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17279,7 +18419,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cherry-blossom:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17290,7 +18431,8 @@ const emojiMetadata =
         "shortcodes": [
           ":white-flower:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17302,7 +18444,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rosette:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17313,7 +18456,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hyacinth:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17324,7 +18468,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sunflower:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17335,7 +18480,8 @@ const emojiMetadata =
         "shortcodes": [
           ":blossom:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17346,7 +18492,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fallen-leaf:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17357,7 +18504,8 @@ const emojiMetadata =
         "shortcodes": [
           ":maple-leaf:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17368,7 +18516,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mushroom:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17379,7 +18528,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ear-of-rice:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17391,7 +18541,8 @@ const emojiMetadata =
           ":plant:",
           ":seed:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17402,7 +18553,8 @@ const emojiMetadata =
         "shortcodes": [
           ":herb:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17413,7 +18565,8 @@ const emojiMetadata =
         "shortcodes": [
           ":leaves:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17425,7 +18578,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shamrock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17437,7 +18591,8 @@ const emojiMetadata =
           ":luck:",
           ":four-leaf-clover:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17448,7 +18603,8 @@ const emojiMetadata =
         "shortcodes": [
           ":potted-plant:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17459,7 +18615,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cactus:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17470,7 +18627,8 @@ const emojiMetadata =
         "shortcodes": [
           ":palm-tree:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17481,7 +18639,8 @@ const emojiMetadata =
         "shortcodes": [
           ":deciduous-tree:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17492,7 +18651,8 @@ const emojiMetadata =
         "shortcodes": [
           ":evergreen-tree:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17503,7 +18663,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wood:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17514,7 +18675,8 @@ const emojiMetadata =
         "shortcodes": [
           ":nest:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17525,7 +18687,8 @@ const emojiMetadata =
         "shortcodes": [
           ":nest-with-eggs:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17536,7 +18699,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17548,7 +18712,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mountain:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17560,7 +18725,8 @@ const emojiMetadata =
         "shortcodes": [
           ":snow-mountain:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17574,7 +18740,8 @@ const emojiMetadata =
           ":winter:",
           ":cold:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17586,7 +18753,8 @@ const emojiMetadata =
         "shortcodes": [
           ":snowman-with-snow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17597,7 +18765,8 @@ const emojiMetadata =
         "shortcodes": [
           ":snowman:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17609,7 +18778,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fog:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17621,7 +18791,8 @@ const emojiMetadata =
         "shortcodes": [
           ":thermometer:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17634,7 +18805,8 @@ const emojiMetadata =
           ":burn:",
           ":lit:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17645,7 +18817,8 @@ const emojiMetadata =
         "shortcodes": [
           ":volcano:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17657,7 +18830,8 @@ const emojiMetadata =
         "shortcodes": [
           ":desert:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17669,7 +18843,8 @@ const emojiMetadata =
         "shortcodes": [
           ":national-park:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17681,7 +18856,8 @@ const emojiMetadata =
         "shortcodes": [
           ":desert-island:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17693,7 +18869,8 @@ const emojiMetadata =
         "shortcodes": [
           ":beach:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17704,7 +18881,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sunrise:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17715,7 +18893,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sunrise-over-mountains:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17726,7 +18905,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rainbow:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17737,7 +18917,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bubbles:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17748,7 +18929,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ocean:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17760,7 +18942,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wind-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17771,7 +18954,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cyclone:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17783,7 +18967,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tornado:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17796,7 +18981,8 @@ const emojiMetadata =
           ":zap:",
           ":lightning:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17807,7 +18993,8 @@ const emojiMetadata =
         "shortcodes": [
           ":umbrella-in-rain:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17818,55 +19005,8 @@ const emojiMetadata =
         "shortcodes": [
           ":droplet:"
         ],
-        "animated": false
-      },
-      {
-        "base": [
-          127783,
-          65039
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":rain-cloud:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          127785,
-          65039
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":cloud-with-lightning:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          9928,
-          65039
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":cloud-with-lightning-and-rain:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          127784,
-          65039
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":cloud-with-snow:"
-        ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17878,7 +19018,60 @@ const emojiMetadata =
         "shortcodes": [
           ":cloud:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          127784,
+          65039
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":cloud-with-snow:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          127783,
+          65039
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":rain-cloud:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          127785,
+          65039
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":cloud-with-lightning:"
+        ],
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          9928,
+          65039
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":cloud-with-lightning-and-rain:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17890,7 +19083,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sun-behind-rain-cloud:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17902,7 +19096,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sun-behind-large-cloud:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17913,7 +19108,8 @@ const emojiMetadata =
         "shortcodes": [
           ":partly-sunny:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17925,7 +19121,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sun-behind-small-cloud:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17937,7 +19134,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sunny:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17948,7 +19146,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sun-with-face:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -17961,7 +19160,8 @@ const emojiMetadata =
         "shortcodes": [
           ":moon-face-full:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17974,7 +19174,8 @@ const emojiMetadata =
         "shortcodes": [
           ":moon-face-new:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17985,7 +19186,8 @@ const emojiMetadata =
         "shortcodes": [
           ":moon-face-last-quarter:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -17996,7 +19198,8 @@ const emojiMetadata =
         "shortcodes": [
           ":moon-face-first-quarter:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18007,7 +19210,8 @@ const emojiMetadata =
         "shortcodes": [
           ":star:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18018,7 +19222,8 @@ const emojiMetadata =
         "shortcodes": [
           ":glowing-star:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18029,7 +19234,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sparkles:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18040,7 +19246,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dizzy:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18051,7 +19258,8 @@ const emojiMetadata =
         "shortcodes": [
           ":crescent-moon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18063,7 +19271,8 @@ const emojiMetadata =
         "shortcodes": [
           ":comet:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18075,7 +19284,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hole:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18086,7 +19296,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shooting-star:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18097,7 +19308,8 @@ const emojiMetadata =
         "shortcodes": [
           ":milky-way:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18108,7 +19320,8 @@ const emojiMetadata =
         "shortcodes": [
           ":globe-showing-Europe-Africa:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18119,7 +19332,8 @@ const emojiMetadata =
         "shortcodes": [
           ":globe-showing-Americas:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18130,7 +19344,8 @@ const emojiMetadata =
         "shortcodes": [
           ":globe-showing-Asia-Australia:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18141,7 +19356,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ringed-planet:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18152,7 +19368,8 @@ const emojiMetadata =
         "shortcodes": [
           ":new-moon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18163,7 +19380,8 @@ const emojiMetadata =
         "shortcodes": [
           ":waxing-crescent-moon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18174,7 +19392,8 @@ const emojiMetadata =
         "shortcodes": [
           ":first-quarter-moon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18185,7 +19404,8 @@ const emojiMetadata =
         "shortcodes": [
           ":waxing-gibbous-moon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18196,7 +19416,8 @@ const emojiMetadata =
         "shortcodes": [
           ":full-moon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18207,7 +19428,8 @@ const emojiMetadata =
         "shortcodes": [
           ":waning-gibbous-moon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18218,7 +19440,8 @@ const emojiMetadata =
         "shortcodes": [
           ":last-quarter-moon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18229,7 +19452,8 @@ const emojiMetadata =
         "shortcodes": [
           ":waning-crescent-moon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18240,7 +19464,8 @@ const emojiMetadata =
         "shortcodes": [
           ":see-no-evil-monkey:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18251,7 +19476,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hear-no-evil-monkey:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18262,7 +19488,8 @@ const emojiMetadata =
         "shortcodes": [
           ":speak-no-evil-monkey:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18273,7 +19500,8 @@ const emojiMetadata =
         "shortcodes": [
           ":monkey-face:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18284,7 +19512,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lion-face:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18295,7 +19524,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tiger-face:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18308,7 +19538,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cat-face:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18321,7 +19552,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dog-face:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18332,7 +19564,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wolf:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18345,7 +19578,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bear-face:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18359,7 +19593,8 @@ const emojiMetadata =
         "shortcodes": [
           ":polar-bear:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18370,7 +19605,8 @@ const emojiMetadata =
         "shortcodes": [
           ":koala:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18381,7 +19617,8 @@ const emojiMetadata =
         "shortcodes": [
           ":panda:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18392,7 +19629,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hamster:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18403,7 +19641,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mouse-face:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18414,7 +19653,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rabbit-face:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18425,7 +19665,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fox-face:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18436,7 +19677,8 @@ const emojiMetadata =
         "shortcodes": [
           ":raccoon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18449,7 +19691,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cow-face:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18460,7 +19703,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pig-face:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18471,7 +19715,8 @@ const emojiMetadata =
         "shortcodes": [
           ":snout:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18482,7 +19727,8 @@ const emojiMetadata =
         "shortcodes": [
           ":boar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18493,7 +19739,8 @@ const emojiMetadata =
         "shortcodes": [
           ":zebra:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18504,7 +19751,8 @@ const emojiMetadata =
         "shortcodes": [
           ":unicorn:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18515,7 +19763,8 @@ const emojiMetadata =
         "shortcodes": [
           ":horse-face:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18526,7 +19775,8 @@ const emojiMetadata =
         "shortcodes": [
           ":moose:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18537,7 +19787,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dragon-face:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18548,7 +19799,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lizard:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18559,7 +19811,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dragon:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18570,7 +19823,8 @@ const emojiMetadata =
         "shortcodes": [
           ":t-rex:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18581,7 +19835,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dinosaur:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18592,7 +19847,8 @@ const emojiMetadata =
         "shortcodes": [
           ":turtle:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18603,7 +19859,8 @@ const emojiMetadata =
         "shortcodes": [
           ":crocodile:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18616,7 +19873,8 @@ const emojiMetadata =
         "shortcodes": [
           ":snake:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18627,7 +19885,8 @@ const emojiMetadata =
         "shortcodes": [
           ":frog:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18638,7 +19897,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rabbit:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18651,7 +19911,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mouse:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18662,7 +19923,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rat:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18673,7 +19935,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18686,7 +19949,8 @@ const emojiMetadata =
         "shortcodes": [
           ":black-cat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18697,7 +19961,8 @@ const emojiMetadata =
         "shortcodes": [
           ":poodle:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18708,7 +19973,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dog:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18719,7 +19985,8 @@ const emojiMetadata =
         "shortcodes": [
           ":guide-dog:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18732,7 +19999,8 @@ const emojiMetadata =
         "shortcodes": [
           ":service-dog:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18743,7 +20011,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pig:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18754,7 +20023,8 @@ const emojiMetadata =
         "shortcodes": [
           ":racehorse:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18765,7 +20035,8 @@ const emojiMetadata =
         "shortcodes": [
           ":donkey:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18776,7 +20047,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18787,7 +20059,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ox:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18798,7 +20071,8 @@ const emojiMetadata =
         "shortcodes": [
           ":water-buffalo:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18809,7 +20083,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bison:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18820,7 +20095,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ram:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18832,7 +20108,8 @@ const emojiMetadata =
           ":sheep:",
           ":ewe:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18843,7 +20120,8 @@ const emojiMetadata =
         "shortcodes": [
           ":goat:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18854,7 +20132,8 @@ const emojiMetadata =
         "shortcodes": [
           ":deer:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18865,7 +20144,8 @@ const emojiMetadata =
         "shortcodes": [
           ":llama:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18876,7 +20156,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sloth:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18887,7 +20168,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kangaroo:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18898,7 +20180,8 @@ const emojiMetadata =
         "shortcodes": [
           ":elephant:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18909,7 +20192,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mammoth:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18921,7 +20205,8 @@ const emojiMetadata =
           ":rhino:",
           ":rhinoceros:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18932,7 +20217,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hippo:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18943,7 +20229,8 @@ const emojiMetadata =
         "shortcodes": [
           ":giraffe:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18954,7 +20241,8 @@ const emojiMetadata =
         "shortcodes": [
           ":leopard:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -18965,7 +20253,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tiger:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18976,7 +20265,8 @@ const emojiMetadata =
         "shortcodes": [
           ":monkey:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18987,7 +20277,8 @@ const emojiMetadata =
         "shortcodes": [
           ":gorilla:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -18998,7 +20289,8 @@ const emojiMetadata =
         "shortcodes": [
           ":orangutan:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19009,7 +20301,8 @@ const emojiMetadata =
         "shortcodes": [
           ":camel:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19020,7 +20313,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bactrian-camel:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19032,7 +20326,8 @@ const emojiMetadata =
         "shortcodes": [
           ":chipmunk:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19043,7 +20338,8 @@ const emojiMetadata =
         "shortcodes": [
           ":beaver:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19054,7 +20350,8 @@ const emojiMetadata =
         "shortcodes": [
           ":skunk:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19065,7 +20362,8 @@ const emojiMetadata =
         "shortcodes": [
           ":badger:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19076,7 +20374,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hedgehog:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19089,7 +20388,8 @@ const emojiMetadata =
         "shortcodes": [
           ":otter:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19102,7 +20402,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bat:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19113,7 +20414,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wing:; :fly:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19124,7 +20426,8 @@ const emojiMetadata =
         "shortcodes": [
           ":feather:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19135,7 +20438,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bird:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19148,7 +20452,8 @@ const emojiMetadata =
         "shortcodes": [
           ":black-bird:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19159,7 +20464,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rooster:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19170,7 +20476,8 @@ const emojiMetadata =
         "shortcodes": [
           ":chicken:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19181,7 +20488,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hatching-chick:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19192,7 +20500,8 @@ const emojiMetadata =
         "shortcodes": [
           ":baby-chick:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19203,7 +20512,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hatched-chick:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19214,7 +20524,8 @@ const emojiMetadata =
         "shortcodes": [
           ":eagle:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19225,7 +20536,8 @@ const emojiMetadata =
         "shortcodes": [
           ":owl:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19236,7 +20548,8 @@ const emojiMetadata =
         "shortcodes": [
           ":parrot:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19249,7 +20562,8 @@ const emojiMetadata =
           ":peace:",
           ":dove:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19260,7 +20574,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dodo:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19271,7 +20586,8 @@ const emojiMetadata =
         "shortcodes": [
           ":swan:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19282,7 +20598,8 @@ const emojiMetadata =
         "shortcodes": [
           ":duck:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19293,7 +20610,8 @@ const emojiMetadata =
         "shortcodes": [
           ":goose:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19304,7 +20622,8 @@ const emojiMetadata =
         "shortcodes": [
           ":flamingo:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19315,7 +20634,22 @@ const emojiMetadata =
         "shortcodes": [
           ":peacock:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          128038,
+          8205,
+          128293
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":phoenix:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19326,7 +20660,8 @@ const emojiMetadata =
         "shortcodes": [
           ":turkey:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19339,7 +20674,8 @@ const emojiMetadata =
         "shortcodes": [
           ":penguin:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19350,7 +20686,8 @@ const emojiMetadata =
         "shortcodes": [
           ":seal:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19361,7 +20698,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shark:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19372,7 +20710,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dolphin:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19383,7 +20722,8 @@ const emojiMetadata =
         "shortcodes": [
           ":humpback-whale:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19394,7 +20734,8 @@ const emojiMetadata =
         "shortcodes": [
           ":whale:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19407,7 +20748,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fish:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19418,7 +20760,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tropical-fish:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19429,7 +20772,8 @@ const emojiMetadata =
         "shortcodes": [
           ":blowfish:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19440,7 +20784,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shrimp:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19451,7 +20796,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lobster:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19462,7 +20808,8 @@ const emojiMetadata =
         "shortcodes": [
           ":crab:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19475,7 +20822,8 @@ const emojiMetadata =
         "shortcodes": [
           ":squid:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19486,7 +20834,8 @@ const emojiMetadata =
         "shortcodes": [
           ":octopus:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19497,7 +20846,8 @@ const emojiMetadata =
         "shortcodes": [
           ":jellyfish:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19508,7 +20858,8 @@ const emojiMetadata =
         "shortcodes": [
           ":oyster:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19519,7 +20870,8 @@ const emojiMetadata =
         "shortcodes": [
           ":coral:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19530,7 +20882,8 @@ const emojiMetadata =
         "shortcodes": [
           ":scorpion:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19542,7 +20895,8 @@ const emojiMetadata =
         "shortcodes": [
           ":spider:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19554,7 +20908,8 @@ const emojiMetadata =
         "shortcodes": [
           ":spider-web:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19565,7 +20920,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shell:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19576,7 +20932,8 @@ const emojiMetadata =
         "shortcodes": [
           ":snail:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19587,7 +20944,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ant:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19598,7 +20956,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cricket:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19609,7 +20968,8 @@ const emojiMetadata =
         "shortcodes": [
           ":beetle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19620,7 +20980,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mosquito:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19631,7 +20992,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cockroach:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19642,7 +21004,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fly:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19653,7 +21016,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bee:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19664,7 +21028,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lady-bug:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19677,7 +21042,8 @@ const emojiMetadata =
         "shortcodes": [
           ":butterfly:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19688,7 +21054,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bug:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19699,7 +21066,8 @@ const emojiMetadata =
         "shortcodes": [
           ":worm:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19710,7 +21078,8 @@ const emojiMetadata =
         "shortcodes": [
           ":microbe:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19721,7 +21090,8 @@ const emojiMetadata =
         "shortcodes": [
           ":paw prints:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       }
     ]
   },
@@ -19737,7 +21107,8 @@ const emojiMetadata =
         "shortcodes": [
           ":strawberry:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19748,7 +21119,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cherries:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19759,7 +21131,8 @@ const emojiMetadata =
         "shortcodes": [
           ":red-apple:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19770,7 +21143,8 @@ const emojiMetadata =
         "shortcodes": [
           ":watermelon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19781,7 +21155,8 @@ const emojiMetadata =
         "shortcodes": [
           ":peach:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19794,7 +21169,8 @@ const emojiMetadata =
           ":orange:",
           ":mandarin:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19805,7 +21181,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mango:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19816,7 +21193,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pineapple:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19827,7 +21205,8 @@ const emojiMetadata =
         "shortcodes": [
           ":banana:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19838,7 +21217,22 @@ const emojiMetadata =
         "shortcodes": [
           ":lemon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          127819,
+          8205,
+          129001
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":lime:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19849,7 +21243,8 @@ const emojiMetadata =
         "shortcodes": [
           ":melon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19860,7 +21255,8 @@ const emojiMetadata =
         "shortcodes": [
           ":green-apple:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19871,7 +21267,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pear:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19882,7 +21279,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kiwi-fruit:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19893,7 +21291,8 @@ const emojiMetadata =
         "shortcodes": [
           ":olive:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19904,7 +21303,8 @@ const emojiMetadata =
         "shortcodes": [
           ":blueberries:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19915,7 +21315,8 @@ const emojiMetadata =
         "shortcodes": [
           ":grapes:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19926,7 +21327,8 @@ const emojiMetadata =
         "shortcodes": [
           ":coconut:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19937,7 +21339,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tomato:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -19949,7 +21352,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hot-pepper:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19960,7 +21364,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ginger:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19971,18 +21376,8 @@ const emojiMetadata =
         "shortcodes": [
           ":carrot:"
         ],
-        "animated": false
-      },
-      {
-        "base": [
-          127840
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":roasted-sweet-potato:"
-        ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -19993,7 +21388,8 @@ const emojiMetadata =
         "shortcodes": [
           ":onion:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20004,7 +21400,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ear-of-corn:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20015,7 +21412,8 @@ const emojiMetadata =
         "shortcodes": [
           ":broccoli:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20026,7 +21424,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cucumber:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20037,7 +21436,8 @@ const emojiMetadata =
         "shortcodes": [
           ":leafy-green:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20048,7 +21448,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pea-pod:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20059,7 +21460,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bell-pepper:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20070,7 +21472,20 @@ const emojiMetadata =
         "shortcodes": [
           ":avocado:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          127840
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":roasted-sweet-potato:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20081,7 +21496,8 @@ const emojiMetadata =
         "shortcodes": [
           ":eggplant:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20092,7 +21508,8 @@ const emojiMetadata =
         "shortcodes": [
           ":garlic:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20103,7 +21520,22 @@ const emojiMetadata =
         "shortcodes": [
           ":potato:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          127812,
+          8205,
+          129003
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":brown-mushroom:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20114,7 +21546,8 @@ const emojiMetadata =
         "shortcodes": [
           ":beans:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20125,7 +21558,8 @@ const emojiMetadata =
         "shortcodes": [
           ":chestnut:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20136,7 +21570,8 @@ const emojiMetadata =
         "shortcodes": [
           ":peanuts:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20147,7 +21582,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bread:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20158,7 +21594,8 @@ const emojiMetadata =
         "shortcodes": [
           ":flatbread:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20169,7 +21606,8 @@ const emojiMetadata =
         "shortcodes": [
           ":croissant:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20180,7 +21618,8 @@ const emojiMetadata =
         "shortcodes": [
           ":baguette-bread:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20191,7 +21630,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bagel:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20202,7 +21642,8 @@ const emojiMetadata =
         "shortcodes": [
           ":waffle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20213,7 +21654,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pancakes:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20224,7 +21666,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cooking:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -20235,7 +21678,8 @@ const emojiMetadata =
         "shortcodes": [
           ":egg:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20246,7 +21690,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cheese-wedge:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20257,7 +21702,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bacon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20268,7 +21714,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cut-of-meat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20279,7 +21726,8 @@ const emojiMetadata =
         "shortcodes": [
           ":poultry-leg:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20290,7 +21738,8 @@ const emojiMetadata =
         "shortcodes": [
           ":meat-on-bone:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20301,7 +21750,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hamburger:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20312,7 +21762,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hot-dog:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20323,7 +21774,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sandwich:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20334,7 +21786,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pretzel:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20345,7 +21798,8 @@ const emojiMetadata =
         "shortcodes": [
           ":french-fries:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20356,7 +21810,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pizza:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20367,7 +21822,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tamale:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20378,7 +21834,8 @@ const emojiMetadata =
         "shortcodes": [
           ":taco:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20389,7 +21846,8 @@ const emojiMetadata =
         "shortcodes": [
           ":burrito:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20400,7 +21858,8 @@ const emojiMetadata =
         "shortcodes": [
           ":stuffed-flatbread:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20411,7 +21870,8 @@ const emojiMetadata =
         "shortcodes": [
           ":falafel:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20422,7 +21882,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shallow-pan-of-food:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20433,7 +21894,8 @@ const emojiMetadata =
         "shortcodes": [
           ":spaghetti:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -20444,7 +21906,8 @@ const emojiMetadata =
         "shortcodes": [
           ":canned-food:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20455,7 +21918,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fondue:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20466,7 +21930,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bowl-with-spoon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20477,7 +21942,8 @@ const emojiMetadata =
         "shortcodes": [
           ":green-salad:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20488,7 +21954,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pot-of-food:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20499,7 +21966,8 @@ const emojiMetadata =
         "shortcodes": [
           ":curry-rice:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20510,7 +21978,8 @@ const emojiMetadata =
         "shortcodes": [
           ":steaming-bowl:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -20521,7 +21990,8 @@ const emojiMetadata =
         "shortcodes": [
           ":oyster:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20532,7 +22002,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lobster:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20543,7 +22014,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sushi:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20554,7 +22026,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fried-shrimp:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20565,7 +22038,8 @@ const emojiMetadata =
         "shortcodes": [
           ":takeout-box:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20576,7 +22050,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cooked-rice:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20587,7 +22062,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bento-box:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20598,7 +22074,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dumpling:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20609,7 +22086,8 @@ const emojiMetadata =
         "shortcodes": [
           ":oden:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20620,7 +22098,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rice-ball:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20631,7 +22110,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rice-cracker:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20642,7 +22122,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fish-cake-with-swirl:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20653,7 +22134,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dango:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20664,7 +22146,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fortune-cookie:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20675,7 +22158,8 @@ const emojiMetadata =
         "shortcodes": [
           ":moon-cake:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20686,7 +22170,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shaved-ice:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20697,7 +22182,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ice-cream:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20708,7 +22194,8 @@ const emojiMetadata =
         "shortcodes": [
           ":soft-ice-cream:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20719,7 +22206,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pie:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20730,7 +22218,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shortcake:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20741,7 +22230,8 @@ const emojiMetadata =
         "shortcodes": [
           ":custard:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20752,7 +22242,8 @@ const emojiMetadata =
         "shortcodes": [
           ":birthday-cake:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20763,7 +22254,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cupcake:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20774,7 +22266,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lollipop:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20785,7 +22278,8 @@ const emojiMetadata =
         "shortcodes": [
           ":candy:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20796,7 +22290,8 @@ const emojiMetadata =
         "shortcodes": [
           ":chocolate-bar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20807,7 +22302,8 @@ const emojiMetadata =
         "shortcodes": [
           ":doughnut:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20818,7 +22314,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cookie:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20829,7 +22326,8 @@ const emojiMetadata =
         "shortcodes": [
           ":honey-pot:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20840,7 +22338,8 @@ const emojiMetadata =
         "shortcodes": [
           ":salt:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20851,7 +22350,8 @@ const emojiMetadata =
         "shortcodes": [
           ":butter:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20862,7 +22362,8 @@ const emojiMetadata =
         "shortcodes": [
           ":popcorn:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -20873,7 +22374,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ice-cube:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20884,7 +22386,8 @@ const emojiMetadata =
         "shortcodes": [
           ":jar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20895,7 +22398,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cup-with-straw:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20907,7 +22411,8 @@ const emojiMetadata =
           ":bubble-tea:",
           ":milk-tea:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20918,7 +22423,8 @@ const emojiMetadata =
         "shortcodes": [
           ":beverage-box:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20929,7 +22435,8 @@ const emojiMetadata =
         "shortcodes": [
           ":glass-of-milk:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20940,7 +22447,8 @@ const emojiMetadata =
         "shortcodes": [
           ":baby-bottle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20951,7 +22459,8 @@ const emojiMetadata =
         "shortcodes": [
           ":teacup-without-handle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20962,7 +22471,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hot-beverage:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -20973,7 +22483,8 @@ const emojiMetadata =
         "shortcodes": [
           ":teapot:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20984,7 +22495,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mate:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -20995,7 +22507,8 @@ const emojiMetadata =
         "shortcodes": [
           ":beer-mug:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21006,7 +22519,8 @@ const emojiMetadata =
         "shortcodes": [
           ":clinking-beer-mugs:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21017,7 +22531,8 @@ const emojiMetadata =
         "shortcodes": [
           ":clinking-glasses:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21028,7 +22543,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bottle-with-popping-cork:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21039,7 +22555,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wine-glass:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21050,7 +22567,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tumbler-glass:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21061,7 +22579,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pour:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21072,7 +22591,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cocktail-glass:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21083,7 +22603,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tropical-drink:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21094,7 +22615,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sake:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21105,7 +22627,8 @@ const emojiMetadata =
         "shortcodes": [
           ":chopsticks:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21116,7 +22639,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fork-and-knife:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21127,7 +22651,8 @@ const emojiMetadata =
         "shortcodes": [
           ":spoon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21138,7 +22663,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kitchen-knife:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21150,7 +22676,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fork-and-knife-with-plate:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       }
     ]
   },
@@ -21166,7 +22693,8 @@ const emojiMetadata =
         "shortcodes": [
           ":stop-sign:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21177,7 +22705,8 @@ const emojiMetadata =
         "shortcodes": [
           ":construction:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21188,7 +22717,8 @@ const emojiMetadata =
         "shortcodes": [
           ":police-car-light:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21199,7 +22729,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fuel-pump:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21211,7 +22742,8 @@ const emojiMetadata =
         "shortcodes": [
           ":oil-drum:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21222,7 +22754,8 @@ const emojiMetadata =
         "shortcodes": [
           ":compass:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21233,7 +22766,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wheel:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21244,7 +22778,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ring-buoy:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21255,7 +22790,8 @@ const emojiMetadata =
         "shortcodes": [
           ":anchor:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21266,7 +22802,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bus-stop:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21277,7 +22814,8 @@ const emojiMetadata =
         "shortcodes": [
           ":metro:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21288,7 +22826,8 @@ const emojiMetadata =
         "shortcodes": [
           ":horizontal-traffic-light:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21299,7 +22838,8 @@ const emojiMetadata =
         "shortcodes": [
           ":vertical-traffic-light:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21310,7 +22850,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kick-scooter:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21321,7 +22862,8 @@ const emojiMetadata =
         "shortcodes": [
           ":manual-wheelchair:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21332,7 +22874,8 @@ const emojiMetadata =
         "shortcodes": [
           ":motorized-wheelchair:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21343,7 +22886,8 @@ const emojiMetadata =
         "shortcodes": [
           ":crutch:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21354,7 +22898,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bicycle:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21365,7 +22910,8 @@ const emojiMetadata =
         "shortcodes": [
           ":motor-scooter:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21377,7 +22923,8 @@ const emojiMetadata =
         "shortcodes": [
           ":motorcycle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21388,7 +22935,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sport-utility-vehicle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21399,7 +22947,8 @@ const emojiMetadata =
         "shortcodes": [
           ":automobile:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21410,7 +22959,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pickup-truck:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21421,7 +22971,8 @@ const emojiMetadata =
         "shortcodes": [
           ":minibus:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21432,7 +22983,8 @@ const emojiMetadata =
         "shortcodes": [
           ":delivery-truck:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21443,7 +22995,8 @@ const emojiMetadata =
         "shortcodes": [
           ":articulated-lorry:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21454,7 +23007,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tractor:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21466,7 +23020,8 @@ const emojiMetadata =
         "shortcodes": [
           ":racing-car:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21477,7 +23032,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fire-engine:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21488,7 +23044,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ambulance:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21499,7 +23056,8 @@ const emojiMetadata =
         "shortcodes": [
           ":police-car:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21510,7 +23068,8 @@ const emojiMetadata =
         "shortcodes": [
           ":taxi:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21521,7 +23080,8 @@ const emojiMetadata =
         "shortcodes": [
           ":auto-rickshaw:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21532,7 +23092,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bus:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21543,7 +23104,8 @@ const emojiMetadata =
         "shortcodes": [
           ":light-rail:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21554,7 +23116,8 @@ const emojiMetadata =
         "shortcodes": [
           ":monorail:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21565,7 +23128,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bullet-train:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21576,7 +23140,8 @@ const emojiMetadata =
         "shortcodes": [
           ":high-speed-train:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21587,7 +23152,8 @@ const emojiMetadata =
         "shortcodes": [
           ":locomotive:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21598,7 +23164,8 @@ const emojiMetadata =
         "shortcodes": [
           ":railway-car:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21609,7 +23176,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tram-car:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21620,7 +23188,8 @@ const emojiMetadata =
         "shortcodes": [
           ":trolleybus:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21631,7 +23200,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mountain-railway:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21642,7 +23212,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tram:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21653,7 +23224,8 @@ const emojiMetadata =
         "shortcodes": [
           ":station:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21664,7 +23236,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bus-front:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21675,7 +23248,8 @@ const emojiMetadata =
         "shortcodes": [
           ":police-car-front:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21686,7 +23260,8 @@ const emojiMetadata =
         "shortcodes": [
           ":automobile-front:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21697,7 +23272,8 @@ const emojiMetadata =
         "shortcodes": [
           ":taxi-front:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21708,7 +23284,8 @@ const emojiMetadata =
         "shortcodes": [
           ":train:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21719,7 +23296,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ship:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21731,7 +23309,8 @@ const emojiMetadata =
         "shortcodes": [
           ":passenger-ship:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21743,7 +23322,8 @@ const emojiMetadata =
         "shortcodes": [
           ":motor-boat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21754,7 +23334,8 @@ const emojiMetadata =
         "shortcodes": [
           ":speedboat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21766,7 +23347,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ferry:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21777,7 +23359,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sailboat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21788,7 +23371,8 @@ const emojiMetadata =
         "shortcodes": [
           ":canoe:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21799,7 +23383,8 @@ const emojiMetadata =
         "shortcodes": [
           ":suspension-railway:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21810,7 +23395,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mountain-cableway:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21821,7 +23407,8 @@ const emojiMetadata =
         "shortcodes": [
           ":aerial-tramway:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21832,7 +23419,8 @@ const emojiMetadata =
         "shortcodes": [
           ":helicopter:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21843,7 +23431,8 @@ const emojiMetadata =
         "shortcodes": [
           ":flying-saucer:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21854,7 +23443,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rocket:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21866,7 +23456,8 @@ const emojiMetadata =
         "shortcodes": [
           ":airplane:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21877,7 +23468,8 @@ const emojiMetadata =
         "shortcodes": [
           ":airplane-departure:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21888,7 +23480,8 @@ const emojiMetadata =
         "shortcodes": [
           ":airplane-arrival:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21900,7 +23493,8 @@ const emojiMetadata =
         "shortcodes": [
           ":small-airplane:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21912,7 +23506,8 @@ const emojiMetadata =
           ":slide:",
           ":playground:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21923,7 +23518,8 @@ const emojiMetadata =
         "shortcodes": [
           ":roller-coaster:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -21934,7 +23530,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ferris-wheel:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21945,7 +23542,8 @@ const emojiMetadata =
         "shortcodes": [
           ":carousel-horse:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21956,7 +23554,8 @@ const emojiMetadata =
         "shortcodes": [
           ":circus-tent:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21967,7 +23566,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tokyo-tower:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21978,7 +23578,8 @@ const emojiMetadata =
         "shortcodes": [
           ":statue-of-Liberty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -21989,7 +23590,8 @@ const emojiMetadata =
         "shortcodes": [
           ":moai:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22000,7 +23602,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mount-fuji:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22012,7 +23615,8 @@ const emojiMetadata =
         "shortcodes": [
           ":classical-building:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22023,7 +23627,8 @@ const emojiMetadata =
         "shortcodes": [
           ":barber-pole:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22034,7 +23639,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fountain:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22046,7 +23652,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shinto-shrine:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22057,7 +23664,8 @@ const emojiMetadata =
         "shortcodes": [
           ":synagogue:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22068,7 +23676,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mosque:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22079,7 +23688,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kaaba:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22090,7 +23700,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hindu-temple:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22101,7 +23712,8 @@ const emojiMetadata =
         "shortcodes": [
           ":church:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22112,7 +23724,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wedding:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22123,7 +23736,8 @@ const emojiMetadata =
         "shortcodes": [
           ":love-hotel:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22134,7 +23748,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Japanese-castle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22145,7 +23760,8 @@ const emojiMetadata =
         "shortcodes": [
           ":castle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22157,7 +23773,8 @@ const emojiMetadata =
         "shortcodes": [
           ":construction-building:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22168,7 +23785,8 @@ const emojiMetadata =
         "shortcodes": [
           ":office-building:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22179,7 +23797,8 @@ const emojiMetadata =
         "shortcodes": [
           ":factory:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22190,7 +23809,8 @@ const emojiMetadata =
         "shortcodes": [
           ":department-store:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22201,7 +23821,8 @@ const emojiMetadata =
         "shortcodes": [
           ":convenience-store:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22213,7 +23834,8 @@ const emojiMetadata =
         "shortcodes": [
           ":stadium:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22224,7 +23846,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bank:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22235,7 +23858,8 @@ const emojiMetadata =
         "shortcodes": [
           ":school:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22246,7 +23870,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hotel:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22257,7 +23882,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Japanese-post-office:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22268,7 +23894,8 @@ const emojiMetadata =
         "shortcodes": [
           ":post-office:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22279,7 +23906,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hospital:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22291,7 +23919,8 @@ const emojiMetadata =
         "shortcodes": [
           ":derelict-house:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22302,7 +23931,8 @@ const emojiMetadata =
         "shortcodes": [
           ":house:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22313,7 +23943,8 @@ const emojiMetadata =
         "shortcodes": [
           ":house-with-garden:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22325,7 +23956,8 @@ const emojiMetadata =
         "shortcodes": [
           ":houses:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22336,7 +23968,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hut:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22347,7 +23980,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tent:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22359,7 +23993,8 @@ const emojiMetadata =
         "shortcodes": [
           ":camping:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22371,7 +24006,8 @@ const emojiMetadata =
         "shortcodes": [
           ":umbrella-on-ground:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22383,7 +24019,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cityscape:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22394,7 +24031,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sunset-cityscape:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22405,7 +24043,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sunset:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22416,7 +24055,8 @@ const emojiMetadata =
         "shortcodes": [
           ":night-with-stars:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22427,7 +24067,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bridge-at-night:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22438,7 +24079,8 @@ const emojiMetadata =
         "shortcodes": [
           ":foggy:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22450,7 +24092,8 @@ const emojiMetadata =
         "shortcodes": [
           ":railway-track:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22462,7 +24105,8 @@ const emojiMetadata =
         "shortcodes": [
           ":motorway:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22473,7 +24117,8 @@ const emojiMetadata =
         "shortcodes": [
           ":map-of-Japan:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22485,7 +24130,8 @@ const emojiMetadata =
         "shortcodes": [
           ":world-map:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22496,7 +24142,8 @@ const emojiMetadata =
         "shortcodes": [
           ":globe-with-meridians:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22507,7 +24154,8 @@ const emojiMetadata =
         "shortcodes": [
           ":seat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22518,7 +24166,8 @@ const emojiMetadata =
         "shortcodes": [
           ":luggage:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       }
     ]
   },
@@ -22534,7 +24183,8 @@ const emojiMetadata =
         "shortcodes": [
           ":party-popper:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22545,7 +24195,8 @@ const emojiMetadata =
         "shortcodes": [
           ":confetti-ball:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22556,7 +24207,8 @@ const emojiMetadata =
         "shortcodes": [
           ":balloon:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22567,7 +24219,8 @@ const emojiMetadata =
         "shortcodes": [
           ":birthday-cake:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22578,7 +24231,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ribbon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22589,7 +24243,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wrapped-gift:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22600,7 +24255,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sparkler:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22611,7 +24267,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fireworks:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22622,7 +24279,8 @@ const emojiMetadata =
         "shortcodes": [
           ":firecracker:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22633,7 +24291,8 @@ const emojiMetadata =
         "shortcodes": [
           ":red-envelope:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22644,7 +24303,8 @@ const emojiMetadata =
         "shortcodes": [
           ":diya-lamp:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22655,7 +24315,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pi\u00f1ata:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22667,7 +24328,8 @@ const emojiMetadata =
           ":mirror-ball:",
           ":disco-ball:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22678,7 +24340,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wind-chime:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22689,7 +24352,8 @@ const emojiMetadata =
         "shortcodes": [
           ":carp-streamer:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22700,7 +24364,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Japanese-dolls:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22711,7 +24376,8 @@ const emojiMetadata =
         "shortcodes": [
           ":moon-viewing-ceremony:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22722,7 +24388,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pine-decoration:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22733,7 +24400,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tanabata-tree:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22744,7 +24412,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Christmas-tree:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22755,7 +24424,8 @@ const emojiMetadata =
         "shortcodes": [
           ":jack-o-lantern:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22767,7 +24437,8 @@ const emojiMetadata =
         "shortcodes": [
           ":reminder-ribbon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22779,7 +24450,8 @@ const emojiMetadata =
           ":gold-medal:",
           ":1st-place-medal:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22791,7 +24463,8 @@ const emojiMetadata =
           ":silver-medal:",
           ":2nd-place-medal:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22803,7 +24476,8 @@ const emojiMetadata =
           ":bronze-medal:",
           ":3rd-place-medal:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22814,7 +24488,8 @@ const emojiMetadata =
         "shortcodes": [
           ":medal:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22826,7 +24501,8 @@ const emojiMetadata =
         "shortcodes": [
           ":military-medal:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22837,7 +24513,8 @@ const emojiMetadata =
         "shortcodes": [
           ":trophy:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22848,7 +24525,8 @@ const emojiMetadata =
         "shortcodes": [
           ":loudspeaker:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22859,7 +24537,8 @@ const emojiMetadata =
         "shortcodes": [
           ":soccer-ball:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22870,7 +24549,8 @@ const emojiMetadata =
         "shortcodes": [
           ":baseball:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22881,7 +24561,8 @@ const emojiMetadata =
         "shortcodes": [
           ":softball:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22892,7 +24573,8 @@ const emojiMetadata =
         "shortcodes": [
           ":basketball:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22903,7 +24585,8 @@ const emojiMetadata =
         "shortcodes": [
           ":volleyball:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22914,7 +24597,8 @@ const emojiMetadata =
         "shortcodes": [
           ":american-football:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22925,7 +24609,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rugby-football:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22936,7 +24621,8 @@ const emojiMetadata =
         "shortcodes": [
           ":goal-net:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -22947,7 +24633,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tennis:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22958,7 +24645,8 @@ const emojiMetadata =
         "shortcodes": [
           ":badminton:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22969,7 +24657,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lacrosse:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22980,7 +24669,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cricket-game:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -22991,7 +24681,8 @@ const emojiMetadata =
         "shortcodes": [
           ":field-hockey:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23002,7 +24693,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ice-hockey:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23013,7 +24705,8 @@ const emojiMetadata =
         "shortcodes": [
           ":curling-stone:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23024,7 +24717,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sled:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23035,7 +24729,8 @@ const emojiMetadata =
         "shortcodes": [
           ":skis:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23047,7 +24742,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ice-skate:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23058,7 +24754,8 @@ const emojiMetadata =
         "shortcodes": [
           ":roller-skates:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23069,7 +24766,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ballet-shoes:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23080,7 +24778,8 @@ const emojiMetadata =
         "shortcodes": [
           ":skateboard:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23091,7 +24790,8 @@ const emojiMetadata =
         "shortcodes": [
           ":flag-in-hole:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23103,7 +24803,8 @@ const emojiMetadata =
           ":direct-hit:",
           ":target:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23114,7 +24815,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bow-and-arrow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23125,7 +24827,8 @@ const emojiMetadata =
         "shortcodes": [
           ":flying-disc:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23136,7 +24839,8 @@ const emojiMetadata =
         "shortcodes": [
           ":boomerang:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23147,7 +24851,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kite:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23158,7 +24863,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fishing-pole:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23169,7 +24875,8 @@ const emojiMetadata =
         "shortcodes": [
           ":diving-mask:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23180,7 +24887,8 @@ const emojiMetadata =
         "shortcodes": [
           ":one-piece-swimsuit:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23191,7 +24899,8 @@ const emojiMetadata =
         "shortcodes": [
           ":running-shirt:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23202,7 +24911,8 @@ const emojiMetadata =
         "shortcodes": [
           ":martial-arts-uniform:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23213,7 +24923,8 @@ const emojiMetadata =
         "shortcodes": [
           ":boxing-glove:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23224,7 +24935,8 @@ const emojiMetadata =
         "shortcodes": [
           ":8-ball:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23235,7 +24947,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ping-pong:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23246,7 +24959,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bowling:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23258,7 +24972,8 @@ const emojiMetadata =
         "shortcodes": [
           ":chess-pawn:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23269,7 +24984,8 @@ const emojiMetadata =
         "shortcodes": [
           ":yo-yo:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23280,7 +24996,8 @@ const emojiMetadata =
         "shortcodes": [
           ":jigsaw:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23291,7 +25008,8 @@ const emojiMetadata =
         "shortcodes": [
           ":video-game:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23303,7 +25021,8 @@ const emojiMetadata =
         "shortcodes": [
           ":joystick:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23314,7 +25033,8 @@ const emojiMetadata =
         "shortcodes": [
           ":alien-monster:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23325,7 +25045,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pistol:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23336,7 +25057,8 @@ const emojiMetadata =
         "shortcodes": [
           ":die:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23347,7 +25069,8 @@ const emojiMetadata =
         "shortcodes": [
           ":slot-machine:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23358,7 +25081,8 @@ const emojiMetadata =
         "shortcodes": [
           ":flower-playing-cards:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23369,7 +25093,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mahjong-red-dragon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23380,7 +25105,8 @@ const emojiMetadata =
         "shortcodes": [
           ":joker:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23391,7 +25117,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wand:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23402,7 +25129,8 @@ const emojiMetadata =
         "shortcodes": [
           ":game-die:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23413,7 +25141,8 @@ const emojiMetadata =
         "shortcodes": [
           ":camera:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23424,7 +25153,8 @@ const emojiMetadata =
         "shortcodes": [
           ":camera-flash:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23436,7 +25166,8 @@ const emojiMetadata =
         "shortcodes": [
           ":framed-picture:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23447,7 +25178,8 @@ const emojiMetadata =
         "shortcodes": [
           ":artist-palette:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23459,7 +25191,8 @@ const emojiMetadata =
         "shortcodes": [
           ":paintbrush:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23471,7 +25204,8 @@ const emojiMetadata =
         "shortcodes": [
           ":crayon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23482,7 +25216,8 @@ const emojiMetadata =
         "shortcodes": [
           ":needle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23493,7 +25228,8 @@ const emojiMetadata =
         "shortcodes": [
           ":thread:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23504,7 +25240,8 @@ const emojiMetadata =
         "shortcodes": [
           ":yarn:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23516,7 +25253,8 @@ const emojiMetadata =
           ":piano:",
           ":musical-keyboard:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23527,7 +25265,8 @@ const emojiMetadata =
         "shortcodes": [
           ":saxophone:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23538,7 +25277,8 @@ const emojiMetadata =
         "shortcodes": [
           ":trumpet:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23549,7 +25289,8 @@ const emojiMetadata =
         "shortcodes": [
           ":guitar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23560,7 +25301,8 @@ const emojiMetadata =
         "shortcodes": [
           ":banjo:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23571,7 +25313,8 @@ const emojiMetadata =
         "shortcodes": [
           ":violin:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23582,7 +25325,8 @@ const emojiMetadata =
         "shortcodes": [
           ":long-drum:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23593,7 +25337,8 @@ const emojiMetadata =
         "shortcodes": [
           ":drum:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23604,7 +25349,8 @@ const emojiMetadata =
         "shortcodes": [
           ":maracas:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23615,7 +25361,8 @@ const emojiMetadata =
         "shortcodes": [
           ":flute:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23626,7 +25373,8 @@ const emojiMetadata =
         "shortcodes": [
           ":accordion:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23637,7 +25385,8 @@ const emojiMetadata =
         "shortcodes": [
           ":microphone:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23648,7 +25397,8 @@ const emojiMetadata =
         "shortcodes": [
           ":headphone:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23660,7 +25410,8 @@ const emojiMetadata =
         "shortcodes": [
           ":level-slider:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23672,7 +25423,8 @@ const emojiMetadata =
         "shortcodes": [
           ":control-knobs:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23684,7 +25436,8 @@ const emojiMetadata =
         "shortcodes": [
           ":studio-microphone:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23695,7 +25448,8 @@ const emojiMetadata =
         "shortcodes": [
           ":radio:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23706,7 +25460,8 @@ const emojiMetadata =
         "shortcodes": [
           ":television:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23717,7 +25472,8 @@ const emojiMetadata =
         "shortcodes": [
           ":videocassette:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23728,7 +25484,8 @@ const emojiMetadata =
         "shortcodes": [
           ":video-camera:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23740,7 +25497,8 @@ const emojiMetadata =
         "shortcodes": [
           ":film-projector:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23751,7 +25509,8 @@ const emojiMetadata =
         "shortcodes": [
           ":movie-camera:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23763,7 +25522,8 @@ const emojiMetadata =
         "shortcodes": [
           ":film:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23774,7 +25534,8 @@ const emojiMetadata =
         "shortcodes": [
           ":clapper:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23785,7 +25546,8 @@ const emojiMetadata =
         "shortcodes": [
           ":performing-arts:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23796,7 +25558,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ticket:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23808,7 +25571,8 @@ const emojiMetadata =
         "shortcodes": [
           ":admission-tickets:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       }
     ]
   },
@@ -23824,7 +25588,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mobile-phone:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23836,7 +25601,8 @@ const emojiMetadata =
         "shortcodes": [
           ":telephone:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23847,7 +25613,8 @@ const emojiMetadata =
         "shortcodes": [
           ":telephone-receiver:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23858,7 +25625,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pager:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23869,7 +25637,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fax-machine:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23880,7 +25649,8 @@ const emojiMetadata =
         "shortcodes": [
           ":electric-plug:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23891,7 +25661,8 @@ const emojiMetadata =
         "shortcodes": [
           ":battery-full:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23902,7 +25673,8 @@ const emojiMetadata =
         "shortcodes": [
           ":battery-low:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -23914,7 +25686,8 @@ const emojiMetadata =
         "shortcodes": [
           ":trackball:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23925,7 +25698,8 @@ const emojiMetadata =
         "shortcodes": [
           ":computer-disk:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23936,7 +25710,8 @@ const emojiMetadata =
         "shortcodes": [
           ":floppy-disk:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23947,7 +25722,8 @@ const emojiMetadata =
         "shortcodes": [
           ":optical-disk:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23958,7 +25734,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dvd:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23970,7 +25747,8 @@ const emojiMetadata =
         "shortcodes": [
           ":desktop-computer:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23981,7 +25759,8 @@ const emojiMetadata =
         "shortcodes": [
           ":laptop-computer:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -23993,7 +25772,8 @@ const emojiMetadata =
         "shortcodes": [
           ":keyboard:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24005,7 +25785,8 @@ const emojiMetadata =
         "shortcodes": [
           ":printer:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24017,7 +25798,8 @@ const emojiMetadata =
         "shortcodes": [
           ":computer-mouse:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24028,7 +25810,8 @@ const emojiMetadata =
         "shortcodes": [
           ":coin:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24039,7 +25822,8 @@ const emojiMetadata =
         "shortcodes": [
           ":money-with-wings:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -24050,7 +25834,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dollar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24061,7 +25846,8 @@ const emojiMetadata =
         "shortcodes": [
           ":yen:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24072,7 +25858,8 @@ const emojiMetadata =
         "shortcodes": [
           ":euro:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24083,7 +25870,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pound:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24094,7 +25882,8 @@ const emojiMetadata =
         "shortcodes": [
           ":credit-card:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24105,7 +25894,8 @@ const emojiMetadata =
         "shortcodes": [
           ":money-bag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24116,7 +25906,8 @@ const emojiMetadata =
         "shortcodes": [
           ":receipt:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24127,7 +25918,8 @@ const emojiMetadata =
         "shortcodes": [
           ":abacus:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24139,7 +25931,8 @@ const emojiMetadata =
         "shortcodes": [
           ":balance-scale:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -24150,7 +25943,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shopping-cart:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24162,7 +25956,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shopping-bags:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24174,7 +25969,8 @@ const emojiMetadata =
         "shortcodes": [
           ":candle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24185,7 +25981,8 @@ const emojiMetadata =
         "shortcodes": [
           ":light-bulb:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -24196,7 +25993,8 @@ const emojiMetadata =
         "shortcodes": [
           ":flashlight:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24207,7 +26005,8 @@ const emojiMetadata =
         "shortcodes": [
           ":red-paper-lantern:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24218,7 +26017,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bricks:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24229,7 +26029,8 @@ const emojiMetadata =
         "shortcodes": [
           ":window:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24240,7 +26041,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mirror:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24251,7 +26053,8 @@ const emojiMetadata =
         "shortcodes": [
           ":door:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24262,7 +26065,8 @@ const emojiMetadata =
         "shortcodes": [
           ":chair:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24274,7 +26078,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bed:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24286,7 +26091,8 @@ const emojiMetadata =
         "shortcodes": [
           ":couch-and-lamp:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24297,7 +26103,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shower:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24308,7 +26115,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bathtub:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24319,7 +26127,8 @@ const emojiMetadata =
         "shortcodes": [
           ":toilet:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24330,7 +26139,8 @@ const emojiMetadata =
         "shortcodes": [
           ":roll-of-paper:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24341,7 +26151,8 @@ const emojiMetadata =
         "shortcodes": [
           ":plunger:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24352,7 +26163,8 @@ const emojiMetadata =
         "shortcodes": [
           ":teddy-bear:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24363,7 +26175,8 @@ const emojiMetadata =
         "shortcodes": [
           ":nesting-doll:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24374,7 +26187,8 @@ const emojiMetadata =
         "shortcodes": [
           ":safety-pin:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24385,7 +26199,8 @@ const emojiMetadata =
         "shortcodes": [
           ":knot:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24396,7 +26211,8 @@ const emojiMetadata =
         "shortcodes": [
           ":broom:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24407,7 +26223,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lotion-bottle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24418,7 +26235,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sponge:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24429,7 +26247,8 @@ const emojiMetadata =
         "shortcodes": [
           ":soap:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24440,7 +26259,8 @@ const emojiMetadata =
         "shortcodes": [
           ":toothbrush:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24451,7 +26271,8 @@ const emojiMetadata =
         "shortcodes": [
           ":razor:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24462,7 +26283,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hair-pick:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24473,7 +26295,8 @@ const emojiMetadata =
         "shortcodes": [
           ":basket:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24484,7 +26307,8 @@ const emojiMetadata =
         "shortcodes": [
           ":socks:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24495,7 +26319,8 @@ const emojiMetadata =
         "shortcodes": [
           ":gloves:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24506,7 +26331,8 @@ const emojiMetadata =
         "shortcodes": [
           ":scarf:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24517,7 +26343,8 @@ const emojiMetadata =
         "shortcodes": [
           ":jeans:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24528,7 +26355,8 @@ const emojiMetadata =
         "shortcodes": [
           ":t-shirt:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24539,7 +26367,8 @@ const emojiMetadata =
         "shortcodes": [
           ":running-shirt:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24550,7 +26379,8 @@ const emojiMetadata =
         "shortcodes": [
           ":woman\u2019s-clothes:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24561,7 +26391,8 @@ const emojiMetadata =
         "shortcodes": [
           ":necktie:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24572,7 +26403,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dress:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24583,7 +26415,8 @@ const emojiMetadata =
         "shortcodes": [
           ":kimono:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24594,7 +26427,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sari:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24605,7 +26439,8 @@ const emojiMetadata =
         "shortcodes": [
           ":one-piece-swimsuit:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24616,7 +26451,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bikini:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24627,7 +26463,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shorts:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24638,7 +26475,8 @@ const emojiMetadata =
         "shortcodes": [
           ":swim-brief:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24649,7 +26487,8 @@ const emojiMetadata =
         "shortcodes": [
           ":coat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24660,7 +26499,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lab-coat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24671,7 +26511,8 @@ const emojiMetadata =
         "shortcodes": [
           ":safety-vest:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24683,7 +26524,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rescue-worker\u2019s-helmet:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24694,7 +26536,8 @@ const emojiMetadata =
         "shortcodes": [
           ":military-helmet:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24705,7 +26548,8 @@ const emojiMetadata =
         "shortcodes": [
           ":graduation-cap:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -24716,7 +26560,8 @@ const emojiMetadata =
         "shortcodes": [
           ":top-hat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24727,7 +26572,8 @@ const emojiMetadata =
         "shortcodes": [
           ":woman\u2019s-hat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24738,7 +26584,8 @@ const emojiMetadata =
         "shortcodes": [
           ":billed-cap:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24749,7 +26596,8 @@ const emojiMetadata =
         "shortcodes": [
           ":crown:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24760,7 +26608,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fan:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24771,7 +26620,8 @@ const emojiMetadata =
         "shortcodes": [
           ":school-backpack:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24782,7 +26632,8 @@ const emojiMetadata =
         "shortcodes": [
           ":clutch-bag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24793,7 +26644,8 @@ const emojiMetadata =
         "shortcodes": [
           ":purse:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24804,7 +26656,8 @@ const emojiMetadata =
         "shortcodes": [
           ":handbag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24815,7 +26668,8 @@ const emojiMetadata =
         "shortcodes": [
           ":briefcase:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24826,7 +26680,8 @@ const emojiMetadata =
         "shortcodes": [
           ":luggage:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24838,7 +26693,8 @@ const emojiMetadata =
         "shortcodes": [
           ":umbrella:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -24849,7 +26705,8 @@ const emojiMetadata =
         "shortcodes": [
           ":closed-umbrella:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24860,7 +26717,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ring:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24871,7 +26729,8 @@ const emojiMetadata =
         "shortcodes": [
           ":gem-stone:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -24882,7 +26741,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lipstick:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24893,7 +26753,8 @@ const emojiMetadata =
         "shortcodes": [
           ":high-heeled-shoe:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24904,7 +26765,8 @@ const emojiMetadata =
         "shortcodes": [
           ":running-shoe:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24915,7 +26777,8 @@ const emojiMetadata =
         "shortcodes": [
           ":man\u2019s-shoe:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24926,7 +26789,8 @@ const emojiMetadata =
         "shortcodes": [
           ":flat-shoe:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24938,7 +26802,8 @@ const emojiMetadata =
           ":flip-flop:",
           ":thong-sandal:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24949,7 +26814,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sandal:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24960,7 +26826,8 @@ const emojiMetadata =
         "shortcodes": [
           ":boot:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24971,7 +26838,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hiking-boot:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24982,7 +26850,8 @@ const emojiMetadata =
         "shortcodes": [
           ":probing-cane:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -24994,7 +26863,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sunglasses:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25005,7 +26875,8 @@ const emojiMetadata =
         "shortcodes": [
           ":glasses:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25016,7 +26887,8 @@ const emojiMetadata =
         "shortcodes": [
           ":goggles:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25028,7 +26900,8 @@ const emojiMetadata =
         "shortcodes": [
           ":alembic:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25039,7 +26912,8 @@ const emojiMetadata =
         "shortcodes": [
           ":petri-dish:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25050,7 +26924,8 @@ const emojiMetadata =
         "shortcodes": [
           ":test-tube:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25062,7 +26937,8 @@ const emojiMetadata =
         "shortcodes": [
           ":thermometer:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25073,7 +26949,8 @@ const emojiMetadata =
         "shortcodes": [
           ":syringe:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25084,7 +26961,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pill:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25095,7 +26973,8 @@ const emojiMetadata =
         "shortcodes": [
           ":adhesive-bandage:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25106,7 +26985,8 @@ const emojiMetadata =
         "shortcodes": [
           ":stethoscope:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25117,7 +26997,8 @@ const emojiMetadata =
         "shortcodes": [
           ":x-ray:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25128,7 +27009,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dna:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25139,7 +27021,8 @@ const emojiMetadata =
         "shortcodes": [
           ":telescope:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25150,7 +27033,8 @@ const emojiMetadata =
         "shortcodes": [
           ":microscope:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25161,7 +27045,8 @@ const emojiMetadata =
         "shortcodes": [
           ":satellite-antenna:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25173,7 +27058,8 @@ const emojiMetadata =
         "shortcodes": [
           ":satellite:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25184,7 +27070,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fire-extinguisher:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25195,7 +27082,8 @@ const emojiMetadata =
         "shortcodes": [
           ":axe:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25206,7 +27094,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ladder:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25217,7 +27106,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bucket:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25228,7 +27118,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hook:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25239,7 +27130,8 @@ const emojiMetadata =
         "shortcodes": [
           ":magnet:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25250,7 +27142,8 @@ const emojiMetadata =
         "shortcodes": [
           ":toolbox:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25262,7 +27155,8 @@ const emojiMetadata =
         "shortcodes": [
           ":clamp:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25273,7 +27167,8 @@ const emojiMetadata =
         "shortcodes": [
           ":nut-and-bolt:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25284,7 +27179,8 @@ const emojiMetadata =
         "shortcodes": [
           ":screwdriver:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25295,7 +27191,8 @@ const emojiMetadata =
         "shortcodes": [
           ":saw:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25306,7 +27203,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wrench:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25317,7 +27215,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hammer:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25329,7 +27228,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hammer-and-pick:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25341,7 +27241,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hammer-and-wrench:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25353,7 +27254,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pick:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25365,7 +27267,23 @@ const emojiMetadata =
         "shortcodes": [
           ":gear:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
+      },
+      {
+        "base": [
+          9939,
+          65039,
+          8205,
+          128165
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":broken-chain:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25376,7 +27294,8 @@ const emojiMetadata =
         "shortcodes": [
           ":link:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25388,7 +27307,8 @@ const emojiMetadata =
         "shortcodes": [
           ":chains:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25399,7 +27319,8 @@ const emojiMetadata =
         "shortcodes": [
           ":paperclip:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25411,7 +27332,8 @@ const emojiMetadata =
         "shortcodes": [
           ":linked-paperclips:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25422,7 +27344,8 @@ const emojiMetadata =
         "shortcodes": [
           ":straight-ruler:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25433,7 +27356,8 @@ const emojiMetadata =
         "shortcodes": [
           ":triangular-ruler:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25445,7 +27369,8 @@ const emojiMetadata =
         "shortcodes": [
           ":paintbrush:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25457,7 +27382,8 @@ const emojiMetadata =
         "shortcodes": [
           ":crayon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25469,7 +27395,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pen:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25481,7 +27408,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fountain-pen:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25493,7 +27421,8 @@ const emojiMetadata =
         "shortcodes": [
           ":black-nib:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25505,7 +27434,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pencil:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -25516,7 +27446,8 @@ const emojiMetadata =
         "shortcodes": [
           ":memo:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25527,7 +27458,8 @@ const emojiMetadata =
         "shortcodes": [
           ":open-book:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25538,7 +27470,8 @@ const emojiMetadata =
         "shortcodes": [
           ":books:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25549,7 +27482,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ledger:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25560,7 +27494,8 @@ const emojiMetadata =
         "shortcodes": [
           ":notebook-with-decorative-cover:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25571,7 +27506,8 @@ const emojiMetadata =
         "shortcodes": [
           ":closed-book:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25582,7 +27518,8 @@ const emojiMetadata =
         "shortcodes": [
           ":notebook:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25593,7 +27530,8 @@ const emojiMetadata =
         "shortcodes": [
           ":green-book:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25604,7 +27542,8 @@ const emojiMetadata =
         "shortcodes": [
           ":blue-book:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25615,7 +27554,8 @@ const emojiMetadata =
         "shortcodes": [
           ":orange-book:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25626,7 +27566,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bookmark:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25638,7 +27579,8 @@ const emojiMetadata =
         "shortcodes": [
           ":spiral-notepad:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25649,7 +27591,8 @@ const emojiMetadata =
         "shortcodes": [
           ":page-facing-up:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25660,7 +27603,8 @@ const emojiMetadata =
         "shortcodes": [
           ":page-with-curl:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25671,7 +27615,8 @@ const emojiMetadata =
         "shortcodes": [
           ":clipboard:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25682,7 +27627,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bookmark-tabs:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25693,7 +27639,8 @@ const emojiMetadata =
         "shortcodes": [
           ":open-file-folder:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25704,7 +27651,8 @@ const emojiMetadata =
         "shortcodes": [
           ":file-folder:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25716,7 +27664,8 @@ const emojiMetadata =
         "shortcodes": [
           ":card-index-dividers:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25728,7 +27677,8 @@ const emojiMetadata =
         "shortcodes": [
           ":card-file-box:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25740,7 +27690,8 @@ const emojiMetadata =
         "shortcodes": [
           ":file-cabinet:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25751,7 +27702,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bar-chart:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25762,7 +27714,8 @@ const emojiMetadata =
         "shortcodes": [
           ":chart-increasing:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25773,7 +27726,8 @@ const emojiMetadata =
         "shortcodes": [
           ":chart-decreasing:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25784,7 +27738,8 @@ const emojiMetadata =
         "shortcodes": [
           ":card-index:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25795,7 +27750,8 @@ const emojiMetadata =
         "shortcodes": [
           ":id:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25806,7 +27762,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pushpin:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25817,7 +27774,8 @@ const emojiMetadata =
         "shortcodes": [
           ":round-pushpin:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25829,7 +27787,8 @@ const emojiMetadata =
         "shortcodes": [
           ":scissors:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25841,7 +27800,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wastebasket:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25852,7 +27812,8 @@ const emojiMetadata =
         "shortcodes": [
           ":newspaper:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25864,7 +27825,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rolled-up-newspaper:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25876,7 +27838,8 @@ const emojiMetadata =
         "shortcodes": [
           ":label:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25887,7 +27850,8 @@ const emojiMetadata =
         "shortcodes": [
           ":package:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25898,7 +27862,8 @@ const emojiMetadata =
         "shortcodes": [
           ":closed-mailbox-with-raised:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25909,7 +27874,8 @@ const emojiMetadata =
         "shortcodes": [
           ":closed-mailbox-with-lowered:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25920,7 +27886,8 @@ const emojiMetadata =
         "shortcodes": [
           ":open-mailbox-with-raised:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25931,7 +27898,8 @@ const emojiMetadata =
         "shortcodes": [
           ":open-mailbox-with-lowered:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25942,7 +27910,8 @@ const emojiMetadata =
         "shortcodes": [
           ":postbox:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25954,7 +27923,8 @@ const emojiMetadata =
         "shortcodes": [
           ":envelope:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25965,7 +27935,8 @@ const emojiMetadata =
         "shortcodes": [
           ":e-mail:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25976,7 +27947,8 @@ const emojiMetadata =
         "shortcodes": [
           ":envelope-with-arrow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25987,7 +27959,8 @@ const emojiMetadata =
         "shortcodes": [
           ":incoming-envelope:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -25998,7 +27971,8 @@ const emojiMetadata =
         "shortcodes": [
           ":love-letter:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26009,7 +27983,8 @@ const emojiMetadata =
         "shortcodes": [
           ":outbox-tray:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26020,7 +27995,8 @@ const emojiMetadata =
         "shortcodes": [
           ":inbox-tray:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26032,7 +28008,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ballot-box:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26043,7 +28020,8 @@ const emojiMetadata =
         "shortcodes": [
           ":twelve-o-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26054,7 +28032,8 @@ const emojiMetadata =
         "shortcodes": [
           ":twelve-thirty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26065,7 +28044,8 @@ const emojiMetadata =
         "shortcodes": [
           ":one-o-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26076,7 +28056,8 @@ const emojiMetadata =
         "shortcodes": [
           ":one-thirty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26087,7 +28068,8 @@ const emojiMetadata =
         "shortcodes": [
           ":two-o-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26098,7 +28080,8 @@ const emojiMetadata =
         "shortcodes": [
           ":two-thirty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26109,7 +28092,8 @@ const emojiMetadata =
         "shortcodes": [
           ":three-o-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26120,7 +28104,8 @@ const emojiMetadata =
         "shortcodes": [
           ":three-thirty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26131,7 +28116,8 @@ const emojiMetadata =
         "shortcodes": [
           ":four-o-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26142,7 +28128,8 @@ const emojiMetadata =
         "shortcodes": [
           ":four-thirty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26153,7 +28140,8 @@ const emojiMetadata =
         "shortcodes": [
           ":five-o-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26164,7 +28152,8 @@ const emojiMetadata =
         "shortcodes": [
           ":five-thirty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26175,7 +28164,8 @@ const emojiMetadata =
         "shortcodes": [
           ":six-o-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26186,7 +28176,8 @@ const emojiMetadata =
         "shortcodes": [
           ":six-thirty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26197,7 +28188,8 @@ const emojiMetadata =
         "shortcodes": [
           ":seven-o-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26208,7 +28200,8 @@ const emojiMetadata =
         "shortcodes": [
           ":seven-thirty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26219,7 +28212,8 @@ const emojiMetadata =
         "shortcodes": [
           ":eight-o-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26230,7 +28224,8 @@ const emojiMetadata =
         "shortcodes": [
           ":eight-thirty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26241,7 +28236,8 @@ const emojiMetadata =
         "shortcodes": [
           ":nine-o-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26252,7 +28248,8 @@ const emojiMetadata =
         "shortcodes": [
           ":nine-thirty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26263,7 +28260,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ten-o-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26274,7 +28272,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ten-thirty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26285,7 +28284,8 @@ const emojiMetadata =
         "shortcodes": [
           ":eleven-o-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26296,7 +28296,8 @@ const emojiMetadata =
         "shortcodes": [
           ":eleven-thirty:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26308,7 +28309,8 @@ const emojiMetadata =
         "shortcodes": [
           ":stopwatch:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26319,7 +28321,8 @@ const emojiMetadata =
         "shortcodes": [
           ":watch:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26331,7 +28334,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mantelpiece-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26342,7 +28346,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hourglass-done:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26353,7 +28358,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hourglass-not-done:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26365,7 +28371,8 @@ const emojiMetadata =
         "shortcodes": [
           ":timer-clock:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26376,7 +28383,8 @@ const emojiMetadata =
         "shortcodes": [
           ":alarm-clock:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -26387,7 +28395,8 @@ const emojiMetadata =
         "shortcodes": [
           ":calendar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26398,7 +28407,8 @@ const emojiMetadata =
         "shortcodes": [
           ":tear-off-calendar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26410,7 +28420,8 @@ const emojiMetadata =
         "shortcodes": [
           ":spiral-calendar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26421,7 +28432,8 @@ const emojiMetadata =
         "shortcodes": [
           ":placard:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26433,7 +28445,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bellhop-bell:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -26444,7 +28457,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bell:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -26455,7 +28469,8 @@ const emojiMetadata =
         "shortcodes": [
           ":postal-horn:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26466,7 +28481,8 @@ const emojiMetadata =
         "shortcodes": [
           ":loudspeaker:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26477,7 +28493,47 @@ const emojiMetadata =
         "shortcodes": [
           ":megaphone:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128264
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":low-volume:",
+          ":speaker-low-volume:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128265
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":medium-volume:",
+          ":speaker-medium-volume:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128266
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":high-volume:",
+          ":speaker-high-volume:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26488,7 +28544,8 @@ const emojiMetadata =
         "shortcodes": [
           ":magnifying-glass-tilted-left:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26499,7 +28556,8 @@ const emojiMetadata =
         "shortcodes": [
           ":magnifying-glass-tilted-right:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26510,7 +28568,8 @@ const emojiMetadata =
         "shortcodes": [
           ":crystal-ball:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -26522,7 +28581,8 @@ const emojiMetadata =
           ":evil-eye:",
           ":nazar-amulet:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26533,7 +28593,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hamsa:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26544,7 +28605,8 @@ const emojiMetadata =
         "shortcodes": [
           ":prayer-beads:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26555,7 +28617,8 @@ const emojiMetadata =
         "shortcodes": [
           ":amphora:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26567,7 +28630,8 @@ const emojiMetadata =
         "shortcodes": [
           ":urn:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26579,7 +28643,8 @@ const emojiMetadata =
         "shortcodes": [
           ":coffin:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26590,7 +28655,8 @@ const emojiMetadata =
         "shortcodes": [
           ":headstone:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26601,7 +28667,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cigarette:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26612,7 +28679,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bomb:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26623,7 +28691,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mouse-trap:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26634,7 +28703,8 @@ const emojiMetadata =
         "shortcodes": [
           ":scroll:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26646,7 +28716,8 @@ const emojiMetadata =
         "shortcodes": [
           ":crossed-swords:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26658,7 +28729,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dagger:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26670,7 +28742,8 @@ const emojiMetadata =
         "shortcodes": [
           ":shield:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26682,7 +28755,8 @@ const emojiMetadata =
         "shortcodes": [
           ":old-key:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26693,7 +28767,8 @@ const emojiMetadata =
         "shortcodes": [
           ":key:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26704,7 +28779,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lock-with-key:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26715,7 +28791,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lock-with-pen:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26726,7 +28803,8 @@ const emojiMetadata =
         "shortcodes": [
           ":locked:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26737,7 +28815,8 @@ const emojiMetadata =
         "shortcodes": [
           ":unlocked:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       }
     ]
   },
@@ -26753,7 +28832,8 @@ const emojiMetadata =
         "shortcodes": [
           ":red-circle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26764,7 +28844,8 @@ const emojiMetadata =
         "shortcodes": [
           ":orange-circle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26775,7 +28856,8 @@ const emojiMetadata =
         "shortcodes": [
           ":yellow-circle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26786,7 +28868,8 @@ const emojiMetadata =
         "shortcodes": [
           ":green-circle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26797,7 +28880,8 @@ const emojiMetadata =
         "shortcodes": [
           ":blue-circle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26808,7 +28892,8 @@ const emojiMetadata =
         "shortcodes": [
           ":purple-circle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26819,7 +28904,8 @@ const emojiMetadata =
         "shortcodes": [
           ":brown-circle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26830,7 +28916,8 @@ const emojiMetadata =
         "shortcodes": [
           ":black-circle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26841,7 +28928,8 @@ const emojiMetadata =
         "shortcodes": [
           ":white-circle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26852,7 +28940,8 @@ const emojiMetadata =
         "shortcodes": [
           ":red-square:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26863,7 +28952,8 @@ const emojiMetadata =
         "shortcodes": [
           ":orange-square:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26874,7 +28964,8 @@ const emojiMetadata =
         "shortcodes": [
           ":yellow-square:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26885,7 +28976,8 @@ const emojiMetadata =
         "shortcodes": [
           ":green-square:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26896,7 +28988,8 @@ const emojiMetadata =
         "shortcodes": [
           ":blue-square:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26907,7 +29000,8 @@ const emojiMetadata =
         "shortcodes": [
           ":purple-square:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26918,7 +29012,8 @@ const emojiMetadata =
         "shortcodes": [
           ":brown-square:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26929,7 +29024,8 @@ const emojiMetadata =
         "shortcodes": [
           ":black-square:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26940,7 +29036,8 @@ const emojiMetadata =
         "shortcodes": [
           ":white-square:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -26952,7 +29049,8 @@ const emojiMetadata =
         "shortcodes": [
           ":red-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -26963,7 +29061,8 @@ const emojiMetadata =
         "shortcodes": [
           ":orange-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -26974,7 +29073,8 @@ const emojiMetadata =
         "shortcodes": [
           ":yellow-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -26985,7 +29085,8 @@ const emojiMetadata =
         "shortcodes": [
           ":green-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -26996,7 +29097,8 @@ const emojiMetadata =
         "shortcodes": [
           ":blue-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27007,7 +29109,8 @@ const emojiMetadata =
         "shortcodes": [
           ":purple-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27018,7 +29121,8 @@ const emojiMetadata =
         "shortcodes": [
           ":brown-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27029,7 +29133,8 @@ const emojiMetadata =
         "shortcodes": [
           ":black-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27040,7 +29145,8 @@ const emojiMetadata =
         "shortcodes": [
           ":white-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27051,7 +29157,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pink-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27062,7 +29169,8 @@ const emojiMetadata =
         "shortcodes": [
           ":light-blue-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27073,7 +29181,8 @@ const emojiMetadata =
         "shortcodes": [
           ":gray-heart:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27085,7 +29194,8 @@ const emojiMetadata =
         "shortcodes": [
           ":heart:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27097,7 +29207,8 @@ const emojiMetadata =
         "shortcodes": [
           ":diamond:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27109,7 +29220,8 @@ const emojiMetadata =
         "shortcodes": [
           ":club:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27121,7 +29233,8 @@ const emojiMetadata =
         "shortcodes": [
           ":spade:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27132,7 +29245,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Aries:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27143,7 +29257,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Taurus:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27154,7 +29269,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Gemini:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27165,7 +29281,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Cancer:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27176,7 +29293,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Leo:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27187,7 +29305,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Virgo:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27198,7 +29317,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Libra:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27209,7 +29329,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Scorpio:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27220,7 +29341,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Sagittarius:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27231,7 +29353,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Capricorn:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27242,7 +29365,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Aquarius:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27253,7 +29377,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Pisces:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27264,7 +29389,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Ophiuchus:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27276,7 +29402,8 @@ const emojiMetadata =
         "shortcodes": [
           ":female-sign:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27288,7 +29415,8 @@ const emojiMetadata =
         "shortcodes": [
           ":male-sign:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27300,7 +29428,8 @@ const emojiMetadata =
         "shortcodes": [
           ":trans-sign:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27312,7 +29441,8 @@ const emojiMetadata =
           ":thought-bubble:",
           ":thought-balloon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27324,7 +29454,8 @@ const emojiMetadata =
         "shortcodes": [
           ":anger-bubble:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27335,7 +29466,8 @@ const emojiMetadata =
         "shortcodes": [
           ":speech-bubble:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27347,7 +29479,8 @@ const emojiMetadata =
         "shortcodes": [
           ":speech-bubble-leftwards:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27358,7 +29491,20 @@ const emojiMetadata =
         "shortcodes": [
           ":exclamation-mark-white:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          10068
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":question-mark-white:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27370,18 +29516,8 @@ const emojiMetadata =
           ":exclamation:",
           ":exclamation-mark:"
         ],
-        "animated": false
-      },
-      {
-        "base": [
-          10068
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":question-mark-white:"
-        ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27394,7 +29530,8 @@ const emojiMetadata =
           ":question-mark:",
           ":?:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27407,7 +29544,8 @@ const emojiMetadata =
           ":exclamation-question-mark:",
           ":!?:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27420,7 +29558,8 @@ const emojiMetadata =
           ":exclamation-double:",
           ":!!:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27431,7 +29570,8 @@ const emojiMetadata =
         "shortcodes": [
           ":large-circle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27443,7 +29583,8 @@ const emojiMetadata =
           ":x:",
           ":cross-mark:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27454,7 +29595,8 @@ const emojiMetadata =
         "shortcodes": [
           ":prohibited:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27465,7 +29607,8 @@ const emojiMetadata =
         "shortcodes": [
           ":no-bicycles:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27476,7 +29619,8 @@ const emojiMetadata =
         "shortcodes": [
           ":no-smoking:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27487,7 +29631,8 @@ const emojiMetadata =
         "shortcodes": [
           ":no-littering:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27498,7 +29643,8 @@ const emojiMetadata =
         "shortcodes": [
           ":non-potable-water:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27509,7 +29655,8 @@ const emojiMetadata =
         "shortcodes": [
           ":no-pedestrians:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27520,7 +29667,8 @@ const emojiMetadata =
         "shortcodes": [
           ":no-mobile-phones:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27531,7 +29679,8 @@ const emojiMetadata =
         "shortcodes": [
           ":no-under-eighteen:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27543,7 +29692,8 @@ const emojiMetadata =
           ":no-sound:",
           ":no-bell:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27554,7 +29704,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mute:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27567,7 +29718,8 @@ const emojiMetadata =
           ":a-button:",
           ":blood-type-a:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27579,7 +29731,8 @@ const emojiMetadata =
           ":ab-button:",
           ":blood-type-ab:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27592,7 +29745,8 @@ const emojiMetadata =
           ":b-button:",
           ":blood-type-b:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27605,7 +29759,8 @@ const emojiMetadata =
           ":o-button:",
           ":blood-type-o:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27616,7 +29771,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cl-button:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27627,7 +29783,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sos:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -27638,7 +29795,8 @@ const emojiMetadata =
         "shortcodes": [
           ":stop:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27649,7 +29807,8 @@ const emojiMetadata =
         "shortcodes": [
           ":no-entry:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27660,7 +29819,8 @@ const emojiMetadata =
         "shortcodes": [
           ":name-badge:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27672,7 +29832,8 @@ const emojiMetadata =
         "shortcodes": [
           ":hot-springs:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27683,7 +29844,8 @@ const emojiMetadata =
         "shortcodes": [
           ":anger:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27694,7 +29856,8 @@ const emojiMetadata =
         "shortcodes": [
           ":triangle-pointed-down:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27705,7 +29868,8 @@ const emojiMetadata =
         "shortcodes": [
           ":triangle-pointed-up:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27716,7 +29880,8 @@ const emojiMetadata =
         "shortcodes": [
           ":bargain:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27728,7 +29893,8 @@ const emojiMetadata =
         "shortcodes": [
           ":secret:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27740,7 +29906,8 @@ const emojiMetadata =
         "shortcodes": [
           ":congratulations:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27751,7 +29918,8 @@ const emojiMetadata =
         "shortcodes": [
           ":passing-grade:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27762,7 +29930,8 @@ const emojiMetadata =
         "shortcodes": [
           ":no-vacancy:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27773,7 +29942,8 @@ const emojiMetadata =
         "shortcodes": [
           ":discount:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27784,7 +29954,8 @@ const emojiMetadata =
         "shortcodes": [
           ":prohibited-button:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27795,7 +29966,8 @@ const emojiMetadata =
         "shortcodes": [
           ":accept:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27806,7 +29978,8 @@ const emojiMetadata =
         "shortcodes": [
           ":not-free-of-charge:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27817,7 +29990,8 @@ const emojiMetadata =
         "shortcodes": [
           ":free-of-charge:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27828,7 +30002,8 @@ const emojiMetadata =
         "shortcodes": [
           ":application:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27839,7 +30014,8 @@ const emojiMetadata =
         "shortcodes": [
           ":open-for-business:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27851,7 +30027,8 @@ const emojiMetadata =
         "shortcodes": [
           ":monthly-amount:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27863,7 +30040,8 @@ const emojiMetadata =
         "shortcodes": [
           ":eight-pointed-star:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27874,7 +30052,8 @@ const emojiMetadata =
         "shortcodes": [
           ":diamond-orange-large:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27885,7 +30064,8 @@ const emojiMetadata =
         "shortcodes": [
           ":diamond-orange-small:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27897,7 +30077,8 @@ const emojiMetadata =
           ":bright:",
           ":brightness:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27909,7 +30090,8 @@ const emojiMetadata =
           ":dim:",
           ":dimness:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27920,7 +30102,8 @@ const emojiMetadata =
         "shortcodes": [
           ":vs:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27931,7 +30114,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cinema:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27942,7 +30126,8 @@ const emojiMetadata =
         "shortcodes": [
           ":signal-strength:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27953,7 +30138,8 @@ const emojiMetadata =
         "shortcodes": [
           ":repeat:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27964,7 +30150,8 @@ const emojiMetadata =
         "shortcodes": [
           ":repeat-one:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27976,7 +30163,8 @@ const emojiMetadata =
           ":shuffle:",
           ":twisted-rightwards-arrows:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -27989,7 +30177,8 @@ const emojiMetadata =
           ":arrow-forward:",
           ":play-button:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28000,7 +30189,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fast-forward:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28015,7 +30205,8 @@ const emojiMetadata =
           ":next:",
           ":right-pointing-double-triangle-with-vertical-bar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28028,7 +30219,8 @@ const emojiMetadata =
           ":play-or-pause:",
           ":right-pointing-triangle-with-double-vertical-bar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28042,7 +30234,8 @@ const emojiMetadata =
           ":leftwards-triangle:",
           ":arrow-backward:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28054,7 +30247,8 @@ const emojiMetadata =
           ":rewind:",
           ":leftwards-double-triangles:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28067,7 +30261,8 @@ const emojiMetadata =
           ":previous:",
           ":left-pointing-double-triangle-with-vertical-bar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28080,7 +30275,8 @@ const emojiMetadata =
           ":arrow-up:",
           ":triangle-up:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28092,7 +30288,8 @@ const emojiMetadata =
           ":fast-up:",
           ":double-triangle-up:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28105,7 +30302,8 @@ const emojiMetadata =
           ":arrow-down:",
           ":triangle-down:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28117,7 +30315,8 @@ const emojiMetadata =
           ":fast-down:",
           ":double-triangle-down:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28130,7 +30329,8 @@ const emojiMetadata =
           ":pause:",
           ":double-vertical-bar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28143,7 +30343,8 @@ const emojiMetadata =
           ":stop-button:",
           ":square-button:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28155,7 +30356,8 @@ const emojiMetadata =
         "shortcodes": [
           ":record:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28168,7 +30370,8 @@ const emojiMetadata =
           ":eject:",
           ":triangle-up-with-horizontal-bar:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28179,7 +30382,8 @@ const emojiMetadata =
         "shortcodes": [
           ":phone-off:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -28190,7 +30394,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wireless:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28202,7 +30407,8 @@ const emojiMetadata =
           ":vibration:",
           ":vibration-mode:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28213,77 +30419,8 @@ const emojiMetadata =
         "shortcodes": [
           ":phone-with-arrow:"
         ],
-        "animated": false
-      },
-      {
-        "base": [
-          128264
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":low-volume:",
-          ":speaker-low-volume:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128265
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":medium-volume:",
-          ":speaker-medium-volume:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128266
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":high-volume:",
-          ":speaker-high-volume:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          127932
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":musical-score:",
-          ":treble-clef:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          127925
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":musical-note:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          127926
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":musical-notes:"
-        ],
-        "animated": true
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28295,7 +30432,8 @@ const emojiMetadata =
         "shortcodes": [
           ":radioactive:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28307,7 +30445,8 @@ const emojiMetadata =
         "shortcodes": [
           ":biohazard:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28319,7 +30458,8 @@ const emojiMetadata =
         "shortcodes": [
           ":warning:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28330,7 +30470,8 @@ const emojiMetadata =
         "shortcodes": [
           ":children-crossing:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28342,7 +30483,8 @@ const emojiMetadata =
         "shortcodes": [
           ":fleur-de-lis:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28353,7 +30495,8 @@ const emojiMetadata =
         "shortcodes": [
           ":trident-emblem:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28365,7 +30508,8 @@ const emojiMetadata =
         "shortcodes": [
           ":part-alternation-mark:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28377,7 +30521,8 @@ const emojiMetadata =
           ":Japanese-symbol-for-beginner:",
           ":beginner:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28389,7 +30534,8 @@ const emojiMetadata =
         "shortcodes": [
           ":eight-spoked-asterisk:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28401,7 +30547,8 @@ const emojiMetadata =
         "shortcodes": [
           ":sparkle:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28413,7 +30560,8 @@ const emojiMetadata =
         "shortcodes": [
           ":recycling-symbol:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28424,7 +30572,8 @@ const emojiMetadata =
         "shortcodes": [
           ":currency-exchange:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28435,7 +30584,8 @@ const emojiMetadata =
         "shortcodes": [
           ":dollar-sign:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28446,7 +30596,8 @@ const emojiMetadata =
         "shortcodes": [
           ":chart-increasing-with-yen:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28457,7 +30608,8 @@ const emojiMetadata =
         "shortcodes": [
           ":reserved:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28470,7 +30622,8 @@ const emojiMetadata =
           ":cross mark button:",
           ":no-mark:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28482,7 +30635,8 @@ const emojiMetadata =
           ":check-mark:",
           ":check-mark-green:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -28494,7 +30648,8 @@ const emojiMetadata =
         "shortcodes": [
           ":check-mark-black:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28507,7 +30662,8 @@ const emojiMetadata =
           ":check-mark-button:",
           ":vote:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28519,7 +30675,8 @@ const emojiMetadata =
         "shortcodes": [
           ":up-arrow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28531,7 +30688,8 @@ const emojiMetadata =
         "shortcodes": [
           ":up-right-arrow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28543,7 +30701,8 @@ const emojiMetadata =
         "shortcodes": [
           ":right-arrow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28555,7 +30714,8 @@ const emojiMetadata =
         "shortcodes": [
           ":down-right-arrow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28567,7 +30727,8 @@ const emojiMetadata =
         "shortcodes": [
           ":down-arrow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28579,7 +30740,8 @@ const emojiMetadata =
         "shortcodes": [
           ":down-left-arrow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28591,7 +30753,8 @@ const emojiMetadata =
         "shortcodes": [
           ":left-arrow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28603,7 +30766,8 @@ const emojiMetadata =
         "shortcodes": [
           ":up-left-arrow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28615,7 +30779,8 @@ const emojiMetadata =
         "shortcodes": [
           ":up-down-arrow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28627,7 +30792,8 @@ const emojiMetadata =
         "shortcodes": [
           ":left-right-arrow:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28639,7 +30805,8 @@ const emojiMetadata =
         "shortcodes": [
           ":right-arrow-curving-left:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28651,7 +30818,8 @@ const emojiMetadata =
         "shortcodes": [
           ":left-arrow-curving-right:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28663,7 +30831,8 @@ const emojiMetadata =
         "shortcodes": [
           ":right-arrow-curving-up:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28675,7 +30844,8 @@ const emojiMetadata =
         "shortcodes": [
           ":right-arrow-curving-down:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28686,7 +30856,8 @@ const emojiMetadata =
         "shortcodes": [
           ":clockwise-arrows:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28697,7 +30868,8 @@ const emojiMetadata =
         "shortcodes": [
           ":counterclockwise-arrows:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28709,7 +30881,8 @@ const emojiMetadata =
           ":back:",
           ":arrow-back:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28721,7 +30894,8 @@ const emojiMetadata =
           ":on:",
           ":arrow-on:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28733,7 +30907,8 @@ const emojiMetadata =
           ":top:",
           ":arrow-top:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28745,7 +30920,8 @@ const emojiMetadata =
           ":end:",
           ":arrow-end:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28757,7 +30933,8 @@ const emojiMetadata =
           ":soon:",
           ":arrow-soon:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28768,7 +30945,8 @@ const emojiMetadata =
         "shortcodes": [
           ":new:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -28779,7 +30957,8 @@ const emojiMetadata =
         "shortcodes": [
           ":free:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -28790,7 +30969,8 @@ const emojiMetadata =
         "shortcodes": [
           ":up!:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -28801,7 +30981,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ok-button:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28812,7 +30993,8 @@ const emojiMetadata =
         "shortcodes": [
           ":cool:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -28823,7 +31005,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ng:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28835,7 +31018,8 @@ const emojiMetadata =
         "shortcodes": [
           ":information:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28847,7 +31031,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Parking:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28858,7 +31043,8 @@ const emojiMetadata =
         "shortcodes": [
           ":here:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28870,7 +31056,8 @@ const emojiMetadata =
         "shortcodes": [
           ":service-charge:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28881,7 +31068,8 @@ const emojiMetadata =
         "shortcodes": [
           ":vacancy:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28892,7 +31080,8 @@ const emojiMetadata =
         "shortcodes": [
           ":symbols:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28904,7 +31093,8 @@ const emojiMetadata =
           ":letters:",
           ":abc:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28915,7 +31105,8 @@ const emojiMetadata =
         "shortcodes": [
           ":uppercase-letters:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28926,7 +31117,8 @@ const emojiMetadata =
         "shortcodes": [
           ":lowercase-letters:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28937,7 +31129,8 @@ const emojiMetadata =
         "shortcodes": [
           ":numbers:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28951,7 +31144,8 @@ const emojiMetadata =
           ":#:",
           ":number-sign:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28965,7 +31159,8 @@ const emojiMetadata =
           ":asterisk:",
           ":keycap-asterisk:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28979,7 +31174,8 @@ const emojiMetadata =
           ":zero:",
           ":keycap-zero:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -28993,7 +31189,8 @@ const emojiMetadata =
           ":one:",
           ":keycap-one:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29007,7 +31204,8 @@ const emojiMetadata =
           ":two:",
           ":keycap-two:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29021,7 +31219,8 @@ const emojiMetadata =
           ":three:",
           ":keycap-three:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29035,7 +31234,8 @@ const emojiMetadata =
           ":four:",
           ":keycap-four:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29049,7 +31249,8 @@ const emojiMetadata =
           ":five:",
           ":keycap-five:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29063,7 +31264,8 @@ const emojiMetadata =
           ":six:",
           ":keycap-six:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29077,7 +31279,8 @@ const emojiMetadata =
           ":seven:",
           ":keycap-seven:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29091,7 +31294,8 @@ const emojiMetadata =
           ":eight:",
           ":keycap-eight:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29105,7 +31309,8 @@ const emojiMetadata =
           ":nine:",
           ":keycap-nine:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29117,40 +31322,8 @@ const emojiMetadata =
           ":ten:",
           ":keycap-ten:"
         ],
-        "animated": false
-      },
-      {
-        "base": [
-          128160
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":diamond-jewel:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128311
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":blue-diamond-large:"
-        ],
-        "animated": false
-      },
-      {
-        "base": [
-          128313
-        ],
-        "alternates": [],
-        "emoticons": [],
-        "shortcodes": [
-          ":blue-diamond-small:"
-        ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29161,7 +31334,44 @@ const emojiMetadata =
         "shortcodes": [
           ":globe:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128160
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":diamond-jewel:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128311
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":blue-diamond-large:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          128313
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":blue-diamond-small:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29172,7 +31382,8 @@ const emojiMetadata =
         "shortcodes": [
           ":ATM:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29185,7 +31396,8 @@ const emojiMetadata =
           ":metro-sign:",
           ":circled-m:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29196,7 +31408,8 @@ const emojiMetadata =
         "shortcodes": [
           ":water-closet:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29207,7 +31420,8 @@ const emojiMetadata =
         "shortcodes": [
           ":restroom:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29218,7 +31432,8 @@ const emojiMetadata =
         "shortcodes": [
           ":mens-room:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29229,7 +31444,8 @@ const emojiMetadata =
         "shortcodes": [
           ":womens-room:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29240,7 +31456,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wheelchair-symbol:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29251,7 +31468,8 @@ const emojiMetadata =
         "shortcodes": [
           ":baby-symbol:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29262,7 +31480,8 @@ const emojiMetadata =
         "shortcodes": [
           ":elevator:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29273,7 +31492,8 @@ const emojiMetadata =
         "shortcodes": [
           ":litter:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -29284,7 +31504,8 @@ const emojiMetadata =
         "shortcodes": [
           ":water-faucet:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29295,7 +31516,8 @@ const emojiMetadata =
         "shortcodes": [
           ":passport-control:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29306,7 +31528,8 @@ const emojiMetadata =
         "shortcodes": [
           ":customs:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29317,7 +31540,8 @@ const emojiMetadata =
         "shortcodes": [
           ":baggage-claim:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29328,7 +31552,8 @@ const emojiMetadata =
         "shortcodes": [
           ":left-luggage:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29339,7 +31564,8 @@ const emojiMetadata =
         "shortcodes": [
           ":heart-box:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29351,7 +31577,8 @@ const emojiMetadata =
         "shortcodes": [
           ":atom-symbol:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29362,7 +31589,8 @@ const emojiMetadata =
         "shortcodes": [
           ":place-of-worship:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29374,7 +31602,8 @@ const emojiMetadata =
         "shortcodes": [
           ":om:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29386,7 +31615,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wheel-of-dharma:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29398,7 +31628,8 @@ const emojiMetadata =
         "shortcodes": [
           ":peace-symbol:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29410,7 +31641,8 @@ const emojiMetadata =
         "shortcodes": [
           ":yin-yang:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29422,7 +31654,8 @@ const emojiMetadata =
         "shortcodes": [
           ":star-and-crescent:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29433,7 +31666,8 @@ const emojiMetadata =
         "shortcodes": [
           ":khanda:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29445,7 +31679,8 @@ const emojiMetadata =
         "shortcodes": [
           ":latin-cross:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29457,7 +31692,8 @@ const emojiMetadata =
         "shortcodes": [
           ":orthodox-cross:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29469,7 +31705,8 @@ const emojiMetadata =
         "shortcodes": [
           ":star-of-David:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29480,7 +31717,8 @@ const emojiMetadata =
         "shortcodes": [
           ":star-of-david-with-dot:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29491,7 +31729,8 @@ const emojiMetadata =
         "shortcodes": [
           ":menorah:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29503,7 +31742,8 @@ const emojiMetadata =
         "shortcodes": [
           ":infinity:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29514,7 +31754,72 @@ const emojiMetadata =
         "shortcodes": [
           ":id-button:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129489,
+          8205,
+          129489,
+          8205,
+          129490
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":family:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129489,
+          8205,
+          129489,
+          8205,
+          129490,
+          8205,
+          129490
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":family-4:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129489,
+          8205,
+          129490
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":family-2:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          129489,
+          8205,
+          129490,
+          8205,
+          129490
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":family-3:"
+        ],
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29526,7 +31831,45 @@ const emojiMetadata =
         "shortcodes": [
           ":medical-symbol:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          127932
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":musical-score:",
+          ":treble-clef:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          127925
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":musical-note:"
+        ],
+        "animated": false,
+        "directional": false
+      },
+      {
+        "base": [
+          127926
+        ],
+        "alternates": [],
+        "emoticons": [],
+        "shortcodes": [
+          ":musical-notes:"
+        ],
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -29538,7 +31881,8 @@ const emojiMetadata =
         "shortcodes": [
           ":multiplication-x:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29550,7 +31894,8 @@ const emojiMetadata =
           ":plus-sign:",
           ":+:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -29562,7 +31907,8 @@ const emojiMetadata =
           ":minus-sign:",
           ":-:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29573,7 +31919,8 @@ const emojiMetadata =
         "shortcodes": [
           ":division-sign:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29585,7 +31932,8 @@ const emojiMetadata =
           ":equals-sign:",
           ":=:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29596,7 +31944,8 @@ const emojiMetadata =
         "shortcodes": [
           ":curly-loop:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29607,7 +31956,8 @@ const emojiMetadata =
         "shortcodes": [
           ":curly-loop-double:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29619,7 +31969,8 @@ const emojiMetadata =
         "shortcodes": [
           ":wavy-dash:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29631,7 +31982,8 @@ const emojiMetadata =
         "shortcodes": [
           ":copyright:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29643,7 +31995,8 @@ const emojiMetadata =
         "shortcodes": [
           ":registered:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29655,7 +32008,8 @@ const emojiMetadata =
         "shortcodes": [
           ":trade-mark:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29666,7 +32020,8 @@ const emojiMetadata =
         "shortcodes": [
           ":radio-button:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29677,7 +32032,8 @@ const emojiMetadata =
         "shortcodes": [
           ":white-square-button:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29689,7 +32045,8 @@ const emojiMetadata =
         "shortcodes": [
           ":black-square-medium:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29700,7 +32057,8 @@ const emojiMetadata =
         "shortcodes": [
           ":black-square-medium-small:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29712,7 +32070,8 @@ const emojiMetadata =
         "shortcodes": [
           ":black-square-small:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29723,7 +32082,8 @@ const emojiMetadata =
         "shortcodes": [
           ":button-black-square:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29735,7 +32095,8 @@ const emojiMetadata =
         "shortcodes": [
           ":white-square-medium:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29746,7 +32107,8 @@ const emojiMetadata =
         "shortcodes": [
           ":white-square-medium-small:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29758,7 +32120,8 @@ const emojiMetadata =
         "shortcodes": [
           ":white-square-small:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29773,7 +32136,8 @@ const emojiMetadata =
         "shortcodes": [
           ":eye-bubble:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       }
     ]
   },
@@ -29789,7 +32153,8 @@ const emojiMetadata =
         "shortcodes": [
           ":chequered-flag:"
         ],
-        "animated": true
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -29800,7 +32165,8 @@ const emojiMetadata =
         "shortcodes": [
           ":triangular-flag:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -29811,7 +32177,8 @@ const emojiMetadata =
         "shortcodes": [
           ":crossed-flags:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29822,7 +32189,8 @@ const emojiMetadata =
         "shortcodes": [
           ":black-flag:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -29834,7 +32202,8 @@ const emojiMetadata =
         "shortcodes": [
           ":white-flag:"
         ],
-        "animated": false
+        "animated": true,
+        "directional": false
       },
       {
         "base": [
@@ -29848,7 +32217,8 @@ const emojiMetadata =
         "shortcodes": [
           ":rainbow-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29863,7 +32233,8 @@ const emojiMetadata =
         "shortcodes": [
           ":trans-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29877,7 +32248,8 @@ const emojiMetadata =
         "shortcodes": [
           ":pirate-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29889,7 +32261,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Ascension-Island-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29901,7 +32274,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Andorra-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29913,7 +32287,8 @@ const emojiMetadata =
         "shortcodes": [
           ":United-Arab-Emirates-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29925,7 +32300,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Afghanistan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29937,7 +32313,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Antigua-Barbuda-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29949,7 +32326,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Anguilla-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29961,7 +32339,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Albania-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29973,7 +32352,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Armenia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29985,7 +32365,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Angola-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -29997,7 +32378,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Antarctica-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30009,7 +32391,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Argentina-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30021,7 +32404,8 @@ const emojiMetadata =
         "shortcodes": [
           ":American-Samoa-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30033,7 +32417,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Austria-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30045,7 +32430,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Australia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30057,7 +32443,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Aruba-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30069,7 +32456,8 @@ const emojiMetadata =
         "shortcodes": [
           ":\u00c5land-Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30081,7 +32469,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Azerbaijan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30093,7 +32482,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Bosnia-Herzegovina-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30105,7 +32495,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Barbados-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30117,7 +32508,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Bangladesh-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30129,7 +32521,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Belgium-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30141,7 +32534,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Burkina-Faso-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30153,7 +32547,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Bulgaria-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30165,7 +32560,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Bahrain-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30177,7 +32573,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Burundi-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30189,7 +32586,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Benin-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30201,7 +32599,8 @@ const emojiMetadata =
         "shortcodes": [
           ":St-Barth\u00e9lemy-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30213,7 +32612,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Bermuda-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30225,7 +32625,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Brunei-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30237,7 +32638,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Bolivia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30249,7 +32651,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Caribbean-Netherlands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30261,7 +32664,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Brazil-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30273,7 +32677,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Bahamas-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30285,7 +32690,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Bhutan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30297,7 +32703,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Bouvet-Island-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30309,7 +32716,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Botswana-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30321,7 +32729,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Belarus-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30333,7 +32742,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Belize-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30345,7 +32755,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Canada-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30357,7 +32768,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Cocos-Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30369,7 +32781,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Congo-Kinshasa-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30381,7 +32794,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Central-African-Republic-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30393,7 +32807,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Congo-Brazzaville-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30405,7 +32820,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Switzerland-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30417,7 +32833,8 @@ const emojiMetadata =
         "shortcodes": [
           ":C\u00f4te-d\u2019Ivoire-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30429,7 +32846,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Cook-Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30441,7 +32859,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Chile-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30453,7 +32872,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Cameroon-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30465,7 +32885,8 @@ const emojiMetadata =
         "shortcodes": [
           ":China-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30477,7 +32898,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Colombia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30489,7 +32911,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Clipperton-Island-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30501,7 +32924,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Costa-Rica-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30513,7 +32937,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Cuba-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30525,7 +32950,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Cape-Verde-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30537,7 +32963,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Cura\u00e7ao-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30549,7 +32976,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Christmas-Island-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30561,7 +32989,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Cyprus-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30573,7 +33002,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Czechia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30585,7 +33015,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Germany-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30597,7 +33028,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Diego-Garcia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30609,7 +33041,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Djibouti-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30621,7 +33054,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Denmark-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30633,7 +33067,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Dominica-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30645,7 +33080,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Dominican Republic-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30657,7 +33093,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Algeria-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30669,7 +33106,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Ceuta-Melilla-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30681,7 +33119,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Ecuador-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30693,7 +33132,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Estonia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30705,7 +33145,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Egypt-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30717,7 +33158,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Western-Sahara-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30729,7 +33171,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Eritrea-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30741,7 +33184,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Spain-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30753,7 +33197,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Ethiopia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30765,7 +33210,8 @@ const emojiMetadata =
         "shortcodes": [
           ":European-Union-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30777,7 +33223,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Finland-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30789,7 +33236,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Fiji-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30801,7 +33249,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Falkland-Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30813,7 +33262,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Micronesia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30825,7 +33275,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Faroe-Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30837,7 +33288,8 @@ const emojiMetadata =
         "shortcodes": [
           ":France-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30849,7 +33301,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Gabon-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30861,7 +33314,8 @@ const emojiMetadata =
         "shortcodes": [
           ":United-Kingdom-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30873,7 +33327,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Grenada-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30885,7 +33340,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Georgia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30897,7 +33353,8 @@ const emojiMetadata =
         "shortcodes": [
           ":French Guiana-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30909,7 +33366,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Guernsey-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30921,7 +33379,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Ghana-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30933,7 +33392,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Gibraltar-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30945,7 +33405,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Greenland-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30957,7 +33418,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Gambia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30969,7 +33431,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Guinea-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30981,7 +33444,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Guadeloupe-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -30993,7 +33457,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Equatorial-Guinea-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31005,7 +33470,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Greece-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31017,7 +33483,8 @@ const emojiMetadata =
         "shortcodes": [
           ":South-Georgia-South-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31029,7 +33496,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Guatemala-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31041,7 +33509,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Guam-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31053,7 +33522,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Guinea-Bissau-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31065,7 +33535,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Guyana-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31077,7 +33548,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Hong-Kong-SAR-China-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31089,7 +33561,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Heard-McDonald Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31101,7 +33574,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Honduras-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31113,7 +33587,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Croatia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31125,7 +33600,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Haiti-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31137,7 +33613,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Hungary-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31149,7 +33626,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Canary-Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31161,7 +33639,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Indonesia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31173,7 +33652,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Ireland-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31185,7 +33665,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Israel-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31197,7 +33678,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Isle-of-Man-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31209,7 +33691,8 @@ const emojiMetadata =
         "shortcodes": [
           ":India-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31221,7 +33704,8 @@ const emojiMetadata =
         "shortcodes": [
           ":British-Indian-Ocean-Territory-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31233,7 +33717,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Iraq-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31245,7 +33730,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Iran-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31257,7 +33743,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Iceland-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31269,7 +33756,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Italy-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31281,7 +33769,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Jersey-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31293,7 +33782,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Jamaica-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31305,7 +33795,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Jordan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31317,7 +33808,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Japan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31329,7 +33821,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Kenya-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31341,7 +33834,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Kyrgyzstan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31353,7 +33847,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Cambodia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31365,7 +33860,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Kiribati-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31377,7 +33873,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Comoros-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31389,7 +33886,8 @@ const emojiMetadata =
         "shortcodes": [
           ":St. Kitts & Nevis-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31401,7 +33899,8 @@ const emojiMetadata =
         "shortcodes": [
           ":North Korea-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31413,7 +33912,8 @@ const emojiMetadata =
         "shortcodes": [
           ":South Korea-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31425,7 +33925,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Kuwait-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31437,7 +33938,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Cayman Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31449,7 +33951,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Kazakhstan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31461,7 +33964,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Laos-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31473,7 +33977,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Lebanon-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31485,7 +33990,8 @@ const emojiMetadata =
         "shortcodes": [
           ":St. Lucia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31497,7 +34003,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Liechtenstein-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31509,7 +34016,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Sri Lanka-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31521,7 +34029,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Liberia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31533,7 +34042,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Lesotho-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31545,7 +34055,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Lithuania-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31557,7 +34068,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Luxembourg-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31569,7 +34081,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Latvia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31581,7 +34094,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Libya-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31593,7 +34107,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Morocco-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31605,7 +34120,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Monaco-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31617,7 +34133,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Moldova-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31629,7 +34146,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Montenegro-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31641,7 +34159,8 @@ const emojiMetadata =
         "shortcodes": [
           ":St-Martin-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31653,7 +34172,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Madagascar-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31665,7 +34185,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Marshall-Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31677,7 +34198,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Macedonia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31689,7 +34211,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Mali-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31701,7 +34224,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Myanmar-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31713,7 +34237,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Mongolia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31725,7 +34250,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Macau-SAR-China-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31737,7 +34263,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Northern-Mariana-Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31749,7 +34276,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Martinique-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31761,7 +34289,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Mauritania-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31773,7 +34302,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Montserrat-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31785,7 +34315,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Malta-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31797,7 +34328,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Mauritius-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31809,7 +34341,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Maldives-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31821,7 +34354,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Malawi-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31833,7 +34367,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Mexico-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31845,7 +34380,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Malaysia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31857,7 +34393,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Mozambique-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31869,7 +34406,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Namibia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31881,7 +34419,8 @@ const emojiMetadata =
         "shortcodes": [
           ":New-Caledonia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31893,7 +34432,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Niger-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31905,7 +34445,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Norfolk-Island-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31917,7 +34458,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Nigeria-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31929,7 +34471,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Nicaragua-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31941,7 +34484,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Netherlands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31953,7 +34497,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Norway-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31965,7 +34510,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Nepal-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31977,7 +34523,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Nauru-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -31989,7 +34536,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Niue-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32001,7 +34549,8 @@ const emojiMetadata =
         "shortcodes": [
           ":New-Zealand-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32013,7 +34562,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Oman-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32025,7 +34575,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Panama-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32037,7 +34588,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Peru-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32049,7 +34601,8 @@ const emojiMetadata =
         "shortcodes": [
           ":French-Polynesia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32061,7 +34614,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Papua-New-Guinea-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32073,7 +34627,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Philippines-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32085,7 +34640,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Pakistan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32097,7 +34653,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Poland-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32109,7 +34666,8 @@ const emojiMetadata =
         "shortcodes": [
           ":St-Pierre-Miquelon-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32121,7 +34679,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Pitcairn-Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32133,7 +34692,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Puerto-Rico-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32145,7 +34705,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Palestinian-Territories-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32157,7 +34718,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Portugal-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32169,7 +34731,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Palau-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32181,7 +34744,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Paraguay-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32193,7 +34757,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Qatar-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32205,7 +34770,8 @@ const emojiMetadata =
         "shortcodes": [
           ":R\u00e9union-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32217,7 +34783,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Romania-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32229,7 +34796,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Serbia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32241,7 +34809,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Russia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32253,7 +34822,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Rwanda-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32265,7 +34835,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Saudi-Arabia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32277,7 +34848,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Solomon-Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32289,7 +34861,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Seychelles-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32301,7 +34874,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Sudan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32313,7 +34887,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Sweden-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32325,7 +34900,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Singapore-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32337,7 +34913,8 @@ const emojiMetadata =
         "shortcodes": [
           ":St-Helena-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32349,7 +34926,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Slovenia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32361,7 +34939,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Svalbard-Jan Mayen-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32373,7 +34952,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Slovakia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32385,7 +34965,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Sierra-Leone-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32397,7 +34978,8 @@ const emojiMetadata =
         "shortcodes": [
           ":San-Marino-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32409,7 +34991,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Senegal-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32421,7 +35004,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Somalia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32433,7 +35017,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Suriname-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32445,7 +35030,8 @@ const emojiMetadata =
         "shortcodes": [
           ":South-Sudan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32457,7 +35043,8 @@ const emojiMetadata =
         "shortcodes": [
           ":S\u00e3o-Tom\u00e9-Pr\u00edncipe-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32469,7 +35056,8 @@ const emojiMetadata =
         "shortcodes": [
           ":El-Salvador-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32481,7 +35069,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Sint-Maarten-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32493,7 +35082,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Syria-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32505,7 +35095,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Swaziland-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32517,7 +35108,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Tristan-da-Cunha-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32529,7 +35121,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Turks-Caicos Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32541,7 +35134,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Chad-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32553,7 +35147,8 @@ const emojiMetadata =
         "shortcodes": [
           ":French-Southern-Territories-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32565,7 +35160,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Togo-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32577,7 +35173,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Thailand-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32589,7 +35186,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Tajikistan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32601,7 +35199,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Tokelau-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32613,7 +35212,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Timor-Leste-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32625,7 +35225,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Turkmenistan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32637,7 +35238,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Tunisia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32649,7 +35251,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Tonga-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32661,7 +35264,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Turkey-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32673,7 +35277,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Trinidad-Tobago-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32685,7 +35290,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Tuvalu-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32697,7 +35303,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Taiwan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32709,7 +35316,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Tanzania-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32721,7 +35329,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Ukraine-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32733,7 +35342,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Uganda-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32745,7 +35355,8 @@ const emojiMetadata =
         "shortcodes": [
           ":US-Outlying Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32757,7 +35368,8 @@ const emojiMetadata =
         "shortcodes": [
           ":United-Nations-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32769,7 +35381,8 @@ const emojiMetadata =
         "shortcodes": [
           ":United-States-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32781,7 +35394,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Uruguay-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32793,7 +35407,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Uzbekistan-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32805,7 +35420,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Vatican City-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32817,7 +35433,8 @@ const emojiMetadata =
         "shortcodes": [
           ":St-Vincent-Grenadines-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32829,7 +35446,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Venezuela-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32841,7 +35459,8 @@ const emojiMetadata =
         "shortcodes": [
           ":British-Virgin Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32853,7 +35472,8 @@ const emojiMetadata =
         "shortcodes": [
           ":US-Virgin-Islands-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32865,7 +35485,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Vietnam-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32877,7 +35498,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Vanuatu-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32889,7 +35511,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Wallis-Futuna-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32901,7 +35524,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Samoa-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32913,7 +35537,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Kosovo-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32925,7 +35550,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Yemen-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32937,7 +35563,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Mayotte-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32949,7 +35576,8 @@ const emojiMetadata =
         "shortcodes": [
           ":South-Africa-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32961,7 +35589,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Zambia-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32973,7 +35602,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Zimbabwe-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -32990,7 +35620,8 @@ const emojiMetadata =
         "shortcodes": [
           ":England-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -33007,7 +35638,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Scotland-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       },
       {
         "base": [
@@ -33024,7 +35656,8 @@ const emojiMetadata =
         "shortcodes": [
           ":Wales-flag:"
         ],
-        "animated": false
+        "animated": false,
+        "directional": false
       }
     ]
   }
