@@ -1,6 +1,19 @@
 # figma-colrv1
 
-Figma plugin to support COLRv1 fonts including variable fonts.
+Figma plugin to support COLRv1 fonts including Noto Color Emoji and variable fonts.
+
+## Fonts
+
+### Emoji fonts
+
+Two emoji fonts are embedded in the plugin. Emoji fonts are large, so embedding helps avoid loading delays.
+
+* [Noto Color Emoji](https://fonts.google.com/noto/specimen/Noto+Color+Emoji) (uses the COLRv1 format)
+* [Noto Emoji](https://fonts.google.com/noto/specimen/Noto+Emoji) (monochrome, with a Weight variation axis)
+
+### Text fonts
+
+Several color text fonts are included, as URLs to fonts hosted online. These fonts are small, so loading delays are minimal.
 
 ## Installation
 
@@ -10,9 +23,13 @@ Figma plugin to support COLRv1 fonts including variable fonts.
   * Click the Resources button, click the Plugins tab, then the + button. Click “Import plugin from manifest…” then select the manifest.json file from the repo.
   * From the main “F” menu, select Plugins, Development, “Import plugin from manifest…” then select the manifest.json file from the repo.
 
-## Usage
+## Invoking the plugin
 
 Click the Resources button, then click the Run button by the “figma-colrv1” plugin.
+
+## Usage
+
+You have two tabs: Emoji and Text. For text fonts, you can edit the palettes of each font.
 
 ## Notes
 
