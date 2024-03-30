@@ -12,9 +12,8 @@
 
 
 
-//const { fontList } = require("./fontlist.js"); // get list of remote fonts
-const { fonts } = require("./fonts.js"); // get list of fonts, some embedded as base64
-const { emojiMetadata } = require("./emoji_15_0_ordering.js"); // get emoji definitions, originally source is https://github.com/googlefonts/emoji-metadata/blob/main/emoji_15_0_ordering.json
+const { fonts } = require("./fonts.js"); // list of fonts, some embedded as base64
+const { emojiMetadata } = require("./emoji_ordering.js"); // emoji definitions and ordering
 const { SamsaFont, SamsaGlyph, SamsaInstance, SamsaBuffer, SAMSAGLOBAL } = require ("samsa-core");
 const BufferWrapper = require("buffer");
 const BufferPolyfill = BufferWrapper.Buffer;
@@ -36,7 +35,7 @@ const GLOBAL:any = {
 };
 
 // show the HTML page in "ui.html"
-figma.showUI(__uiFiles__.main, { width: 314, height: 600, title: "COLRv1 Emoji & Fonts" });
+figma.showUI(__uiFiles__.main, { width: 354, height: 644-40, title: "COLRv1 Emoji & Fonts" }); // spec is 354x644 (40 is height of title bar)
 
 
 // this is the main font object: you can only have one font at a time
@@ -173,7 +172,8 @@ figma.ui.onmessage = msg => {
 						figma.ui.postMessage({type: "CPAL", CPAL: { colors: font.CPAL.colors, palettes: font.CPAL.palettes, hexColors: font.CPAL.hexColors}});
 					}
 	
-					figma.ui.postMessage({type: "font-data-delivered"});
+					// the UI can do what it wants now
+					figma.ui.postMessage({ type: "font-data-delivered", fontFamily: msg.name });
 				});
 
 			}

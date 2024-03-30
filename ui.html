@@ -8,8 +8,17 @@
 	--grey-outline: #dddddd;
 	--grey-background: #f7f7f7;
 	--grey-inactive-label: grey;
+	--blue-active: #0075ff;
+	--grey-text-input: #ededf5;
+	padding: 6px;
 	font-family: "Google Sans Text", system-ui, sans-serif;
+	font-size: 12px;
 	background-color: var(--grey-background);
+}
+
+input {
+	font-family: "Noto Color Emoji", "Google Sans Text", system-ui, sans-serif;
+	font-size: 14px;
 }
 
 .emoji-group-icon {
@@ -31,27 +40,196 @@
 	text-align: center;
 }
 
+.material-symbols {
+	font-family: "Material Symbols Outlined";
+}
+
 /* section headings */
 h2 {
 	font-size: 20px;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding: 0;
+	padding-bottom: 2px;
+	padding-top: 0;
 	margin: 0;
 }
+
+/* text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.7em;
+	margin-left: 0.4em; */
+
 
 #intro {
 	font-size: 0.75rem;
 }
 
-.mode-selector {
+.controls-new {
+	display: grid;
+	grid-template-rows: auto auto 1fr auto auto;
+	height: 100%;
+}
+
+.mode-select {
 	display: grid;
 	width: 100%;
 	grid-template-columns: 50% 50%;
+	font-size: 14px;
 }
 
 .mode {
+	position: relative;
 	text-align: center;
+	border-bottom: 2px solid var(--blue-active);
+	padding-bottom: 9px;
+	cursor: default;
+	user-select: none;
+}
+
+.icon {
+	position: absolute;
+	top: -4px;
+	font-family: "Material Symbols Outlined";
+	font-size: 20px;
+	font-weight: normal;
+	display: inline-block;  
+	user-select: none;
+}
+
+.font .size {
+	display: grid;
+	width: 100%;
+	align-items: center;
+}
+
+.font, .axis {
+	display: grid;
+	grid-template-columns: 70px 1fr;
+	width: 100%;
+	align-items: center;
+}
+
+.select {
+	position: relative;
+}
+
+.dropdown {
+	position: absolute;
+	display: none;
+	top: 1em;
+	background-color: white;
+	line-height: 1.5em;
+	border: solid lightgrey;
+	border-width: 0 1px 1px 1px;
+	z-index: 10;
+	padding: 0.3em;
+}
+
+.axis .tag {
+	cursor: pointer;
+}
+
+.axis .numeric {
+	width: 100%;
+	_background-color: white;
+	border: none;
+}
+
+.axis .slider {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.style {
+	grid-column: 1 / 3;
+}
+
+.icon-wrap {
+  position: relative;
+  padding-right: 2em;
+}
+
+.controls.emoji {
+	_display: none;
+	background-color: pink;
+}
+
+.font-select {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 15% 20px 1fr 20px;
+	font-size: 12px;
+	padding: 6px 0;
+}
+
+.font-select .icon {
+	_position: relative;
+	_top: 6px;
+	_font-family: "Material Symbols Outlined";
+	font-size: 24px;
+	_padding-right: 5px;
+}
+
+.font-select .size {
+	position: relative;
+}
+
+.font-select .font-family {
+	position: relative;
+}
+
+.dropdown-icon {
+	position: absolute;
+	text-align: right;
+}
+
+.font-style {
+	width: 100%;
+}
+
+.axes {
+
+}
+
+.palettes {
+
+}
+
+.common {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.button {
+	border: 2px solid black;
+	border-radius: 5em;
+	padding: 10px;
+	display: inline-block;
+	font-size: 14px;
+	width: 100%;
+}
+
+h2 { /* for Axes and Palettes headings */
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 1.25em;
+}
+
+h3 { /* for emoji category */
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+.text-input {
+	width: 100%;
+}
+
+.text-input input, .search input {
+	width: 100%;
+	background-color: var(--grey-text-input);
+	border-radius: 5em;
+	border: none;
+	padding: 0.8em;
 }
 
 #controls {
@@ -60,13 +238,6 @@ h2 {
 	grid-template-columns: 1fr 3fr;
 	position: relative;
 	row-gap: 7px;
-}
-
-.font-size {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 50px 1fr;
-	align-items: center;
 }
 
 .reveal {
@@ -83,21 +254,21 @@ h2 {
 	display: none;
 }
 
-.axis {
+/* .axis {
 	display: grid;
 	width: 100%;
 	grid-template-columns: 50px 50px 1fr;
 	align-items: center;
-}
+} */
 
-.axis label {
+/* .axis label {
 	font-weight: bold;
 	font-size: 0.8em;
 }
 
 .axis input[type=range] {
 	width: 100%; /* shrink it from default, otherwise it ruins layout */
-}
+} */
 
 #palettes-select {
 	display: none;
@@ -106,7 +277,7 @@ h2 {
 .palette {
 	display: grid;
 	width: 100%;
-	grid-template-columns: 20px repeat(14, 1fr);
+	grid-template-columns: 20px repeat(18, 1fr);
 	column-gap: 2px;
 	align-items: center;
 }
@@ -157,8 +328,9 @@ h2 {
 }
 
 #emoji-picker {
-	display: none;
-	width: 300px;
+	_display: none;
+	_width: 300px;
+	width: 100%;
 	height: 300px;
 	grid-column: span 2;
 	--emoji-grey: #606368;
@@ -230,7 +402,114 @@ h2 {
 
 <!-- <h2>figma-colrv1</h2> -->
 
-<div id="controls">
+<!-- NEW CONTROLS (start) -->
+<div class="controls-new">
+
+	<div class="mode-select">
+		<div class="mode emoji"><span class="icon-wrap"><div class="icon">mood</div></span> Emoji</div>
+		<div class="mode text"><span class="icon-wrap"><div class="icon">insert_text</div></span> Text</div>
+	</div>
+
+	<div class="controls text">
+
+		<div class="font">
+
+			<div class="size select">12px</div><div class="icon">arrow_drop_down</div>
+	
+			<div class="family select">Select font…</div>
+	
+			<div class="style select">Select style…</div>
+	
+		</div>
+	
+		<div class="axes">
+			<h2><span class="icon-wrap"><div class="icon" style="top: -3px; font-size: 1.625em;">custom_typography</div></span> Axes</h2>
+			<div class="axis-controls">
+				<!-- <div class="axis"> -->
+				<!-- <div class="axis"> -->
+			</div>
+		</div>
+
+		<div class="palettes">
+			<h2><span class="icon-wrap"><div class="icon">palette</div></span> Palettes</h2>
+			<div class="palette-controls">
+				<!-- <div class="palette"> -->
+				<!-- <div class="palette"> -->
+			</div>
+		</div>
+
+	</div>
+
+	<div class="controls emoji">
+
+		<div class="font">
+
+			<div class="size select">12px</div><div class="icon">arrow_drop_down</div>
+	
+			<div class="family select">Select font…</div>
+	
+			<div class="style select">Select style…</div>
+	
+		</div>
+	
+		<div class="search">
+			<input type="text" value="" placeholder="Search emoji">
+		</div>
+
+		<div id="emoji-picker" class="emoji-mode" style="border: 1px solid red; background-color: yellow;">
+			<!-- <input id="emoji-search" type="search" placeholder="Search emojis"> -->
+			<div id="emoji-type">
+				<div class="emoji-group-icon">schedule</div>
+				<div class="emoji-group-icon default">mood</div>
+				<div class="emoji-group-icon">emoji_people</div>
+				<div class="emoji-group-icon">emoji_nature</div>
+				<div class="emoji-group-icon">emoji_food_beverage</div>
+				<div class="emoji-group-icon">emoji_transportation</div>
+				<div class="emoji-group-icon">emoji_events</div>
+				<div class="emoji-group-icon">emoji_objects</div>
+				<div class="emoji-group-icon">glyphs</div>
+				<div class="emoji-group-icon">emoji_flags</div>
+			</div>
+
+			<h2 id="emoji-type-heading">
+				Heading
+			</h2>		
+
+			<div id="emoji-main">
+				<div class="emoji-grid"></div>
+				<div class="emoji-variants-grid"></div>
+			</div>		
+		</div>
+	
+
+	</div>
+
+	
+
+	<div class="text-input" style="border-top: 1px solid #ddd; padding-top: 12px;">
+		<input type="text" value="" placeholder="Text will update as you type">
+	</div>
+
+	<div class="common" style="padding-top: 14px;">
+		<div>
+			<span class="icon-wrap"><div class="icon" style="font-size: 24px; padding-top: 12px;">info</div></span>
+		</div>
+
+		<div style="margin: 0 -4px 0 20px;">
+			<button class="button" style="margin-bottom: -4px;">
+				<span class="icon-wrap"><div class="icon">code</div></span>
+				<span style="">Show CSS</span>
+			</button>
+		</div>
+		
+	</div>
+
+</div>
+
+<!-- NEW CONTROLS (end) -->
+
+<div style="display: none;">
+<div id="controls" style="display:none;">
 
 
 <!-- these must be in groups of two, to fit with the grid definition -->
@@ -270,9 +549,9 @@ h2 {
 	<div id="palettes-list"></div>
 </div>
 
-<div id="emoji-picker" class="emoji-mode">
+<div id="_emoji-picker" class="emoji-mode">
 	<input id="emoji-search" type="search" placeholder="Search emojis">
-	<div id="emoji-type">
+	<div id="_emoji-type">
 		<div class="emoji-group-icon">schedule</div>
 		<div class="emoji-group-icon default">mood</div>
 		<div class="emoji-group-icon">emoji_people</div>
@@ -285,7 +564,7 @@ h2 {
 		<div class="emoji-group-icon">emoji_flags</div>
 	</div>
 	
-	<div id="emoji-main">
+	<div id="_emoji-main">
 		<div class="emoji-grid"></div>
 		<div class="emoji-variants-grid"></div>
 	</div>
@@ -315,9 +594,13 @@ h2 {
 <button id="about">About</button>
 <button id="cancel">Close</button>
 
+
+</div>
 <!-- <script type="module" src="dist/fontlist.js"></script> -->
 
 <script type="module">
+
+
 
 const GLOBAL = {
 	emojiSVGs: {}, // store all the svgs: should be emptied on font change
@@ -342,13 +625,477 @@ const GLOBAL = {
 const fontFamilySelect = document.querySelector("#font-family-select");
 
 
+// run this when the UI is ready
+(function initUI() {
+	populateAxes();
+	populatePalettes();
+	setMode();
+
+	switchFontFamily();
+
+	
+})();
+
+function switchFontFamily(e) {
+
+
+	//let family = e ? e.target.textContent : "Nabla";
+	let family = e ? e.target.textContent : "Noto Color Emoji";
+	
+	console.log("switching font family to ", family)
+	// if (e) console.log(e.target)
+	// if (!e) {
+	// 	parent.postMessage({ pluginMessage: { type: 'fetch-font-by-name', name: "Nabla" } }, "*");
+	// }
+	// else {
+	// 	const el = e.target;
+	// 	const family = el.textContent;
+	// 	parent.postMessage({ pluginMessage: { type: 'fetch-font-by-name', name: family } }, "*");
+
+	// 	// close the dropdown menu
+	// 	el.closest(".dropdown").style.display = "none";
+	// }
+	
+
+	parent.postMessage({ pluginMessage: { type: 'fetch-font-by-name', name: family } }, "*");
+
+	// hide the dropdown menu
+	if (e)
+ 		document.querySelector(".font .family.select .dropdown").style.display = "none";
+
+
+	// update the family in the select element
+	//document.querySelector(".font .family.select").innerHTML = "sss";
+	//document.querySelector(".font .family.select").onclick = openSelect;
+	//document.querySelector(".font .family.select").textContent = family;
+
+
+}
+
+function populateSelects() {
+
+	const familySelectEmojiEl = document.querySelector(".controls.emoji .font .family.select");
+	const familySelectTextEl = document.querySelector(".controls.text .font .family.select");
+
+
+	// add a dropdown div to each select element
+	document.querySelectorAll(".select").forEach(selectEl => {
+		const dropdownEl = document.createElement("div");
+		dropdownEl.classList.add("dropdown");
+
+		selectEl.append(dropdownEl);
+		selectEl.onclick = openSelect;
+
+	});
+
+	// // populate font families
+	// if (selectEl.classList.contains("family")) {
+
+		//populateFamilySelect("text");
+
+
+		console.log("Haadadad");
+		GLOBAL.fontList.forEach((font, f) => {
+			console.log(font);
+
+			//if (font.attributes.includes("text")) {
+				const familyEl = document.createElement("div");
+				familyEl.classList.add("dropdown-item")
+
+				familyEl.innerText = font.name;
+				console.log(familyEl)
+
+				// familyEl.textContent = font;
+				// familyEl.dataset.fontFamily = font;
+				// familyEl.onclick = function(e) {
+				// 	const el = e.target;
+				// 	const family = el.dataset.fontFamily;
+				// 	fontFamilySelect.value = family;
+				// 	fontFamilySelect.dispatchEvent(new Event("change"));
+				// }
+
+				// EVENT: click on a family
+				familyEl.onclick = switchFontFamily;
+
+				//familiesEl.append(familyEl);
+				//dropdownEl.append(familyEl);
+
+				const familySelectEl = font.attributes.includes("text") ? familySelectTextEl : familySelectEmojiEl;
+				familySelectEl.querySelector(".dropdown").append(familyEl);
+				console.log("Appending :)")
+
+				//familySelectEmoji
+
+			//}
+
+
+		// }
+
+
+	});
+
+
+
+
+	const familiesEl = document.querySelector(".font .family.select");
+	console.log("familiesEl");
+	console.log(familiesEl);
+
+
+
+	// GLOBAL.fontList.forEach((font, f) => {
+	// 	console.log(font)
+	// 	const familyEl = document.createElement("div");
+
+	// 	familyEl.innerText = font.name;
+	// 	console.log(familyEl)
+
+	// 	// familyEl.textContent = font;
+	// 	// familyEl.dataset.fontFamily = font;
+	// 	// familyEl.onclick = function(e) {
+	// 	// 	const el = e.target;
+	// 	// 	const family = el.dataset.fontFamily;
+	// 	// 	fontFamilySelect.value = family;
+	// 	// 	fontFamilySelect.dispatchEvent(new Event("change"));
+	// 	// }
+
+	// 	// EVENT: click on a family
+	// 	familyEl.onclick = switchFontFamily;
+
+	// 	familiesEl.append(familyEl);
+	// });
+
+
+
+	console.log(familiesEl);
+
+}
+
+function populateFamilySelect(mode) {
+
+	// GLOBAL.fontList.forEach((font, f) => {
+	// 	console.log(font)
+
+	// 	if (font.attributes.includes(mode)) { // mode is "text" or "emoji"
+	// 		const familyEl = document.createElement("div");
+	// 		familyEl.classList.add("dropdown-item")
+
+	// 		familyEl.innerText = font.name;
+	// 		console.log(familyEl)
+
+	// 		// familyEl.textContent = font;
+	// 		// familyEl.dataset.fontFamily = font;
+	// 		// familyEl.onclick = function(e) {
+	// 		// 	const el = e.target;
+	// 		// 	const family = el.dataset.fontFamily;
+	// 		// 	fontFamilySelect.value = family;
+	// 		// 	fontFamilySelect.dispatchEvent(new Event("change"));
+	// 		// }
+
+	// 		// EVENT: click on a family
+	// 		familyEl.onclick = switchFontFamily;
+
+	// 		//familiesEl.append(familyEl);
+	// 		dropdownEl.append(familyEl);
+
+	// 	}
+	// });
+
+}
+
+function openSelect(e) {
+
+	const dropDownEl = e.target.querySelector(".dropdown");
+	if (dropDownEl) {
+		dropDownEl.style.display = dropDownEl.style.display === "block" ? "none" : "block";
+	}
+}
+
+function populateAxes() {
+
+	console.log("populateAxes")
+	const axisControlsEl = document.querySelector(".axes .axis-controls");
+	if (!GLOBAL.fvar || !GLOBAL.fvar.axes || GLOBAL.fvar.axes.length === 0) {
+		axisControlsEl.innerHTML = "No variation axes found.";
+	}
+	else {
+		axisControlsEl.innerHTML = "";
+		GLOBAL.fvar.axes.forEach(axis => {
+			const value = axisDefaultOverride(axis);
+			const axisEl = document.createElement("div");
+			axisEl.style.width = "100%";
+			const leftEl = document.createElement("div");
+			const rightEl = document.createElement("div");
+
+			const tagEl = document.createElement("div");
+			tagEl.textContent = axis.axisTag;
+			tagEl.title = axis.name;
+			tagEl.classList.add("tag");
+
+			const numericEl = document.createElement("input");
+			numericEl.type = "text";
+			numericEl.value = value;
+			numericEl.classList.add("numeric");
+			numericEl.disabled = true;
+
+			const sliderEl = document.createElement("input");
+			sliderEl.type = "range";
+			sliderEl.classList.add("slider");
+			sliderEl.min = axis.minValue;
+			sliderEl.max = axis.maxValue;
+			sliderEl.value = value;
+			//sliderEl.style.verticalAlign = "middle";
+			sliderEl.oninput = axisInput;
+
+			leftEl.append(tagEl, numericEl);
+			rightEl.append(sliderEl);
+			axisEl.append(leftEl, rightEl);
+			axisEl.classList.add("axis");
+			axisControlsEl.append(axisEl);
+		});
+	}
+}
+
+function clamp(value, min, max) {
+	return Math.min(Math.max(value, min), max);
+}
+
+function axisDefaultOverride(axis) {
+	const overrides = {
+		wdth: 100,
+		wght: 400,
+		ital: 0,
+		opsz: 12,
+	};
+
+	if (overrides[axis.axisTag] !== undefined) {
+		return clamp(overrides[axis.axisTag], axis.minValue, axis.maxValue);
+	}
+	else {
+		return axis.defaultValue;
+	}
+}
+
+function populatePalettes() {
+
+	console.log("populatePalettes()")
+	const palettesEl = document.querySelector(".palettes .palette-controls");
+	console.log(palettesEl);
+	console.log(GLOBAL.CPAL);
+	if (!GLOBAL.CPAL || !GLOBAL.CPAL.palettes || GLOBAL.CPAL.palettes.length === 0) {
+		palettesEl.innerHTML = "No CPAL palettes found.";
+	}
+	else {
+		palettesEl.innerHTML = "";
+		GLOBAL.CPAL.palettes.forEach((palette, p) => {
+
+			// list: each palette div needs n children for the grid to work
+			const paletteEl = document.createElement("div");
+			paletteEl.classList.add("palette");
+
+			// create each radio button
+			const radio = document.createElement("input");
+			radio.type = "radio";
+			radio.name = "palette-id";
+			radio.value = p;
+			paletteEl.append(radio);
+			if (p==0) {
+				radio.checked = true;
+			}
+
+			// EVENT: switch palette
+			radio.onchange = updateRendering;
+
+			// create the color inputs
+			palette.colors.forEach((color, c) => {
+				const frame = document.createElement("div");
+				frame.classList.add("frame");
+				const sample = document.createElement("input");
+				sample.type = "color";
+				sample.value = GLOBAL.CPAL.hexColors[color];
+				sample.dataset.paletteId = p;
+				sample.dataset.entryId = c;
+				if (c < 18) { // TODO: hack to show max 18 colors in a palette
+					frame.append(sample);
+					paletteEl.append(frame);
+
+					// EVENT: edit color in palette
+					sample.oninput = editColor;
+				}
+				sample.title = `Palette ${p}, entry ${c}: ${GLOBAL.CPAL.hexColors[color]}`;
+			});
+			palettesEl.append(paletteEl);
+		});
+		// palettesSelect.disabled = false;
+		// palettesLabel.style.color = "black";
+	}
+}
+
+function setMode(e) {
+
+	//alert ("mode clicked")
+	const el = e ? e.target : document.querySelector(".mode");
+
+	// flip the underline that denotes the selected mode
+	el.parentNode.querySelectorAll(".mode").forEach(el_ => el_.style.borderColor = (el === el_) ? "var(--blue-active)" : "transparent" ); // reset all to transparent
+	//el.style.borderColor = ;
+
+	console.log(GLOBAL.fvar)
+	
+	// show/hide the relevant controls
+	console.log('in setmode()');
+	console.log(el);
+
+	GLOBAL.mode = "";
+	if (el.classList.contains("emoji")) {
+		document.querySelector(".controls.emoji").style.display = "block";
+		document.querySelector(".controls.text").style.display = "none";
+		document.querySelector(".text-input input").placeholder = "Emoji will insert as you select";
+		GLOBAL.mode = "emoji";
+	}
+	else if (el.classList.contains("text")) {
+		document.querySelector(".controls.text").style.display = "block";
+		document.querySelector(".controls.emoji").style.display = "none";
+		document.querySelector(".text-input input").placeholder = "Text will update as you type";
+		GLOBAL.mode = "text";
+	}
+
+	//populateFamilySelect(GLOBAL.mode);
+
+	document.querySelector(".text-input input").value = "";
+
+}
+
+function axisInput(e) {
+	const input = e.target;
+	const numericEl = e.target.closest(".axis").querySelector(".numeric");
+	numericEl.value = e.target.value;
+
+	//console.log(value);
+
+	// const other = input.parentNode.querySelector(`input[type=${ input.type == "range" ? "text" : "range"} ]`);
+	// other.value = input.value;
+	// document.querySelector("#instances-select").value = "-2";
+
+	// TODO: set all other axes that have this tag to this new value
+	updateRendering();
+
+
+
+}
+
+
+// EVENT: change mode text/emoji
+document.querySelectorAll(".mode").forEach(el => {
+	el.onclick = setMode;
+});
+
+// EVENT: type text into the text box
+document.querySelector(".text-input input").oninput = updateRendering;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function buildAxesUI() {
+
+	const axesEl = document.querySelector(".axes");
+	const controlsEl = document.querySelector(".axes .controls");
+	if (!GLOBAL.fvar || GLOBAL.fvar.axes.length === 0) {
+		controlsEl.innerHTML = "No variation axes found.";
+	}
+	else {
+
+		// const axesEl = document.querySelector(".axes");
+		// //const axesLabel = axesDiv.previousElementSibling;
+		// //const axesHeader = document.querySelector("#axes-header");
+		// const axesList = document.querySelector("#axes-list");
+
+		// const instancesSelect = document.querySelector("#instances-select");
+		// const instancesLabel = instancesSelect.previousElementSibling;
+
+		// axesHeader.innerHTML = `<div style="width: 1em; text-align: center;" class="reveal reveal-open">&#x25BC;</div>`; // Black Down-Pointing Triangle
+
+		// const reveal = axesHeader.querySelector(".reveal");
+		// reveal.onclick = function(e) {
+		// 	console.log(document.querySelector("#axes-list"));
+
+		// 	e.target.classList.toggle("reveal-open");
+		// 	console.log(axesList.style.display);
+		// 	axesList.style.display = axesList.style.display === "none" ? "block" : "none";
+
+		// 	// hide or show axis list
+		// 	console.log("toggle axis list");
+		// }
+
+		// build axes list
+		GLOBAL.fvar.axes.forEach(axis => {
+
+			// an axis element contains 2 columns: label + value; slider
+			const axisEl = document.createElement("div");
+			axisEl.classList.add("axis");
+
+			const axisData = document.createElement("div");
+			const axisSlider = document.createElement("input");
+			axisSlider.type = "range";
+			axisSlider.classList.add("slider");
+
+			axisData.innerHTML = `<span>${axis.axisTag}</span><br><input type="text" value="${axis.defaultValue}" class="text">`;
+			axisSlider.innerHTML = `<input type="slider" value="${axis.defaultValue}">`;
+
+			axisEl.append(axisData, axisSlider);
+			controlsEl.append(axisEl);
+
+			// const tag = document.createElement("span");
+			// tag.textContent = axis.axisTag;
+			// tag.title = axis.name;
+
+			const numeric = document.createElement("input");
+			numeric.type = "text";
+			numeric.value = axis.defaultValue;
+			numeric.oninput = changedAxisInput;
+
+			const slider = document.createElement("input");
+			slider.type = "range";
+			slider.min = axis.minValue;
+			slider.max = axis.maxValue;
+			slider.value = axis.defaultValue;
+			slider.step = 0.01;
+			slider.oninput = changedAxisInput;
+			axisDiv.append(tag, numeric, slider);
+			axesList.append(axisDiv);
+
+		});
+		//axesLabel.style.color = "black";
+	}
+}
+
+
 function axisValues() {
 	const fvs = {};
-	document.querySelectorAll(".axis").forEach(axisDiv => {
-		const tag = axisDiv.querySelector("label").textContent;
-		const value = axisDiv.querySelector("input[type=text]").value;
-		fvs[tag] ??= parseFloat(value); // only assign if it’s unassigned, so if tags are repeated, we only use the first
-	});
+	// if (GLOBAL.fvar && GLOBAL.fvar.axes && GLOBAL.fvar.axes.length) {
+	// 	GLOBAL.fvar.axes.forEach((axis, a) => fvs[axis.axisTag] = parseFloat(document.querySelector(`.axes .axis:nth-child(${a+1}) .numeric`).value) );
+	// }
+
+	const axisEls = document.querySelectorAll(`.axis-controls .axis`);
+	if (GLOBAL.fvar && GLOBAL.fvar.axes && GLOBAL.fvar.axes.length && axisEls.length === GLOBAL.fvar.axes.length) {
+		GLOBAL.fvar.axes.forEach((axis, a) => fvs[axis.axisTag] = parseFloat(axisEls[a].querySelector(".numeric").value) );
+	}
 	return fvs;
 }
 
@@ -387,7 +1134,8 @@ function changedInstance(e) {
 function updateRendering(figmaNodeId) {
 	const options = {
 		fvs: axisValues(),
-		text: document.querySelector("#text").value,
+		//text: document.querySelector("#text").value,
+		text: document.querySelector(".text-input input").value,
 		fontSize: parseFloat(document.querySelector(".font-size input[type=text]").value), // the numeric (text) input is the source of truth
 		//paletteId: GLOBAL.CPAL ? parseInt(document.querySelector("input[name=palette-id]:checked").value) : 0,
 	}
@@ -628,24 +1376,33 @@ onmessage = (e) => {
 			//spinner(false); // stop the spinner
 			console.log("Got init message");
 			console.log(msg);
+
 			break;
 		}
 
 		case "names": {
-			console.log("names switch")
+			console.log("names switch");
+			alert ("names")
+
 			break;
 		}
 
 		case "font-list": {
 			GLOBAL.fontList = msg.fontList;
-			GLOBAL.fontList.forEach(font => {
-				if (font.attributes.includes("text")) {
-					const option = document.createElement("option");
-					option.value = option.text = font.name;
-					fontFamilySelect.append(option);
-				}
-			});
+			// GLOBAL.fontList.forEach(font => {
+			// 	if (font.attributes.includes("text")) {
+			// 		const option = document.createElement("option");
+			// 		option.value = option.text = font.name;
+			// 		fontFamilySelect.append(option);
+			// 	}
+			// });
+
+			// new
+			populateSelects();
+
 			console.log("Got font-list message");
+
+			console.log(GLOBAL.fontList);
 			break;
 		}
 
@@ -676,6 +1433,9 @@ onmessage = (e) => {
 		case "font-fetched": {
 			console.log("Font fetched");
 
+			GLOBAL.fvar = undefined;
+			GLOBAL.CPAL = undefined;
+
 			// we can prepare the UI now
 			const axesList = document.querySelector("#axes-list");
 			axesList.innerHTML = ""; // reset axes list
@@ -692,6 +1452,38 @@ onmessage = (e) => {
 		case "font-data-delivered": {
 			spinner(false); // stop the spinner
 			updateRendering(); // update the text being edited to this font
+
+			// new
+			populateAxes();
+			populatePalettes();
+
+			console.log("msg.fontFamily");
+			console.log(msg.fontFamily);
+			GLOBAL.fontFamily = msg.fontFamily;
+			GLOBAL.fontMetadata = GLOBAL.fontList.find(font => font.name === GLOBAL.fontFamily);
+			
+			if (GLOBAL.fontMetadata.attributes.includes("emoji")) {
+				GLOBAL.mode = "emoji";
+			}
+			else if (GLOBAL.fontMetadata.attributes.includes("text")) {
+				GLOBAL.mode = "text";
+			}
+			else {
+				GLOBAL.mode = "";
+			}
+			
+			if (GLOBAL.mode !== "") {
+				document.querySelector(`.mode.${GLOBAL.mode}`).dispatchEvent(new Event("click")); // trigger a fetch of the text emoji mode
+			}
+
+			//console.log(GLOBAL.fontMetadata);
+			
+
+			//if (attributes)
+
+
+			//document.querySelector(".mode.text").dispatchEvent(new Event("click")); // trigger a fetch of the text emoji mode
+
 			break;
 		}
 
@@ -700,6 +1492,8 @@ onmessage = (e) => {
 
 			const fvar = GLOBAL.fvar = msg.fvar;
 			console.log(fvar);
+
+			//buildAxesUI();
 
 			const axesDiv = document.querySelector("#axes");
 			const axesLabel = axesDiv.previousElementSibling;
@@ -802,8 +1596,6 @@ onmessage = (e) => {
 			if (CPAL) {
 				CPAL.palettes.forEach((palette, p) => {
 
-					console.log("Creating palette " + p	);
-
 					// select (it’s display:none for now)
 					const paletteOption = document.createElement("option");
 					paletteOption.value = p;
@@ -823,6 +1615,8 @@ onmessage = (e) => {
 					if (p==0) {
 						radio.checked = true;
 					}
+
+					// EVENT: switch palettes
 					radio.onchange = updateRendering;
 
 					// create the color inputs
@@ -835,9 +1629,11 @@ onmessage = (e) => {
 						sample.dataset.paletteId = p;
 						sample.dataset.entryId = c;
 						if (c < 14) { // TODO: fix this hack
-							sample.oninput = editColor;
 							frame.append(sample);
 							paletteDiv.append(frame);
+
+							// EVENT: switch color in palette
+							sample.oninput = editColor;
 						}
 					});
 					palettesList.append(paletteDiv);
@@ -897,8 +1693,13 @@ function emojiInsertIntoContainer(container, str, svg, variant=false) {
 
 function emojiPick(e) {
 	const el = e.target.closest(".emoji-cell"); // which cell did we click on?
-	const inputEl = document.querySelector("#text");
+
+	const inputEl = document.querySelector(".text-input input")
+	//const inputEl = document.querySelector("#text");
+	
 	inputEl.value += el.dataset.string; // append the selected emoji (as a string) to the input text
+
+
 	inputEl.dispatchEvent(new Event("input")); // trigger a redraw by sending the "input" event to the <input id="#text"> element
 }
 
