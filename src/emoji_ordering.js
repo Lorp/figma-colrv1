@@ -1,7 +1,7 @@
 "use strict";
 
 // This is copied from https://github.com/googlefonts/emoji-metadata/blob/main/emoji_15_1_ordering.json
-// The only chnage is to top and tail it to make it a js module that exports the object.
+// The only change is to top and tail it to make it a js module that exports the object.
 const emojiMetadata = 
 [
   {
