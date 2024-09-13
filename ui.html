@@ -17,7 +17,7 @@
 }
 
 input {
-	font-family: "Noto Color Emoji", "Google Sans Text", system-ui, sans-serif;
+	font-family: "Google Sans Text", system-ui, sans-serif;
 	font-size: 14px;
 }
 
@@ -48,10 +48,17 @@ input {
 h2 {
 	font-size: 20px;
 	font-weight: bold;
-	text-transform: uppercase;
+	_text-transform: uppercase;
 	padding-bottom: 2px;
 	padding-top: 0;
 	margin: 0;
+}
+
+h2.emoji-group {
+	font-size: 11px;
+	text-transform: uppercase;
+	padding-top: 7px;
+	padding-bottom: 7px;
 }
 
 /* text-transform: uppercase;
@@ -254,59 +261,12 @@ h3 { /* for emoji category */
 	display: none;
 }
 
-/* .axis {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 50px 50px 1fr;
-	align-items: center;
-} */
-
-/* .axis label {
-	font-weight: bold;
-	font-size: 0.8em;
-}
-
-.axis input[type=range] {
-	width: 100%; /* shrink it from default, otherwise it ruins layout */
-} */
-
-#palettes-select {
-	display: none;
-}
-
 .palette {
 	display: grid;
 	width: 100%;
 	grid-template-columns: 20px repeat(18, 1fr);
 	column-gap: 2px;
 	align-items: center;
-}
-
-#about {
-	position: absolute;
-	left: 5px;
-	bottom: 5px;
-}
-
-#cancel {
-	position: absolute;
-	right: 5px;
-	bottom: 5px;
-}
-
-#color-picker-panel {
-	display: none;
-	position: absolute;
-	width: 100%;
-	height: 40px;
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-#color-picker {
-	width: 90%;
-	height: 25px;
 }
 
 .palette input[type=color] {
@@ -440,6 +400,7 @@ h3 { /* for emoji category */
 
 	</div>
 
+	<!-- EMOJI CONTROLS start -->
 	<div class="controls emoji">
 
 		<div class="font">
@@ -457,7 +418,6 @@ h3 { /* for emoji category */
 		</div>
 
 		<div id="emoji-picker" class="emoji-mode" style="border: 1px solid red; background-color: yellow;">
-			<!-- <input id="emoji-search" type="search" placeholder="Search emojis"> -->
 			<div id="emoji-type">
 				<div class="emoji-group-icon">schedule</div>
 				<div class="emoji-group-icon default">mood</div>
@@ -471,9 +431,7 @@ h3 { /* for emoji category */
 				<div class="emoji-group-icon">emoji_flags</div>
 			</div>
 
-			<h2 id="emoji-type-heading">
-				Heading
-			</h2>		
+			<h2 class="emoji-group">Heading</h2>		
 
 			<div id="emoji-main">
 				<div class="emoji-grid"></div>
@@ -483,9 +441,9 @@ h3 { /* for emoji category */
 	
 
 	</div>
+	<!-- EMOJI CONTROLS end -->
 
-	
-
+	<!-- TEXT CONTROLS start -->
 	<div class="text-input" style="border-top: 1px solid #ddd; padding-top: 12px;">
 		<input type="text" value="" placeholder="Text will update as you type">
 	</div>
@@ -498,101 +456,19 @@ h3 { /* for emoji category */
 		<div style="margin: 0 -4px 0 20px;">
 			<button class="button" style="margin-bottom: -4px;">
 				<span class="icon-wrap"><div class="icon">code</div></span>
-				<span style="">Show CSS</span>
+				<span>Show CSS</span>
 			</button>
 		</div>
 		
 	</div>
+	<!-- TEXT CONTROLS end -->
+
+	<div id="css"></div>
+	
 
 </div>
 
 <!-- NEW CONTROLS (end) -->
-
-<div style="display: none;">
-<div id="controls" style="display:none;">
-
-
-<!-- these must be in groups of two, to fit with the grid definition -->
-
-<div id="spinner"></div>
-<div id="intro">Figma plugin for COLRv1 fonts.<br>Project maintained at <a href="https://github.com/Lorp/figma-colrv1" target="_blank">GitHub</a>.<br>
-	<div id="mode">[ <span class="text" style="cursor: pointer; font-weight: 700;">Text</span> | <span class="emoji" style="cursor: pointer;">Emoji</span> ]</div>
-</div>
-
-<label class="text-mode">Font</label>
-<select class="text-mode" id="font-family-select"><option value="-1">select font…</option></select>
-
-<label>Text</label>
-<input id="text" value="" placeholder="your text">
-
-<label>Size</label>
-<div class="font-size">
-	<input value="144" type="text">
-	<!-- <input value="144" type="range" min="1" max="200"> -->
-	<input value="1" type="range" min="0" max="1" step="0.001">
-</div>
-	
-
-
-<label class="text-mode">Style</label>
-<select class="text-mode" id="instances-select" disabled><option value="-1">select style…</option></select>
-
-<label class="text-mode">Axes</label>
-<div class="text-mode" id="axes">
-	<div id="axes-header"></div> <!-- hidden for now -->
-	<div id="axes-list"></div>
-</div>
-
-<label class="text-mode">Palettes</label>
-<div class="text-mode" id="palettes">
-	<select id="palettes-select" disabled><option>none</option></select> <!-- hidden for now -->
-	<div id="palettes-list"></div>
-</div>
-
-<div id="_emoji-picker" class="emoji-mode">
-	<input id="emoji-search" type="search" placeholder="Search emojis">
-	<div id="_emoji-type">
-		<div class="emoji-group-icon">schedule</div>
-		<div class="emoji-group-icon default">mood</div>
-		<div class="emoji-group-icon">emoji_people</div>
-		<div class="emoji-group-icon">emoji_nature</div>
-		<div class="emoji-group-icon">emoji_food_beverage</div>
-		<div class="emoji-group-icon">emoji_transportation</div>
-		<div class="emoji-group-icon">emoji_events</div>
-		<div class="emoji-group-icon">emoji_objects</div>
-		<div class="emoji-group-icon">glyphs</div>
-		<div class="emoji-group-icon">emoji_flags</div>
-	</div>
-	
-	<div id="_emoji-main">
-		<div class="emoji-grid"></div>
-		<div class="emoji-variants-grid"></div>
-	</div>
-		
-</div>
-
-
-<label>CSS</label>
-<div style="position: relative;">
-	<div style="position: absolute; top: 1px; right: 0px;" class="copy-icon emoji-group-icon">
-		content_copy
-	</div>
-	<textarea id="css" style="width: 100%; resize: none; font-size: 75%; height: 100px;";></textarea>
-</div>
-
-<!-- <label>Upload</label>
-<div><input type="file" id="font-upload"></div> -->
-
-
-</div> <!-- end of panel -->
-
-<div id="color-picker-panel"> <!-- hidden for now -->
-	<input id="color-picker" type="color">
-	<button id="color-picker-close">Close</button>
-</div>
-
-<button id="about">About</button>
-<button id="cancel">Close</button>
 
 
 </div>
@@ -600,6 +476,9 @@ h3 { /* for emoji category */
 
 <script type="module">
 
+function EL(el) {
+
+}
 
 
 const GLOBAL = {
@@ -620,10 +499,8 @@ const GLOBAL = {
 	},
 	emojiPickerUsesSystemFont: false,
 	uiReady: true,
+	fontList: [],
 };
-	
-const fontFamilySelect = document.querySelector("#font-family-select");
-
 
 // run this when the UI is ready
 (function initUI() {
@@ -632,43 +509,26 @@ const fontFamilySelect = document.querySelector("#font-family-select");
 	setMode();
 
 	switchFontFamily();
-
 	
 })();
 
+
+function fontByName(name) {
+	return GLOBAL.fontList.find(font => name && font.name === name);
+}
+
 function switchFontFamily(e) {
 
+	const family = e ? e.target.textContent : "Noto Color Emoji";
 
-	//let family = e ? e.target.textContent : "Nabla";
-	let family = e ? e.target.textContent : "Noto Color Emoji";
+	const font = fontByName(family);
 	
 	console.log("switching font family to ", family)
-	// if (e) console.log(e.target)
-	// if (!e) {
-	// 	parent.postMessage({ pluginMessage: { type: 'fetch-font-by-name', name: "Nabla" } }, "*");
-	// }
-	// else {
-	// 	const el = e.target;
-	// 	const family = el.textContent;
-	// 	parent.postMessage({ pluginMessage: { type: 'fetch-font-by-name', name: family } }, "*");
-
-	// 	// close the dropdown menu
-	// 	el.closest(".dropdown").style.display = "none";
-	// }
-	
-
 	parent.postMessage({ pluginMessage: { type: 'fetch-font-by-name', name: family } }, "*");
 
 	// hide the dropdown menu
 	if (e)
  		document.querySelector(".font .family.select .dropdown").style.display = "none";
-
-
-	// update the family in the select element
-	//document.querySelector(".font .family.select").innerHTML = "sss";
-	//document.querySelector(".font .family.select").onclick = openSelect;
-	//document.querySelector(".font .family.select").textContent = family;
-
 
 }
 
@@ -688,118 +548,15 @@ function populateSelects() {
 
 	});
 
-	// // populate font families
-	// if (selectEl.classList.contains("family")) {
-
-		//populateFamilySelect("text");
-
-
-		console.log("Haadadad");
-		GLOBAL.fontList.forEach((font, f) => {
-			console.log(font);
-
-			//if (font.attributes.includes("text")) {
-				const familyEl = document.createElement("div");
-				familyEl.classList.add("dropdown-item")
-
-				familyEl.innerText = font.name;
-				console.log(familyEl)
-
-				// familyEl.textContent = font;
-				// familyEl.dataset.fontFamily = font;
-				// familyEl.onclick = function(e) {
-				// 	const el = e.target;
-				// 	const family = el.dataset.fontFamily;
-				// 	fontFamilySelect.value = family;
-				// 	fontFamilySelect.dispatchEvent(new Event("change"));
-				// }
-
-				// EVENT: click on a family
-				familyEl.onclick = switchFontFamily;
-
-				//familiesEl.append(familyEl);
-				//dropdownEl.append(familyEl);
-
-				const familySelectEl = font.attributes.includes("text") ? familySelectTextEl : familySelectEmojiEl;
-				familySelectEl.querySelector(".dropdown").append(familyEl);
-				console.log("Appending :)")
-
-				//familySelectEmoji
-
-			//}
-
-
-		// }
-
-
+	// populate font families
+	GLOBAL.fontList.forEach((font, f) => {
+		const familyEl = document.createElement("div");
+		familyEl.classList.add("dropdown-item")
+		familyEl.innerText = font.name;
+		familyEl.onclick = switchFontFamily;
+		const familySelectEl = font.attributes.includes("text") ? familySelectTextEl : familySelectEmojiEl;
+		familySelectEl.querySelector(".dropdown").append(familyEl);
 	});
-
-
-
-
-	const familiesEl = document.querySelector(".font .family.select");
-	console.log("familiesEl");
-	console.log(familiesEl);
-
-
-
-	// GLOBAL.fontList.forEach((font, f) => {
-	// 	console.log(font)
-	// 	const familyEl = document.createElement("div");
-
-	// 	familyEl.innerText = font.name;
-	// 	console.log(familyEl)
-
-	// 	// familyEl.textContent = font;
-	// 	// familyEl.dataset.fontFamily = font;
-	// 	// familyEl.onclick = function(e) {
-	// 	// 	const el = e.target;
-	// 	// 	const family = el.dataset.fontFamily;
-	// 	// 	fontFamilySelect.value = family;
-	// 	// 	fontFamilySelect.dispatchEvent(new Event("change"));
-	// 	// }
-
-	// 	// EVENT: click on a family
-	// 	familyEl.onclick = switchFontFamily;
-
-	// 	familiesEl.append(familyEl);
-	// });
-
-
-
-	console.log(familiesEl);
-
-}
-
-function populateFamilySelect(mode) {
-
-	// GLOBAL.fontList.forEach((font, f) => {
-	// 	console.log(font)
-
-	// 	if (font.attributes.includes(mode)) { // mode is "text" or "emoji"
-	// 		const familyEl = document.createElement("div");
-	// 		familyEl.classList.add("dropdown-item")
-
-	// 		familyEl.innerText = font.name;
-	// 		console.log(familyEl)
-
-	// 		// familyEl.textContent = font;
-	// 		// familyEl.dataset.fontFamily = font;
-	// 		// familyEl.onclick = function(e) {
-	// 		// 	const el = e.target;
-	// 		// 	const family = el.dataset.fontFamily;
-	// 		// 	fontFamilySelect.value = family;
-	// 		// 	fontFamilySelect.dispatchEvent(new Event("change"));
-	// 		// }
-
-	// 		// EVENT: click on a family
-	// 		familyEl.onclick = switchFontFamily;
-
-	// 		//familiesEl.append(familyEl);
-	// 		dropdownEl.append(familyEl);
-
-	// 	}
-	// });
 
 }
 
@@ -813,7 +570,7 @@ function openSelect(e) {
 
 function populateAxes() {
 
-	console.log("populateAxes")
+	console.log("populateAxes()")
 	const axisControlsEl = document.querySelector(".axes .axis-controls");
 	if (!GLOBAL.fvar || !GLOBAL.fvar.axes || GLOBAL.fvar.axes.length === 0) {
 		axisControlsEl.innerHTML = "No variation axes found.";
@@ -836,7 +593,11 @@ function populateAxes() {
 			numericEl.type = "text";
 			numericEl.value = value;
 			numericEl.classList.add("numeric");
+			numericEl.style.fontFamily = "Google Sans Text";
+
+			console.log(numericEl.value);
 			numericEl.disabled = true;
+			numericEl.style.textAlign = "left";
 
 			const sliderEl = document.createElement("input");
 			sliderEl.type = "range";
@@ -926,8 +687,6 @@ function populatePalettes() {
 			});
 			palettesEl.append(paletteEl);
 		});
-		// palettesSelect.disabled = false;
-		// palettesLabel.style.color = "black";
 	}
 }
 
@@ -951,16 +710,16 @@ function setMode(e) {
 		document.querySelector(".controls.emoji").style.display = "block";
 		document.querySelector(".controls.text").style.display = "none";
 		document.querySelector(".text-input input").placeholder = "Emoji will insert as you select";
+		document.querySelector(".text-input input").style.fontFamily = "Noto Color Emoji,Google Sans Text";
 		GLOBAL.mode = "emoji";
 	}
 	else if (el.classList.contains("text")) {
 		document.querySelector(".controls.text").style.display = "block";
 		document.querySelector(".controls.emoji").style.display = "none";
 		document.querySelector(".text-input input").placeholder = "Text will update as you type";
+		document.querySelector(".text-input input").style.fontFamily = "Google Sans Text";
 		GLOBAL.mode = "text";
 	}
-
-	//populateFamilySelect(GLOBAL.mode);
 
 	document.querySelector(".text-input input").value = "";
 
@@ -971,17 +730,10 @@ function axisInput(e) {
 	const numericEl = e.target.closest(".axis").querySelector(".numeric");
 	numericEl.value = e.target.value;
 
-	//console.log(value);
-
-	// const other = input.parentNode.querySelector(`input[type=${ input.type == "range" ? "text" : "range"} ]`);
-	// other.value = input.value;
 	// document.querySelector("#instances-select").value = "-2";
 
 	// TODO: set all other axes that have this tag to this new value
 	updateRendering();
-
-
-
 }
 
 
@@ -996,104 +748,10 @@ document.querySelector(".text-input input").oninput = updateRendering;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function buildAxesUI() {
-
-	const axesEl = document.querySelector(".axes");
-	const controlsEl = document.querySelector(".axes .controls");
-	if (!GLOBAL.fvar || GLOBAL.fvar.axes.length === 0) {
-		controlsEl.innerHTML = "No variation axes found.";
-	}
-	else {
-
-		// const axesEl = document.querySelector(".axes");
-		// //const axesLabel = axesDiv.previousElementSibling;
-		// //const axesHeader = document.querySelector("#axes-header");
-		// const axesList = document.querySelector("#axes-list");
-
-		// const instancesSelect = document.querySelector("#instances-select");
-		// const instancesLabel = instancesSelect.previousElementSibling;
-
-		// axesHeader.innerHTML = `<div style="width: 1em; text-align: center;" class="reveal reveal-open">&#x25BC;</div>`; // Black Down-Pointing Triangle
-
-		// const reveal = axesHeader.querySelector(".reveal");
-		// reveal.onclick = function(e) {
-		// 	console.log(document.querySelector("#axes-list"));
-
-		// 	e.target.classList.toggle("reveal-open");
-		// 	console.log(axesList.style.display);
-		// 	axesList.style.display = axesList.style.display === "none" ? "block" : "none";
-
-		// 	// hide or show axis list
-		// 	console.log("toggle axis list");
-		// }
-
-		// build axes list
-		GLOBAL.fvar.axes.forEach(axis => {
-
-			// an axis element contains 2 columns: label + value; slider
-			const axisEl = document.createElement("div");
-			axisEl.classList.add("axis");
-
-			const axisData = document.createElement("div");
-			const axisSlider = document.createElement("input");
-			axisSlider.type = "range";
-			axisSlider.classList.add("slider");
-
-			axisData.innerHTML = `<span>${axis.axisTag}</span><br><input type="text" value="${axis.defaultValue}" class="text">`;
-			axisSlider.innerHTML = `<input type="slider" value="${axis.defaultValue}">`;
-
-			axisEl.append(axisData, axisSlider);
-			controlsEl.append(axisEl);
-
-			// const tag = document.createElement("span");
-			// tag.textContent = axis.axisTag;
-			// tag.title = axis.name;
-
-			const numeric = document.createElement("input");
-			numeric.type = "text";
-			numeric.value = axis.defaultValue;
-			numeric.oninput = changedAxisInput;
-
-			const slider = document.createElement("input");
-			slider.type = "range";
-			slider.min = axis.minValue;
-			slider.max = axis.maxValue;
-			slider.value = axis.defaultValue;
-			slider.step = 0.01;
-			slider.oninput = changedAxisInput;
-			axisDiv.append(tag, numeric, slider);
-			axesList.append(axisDiv);
-
-		});
-		//axesLabel.style.color = "black";
-	}
-}
-
-
 function axisValues() {
 	const fvs = {};
-	// if (GLOBAL.fvar && GLOBAL.fvar.axes && GLOBAL.fvar.axes.length) {
-	// 	GLOBAL.fvar.axes.forEach((axis, a) => fvs[axis.axisTag] = parseFloat(document.querySelector(`.axes .axis:nth-child(${a+1}) .numeric`).value) );
-	// }
-
 	const axisEls = document.querySelectorAll(`.axis-controls .axis`);
-	if (GLOBAL.fvar && GLOBAL.fvar.axes && GLOBAL.fvar.axes.length && axisEls.length === GLOBAL.fvar.axes.length) {
+	if (GLOBAL?.fvar?.axes.length && axisEls.length === GLOBAL.fvar.axes.length) {
 		GLOBAL.fvar.axes.forEach((axis, a) => fvs[axis.axisTag] = parseFloat(axisEls[a].querySelector(".numeric").value) );
 	}
 	return fvs;
@@ -1132,17 +790,18 @@ function changedInstance(e) {
 }
 
 function updateRendering(figmaNodeId) {
+
 	const options = {
 		fvs: axisValues(),
-		//text: document.querySelector("#text").value,
 		text: document.querySelector(".text-input input").value,
-		fontSize: parseFloat(document.querySelector(".font-size input[type=text]").value), // the numeric (text) input is the source of truth
-		//paletteId: GLOBAL.CPAL ? parseInt(document.querySelector("input[name=palette-id]:checked").value) : 0,
+		fontSize: parseFloat(document.querySelector(".size.select").textContent), // the numeric (text) input is the source of truth
 	}
 	if (GLOBAL.CPAL) {
-		options.paletteId = parseInt(document.querySelector("input[name=palette-id]:checked").value);
+		const paletteEl = document.querySelector(`input[name="palette-id"]:checked`);
+		if (paletteEl) {
+			options.paletteId = paletteEl.value;
+		}
 	}
-	//console.log("parent.postMessage({ pluginMessage: { type: 'render', options: options } }, '*');")
 	parent.postMessage({ pluginMessage: { type: 'render', options: options } }, '*');
 
 	// update CSS for user to copy
@@ -1200,52 +859,6 @@ document.querySelectorAll("#mode span").forEach(span => {
 });
 
 
-let svgSpinnerSrc = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
-	<defs>
-		<path id="segment" d="m0 12 h-2 l-1 4 v12 l1 4 h4 l1 -4 v-12 l-1 -4 z"/>
-	</defs>
-	<g transform="translate(32 32)">
-		<g>
-			<use href="#segment" opacity="0.5"/>
-			<use href="#segment" transform="rotate(-30)" opacity="0.5"/>
-			<use href="#segment" transform="rotate(-60)" opacity="0.5"/>
-			<use href="#segment" transform="rotate(-90)"  opacity="0.5"/>
-			<use href="#segment" transform="rotate(-120)" opacity="0.45"/>
-			<use href="#segment" transform="rotate(-150)" opacity="0.4"/>
-			<use href="#segment" transform="rotate(-180)" opacity="0.35"/>
-			<use href="#segment" transform="rotate(-210)" opacity="0.3"/>
-			<use href="#segment" transform="rotate(-240)" opacity="0.25"/>
-			<use href="#segment" transform="rotate(-270)" opacity="0.2"/>
-			<use href="#segment" transform="rotate(-300)" opacity="0.15"/>
-			<use href="#segment" transform="rotate(-330)" opacity="0.1"/>
-			<animateTransform
-				attributeName="transform"
-				values="0;30;60;90;120;150;180;210;240;270;300;330"
-				type="rotate"
-				dur="1.5s"
-				calcMode="discrete"
-				repeatCount="indefinite"
-			/>
-		</g>
-	</g>  
-</svg>`;
-svgSpinnerSrc = "data:image/svg+xml," + svgSpinnerSrc
-	.replaceAll('"', "'")
-	.replaceAll("\n", " ")
-	.replaceAll("\t", " ")
-	.replaceAll("<", "%3c")
-	.replaceAll(">", "%3e")
-	.replaceAll("#", "%23");
-
-function spinner(startStop) {
-	if (startStop == true) {
-		document.querySelector("#spinner").innerHTML = `<img src="${svgSpinnerSrc}" width="25" height="25">`;
-	}
-	else {
-		document.querySelector("#spinner").innerHTML = "";
-	}
-}
-
 function editColor(e) {
 	const message = {
 		type: "palette-edit",
@@ -1255,27 +868,6 @@ function editColor(e) {
 	}
 	parent.postMessage({ pluginMessage: message }, "*");
 	updateRendering();
-}
-
-
-// UI event handlers
-fontFamilySelect.onchange = function () {
-
-	// load font and create a Samsa font object
-	console.log("Loading font file " + this.value);
-	spinner(true);
-	parent.postMessage({ pluginMessage: { type: 'fetch-font-by-name', name: this.value } }, "*");
-	
-}
-
-document.querySelector("#text").oninput = updateRendering;
-
-document.getElementById("about").onclick = () => {
-	alert ("This plugin is by Lorp. It is maintained at https://github.com/Lorp/figma-colrv1")
-}
-
-document.getElementById("cancel").onclick = () => {
-	parent.postMessage({ pluginMessage: { type: "cancel" } }, "*");
 }
 
 document.querySelectorAll(".font-size input").forEach(input => {
@@ -1328,39 +920,36 @@ document.querySelectorAll(".emoji-group-icon").forEach(el => {
 });
 
 
-// dragdrop
-// - handle the "dragover" event (this is needed, otherwise the "drop" event will not work!)
-document.querySelector("#spinner").ondragover = e => {
+// drag-drop a font file [NEW]
+// - assume all drag-drop fonts are text fonts, not emoji
+document.querySelector(".controls-new").ondragover = e => {
 	e.preventDefault();
-}
-// - handle the "drop" event
-document.querySelector("#spinner").ondrop = e => {
+};
+
+document.querySelector(".controls-new").ondrop = e => {
 	e.preventDefault();
+
 	const file = e.dataTransfer.files[0];
 	file.arrayBuffer().then(arrayBuffer => {
-
+		
 		// send this data to the plugin as base64
 		let uint8 = new Uint8Array(arrayBuffer);
 		let str = "";
 		for (let i=0; i<arrayBuffer.byteLength; i++) {
-			str += String.fromCharCode(uint8[i]); // this worked for short blobs but gave error "Maximum call stack size exceeded" for longer ones: "btoa(String.fromCharCode(...new Uint8Array(arrayBuffer)));"
+			str += String.fromCharCode(uint8[i]);
 		}
+
 		const message = {
 			type: "font-upload",
+			// fontData: btoa(String.fromCharCode(...new Uint8Array(arrayBuffer))), // this works for short blobs but gives error "Maximum call stack size exceeded" for longer ones, hence the for loop above
 			fontData: btoa(str), // base64 encoding of the ArrayBuffer
 		}
 		parent.postMessage({ pluginMessage: message }, "*");
 	});
-}
 
-// document.querySelector("#font-upload").onchange = function (e) {
+};
 
-// 	alert ("upload");
 
-// }
-
-// console.log("hey")
-// alert ("hey");
 
 // receive messages from the plugin code
 // https://www.figma.com/plugin-docs/creating-ui
@@ -1373,10 +962,8 @@ onmessage = (e) => {
 	switch (msg.type) {
 
 		case "init": {
-			//spinner(false); // stop the spinner
 			console.log("Got init message");
 			console.log(msg);
-
 			break;
 		}
 
@@ -1388,21 +975,8 @@ onmessage = (e) => {
 		}
 
 		case "font-list": {
-			GLOBAL.fontList = msg.fontList;
-			// GLOBAL.fontList.forEach(font => {
-			// 	if (font.attributes.includes("text")) {
-			// 		const option = document.createElement("option");
-			// 		option.value = option.text = font.name;
-			// 		fontFamilySelect.append(option);
-			// 	}
-			// });
-
-			// new
+			GLOBAL.fontList.push(...msg.fontList);
 			populateSelects();
-
-			console.log("Got font-list message");
-
-			console.log(GLOBAL.fontList);
 			break;
 		}
 
@@ -1437,8 +1011,6 @@ onmessage = (e) => {
 			GLOBAL.CPAL = undefined;
 
 			// we can prepare the UI now
-			const axesList = document.querySelector("#axes-list");
-			axesList.innerHTML = ""; // reset axes list
 
 			// emoji handling: we need to import the emoji glyphs to show in the picker
 			// - the response will be handled in onmessage for "emoji-svgs"
@@ -1450,7 +1022,6 @@ onmessage = (e) => {
 		}
 
 		case "font-data-delivered": {
-			spinner(false); // stop the spinner
 			updateRendering(); // update the text being edited to this font
 
 			// new
@@ -1476,50 +1047,14 @@ onmessage = (e) => {
 				document.querySelector(`.mode.${GLOBAL.mode}`).dispatchEvent(new Event("click")); // trigger a fetch of the text emoji mode
 			}
 
-			//console.log(GLOBAL.fontMetadata);
-			
-
-			//if (attributes)
-
-
-			//document.querySelector(".mode.text").dispatchEvent(new Event("click")); // trigger a fetch of the text emoji mode
-
 			break;
 		}
 
 		case "fvar": {
-			console.log("got fvar message");
-
-			const fvar = GLOBAL.fvar = msg.fvar;
-			console.log(fvar);
-
-			//buildAxesUI();
-
-			const axesDiv = document.querySelector("#axes");
-			const axesLabel = axesDiv.previousElementSibling;
-			const axesHeader = document.querySelector("#axes-header");
-			const axesList = document.querySelector("#axes-list");
-
-			const instancesSelect = document.querySelector("#instances-select");
-			const instancesLabel = instancesSelect.previousElementSibling;
-
-			axesHeader.innerHTML = `<div style="width: 1em; text-align: center;" class="reveal reveal-open">&#x25BC;</div>`; // Black Down-Pointing Triangle
-
-			const reveal = axesHeader.querySelector(".reveal");
-			reveal.onclick = function(e) {
-				console.log(document.querySelector("#axes-list"));
-
-				e.target.classList.toggle("reveal-open");
-				console.log(axesList.style.display);
-				axesList.style.display = axesList.style.display === "none" ? "block" : "none";
-
-				// hide or show axis list
-				console.log("toggle axis list");
-			}
-
 			// build axes list
-			if (fvar && fvar.axes) {
-				fvar.axes.forEach(axis => {
+			GLOBAL.fvar = msg.fvar;
+			if (GLOBAL.fvar?.axes) {
+				GLOBAL.fvar.axes.forEach(axis => {
 					const axisDiv = document.createElement("div");
 					axisDiv.classList.add("axis");
 
@@ -1539,114 +1074,18 @@ onmessage = (e) => {
 					slider.value = axis.defaultValue;
 					slider.step = 0.01;
 					slider.oninput = changedAxisInput;
+
 					axisDiv.append(tag, numeric, slider);
 					axesList.append(axisDiv);
 
 				});
-				axesLabel.style.color = "black";
 			}
-			else {
-				axesLabel.style.color = "var(--grey-inactive-label)";
-			}
-
-			// build instances, include Default even if static
-			instancesSelect.innerText = "";
-			let instanceOption = document.createElement("option");
-			instanceOption.value = "-1";
-			instanceOption.innerText = "Default";
-			instancesSelect.append(instanceOption);
-			instancesSelect.onchange = changedInstance;
-
-
-			if (fvar && fvar.instances) {
-				fvar.instances.forEach((instance, i) => {
-					instanceOption = document.createElement("option");
-					instanceOption.value = i;
-					instanceOption.innerText = instance.name;
-					instancesSelect.append(instanceOption);
-				})
-
-				instanceOption = document.createElement("option");
-				instanceOption.value = "-2";
-				instanceOption.innerText = "Custom";
-				instancesSelect.append(instanceOption);
-			}
-
-			instancesLabel.style.color = "black";
-			instancesSelect.disabled = false;
 
 			break;
 		}
 
 		case "CPAL": {
-			// populate COLR info
-
-			// list palettes
-			console.log("got CPAL message");
-			console.log(msg.CPAL);
-			const CPAL = GLOBAL.CPAL = msg.CPAL;
-			const palettesSelect = document.querySelector("#palettes-select");
-			const palettesList = document.querySelector("#palettes-list");
-
-			const palettesDiv = document.querySelector("#palettes");
-			const palettesLabel = palettesDiv.previousElementSibling;
-
-			palettesSelect.innerHTML = "";
-			palettesList.innerHTML = "";
-			if (CPAL) {
-				CPAL.palettes.forEach((palette, p) => {
-
-					// select (it’s display:none for now)
-					const paletteOption = document.createElement("option");
-					paletteOption.value = p;
-					paletteOption.innerText = palette.name || `#${p}`;
-					palettesSelect.append(paletteOption);
-
-					// list: each palette div needs n children for the grid to work
-					const paletteDiv = document.createElement("div");
-					paletteDiv.classList.add("palette");
-
-					// create each radio button
-					const radio = document.createElement("input");
-					radio.type = "radio";
-					radio.name = "palette-id";
-					radio.value = p;
-					paletteDiv.append(radio);
-					if (p==0) {
-						radio.checked = true;
-					}
-
-					// EVENT: switch palettes
-					radio.onchange = updateRendering;
-
-					// create the color inputs
-					palette.colors.forEach((color, c) => {
-						const frame = document.createElement("div");
-						frame.classList.add("frame");
-						const sample = document.createElement("input");
-						sample.type = "color";
-						sample.value = CPAL.hexColors[color];
-						sample.dataset.paletteId = p;
-						sample.dataset.entryId = c;
-						if (c < 14) { // TODO: fix this hack
-							frame.append(sample);
-							paletteDiv.append(frame);
-
-							// EVENT: switch color in palette
-							sample.oninput = editColor;
-						}
-					});
-					palettesList.append(paletteDiv);
-				});
-				palettesSelect.disabled = false;
-				palettesLabel.style.color = "black";
-			}
-			else {
-				palettesSelect.innerHTML = "<option>none</option>";
-				palettesSelect.disabled = true;
-				palettesLabel.style.color = "var(--grey-inactive-label)";
-			}
-
+			GLOBAL.CPAL = msg.CPAL;
 			break;
 		}
 
@@ -1693,13 +1132,8 @@ function emojiInsertIntoContainer(container, str, svg, variant=false) {
 
 function emojiPick(e) {
 	const el = e.target.closest(".emoji-cell"); // which cell did we click on?
-
 	const inputEl = document.querySelector(".text-input input")
-	//const inputEl = document.querySelector("#text");
-	
 	inputEl.value += el.dataset.string; // append the selected emoji (as a string) to the input text
-
-
 	inputEl.dispatchEvent(new Event("input")); // trigger a redraw by sending the "input" event to the <input id="#text"> element
 }
 
@@ -1757,6 +1191,9 @@ function emojiChangeGroup(e) {
 	// - the response will be a message of type "emoji-svgs", with string keys and svg values
 	const message = { type: "fetch-emojis", emojiType: emojiGroupId };
 	parent.postMessage({ pluginMessage: message }, "*");
+
+	// set the group title
+	document.querySelector("h2.emoji-group").innerText = GLOBAL.emojiMetadata[emojiGroupId].group;
 
 	// update icon color/style
 	document.querySelectorAll(".emoji-group-icon").forEach(el_ => {
