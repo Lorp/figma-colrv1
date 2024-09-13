@@ -1,12 +1,14 @@
 "use strict";
 
 const fonts = [
+	/*
 	{
 		name: "Bitcount",
 		attributes: ["text", "color"],
-		website: "https://www.harbortype.com/fonts/.../",
+		website: "https://github.com/petrvanblokland/TYPETR-Bitcount",
 		url: "https://www.axis-praxis.org/samsa/fonts/figma/BitcountGridSingle-Color.woff2",
 	},
+	*/
 	{
 		name: "Bitter",
 		attributes: ["text"],
@@ -26,10 +28,10 @@ const fonts = [
 		url: "https://raw.githubusercontent.com/google/fonts/main/ofl/blakaink/BlakaInk-Regular.ttf",
 	},
 	{
-		name: "Bungee Color",
+		name: "Bungee Tint",
 		attributes: ["text", "color"],
 		website: "https://djr.com/bungee",
-		url: "https://raw.githubusercontent.com/google/fonts/main/ofl/bungeecolor/BungeeColor-Regular.ttf",
+		url: "https://raw.githubusercontent.com/google/fonts/main/ofl/bungeetint/BungeeTint-Regular.ttf",
 	},
 	{
 		name: "Bungee Spice",
@@ -48,6 +50,12 @@ const fonts = [
 		attributes: ["text", "color"],
 		website: "",
 		url: "https://www.axis-praxis.org/samsa/fonts/figma/GimmeConstructoVariablev03VF.woff2",
+	},
+	{
+		name: "Kalnia Glaze",
+		attributes: ["text", "color"],
+		website: "https://fonts.google.com/specimen/Kalnia+Glaze",
+		url: "https://raw.githubusercontent.com/google/fonts/main/ofl/kalniaglaze/KalniaGlaze%5Bwdth%2Cwght%5D.ttf",
 	},
 	{
 		name: "Nabla",
