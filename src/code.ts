@@ -11,7 +11,7 @@
 // https://www.figma.com/plugin-docs/libraries-and-bundling/
 
 
-
+const { CONFIG } = require("./config.js");
 const { fonts } = require("./fonts.js"); // list of fonts, some embedded as base64
 const { emojiMetadata } = require("./emoji_ordering.js"); // emoji definitions and ordering
 const { SamsaFont, SamsaGlyph, SamsaInstance, SamsaBuffer, SAMSAGLOBAL } = require ("samsa-core");
