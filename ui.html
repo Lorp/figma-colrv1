@@ -16,9 +16,10 @@
 	background-color: var(--grey-background);
 }
 
-input {
+.controls input {
 	font-family: "Google Sans Text", system-ui, sans-serif;
-	font-size: 14px;
+	border: none;
+	background-color: transparent;
 }
 
 .emoji-group-icon {
@@ -103,48 +104,50 @@ h2.emoji-group {
 	user-select: none;
 }
 
-.font .size {
-	display: grid;
-	width: 100%;
-	align-items: center;
-}
-
-.font, .axis {
+.font {
 	display: grid;
 	grid-template-columns: 70px 1fr;
 	width: 100%;
 	align-items: center;
+	.size {
+		display: grid;
+		width: 100%;
+		align-items: center;
+	}
+}
+
+.axis {
+	display: grid;
+	grid-template-columns: 70px 1fr;
+	width: 100%;
+	align-items: center;
+	.tag {
+		cursor: pointer;
+	}
+	.numeric {
+		width: 100%;
+		_background-color: white;
+		border: none;
+	}
+	.slider {
+		width: 100%;
+		vertical-align: middle;
+	}
 }
 
 .select {
 	position: relative;
-}
-
-.dropdown {
-	position: absolute;
-	display: none;
-	top: 1em;
-	background-color: white;
-	line-height: 1.5em;
-	border: solid lightgrey;
-	border-width: 0 1px 1px 1px;
-	z-index: 10;
-	padding: 0.3em;
-}
-
-.axis .tag {
-	cursor: pointer;
-}
-
-.axis .numeric {
-	width: 100%;
-	_background-color: white;
-	border: none;
-}
-
-.axis .slider {
-	width: 100%;
-	vertical-align: middle;
+	.dropdown {
+		position: absolute;
+		display: none;
+		top: 1em;
+		background-color: white;
+		line-height: 1.5em;
+		border: solid lightgrey;
+		border-width: 0 1px 1px 1px;
+		z-index: 10;
+		padding: 0.3em;
+	}
 }
 
 .style {
@@ -152,50 +155,17 @@ h2.emoji-group {
 }
 
 .icon-wrap {
-  position: relative;
-  padding-right: 2em;
+	position: relative;
+	padding-right: 2em;
 }
 
 .controls.emoji {
-	_display: none;
 	background-color: pink;
-}
-
-.font-select {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 15% 20px 1fr 20px;
-	font-size: 12px;
-	padding: 6px 0;
-}
-
-.font-select .icon {
-	_position: relative;
-	_top: 6px;
-	_font-family: "Material Symbols Outlined";
-	font-size: 24px;
-	_padding-right: 5px;
-}
-
-.font-select .size {
-	position: relative;
-}
-
-.font-select .font-family {
-	position: relative;
 }
 
 .dropdown-icon {
 	position: absolute;
 	text-align: right;
-}
-
-.font-style {
-	width: 100%;
-}
-
-.axes {
-
 }
 
 .palettes {
@@ -228,6 +198,7 @@ h3 { /* for emoji category */
 }
 
 .text-input {
+	margin-top: 0.8em;
 	width: 100%;
 }
 
@@ -237,14 +208,6 @@ h3 { /* for emoji category */
 	border-radius: 5em;
 	border: none;
 	padding: 0.8em;
-}
-
-#controls {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 1fr 3fr;
-	position: relative;
-	row-gap: 7px;
 }
 
 .reveal {
@@ -257,34 +220,30 @@ h3 { /* for emoji category */
 	transform: rotate(0deg);
 }
 
-#axes-header {
-	display: none;
-}
-
 .palette {
 	display: grid;
 	width: 100%;
 	grid-template-columns: 20px repeat(18, 1fr);
 	column-gap: 2px;
 	align-items: center;
-}
 
-.palette input[type=color] {
-	width: 40px;
-	height: 40px;
-	padding: 0;
-	border: none;
-	position: absolute;
-	left: -10px;
-	top: -10px;
-}
+	input[type=color] {
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		border: none;
+		position: absolute;
+		left: -10px;
+		top: -10px;
+	}
 
-.palette .frame {
-	width: 13px;
-	height: 13px;
-	border: 1px solid var(--grey-outline);
-	position: relative;
-	overflow: hidden;
+	.frame {
+		width: 13px;
+		height: 13px;
+		border: 1px solid var(--grey-outline);
+		position: relative;
+		overflow: hidden;
+	}
 }
 
 #emoji-picker {
@@ -316,13 +275,12 @@ h3 { /* for emoji category */
 
 #emoji-main {
 	color: var(--emoji-grey);
-}
-
-#emoji-main label {
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 0.7em;
-	margin-left: 0.4em;
+	label {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 0.7em;
+		margin-left: 0.4em;
+	}
 }
 
 .emoji-grid {
@@ -370,46 +328,16 @@ h3 { /* for emoji category */
 		<div class="mode text"><span class="icon-wrap"><div class="icon">insert_text</div></span> Text</div>
 	</div>
 
-	<div class="controls text">
-
-		<div class="font">
-
-			<div class="size select">12px</div><div class="icon">arrow_drop_down</div>
-	
-			<div class="family select">Select font…</div>
-	
-			<div class="style select">Select style…</div>
-	
-		</div>
-	
-		<div class="axes">
-			<h2><span class="icon-wrap"><div class="icon" style="top: -3px; font-size: 1.625em;">custom_typography</div></span> Axes</h2>
-			<div class="axis-controls">
-				<!-- <div class="axis"> -->
-				<!-- <div class="axis"> -->
-			</div>
-		</div>
-
-		<div class="palettes">
-			<h2><span class="icon-wrap"><div class="icon">palette</div></span> Palettes</h2>
-			<div class="palette-controls">
-				<!-- <div class="palette"> -->
-				<!-- <div class="palette"> -->
-			</div>
-		</div>
-
-	</div>
-
 	<!-- EMOJI CONTROLS start -->
 	<div class="controls emoji">
 
 		<div class="font">
 
-			<div class="size select">12px</div><div class="icon">arrow_drop_down</div>
-	
-			<div class="family select">Select font…</div>
-	
-			<div class="style select">Select style…</div>
+			<!-- <div class="size">12px</div><div class="icon">arrow_drop_down</div> -->
+
+			<div class="size select"><input class="current" value="12px"><div class="dropdown"></div></div>
+			<div class="family select"><input class="current" readonly><div class="dropdown"></div></div>
+			<div class="style select"><input class="current" readonly><div class="dropdown"></div></div>
 	
 		</div>
 	
@@ -444,7 +372,39 @@ h3 { /* for emoji category */
 	<!-- EMOJI CONTROLS end -->
 
 	<!-- TEXT CONTROLS start -->
-	<div class="text-input" style="border-top: 1px solid #ddd; padding-top: 12px;">
+	<div class="controls text">
+
+		<div class="font">
+
+			<!-- <div class="size">12px</div><div class="icon">arrow_drop_down</div> -->
+			<div class="size select"><input class="current" value="12px"><div class="dropdown"></div></div>
+			<div class="family select"><input class="current" readonly><div class="dropdown"></div></div>
+			<div class="style select"><input class="current" readonly><div class="dropdown"></div></div>
+
+		</div>
+	
+		<div class="axes">
+			<h2><span class="icon-wrap"><div class="icon" style="top: -3px; font-size: 1.625em;">custom_typography</div></span> Axes</h2>
+			<div class="axis-controls">
+				<!-- <div class="axis"> -->
+				<!-- <div class="axis"> -->
+			</div>
+		</div>
+
+		<div class="palettes">
+			<h2><span class="icon-wrap"><div class="icon">palette</div></span> Palettes</h2>
+			<div class="palette-controls">
+				<!-- <div class="palette"> -->
+				<!-- <div class="palette"> -->
+			</div>
+		</div>
+
+	</div>
+	<!-- TEXT CONTROLS end -->
+
+
+	<!-- joint controls start -->
+	<div class="text-input">
 		<input type="text" value="" placeholder="Text will update as you type">
 	</div>
 
@@ -461,7 +421,7 @@ h3 { /* for emoji category */
 		</div>
 		
 	</div>
-	<!-- TEXT CONTROLS end -->
+	<!-- joint controls end -->
 
 	<div id="css"></div>
 	
@@ -476,10 +436,29 @@ h3 { /* for emoji category */
 
 <script type="module">
 
-function EL(el) {
-
+function Q (selector, root=document) {
+	return root.querySelector(selector);
 }
 
+function QA (selector, root=document) {
+	return root.querySelectorAll(selector);
+}
+
+function EL (tag, attrs, props={}, style={}) {
+	let el = document.createElement(tag);
+	el.attr(attrs);
+	for (const prop in props)
+		el[prop] = props[prop];
+	for (const prop in style)
+		el.style[prop] = style[prop];
+	return el;
+}
+
+Element.prototype.attr = function(attrs) {
+	for (const key in attrs) {
+		this.setAttributeNS(null, key, attrs[key]);
+	}
+}
 
 const GLOBAL = {
 	emojiSVGs: {}, // store all the svgs: should be emptied on font change
@@ -500,78 +479,184 @@ const GLOBAL = {
 	emojiPickerUsesSystemFont: false,
 	uiReady: true,
 	fontList: [],
+	fontSizes: [6,7,8,9,10,11,12,14,16,18,20,24,28,36,48,60,72],
+	axisDefaultOverrides: { wdth: 100, wght: 400, ital: 0, opsz: 12 },
 };
 
 // run this when the UI is ready
-(function initUI() {
+function initUI() {
 	populateAxes();
 	populatePalettes();
-	setMode();
-
-	switchFontFamily();
-	
-})();
+	changeMode();
+	changeFontFamily();
+}
 
 
 function fontByName(name) {
 	return GLOBAL.fontList.find(font => name && font.name === name);
 }
 
-function switchFontFamily(e) {
+function changeFontSize(e) {
 
-	const family = e ? e.target.textContent : "Noto Color Emoji";
-
-	const font = fontByName(family);
-	
-	console.log("switching font family to ", family)
-	parent.postMessage({ pluginMessage: { type: 'fetch-font-by-name', name: family } }, "*");
-
-	// hide the dropdown menu
-	if (e)
- 		document.querySelector(".font .family.select .dropdown").style.display = "none";
-
+	const inputEl = e.target.closest(".select").querySelector(".current");
+	if (e.target.classList.contains("dropdown-item")) {
+		inputEl.value = e.target.textContent;
+	}
+	else if (e.target.classList.contains("current")) {
+		inputEl.value = parseFloat(inputEl.value) + "px"; // sanitize input in case it was typed by user
+	}
+	Q(".controls.text .font .size .dropdown").style.display = "none";
+	updateRendering();
 }
 
+function changePaletteColor(e) {
+	const message = {
+		type: "palette-edit",
+		paletteId: e.target.dataset.paletteId,
+		entryId: e.target.dataset.entryId,
+		color: e.target.value,
+	}
+	parent.postMessage({ pluginMessage: message }, "*");
+	updateRendering();
+}
+
+function changeMode(e) {
+
+	//alert ("mode clicked")
+	const el = e ? e.target.closest(".mode") : document.querySelector(".mode");
+	GLOBAL.mode = el.classList.contains("emoji") ? "emoji" : "text";
+	console.log("We set mode to ", GLOBAL.mode);
+	console.log(el);
+
+	// set underline color (transparent or blue) that denotes the selected mode
+	el.parentNode.querySelectorAll(".mode").forEach(el_ => el_.style.borderColor = (el === el_) ? "var(--blue-active)" : "transparent" );
+
+	// show/hide the relevant controls
+	if (el.classList.contains("emoji")) {
+		Q(".controls.emoji").style.display = "block";
+		Q(".controls.text").style.display = "none";
+		Q(".text-input input").placeholder = "Emoji will insert as you select";
+		Q(".text-input input").style.fontFamily = "Noto Color Emoji,Google Sans Text";
+	}
+	else if (el.classList.contains("text")) {
+		Q(".controls.text").style.display = "block";
+		Q(".controls.emoji").style.display = "none";
+		Q(".text-input input").placeholder = "Text will update as you type";
+		Q(".text-input input").style.fontFamily = "Google Sans Text";
+	}
+
+	Q(".text-input input").value = "";
+
+	// we should set the default family for the mode here
+	changeFontFamily();
+}
+
+function changeFontFamily(e) {
+
+	let family = "";
+
+	// if the user has picked a font, we get its name
+	if (e) {
+		family = e.target.textContent;
+	}
+	// else we need a default font for this mode, so filter fonts by mode (emoji or text) then pick the top priority font
+	else {
+		const filteredFonts = GLOBAL.fontList.filter(font => font.attributes.includes(GLOBAL.mode));
+		filteredFonts.sort((a, b) => {
+			const aPri = a.priority || 0;
+			const bPri = b.priority || 0;
+			if (aPri < bPri) return 1;
+			if (aPri > bPri) return -1;
+			if (a.name < b.name) return -1;
+			if (a.name > b.name) return 1;
+			return 0;
+		});
+		const font = filteredFonts[0];
+		family = filteredFonts[0].name;
+	}
+		
+	parent.postMessage({ pluginMessage: { type: 'fetch-font-by-name', name: family } }, "*");
+
+	// set the current font family
+	if (GLOBAL.mode === "emoji") {
+		Q(".controls.emoji .font .family.select .current").value = family;
+	}
+	else {
+		Q(".controls.text .font .family.select .current").value = family;
+	}
+	
+	if (e)
+		e.target.closest(".dropdown").style.display = "none"; // hide the dropdown menu
+}
+
+function changeInstance(e) {
+
+	console.log("changeInstance", e.target.textContent);
+
+	const selectedInstance = GLOBAL.fvar.instances.find(instance => instance.name === e.target.textContent);
+	console.log(selectedInstance);
+
+	const axisEls = QA(".axes .axis", e.target.closest(".controls"));
+	if (axisEls.length === selectedInstance.coordinates.length) {
+		selectedInstance.coordinates.forEach((coord, a) => axisEls[a].querySelector(".numeric").value = axisEls[a].querySelector(".slider").value = coord );
+
+		console.log(e.target.closest(".select"));
+		console.log(e.target.closest(".select").querySelector(".current"));
+
+		//e.target.closest(".select").querySelector(".current").textContent = e.target.textContent; // update name
+		e.target.closest(".select").querySelector(".current").value = e.target.textContent; // update name
+		e.target.closest(".dropdown").style.display = "none"; // hide dropdown
+		updateRendering();
+	}
+}
+
+// for the elements of class "select", this
+// - populates the "dropdown" child element
+// - adds a click handler for the "current" child element
+// - does NOT populate the "current" child element with any content
 function populateSelects() {
 
 	const familySelectEmojiEl = document.querySelector(".controls.emoji .font .family.select");
 	const familySelectTextEl = document.querySelector(".controls.text .font .family.select");
 
+	// add an event handler for each select element
+	QA(".select").forEach(selectEl => {
+		const currentEl = Q(".current", selectEl);
+		if (currentEl) {
+			currentEl.onclick = e => {
+				const dropDownEl = e.target.closest(".select")?.querySelector(".dropdown");
+				if (dropDownEl) {
+					dropDownEl.style.display = "block"; // display the dropdown
+					dropDownEl.onmouseleave = () => dropDownEl.style.display = "none"; // hide the dropdown
+				}				
+			};
+		}
 
-	// add a dropdown div to each select element
-	document.querySelectorAll(".select").forEach(selectEl => {
-		const dropdownEl = document.createElement("div");
-		dropdownEl.classList.add("dropdown");
-
-		selectEl.append(dropdownEl);
-		selectEl.onclick = openSelect;
-
+		if (selectEl.classList.contains("size")) {
+			selectEl.querySelector(".current").onchange = changeFontSize; // don’t use blur event, as that interferes with the click event of the dropdown
+			GLOBAL.fontSizes.forEach(size => {
+				const sizeChoiceEl = EL("div", {class: "dropdown-item"}, {textContent: size + "px", onclick: changeFontSize});
+				const dropDownEl = Q(".dropdown", selectEl);
+				if (dropDownEl)
+					dropDownEl.append(sizeChoiceEl);
+			});
+		}
 	});
 
-	// populate font families
+	// populate the dropdown with initial font families
 	GLOBAL.fontList.forEach((font, f) => {
-		const familyEl = document.createElement("div");
-		familyEl.classList.add("dropdown-item")
-		familyEl.innerText = font.name;
-		familyEl.onclick = switchFontFamily;
-		const familySelectEl = font.attributes.includes("text") ? familySelectTextEl : familySelectEmojiEl;
+		const familyEl = EL("div", {class: "dropdown-item"}, {textContent: font.name, onclick: changeFontFamily});
+		const familySelectEl = font.attributes.includes("text") ? familySelectTextEl : familySelectEmojiEl; // decide which parent (emoji or text) to append this family to
 		familySelectEl.querySelector(".dropdown").append(familyEl);
 	});
 
-}
-
-function openSelect(e) {
-
-	const dropDownEl = e.target.querySelector(".dropdown");
-	if (dropDownEl) {
-		dropDownEl.style.display = dropDownEl.style.display === "block" ? "none" : "block";
-	}
+	changeMode();
 }
 
 function populateAxes() {
 
 	console.log("populateAxes()")
-	const axisControlsEl = document.querySelector(".axes .axis-controls");
+	const axisControlsEl = Q(".axes .axis-controls");
 	if (!GLOBAL.fvar || !GLOBAL.fvar.axes || GLOBAL.fvar.axes.length === 0) {
 		axisControlsEl.innerHTML = "No variation axes found.";
 	}
@@ -579,39 +664,42 @@ function populateAxes() {
 		axisControlsEl.innerHTML = "";
 		GLOBAL.fvar.axes.forEach(axis => {
 			const value = axisDefaultOverride(axis);
-			const axisEl = document.createElement("div");
+			const axisEl = EL("div", {class: "axis"});
 			axisEl.style.width = "100%";
-			const leftEl = document.createElement("div");
-			const rightEl = document.createElement("div");
+			const leftEl = EL("div");
+			const rightEl = EL("div");
 
-			const tagEl = document.createElement("div");
-			tagEl.textContent = axis.axisTag;
-			tagEl.title = axis.name;
-			tagEl.classList.add("tag");
-
-			const numericEl = document.createElement("input");
-			numericEl.type = "text";
-			numericEl.value = value;
-			numericEl.classList.add("numeric");
-			numericEl.style.fontFamily = "Google Sans Text";
-
-			console.log(numericEl.value);
-			numericEl.disabled = true;
-			numericEl.style.textAlign = "left";
-
-			const sliderEl = document.createElement("input");
-			sliderEl.type = "range";
-			sliderEl.classList.add("slider");
-			sliderEl.min = axis.minValue;
-			sliderEl.max = axis.maxValue;
-			sliderEl.value = value;
-			//sliderEl.style.verticalAlign = "middle";
-			sliderEl.oninput = axisInput;
+			const tagEl = EL("div", {
+				title: axis.name,
+				class: "tag",
+			}, {
+				textContent: axis.axisTag,
+			});
+			const numericEl = EL("input", {
+				type: "text",
+				class: "numeric",
+				value: value,
+			}, {
+				oninput: axisInput,
+				readonly: true,
+			}, {
+				fontFamily: "Google Sans Text",
+				textAlign: "left",
+			});
+			const sliderEl = EL("input", {
+				type: "range",
+				class: "slider",
+				min: axis.minValue,
+				max: axis.maxValue,
+				step: 0.01,
+				value: value,
+			}, {
+				oninput: axisInput,
+			});
 
 			leftEl.append(tagEl, numericEl);
 			rightEl.append(sliderEl);
 			axisEl.append(leftEl, rightEl);
-			axisEl.classList.add("axis");
 			axisControlsEl.append(axisEl);
 		});
 	}
@@ -622,25 +710,34 @@ function clamp(value, min, max) {
 }
 
 function axisDefaultOverride(axis) {
-	const overrides = {
-		wdth: 100,
-		wght: 400,
-		ital: 0,
-		opsz: 12,
-	};
-
-	if (overrides[axis.axisTag] !== undefined) {
-		return clamp(overrides[axis.axisTag], axis.minValue, axis.maxValue);
+	if (GLOBAL.axisDefaultOverrides[axis.axisTag] !== undefined) {
+		return clamp(GLOBAL.axisDefaultOverrides[axis.axisTag], axis.minValue, axis.maxValue);
 	}
 	else {
 		return axis.defaultValue;
 	}
 }
 
+function populateInstances() {
+	// populate instances from fvar table
+	const instancesSelect = Q(`.controls.${GLOBAL.mode} .style.select`);
+	instancesSelect.querySelector(".current").value = "Default";
+	instancesSelect.querySelector(".dropdown").innerHTML = "";
+	if (GLOBAL.fvar?.instances) {
+		GLOBAL.fvar.instances.forEach((instance, i) => {
+			const instanceEl = document.createElement("div");
+			instanceEl.classList.add("dropdown-item");
+			instanceEl.textContent = instance.name;
+			instanceEl.onclick = changeInstance;
+			instancesSelect.querySelector(".dropdown").append(instanceEl);
+		});
+	}
+}
+
 function populatePalettes() {
 
 	console.log("populatePalettes()")
-	const palettesEl = document.querySelector(".palettes .palette-controls");
+	const palettesEl = Q(".palettes .palette-controls");
 	console.log(palettesEl);
 	console.log(GLOBAL.CPAL);
 	if (!GLOBAL.CPAL || !GLOBAL.CPAL.palettes || GLOBAL.CPAL.palettes.length === 0) {
@@ -681,7 +778,7 @@ function populatePalettes() {
 					paletteEl.append(frame);
 
 					// EVENT: edit color in palette
-					sample.oninput = editColor;
+					sample.oninput = changePaletteColor;
 				}
 				sample.title = `Palette ${p}, entry ${c}: ${GLOBAL.CPAL.hexColors[color]}`;
 			});
@@ -690,40 +787,6 @@ function populatePalettes() {
 	}
 }
 
-function setMode(e) {
-
-	//alert ("mode clicked")
-	const el = e ? e.target : document.querySelector(".mode");
-
-	// flip the underline that denotes the selected mode
-	el.parentNode.querySelectorAll(".mode").forEach(el_ => el_.style.borderColor = (el === el_) ? "var(--blue-active)" : "transparent" ); // reset all to transparent
-	//el.style.borderColor = ;
-
-	console.log(GLOBAL.fvar)
-	
-	// show/hide the relevant controls
-	console.log('in setmode()');
-	console.log(el);
-
-	GLOBAL.mode = "";
-	if (el.classList.contains("emoji")) {
-		document.querySelector(".controls.emoji").style.display = "block";
-		document.querySelector(".controls.text").style.display = "none";
-		document.querySelector(".text-input input").placeholder = "Emoji will insert as you select";
-		document.querySelector(".text-input input").style.fontFamily = "Noto Color Emoji,Google Sans Text";
-		GLOBAL.mode = "emoji";
-	}
-	else if (el.classList.contains("text")) {
-		document.querySelector(".controls.text").style.display = "block";
-		document.querySelector(".controls.emoji").style.display = "none";
-		document.querySelector(".text-input input").placeholder = "Text will update as you type";
-		document.querySelector(".text-input input").style.fontFamily = "Google Sans Text";
-		GLOBAL.mode = "text";
-	}
-
-	document.querySelector(".text-input input").value = "";
-
-}
 
 function axisInput(e) {
 	const input = e.target;
@@ -738,63 +801,33 @@ function axisInput(e) {
 
 
 // EVENT: change mode text/emoji
-document.querySelectorAll(".mode").forEach(el => {
-	el.onclick = setMode;
+QA(".mode").forEach(el => {
+	el.onclick = changeMode;
 });
 
 // EVENT: type text into the text box
-document.querySelector(".text-input input").oninput = updateRendering;
+Q(".text-input input").oninput = updateRendering;
 
 
 
-
-function axisValues() {
+function getCurrentAxisValues() {
 	const fvs = {};
-	const axisEls = document.querySelectorAll(`.axis-controls .axis`);
+	const axisEls = QA(`.axis-controls .axis`);
 	if (GLOBAL?.fvar?.axes.length && axisEls.length === GLOBAL.fvar.axes.length) {
-		GLOBAL.fvar.axes.forEach((axis, a) => fvs[axis.axisTag] = parseFloat(axisEls[a].querySelector(".numeric").value) );
+		GLOBAL.fvar.axes.forEach((axis, a) => fvs[axis.axisTag] = parseFloat(Q(".numeric", axisEls[a]).value) );
 	}
 	return fvs;
 }
 
-function changedAxisInput(e) {
-	const input = e.target;
-	const other = input.parentNode.querySelector(`input[type=${ input.type == "range" ? "text" : "range"} ]`);
-	other.value = input.value;
-	document.querySelector("#instances-select").value = "-2";
-
-	// TODO: set all other axes that have this tag to this new value
-	updateRendering();
-}
-
-function changedInstance(e) {
-
-	const selection = parseInt(e.target.value);
-	if (selection >= -1) { // default (-1) and the named instances (0 to instances.length-1)
-		document.querySelectorAll(".axis").forEach((axisDiv, a) => {
-			let coord;
-			if (selection == -1) {
-				coord = GLOBAL.fvar.axes[a].defaultValue;
-			}
-			else {
-				const instance = GLOBAL.fvar.instances[selection];
-				coord = instance.coordinates[a];
-			}
-			axisDiv.querySelectorAll("input").forEach(input => input.value = coord); // does the input[type=text] and the input[type=range]
-		});
-		updateRendering();
-	}
-	else if (selection == -2) { // custom instance
-		console.log("Custom"); // no action needed, maybe alert the user to try the sliders
-	}
-}
-
 function updateRendering(figmaNodeId) {
 
+	console.log(`.controls.${GLOBAL.mode} .size .current`);
+	console.log(Q(`.controls.${GLOBAL.mode} .size .current`));
+
 	const options = {
-		fvs: axisValues(),
-		text: document.querySelector(".text-input input").value,
-		fontSize: parseFloat(document.querySelector(".size.select").textContent), // the numeric (text) input is the source of truth
+		fvs: getCurrentAxisValues(),
+		text: Q(".text-input input").value,
+		fontSize: parseFloat(Q(`.controls.${GLOBAL.mode} .size .current`).value), // font size input
 	}
 	if (GLOBAL.CPAL) {
 		const paletteEl = document.querySelector(`input[name="palette-id"]:checked`);
@@ -808,111 +841,8 @@ function updateRendering(figmaNodeId) {
 	let css = "@font-face {\n\tfont-family: \"" + GLOBAL.fontFamily + "\";\n\tsrc: url(\"" + GLOBAL.fontURL + "\");\n}\n\n";
 	css += ".myClass {\nfont-family: \"" + GLOBAL.fontFamily + "\";\n\n}\n"
 
-	document.querySelector("#css").value = css;
+	Q("#css").value = css;
 }
-
-function changeMode(e) {
-
-	GLOBAL.mode = e.target.textContent.toLowerCase();
-
-	// disable/enable the relevant UI items
-	document.querySelectorAll(".text-mode").forEach(el => {
-		el.style.display = GLOBAL.mode === "text" ? "block" : "none";
-	});
-	document.querySelectorAll(".emoji-mode").forEach(el => {
-		el.style.display = GLOBAL.mode === "emoji" ? "block" : "none";
-	});
-
-	// update the mode picker ui to show which is selected
-	document.querySelectorAll("#mode span").forEach(span => {
-		if (span === e.target) {
-			span.style.fontWeight = "700";
-		}
-		else {
-			span.style.fontWeight = "400";
-		}
-	});
-
-	// empty the text input box
-	const textEl = document.querySelector("#text");
-	textEl.value = "";
-	textEl.setAttribute("placeholder", GLOBAL.mode === "emoji" ? "your emoji" : "your text");
-
-
-	// populate emoji picker
-	if (GLOBAL.mode === "emoji") {
-
-		// fetch the emoji font
-		// - response will be handled in "font-fetched" and "emoji-svgs" messages
-		parent.postMessage({ pluginMessage: {
-			type: 'fetch-font-by-name',
-			name: "Noto Color Emoji",
-			excludes: ["CPAL"], // we don’t need CPAL data in the UI
-		} }, "*");
-
-	}
-}
-
-// handle mode change text/emoji
-document.querySelectorAll("#mode span").forEach(span => {
-	span.onclick = changeMode;
-});
-
-
-function editColor(e) {
-	const message = {
-		type: "palette-edit",
-		paletteId: e.target.dataset.paletteId,
-		entryId: e.target.dataset.entryId,
-		color: e.target.value,
-	}
-	parent.postMessage({ pluginMessage: message }, "*");
-	updateRendering();
-}
-
-document.querySelectorAll(".font-size input").forEach(input => {
-
-	// this one only sends the "input" event if the UI is ready
-	function updateFontSizePlease(e) {
-		if (GLOBAL.uiReady) {
-			GLOBAL.uiReady = false;
-			updateFontSize(e);
-		} 
-	}
-
-	function updateFontSize(e) {
-		const input = e.target;
-		const log2min = Math.log2(4);
-		const log2max = Math.log2(200);
-		const scale = "log"; // or "linear"
-		const sibling = input.parentNode.querySelector(`input[type=${ input.type == "text" ? "range" : "text"}]`); // get the "other" input
-
-		if (scale == "log") {
-			if (input.type == "text") {
-				// convert from linear to log2 for the input[type=range]
-				const fontSize = parseFloat(input.value);
-				const log2 = Math.log2(fontSize);
-				const posOnLogScale = (log2 - log2min)/(log2max - log2min);
-				sibling.value = posOnLogScale;
-			}
-			else {
-				// convert from log2 to linear for the input[type=text]
-				const posOnLogScale = parseFloat(input.value);
-				const log2 = log2min + posOnLogScale * (log2max - log2min);
-				const fontSize = (Math.pow(2, log2)).toFixed(2);
-				sibling.value = fontSize;
-			}
-		}
-		else { // scale == "linear"
-			// we also need to use the linear min and max, not the 0 and 1 of the log method
-			sibling.value = input.value;
-		}
-
-		updateRendering();
-	}
-	input.oninput = updateFontSizePlease;
-	input.onchange = updateFontSize;
-});
 
 // add event so we change group when we click on a group icon
 document.querySelectorAll(".emoji-group-icon").forEach(el => {
@@ -933,16 +863,27 @@ document.querySelector(".controls-new").ondrop = e => {
 	file.arrayBuffer().then(arrayBuffer => {
 		
 		// send this data to the plugin as base64
-		let uint8 = new Uint8Array(arrayBuffer);
-		let str = "";
+		const uint8Arr = new Uint8Array(arrayBuffer);
+		let string = "";
 		for (let i=0; i<arrayBuffer.byteLength; i++) {
-			str += String.fromCharCode(uint8[i]);
+			string += String.fromCharCode(uint8Arr[i]);
 		}
+
+
+		// Create a Uint8Array
+		//const uint8Arr = new Uint8Array([72, 101, 108, 108, 111]);
+
+		// Use TextDecoder to convert to a string
+		// const decoder = new TextDecoder();
+		// const string = decoder.decode(uint8Arr);
+
+		console.log(string); // Output: "Hello"
+
 
 		const message = {
 			type: "font-upload",
 			// fontData: btoa(String.fromCharCode(...new Uint8Array(arrayBuffer))), // this works for short blobs but gives error "Maximum call stack size exceeded" for longer ones, hence the for loop above
-			fontData: btoa(str), // base64 encoding of the ArrayBuffer
+			fontData: btoa(string), // base64 encoding of the ArrayBuffer
 		}
 		parent.postMessage({ pluginMessage: message }, "*");
 	});
@@ -1027,60 +968,34 @@ onmessage = (e) => {
 			// new
 			populateAxes();
 			populatePalettes();
+			populateInstances();
 
 			console.log("msg.fontFamily");
 			console.log(msg.fontFamily);
-			GLOBAL.fontFamily = msg.fontFamily;
+			GLOBAL.fontFamily = msg.fontFamily; // the backend requests "Noto Color Emoji"
 			GLOBAL.fontMetadata = GLOBAL.fontList.find(font => font.name === GLOBAL.fontFamily);
-			
-			if (GLOBAL.fontMetadata.attributes.includes("emoji")) {
-				GLOBAL.mode = "emoji";
-			}
-			else if (GLOBAL.fontMetadata.attributes.includes("text")) {
-				GLOBAL.mode = "text";
-			}
-			else {
-				GLOBAL.mode = "";
-			}
-			
-			if (GLOBAL.mode !== "") {
-				document.querySelector(`.mode.${GLOBAL.mode}`).dispatchEvent(new Event("click")); // trigger a fetch of the text emoji mode
+
+			if (GLOBAL.fontMetadata) {
+				if (GLOBAL.fontMetadata.attributes.includes("emoji")) {
+					GLOBAL.mode = "emoji";
+				}
+				else if (GLOBAL.fontMetadata.attributes.includes("text")) {
+					GLOBAL.mode = "text";
+				}
+				else {
+					GLOBAL.mode = "";
+				}
+				
+				if (GLOBAL.mode !== "") {
+					//document.querySelector(`.mode.${GLOBAL.mode}`).dispatchEvent(new Event("click")); // trigger a fetch of the text emoji mode
+				}
 			}
 
 			break;
 		}
 
 		case "fvar": {
-			// build axes list
 			GLOBAL.fvar = msg.fvar;
-			if (GLOBAL.fvar?.axes) {
-				GLOBAL.fvar.axes.forEach(axis => {
-					const axisDiv = document.createElement("div");
-					axisDiv.classList.add("axis");
-
-					const tag = document.createElement("label");
-					tag.textContent = axis.axisTag;
-					tag.title = axis.name;
-
-					const numeric = document.createElement("input");
-					numeric.type = "text";
-					numeric.value = axis.defaultValue;
-					numeric.oninput = changedAxisInput;
-
-					const slider = document.createElement("input");
-					slider.type = "range";
-					slider.min = axis.minValue;
-					slider.max = axis.maxValue;
-					slider.value = axis.defaultValue;
-					slider.step = 0.01;
-					slider.oninput = changedAxisInput;
-
-					axisDiv.append(tag, numeric, slider);
-					axesList.append(axisDiv);
-
-				});
-			}
-
 			break;
 		}
 

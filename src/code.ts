@@ -19,12 +19,16 @@ const BufferWrapper = require("buffer");
 const BufferPolyfill = BufferWrapper.Buffer;
 const brotliDecompressFunction = require("../node_modules/brotli/decompress");
 
-// create fontList, a simplified list of fonts for UI
-const fontList:{ name: string, attributes: string[], website: string }[] = [];
+// create fontList, a simplified list of fonts for UI (no URLs or data URLs)
+const fontList:{ name: string, attributes: string[], website: string, priority: any }[] = [];
 fonts.forEach((font:any) => {
-	fontList.push({ name: font.name, attributes: font.attributes, website: font.website });
+	fontList.push({
+		name: font.name,
+		attributes: font.attributes,
+		website: font.website,
+		priority: font.priority || 0,
+	});
 });
-
 
 
 
