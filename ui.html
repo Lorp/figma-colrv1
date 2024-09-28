@@ -20,6 +20,7 @@
 	font-family: "Google Sans Text", system-ui, sans-serif;
 	border: none;
 	background-color: transparent;
+	cursor: default;
 }
 
 .emoji-group-icon {
@@ -53,20 +54,14 @@ h2 {
 	padding-bottom: 2px;
 	padding-top: 0;
 	margin: 0;
+
+	.emoji-group {
+		font-size: 11px;
+		text-transform: uppercase;
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
 }
-
-h2.emoji-group {
-	font-size: 11px;
-	text-transform: uppercase;
-	padding-top: 7px;
-	padding-bottom: 7px;
-}
-
-/* text-transform: uppercase;
-	font-weight: bold;
-	font-size: 0.7em;
-	margin-left: 0.4em; */
-
 
 #intro {
 	font-size: 0.75rem;
@@ -138,6 +133,7 @@ h2.emoji-group {
 .select {
 	position: relative;
 	.dropdown {
+		cursor: pointer;
 		position: absolute;
 		display: none;
 		top: 1em;
@@ -147,6 +143,10 @@ h2.emoji-group {
 		border-width: 0 1px 1px 1px;
 		z-index: 10;
 		padding: 0.3em;
+		.dropdown-item:hover {
+			background-color: var(--blue-active);
+			color: white;
+		}
 	}
 }
 
@@ -498,14 +498,14 @@ function fontByName(name) {
 
 function changeFontSize(e) {
 
-	const inputEl = e.target.closest(".select").querySelector(".current");
+	const selectEl = e.target.closest(".select");
+	const inputEl = Q(".current", selectEl);
+	const dropdownEl = Q(".dropdown", selectEl);
 	if (e.target.classList.contains("dropdown-item")) {
 		inputEl.value = e.target.textContent;
 	}
-	else if (e.target.classList.contains("current")) {
-		inputEl.value = parseFloat(inputEl.value) + "px"; // sanitize input in case it was typed by user
-	}
-	Q(".controls.text .font .size .dropdown").style.display = "none";
+	inputEl.value = parseFloat(inputEl.value) + "px"; // sanitize input in case it is typed by user
+	dropdownEl.style.display = "none";
 	updateRendering();
 }
 
@@ -577,13 +577,7 @@ function changeFontFamily(e) {
 		
 	parent.postMessage({ pluginMessage: { type: 'fetch-font-by-name', name: family } }, "*");
 
-	// set the current font family
-	if (GLOBAL.mode === "emoji") {
-		Q(".controls.emoji .font .family.select .current").value = family;
-	}
-	else {
-		Q(".controls.text .font .family.select .current").value = family;
-	}
+	Q(`.controls.${GLOBAL.mode} .font .family.select .current`).value = family; // set the current font family
 	
 	if (e)
 		e.target.closest(".dropdown").style.display = "none"; // hide the dropdown menu
@@ -591,21 +585,13 @@ function changeFontFamily(e) {
 
 function changeInstance(e) {
 
-	console.log("changeInstance", e.target.textContent);
-
 	const selectedInstance = GLOBAL.fvar.instances.find(instance => instance.name === e.target.textContent);
-	console.log(selectedInstance);
-
 	const axisEls = QA(".axes .axis", e.target.closest(".controls"));
 	if (axisEls.length === selectedInstance.coordinates.length) {
+		const selectEl = e.target.closest(".select");
 		selectedInstance.coordinates.forEach((coord, a) => axisEls[a].querySelector(".numeric").value = axisEls[a].querySelector(".slider").value = coord );
-
-		console.log(e.target.closest(".select"));
-		console.log(e.target.closest(".select").querySelector(".current"));
-
-		//e.target.closest(".select").querySelector(".current").textContent = e.target.textContent; // update name
-		e.target.closest(".select").querySelector(".current").value = e.target.textContent; // update name
-		e.target.closest(".dropdown").style.display = "none"; // hide dropdown
+		Q(".current", selectEl).value = e.target.textContent; // update name
+		Q(".dropdown", selectEl).style.display = "none"; // hide dropdown
 		updateRendering();
 	}
 }
@@ -616,15 +602,15 @@ function changeInstance(e) {
 // - does NOT populate the "current" child element with any content
 function populateSelects() {
 
-	const familySelectEmojiEl = document.querySelector(".controls.emoji .font .family.select");
-	const familySelectTextEl = document.querySelector(".controls.text .font .family.select");
+	const familySelectEmojiEl = Q(".controls.emoji .font .family.select");
+	const familySelectTextEl = Q(".controls.text .font .family.select");
 
 	// add an event handler for each select element
 	QA(".select").forEach(selectEl => {
 		const currentEl = Q(".current", selectEl);
 		if (currentEl) {
 			currentEl.onclick = e => {
-				const dropDownEl = e.target.closest(".select")?.querySelector(".dropdown");
+				const dropDownEl = Q(".dropdown", selectEl); // selectEl’s context is preserved
 				if (dropDownEl) {
 					dropDownEl.style.display = "block"; // display the dropdown
 					dropDownEl.onmouseleave = () => dropDownEl.style.display = "none"; // hide the dropdown
@@ -633,7 +619,7 @@ function populateSelects() {
 		}
 
 		if (selectEl.classList.contains("size")) {
-			selectEl.querySelector(".current").onchange = changeFontSize; // don’t use blur event, as that interferes with the click event of the dropdown
+			Q(".current", selectEl).onchange = changeFontSize; // don’t use blur event, as that interferes with the click event of the dropdown
 			GLOBAL.fontSizes.forEach(size => {
 				const sizeChoiceEl = EL("div", {class: "dropdown-item"}, {textContent: size + "px", onclick: changeFontSize});
 				const dropDownEl = Q(".dropdown", selectEl);
@@ -647,7 +633,7 @@ function populateSelects() {
 	GLOBAL.fontList.forEach((font, f) => {
 		const familyEl = EL("div", {class: "dropdown-item"}, {textContent: font.name, onclick: changeFontFamily});
 		const familySelectEl = font.attributes.includes("text") ? familySelectTextEl : familySelectEmojiEl; // decide which parent (emoji or text) to append this family to
-		familySelectEl.querySelector(".dropdown").append(familyEl);
+		Q(".dropdown", familySelectEl).append(familyEl);
 	});
 
 	changeMode();
@@ -721,25 +707,23 @@ function axisDefaultOverride(axis) {
 function populateInstances() {
 	// populate instances from fvar table
 	const instancesSelect = Q(`.controls.${GLOBAL.mode} .style.select`);
-	instancesSelect.querySelector(".current").value = "Default";
-	instancesSelect.querySelector(".dropdown").innerHTML = "";
+	const currentEl = Q(".current", instancesSelect);
+	const dropdownEl = Q(".dropdown", instancesSelect);
+	currentEl.value = "Default";
+	if (!GLOBAL.fvar?.instances.length || GLOBAL.mode === "emoji") {
+		currentEl.onclick = null; // disable the instances select for emoji and fonts with 0 instances
+	}
+	dropdownEl.innerHTML = "";
 	if (GLOBAL.fvar?.instances) {
 		GLOBAL.fvar.instances.forEach((instance, i) => {
-			const instanceEl = document.createElement("div");
-			instanceEl.classList.add("dropdown-item");
-			instanceEl.textContent = instance.name;
-			instanceEl.onclick = changeInstance;
-			instancesSelect.querySelector(".dropdown").append(instanceEl);
+			dropdownEl.append(EL("div", {class: "dropdown-item"}, {textContent: instance.name, onclick: changeInstance}));
 		});
 	}
 }
 
 function populatePalettes() {
 
-	console.log("populatePalettes()")
 	const palettesEl = Q(".palettes .palette-controls");
-	console.log(palettesEl);
-	console.log(GLOBAL.CPAL);
 	if (!GLOBAL.CPAL || !GLOBAL.CPAL.palettes || GLOBAL.CPAL.palettes.length === 0) {
 		palettesEl.innerHTML = "No CPAL palettes found.";
 	}
@@ -748,39 +732,19 @@ function populatePalettes() {
 		GLOBAL.CPAL.palettes.forEach((palette, p) => {
 
 			// list: each palette div needs n children for the grid to work
-			const paletteEl = document.createElement("div");
-			paletteEl.classList.add("palette");
-
-			// create each radio button
-			const radio = document.createElement("input");
-			radio.type = "radio";
-			radio.name = "palette-id";
-			radio.value = p;
-			paletteEl.append(radio);
-			if (p==0) {
-				radio.checked = true;
-			}
-
-			// EVENT: switch palette
-			radio.onchange = updateRendering;
+			const paletteEl = EL("div", {class: "palette"});
+			paletteEl.append(EL("input", {type: "radio", name: "palette-id", value: p}, {checked: p==0, onchange: updateRendering})); // create & append a radio button for the palette
 
 			// create the color inputs
 			palette.colors.forEach((color, c) => {
-				const frame = document.createElement("div");
-				frame.classList.add("frame");
-				const sample = document.createElement("input");
-				sample.type = "color";
-				sample.value = GLOBAL.CPAL.hexColors[color];
-				sample.dataset.paletteId = p;
-				sample.dataset.entryId = c;
+				const frameEl = EL("div", {class: "frame"});
+				const sampleEl = EL("input", {type: "color", value: GLOBAL.CPAL.hexColors[color], title: `Palette ${p}, entry ${c}: ${GLOBAL.CPAL.hexColors[color]}`}, {oninput: changePaletteColor});
+				sampleEl.dataset.paletteId = p;
+				sampleEl.dataset.entryId = c;
 				if (c < 18) { // TODO: hack to show max 18 colors in a palette
-					frame.append(sample);
-					paletteEl.append(frame);
-
-					// EVENT: edit color in palette
-					sample.oninput = changePaletteColor;
+					frameEl.append(sampleEl);
+					paletteEl.append(frameEl);
 				}
-				sample.title = `Palette ${p}, entry ${c}: ${GLOBAL.CPAL.hexColors[color]}`;
 			});
 			palettesEl.append(paletteEl);
 		});
@@ -830,7 +794,7 @@ function updateRendering(figmaNodeId) {
 		fontSize: parseFloat(Q(`.controls.${GLOBAL.mode} .size .current`).value), // font size input
 	}
 	if (GLOBAL.CPAL) {
-		const paletteEl = document.querySelector(`input[name="palette-id"]:checked`);
+		const paletteEl = Q(`input[name="palette-id"]:checked`);
 		if (paletteEl) {
 			options.paletteId = paletteEl.value;
 		}
@@ -845,18 +809,18 @@ function updateRendering(figmaNodeId) {
 }
 
 // add event so we change group when we click on a group icon
-document.querySelectorAll(".emoji-group-icon").forEach(el => {
+QA(".emoji-group-icon").forEach(el => {
 	el.onclick = emojiChangeGroup;
 });
 
 
 // drag-drop a font file [NEW]
 // - assume all drag-drop fonts are text fonts, not emoji
-document.querySelector(".controls-new").ondragover = e => {
+Q(".controls-new").ondragover = e => {
 	e.preventDefault();
 };
 
-document.querySelector(".controls-new").ondrop = e => {
+Q(".controls-new").ondrop = e => {
 	e.preventDefault();
 
 	const file = e.dataTransfer.files[0];
@@ -956,7 +920,7 @@ onmessage = (e) => {
 			// emoji handling: we need to import the emoji glyphs to show in the picker
 			// - the response will be handled in onmessage for "emoji-svgs"
 			if (GLOBAL.mode === "emoji") {
-				document.querySelector(".emoji-group-icon.default").dispatchEvent(new Event("click")); // trigger a fetch of the default emoji group
+				Q(".emoji-group-icon.default").dispatchEvent(new Event("click")); // trigger a fetch of the default emoji group
 			}
 
 			break;
@@ -1008,7 +972,7 @@ onmessage = (e) => {
 
 			// now place all the default svgs in the panel
 			if (msg.emojiType >= 0 && msg.emojiType < GLOBAL.emojiMetadata.length) {
-				const emojiGrid = document.querySelector("#emoji-main .emoji-grid");
+				const emojiGrid = Q("#emoji-main .emoji-grid");
 				const emojiGroup = GLOBAL.emojiMetadata[msg.emojiType]; // 0-based index into the defined groups
 				Object.assign(GLOBAL.emojiSVGs, msg.svgs); // merge new svgs with existing svgs (we could check this array in advance, since the svgs may be cached already)
 				emojiGrid.innerHTML = "";
@@ -1047,7 +1011,7 @@ function emojiInsertIntoContainer(container, str, svg, variant=false) {
 
 function emojiPick(e) {
 	const el = e.target.closest(".emoji-cell"); // which cell did we click on?
-	const inputEl = document.querySelector(".text-input input")
+	const inputEl = Q(".text-input input")
 	inputEl.value += el.dataset.string; // append the selected emoji (as a string) to the input text
 	inputEl.dispatchEvent(new Event("input")); // trigger a redraw by sending the "input" event to the <input id="#text"> element
 }
@@ -1064,7 +1028,7 @@ function emojiVariantTimer(e) {
 		GLOBAL.emojiVariantsTimer = setTimeout(function () {
 
 			const emojiGrid = el.closest(".emoji-grid"); // we need this for its scroll offset
-			const elVariants = document.querySelector(".emoji-variants-grid");
+			const elVariants = Q(".emoji-variants-grid");
 			elVariants.style.display = "grid";
 			elVariants.innerHTML = ""; // clear previous alternates
 			const itemsPerRow = Math.min(5, GLOBAL.emojiVariants[str].length);
@@ -1089,7 +1053,7 @@ function clearLongpressTimer(e) {
 	document.removeEventListener("onmouseup", clearLongpressTimer);
 
 	// hide the alternates picker
-	const elVariants = document.querySelector(".emoji-variants-grid");
+	const elVariants = Q(".emoji-variants-grid");
 	elVariants.style.display = "none";
 }
 
@@ -1099,7 +1063,7 @@ function emojiChangeGroup(e) {
 	const emojiGroupId = GLOBAL.emojiGroupLookup[el.textContent]; // an integer index into the emojiMetadata array
 
 	// reset scroll position
-	const emojiGrid = document.querySelector(".emoji-grid");
+	const emojiGrid = Q(".emoji-grid");
 	emojiGrid.scrollTop = "0px";
 
 	// fetch emojis for the requested group
@@ -1108,10 +1072,10 @@ function emojiChangeGroup(e) {
 	parent.postMessage({ pluginMessage: message }, "*");
 
 	// set the group title
-	document.querySelector("h2.emoji-group").innerText = GLOBAL.emojiMetadata[emojiGroupId].group;
+	Q("h2.emoji-group").innerText = GLOBAL.emojiMetadata[emojiGroupId].group;
 
 	// update icon color/style
-	document.querySelectorAll(".emoji-group-icon").forEach(el_ => {
+	QA(".emoji-group-icon").forEach(el_ => {
 		if (el_ === el) {
 			el_.style.textDecoration = "underline";
 			el_.classList.add("selected");
