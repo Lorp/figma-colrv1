@@ -19,7 +19,7 @@
 }
 
 .controls input {
-	font-family: "Google Sans Text", system-ui, sans-serif;
+	font-family: var(--ui-font-family);
 	border: none;
 	background-color: transparent;
 	cursor: default;
@@ -540,7 +540,7 @@ function changeMode(e) {
 		Q(".controls.text").style.display = "block";
 		Q(".controls.emoji").style.display = "none";
 		Q(".text-input input").placeholder = "Text will update as you type";
-		Q(".text-input input").style.fontFamily = "Google Sans Text";
+		Q(".text-input input").style.fontFamily = "var(--ui-font-family)";
 	}
 
 	Q(".text-input input").value = "";
@@ -667,7 +667,7 @@ function populateAxes() {
 				oninput: axisInput,
 				readonly: true,
 			}, {
-				fontFamily: "Google Sans Text",
+				fontFamily: "var(--ui-font-family)",
 				textAlign: "left",
 			});
 			const sliderEl = EL("input", {
