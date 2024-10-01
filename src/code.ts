@@ -91,20 +91,62 @@ figma.ui.onmessage = msg => {
 		case "fetch-emojis": {
 
 			console.log("fetch-emojis message received")
+			console.log(msg);
 			const emojiSVGs: {[key: string]: string} = {}; // we return an object of SVGs indexed by the string that invokes the emoji (the UI already knows about the arrangement of emojis)
 			
 			// we return an object of SVGs indexed by string
-			emojiMetadata[msg.emojiType].emoji.forEach((emojiChar:any) => {
-				const instance = font.instance(); // no axis settings for now, so we get the default instance
-				const str: string = String.fromCodePoint(...emojiChar.base);
-				const strings:string[] = [str];
-				emojiChar.alternates.forEach((alternate:any) => strings.push(String.fromCodePoint(...alternate))) // get the alternate strings as well
-				
-				strings.forEach(str => emojiSVGs[str] = instance.renderText({text: str, fontSize: 24, format: "svg"})); // render all the strings to svg, store the svg strings in the emojiSVGs object
-			});
+			let emojiIndex:number = 0;
+			const instance = font.instance(); // no axis settings for now, so we get the default instance
 
-			// send the emoji svgs back to UI using message type "emoji-svgs"
-			figma.ui.postMessage({type: "emoji-svgs", emojiType: msg.emojiType, svgs: emojiSVGs });
+
+			// the request is for specific emojis
+			if (msg.emojiStrings && Array.isArray(msg.emojiStrings)) {
+				msg.emojiStrings.forEach((emojiString:string) => {
+
+					// find the relevant emojiChar
+					let foundEmojiChar:boolean = false;
+					for (const group in emojiMetadata) {
+						const emojiGroup = emojiMetadata[group].emoji;
+						for (const e in emojiGroup) {
+							const emojiChar = emojiGroup[e];					
+							const str = String.fromCodePoint(...emojiChar.base);
+							if (str === emojiString) {
+								const strings:string[] = [];
+								if (msg.getBases)
+									strings.push(emojiString);
+								if (msg.getAlternates)
+									emojiChar.alternates.forEach((alternate:any) => strings.push(String.fromCodePoint(...alternate))) // get the alternate strings as well
+								strings.forEach(str => emojiSVGs[str] = instance.renderText({text: str, fontSize: 24, format: "svg"})); // render all the strings to svg, store the svg strings in the emojiSVGs object
+								figma.ui.postMessage({type: "emoji-svgs", emojiStrings: true, svgs: emojiSVGs }); // send the SVG strings back to the frontend
+								foundEmojiChar = true;
+								break;
+							}
+						}
+						if (foundEmojiChar)
+							break;
+					}
+
+					if (!foundEmojiChar) {
+						console.log("emoji not found: ", emojiString);
+					}
+				});
+			}
+
+			// the request is for emojis by group, possibly with nonzero startIndex
+			else if (msg.emojiType !== undefined) {
+				const startIndex:number = msg.startIndex || 0;
+				const count:number = msg.count || 1000; // 1000 is sanity check
+				for (let i:number = startIndex; i < startIndex + count && i < emojiMetadata[msg.emojiType].emoji.length; i++) {
+					const emojiChar:any = emojiMetadata[msg.emojiType].emoji[i];
+					const str: string = String.fromCodePoint(...emojiChar.base);
+					const strings:string[] = [str];
+					if (msg.getAlternates)
+						emojiChar.alternates.forEach((alternate:any) => strings.push(String.fromCodePoint(...alternate))) // get the alternate strings as well
+					strings.forEach(str => emojiSVGs[str] = instance.renderText({text: str, fontSize: 24, format: "svg"})); // render all the strings to svg, store the svg strings in the emojiSVGs object
+				}
+				figma.ui.postMessage({type: "emoji-svgs", emojiType: msg.emojiType, svgs: emojiSVGs, startIndex: startIndex});
+			}
+
 			break;
 		}
 
@@ -114,6 +156,7 @@ figma.ui.onmessage = msg => {
 			if (foundFont) {
 				console.log("Font font " + foundFont.name)
 				const url = foundFont.dataUrl || foundFont.url;
+				if (!url) break;
 
 				fetch(url)
 				.then(response => {
@@ -181,77 +224,6 @@ figma.ui.onmessage = msg => {
 				});
 
 			}
-			break;
-		}
-
-
-		// DEPRECATED 2024-03-14
-		// - use "fetch-font-by-name" instead
-		case "fetch-font": {
-
-			fetch(msg.url)
-			.then(response => {
-				console.log("Loaded response: ", response);
-				return response.arrayBuffer();
-			})
-			.then(arrayBuffer => {
-				console.log(`File loaded (${arrayBuffer.byteLength} bytes)`);
-				const options = {
-					fontFace: msg.url,
-					allGlyphs: true,
-					allTVTs: true,
-				};
-
-				//fontSetupFromArrayBuffer(arrayBuffer)
-
-				// load the font, decompress it if necessary
-				const fingerprint = new DataView(arrayBuffer, 0, 4).getUint32(0);
-				let fontBuffer;
-				if (fingerprint === SAMSAGLOBAL.fingerprints.WOFF2) { // does the fingerprint indicate WOFF2?
-					console.log("WOFF2 font detected");
-					fontBuffer = new SamsaBuffer(arrayBuffer).decodeWOFF2({ // if woff2, convert to ttf here
-						bufferObject: BufferPolyfill, // Samsa doesn’t know about Buffer, so we pass it in
-						brotliDecompress: brotliDecompressFunction, // Samsa doesn’t know about Brotli, so we pass it in the decompress function
-						ignoreInstructions: true,
-						ignoreChecksums: true,
-					});
-					console.log(`WOFF2 font decompressed to TTF (${fontBuffer.byteLength} bytes)`);
-					// TODO: check it really is a TTF!
-				}
-				else {
-					fontBuffer = new SamsaBuffer(arrayBuffer);
-				}
-
-				// make a SamsaFont object from the uncompressed ttf
-				// - font is a global variable (TODO: have it as GLOBAL.font?)
-				font = new SamsaFont(fontBuffer, options);
-				console.log("TTF font loaded");
-				
-				// signal to the UI that we’ve got the font, by sending its names, fvar, CPAL
-				// - TODO: send these all as one message?
-				figma.ui.postMessage({type: "font-fetched"});
-
-				// variable font?
-				if (font.fvar && font.fvar.axisCount) {
-					font.fvar.axes.forEach((axis:any) => {
-						axis.name = font.names[axis.axisNameID];
-					});
-					figma.ui.postMessage({type: "fvar", fvar: { instances: font.fvar.instances, axes: font.fvar.axes}});	
-				}
-
-				// color font?
-				if (font.CPAL && (!msg.excludes || !msg.excludes.includes("CPAL"))) { // we might not need CPAL at the front end
-					font.CPAL.hexColors = {}; // must use an object here... (sparse arrays in JSON are HUGE!)
-					font.CPAL.palettes.forEach((palette:any) => {
-						palette.colors.forEach((color:number) => {
-							font.CPAL.hexColors[color] = font.hexColorFromU32(color);
-						});
-					});
-					figma.ui.postMessage({type: "CPAL", CPAL: { colors: font.CPAL.colors, palettes: font.CPAL.palettes, hexColors: font.CPAL.hexColors}});
-				}
-
-				figma.ui.postMessage({type: "font-data-delivered"});
-			});
 			break;
 		}
 

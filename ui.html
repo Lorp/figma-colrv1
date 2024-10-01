@@ -10,8 +10,10 @@
 	--grey-inactive-label: grey;
 	--blue-active: #0075ff;
 	--grey-text-input: #ededf5;
+	--ui-font-family: "Google Sans Text", system-ui, sans-serif;
+	
 	padding: 6px;
-	font-family: "Google Sans Text", system-ui, sans-serif;
+	font-family: var(--ui-font-family);
 	font-size: 12px;
 	background-color: var(--grey-background);
 }
@@ -55,7 +57,7 @@ h2 {
 	padding-top: 0;
 	margin: 0;
 
-	.emoji-group {
+	&.emoji-group {
 		font-size: 11px;
 		text-transform: uppercase;
 		padding-top: 7px;
@@ -190,11 +192,6 @@ h2 { /* for Axes and Palettes headings */
 	font-weight: bold;
 	font-size: 14px;
 	margin-top: 1.25em;
-}
-
-h3 { /* for emoji category */
-	text-transform: uppercase;
-	font-size: 11px;
 }
 
 .text-input {
@@ -464,6 +461,7 @@ const GLOBAL = {
 	emojiSVGs: {}, // store all the svgs: should be emptied on font change
 	emojiVariants: {}, // string keys indexing an array of variant strings (key is only present if there are variant strings, so no empty arrays)
 	emojiVariantsDelay: 650, // ms
+	emojiPerPageCount: 63, // 9 columns, 6 rows is the initial load for each emoji group
 	emojiGroupLookup: { // these property names are strings that GSUB to icons from Material Symbols
 		schedule: -1,
 		mood: 0,
@@ -971,15 +969,24 @@ onmessage = (e) => {
 		case "emoji-svgs": {
 
 			// now place all the default svgs in the panel
+			const emojiGrid = Q("#emoji-main .emoji-grid");
 			if (msg.emojiType >= 0 && msg.emojiType < GLOBAL.emojiMetadata.length) {
-				const emojiGrid = Q("#emoji-main .emoji-grid");
 				const emojiGroup = GLOBAL.emojiMetadata[msg.emojiType]; // 0-based index into the defined groups
 				Object.assign(GLOBAL.emojiSVGs, msg.svgs); // merge new svgs with existing svgs (we could check this array in advance, since the svgs may be cached already)
-				emojiGrid.innerHTML = "";
+				if (msg.startIndex === 0) {
+					// we’ve got the first "page" of this group’s emojis, so immediately fetch the rest!
+					const message = { type: "fetch-emojis", emojiType: msg.emojiType, startIndex: GLOBAL.emojiPerPageCount, includeAlternates: false };
+					parent.postMessage({ pluginMessage: message }, "*");
+					emojiGrid.innerHTML = ""; // clear the grid if we’re starting from the beginning
+				}
 				emojiGroup.emoji.forEach(emojiChar => {
 					const str = String.fromCodePoint(...emojiChar.base); // get the string we need
-					emojiInsertIntoContainer(emojiGrid, str, msg.svgs[str]);
+					if (msg.svgs[str]) // conditional as we retrieve them in batches
+						emojiInsertIntoContainer(emojiGrid, str, msg.svgs[str]);
 				});
+			}
+			else if (msg.emojiStrings) {
+				Object.assign(GLOBAL.emojiSVGs, msg.svgs); // merge new svgs with existing svgs
 			}
 			else {
 				console.log("Error: emojiType out of range");
@@ -1023,6 +1030,9 @@ function emojiVariantTimer(e) {
 
   // are there in fact any alternates for this string?
   if (GLOBAL.emojiVariants[str]) {
+
+		// fetch the variants (should really fetch them immediately after the mousedown )
+		parent.postMessage({ pluginMessage: { type: "fetch-emojis", emojiStrings: [str], getAlternates: true, getBases: false } }, "*");
 
 		// start timer and define what happens when it times out
 		GLOBAL.emojiVariantsTimer = setTimeout(function () {
@@ -1068,8 +1078,25 @@ function emojiChangeGroup(e) {
 
 	// fetch emojis for the requested group
 	// - the response will be a message of type "emoji-svgs", with string keys and svg values
-	const message = { type: "fetch-emojis", emojiType: emojiGroupId };
+	const message = { type: "fetch-emojis", emojiType: emojiGroupId, startIndex: 0, count: GLOBAL.emojiPerPageCount, includeAlternates: false };
 	parent.postMessage({ pluginMessage: message }, "*");
+
+
+
+	// GLOBAL.emojiMetadata.forEach(emojiGroup => {
+	// 	emojiGroup.emoji.forEach(emojiChar
+
+	console.log(GLOBAL.emojiMetadata[0].emoji[0]);
+	console.log("GLOBAL.emojiMetadata[0].emoji[0]");
+
+	parent.postMessage({ pluginMessage: { type: "fetch-emojis", emojiStrings: [
+		String.fromCodePoint(...GLOBAL.emojiMetadata[0].emoji[0].base),
+		String.fromCodePoint(...GLOBAL.emojiMetadata[0].emoji[3].base),
+	], includeAlternates: true } }, "*");
+
+
+
+
 
 	// set the group title
 	Q("h2.emoji-group").innerText = GLOBAL.emojiMetadata[emojiGroupId].group;
