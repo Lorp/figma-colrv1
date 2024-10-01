@@ -927,13 +927,10 @@ onmessage = (e) => {
 		case "font-data-delivered": {
 			updateRendering(); // update the text being edited to this font
 
-			// new
 			populateAxes();
 			populatePalettes();
 			populateInstances();
 
-			console.log("msg.fontFamily");
-			console.log(msg.fontFamily);
 			GLOBAL.fontFamily = msg.fontFamily; // the backend requests "Noto Color Emoji"
 			GLOBAL.fontMetadata = GLOBAL.fontList.find(font => font.name === GLOBAL.fontFamily);
 
