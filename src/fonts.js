@@ -9,6 +9,7 @@ const fonts = [
 		url: "https://www.axis-praxis.org/samsa/fonts/figma/BitcountGridSingle-Color.woff2",
 	},
 	*/
+	/*
 	{
 		name: "Bitter",
 		attributes: ["text"],
@@ -21,6 +22,7 @@ const fonts = [
 		website: "https://fonts.google.com/specimen/Bitter",
 		url: "https://raw.githubusercontent.com/google/fonts/main/ofl/bitter/Bitter-Italic%5Bwght%5D.ttf",
 	},
+	*/
 	{
 		name: "Blaka Ink",
 		attributes: ["text", "color"],
@@ -56,6 +58,7 @@ const fonts = [
 		attributes: ["text", "color"],
 		website: "https://fonts.google.com/specimen/Kalnia+Glaze",
 		url: "https://raw.githubusercontent.com/google/fonts/main/ofl/kalniaglaze/KalniaGlaze%5Bwdth%2Cwght%5D.ttf",
+		priority: 1, // makes this the default text font
 	},
 	{
 		name: "Nabla",
@@ -80,6 +83,7 @@ const fonts = [
 		attributes: ["emoji", "color"],
 		version: "15.1",
 		website: "https://fonts.google.com/noto/specimen/Noto+Color+Emoji",
+		priority: 1, // makes this the default emoji font
 
 		// this is Noto Color Emoji 15.0
 		// url: "https://fonts.gstatic.com/s/notocoloremoji/v25/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFWRxHy9WY8YXt1PQ.woff2",
