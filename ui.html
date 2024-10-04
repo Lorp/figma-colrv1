@@ -18,44 +18,26 @@
 	background-color: var(--grey-background);
 }
 
-.controls input {
+.controls-new input {
 	font-family: var(--ui-font-family);
 	border: none;
 	background-color: transparent;
 	cursor: default;
-}
-
-.emoji-group-icon {
-	font-family: "Material Symbols Outlined";
-	font-weight: normal;
-	font-style: normal;
-	font-size: 24px;
-	line-height: 1;
-	letter-spacing: normal;
-	text-transform: none;
-	display: inline-block;
-	white-space: nowrap;
-	word-wrap: normal;
-	direction: ltr;
-	-webkit-font-feature-settings: 'liga';
-	-webkit-font-smoothing: antialiased;
-	color: var(--emoji-grey);
-	font-variation-settings: 'FILL' 1;
-	text-align: center;
+	&:focus {
+		outline-color: var(--blue-active);
+	}
 }
 
 .material-symbols {
 	font-family: "Material Symbols Outlined";
 }
 
-/* section headings */
+/* section headings (for Axes and Palettes titles) */
 h2 {
-	font-size: 20px;
 	font-weight: bold;
-	_text-transform: uppercase;
+	font-size: 14px;
 	padding-bottom: 2px;
 	padding-top: 0;
-	margin: 0;
 
 	&.emoji-group {
 		font-size: 11px;
@@ -105,35 +87,39 @@ h2 {
 	display: grid;
 	grid-template-columns: 70px 1fr;
 	width: 100%;
-	align-items: center;
+	/* align-items: center; */
 	.size {
 		display: grid;
-		width: 100%;
-		align-items: center;
+		/* width: 100%; */
+		/* align-items: center; */
 	}
 }
 
-.axis {
-	display: grid;
-	grid-template-columns: 70px 1fr;
-	width: 100%;
-	align-items: center;
-	.tag {
-		cursor: pointer;
-	}
-	.numeric {
+.axes {
+	.axis {
+		display: grid;
+		grid-template-columns: 70px 1fr;
 		width: 100%;
-		_background-color: white;
-		border: none;
-	}
-	.slider {
-		width: 100%;
-		vertical-align: middle;
+		align-items: center;
+		.tag {
+			cursor: pointer;
+		}
+		.numeric {
+			width: 100%;
+			border: none;
+		}
+		.slider {
+			width: 100%;
+			vertical-align: middle;
+		}
 	}
 }
 
 .select {
 	position: relative;
+	.current {
+		width: 100%;
+	}
 	.dropdown {
 		cursor: pointer;
 		position: absolute;
@@ -162,7 +148,6 @@ h2 {
 }
 
 .controls.emoji {
-	background-color: pink;
 }
 
 .dropdown-icon {
@@ -171,7 +156,31 @@ h2 {
 }
 
 .palettes {
+	.palette {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 20px repeat(18, 1fr);
+		column-gap: 2px;
+		align-items: center;
 
+		input[type=color] {
+			width: 40px;
+			height: 40px;
+			padding: 0;
+			border: none;
+			position: absolute;
+			left: -10px;
+			top: -10px;
+		}
+
+		.frame {
+			width: 13px;
+			height: 13px;
+			border: 1px solid var(--grey-outline);
+			position: relative;
+			overflow: hidden;
+		}
+	}
 }
 
 .common {
@@ -188,12 +197,6 @@ h2 {
 	width: 100%;
 }
 
-h2 { /* for Axes and Palettes headings */
-	font-weight: bold;
-	font-size: 14px;
-	margin-top: 1.25em;
-}
-
 .text-input {
 	margin-top: 0.8em;
 	width: 100%;
@@ -207,43 +210,7 @@ h2 { /* for Axes and Palettes headings */
 	padding: 0.8em;
 }
 
-.reveal {
-	transform: rotate(-90deg);
-	position: relative;
-	transform-origin: center;
-}
-
-.reveal-open {
-	transform: rotate(0deg);
-}
-
-.palette {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 20px repeat(18, 1fr);
-	column-gap: 2px;
-	align-items: center;
-
-	input[type=color] {
-		width: 40px;
-		height: 40px;
-		padding: 0;
-		border: none;
-		position: absolute;
-		left: -10px;
-		top: -10px;
-	}
-
-	.frame {
-		width: 13px;
-		height: 13px;
-		border: 1px solid var(--grey-outline);
-		position: relative;
-		overflow: hidden;
-	}
-}
-
-#emoji-picker {
+.emoji-picker {
 	_display: none;
 	_width: 300px;
 	width: 100%;
@@ -256,66 +223,120 @@ h2 { /* for Axes and Palettes headings */
 	border: 2px solid var(--emoji-grey);
 	border-radius: 5px;
 	position: relative;
-}
 
-#emoji-search {
-	width: calc(100% - 2 * 0.3em);
-	margin: 0.3em;
-}
-
-#emoji-type {
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	margin-bottom: 0.3em;
-	cursor: pointer;
-}
-
-#emoji-main {
-	color: var(--emoji-grey);
-	label {
-		text-transform: uppercase;
-		font-weight: bold;
-		font-size: 0.7em;
-		margin-left: 0.4em;
+	.emoji-type {
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		margin-bottom: 0.3em;
+		cursor: pointer;
 	}
-}
 
-.emoji-grid {
-	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(9, 1fr);  
-	font-size: 25px;
-	overflow-y: scroll;
-	height: 221px;
-	grid-auto-rows: 34px;
-}
+	.emoji-group-icon {
+		font-family: "Material Symbols Outlined";
+		font-weight: normal;
+		font-style: normal;
+		font-size: 24px;
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		display: inline-block;
+		white-space: nowrap;
+		word-wrap: normal;
+		direction: ltr;
+		-webkit-font-feature-settings: 'liga';
+		-webkit-font-smoothing: antialiased;
+		color: var(--emoji-grey);
+		font-variation-settings: 'FILL' 1;
+		text-align: center;
+	}
 
-.emoji-cell {
-	position: relative;
-	text-align: center;
-	cursor: pointer;
-	overflow: hidden;
+	.emoji-main {
+		color: var(--emoji-grey);
+		label {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 0.7em;
+			margin-left: 0.4em;
+		}
+
+		.emoji-grid {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(9, 1fr);  
+			font-size: 25px;
+			overflow-y: scroll;
+			height: 221px;
+			grid-auto-rows: 34px;
+		}
+
+		.emoji-variants-grid {
+			position: absolute;
+			left: 0px;
+			top: -1em;
+			z-index: 1;
+			background-color: white;
+			border: 1px solid black;
+			border-radius: 3px;
+			display: none;
+		}
+
+		.emoji-cell {
+			position: relative;
+			text-align: center;
+			cursor: pointer;
+			overflow: hidden;
+		}
+	}
 }
 
 .selected {
 	color: var(--selected);
 }
 
-.emoji-variants-grid {
+.dropzone {
 	position: absolute;
-	left: 0px;
-	top: -1em;
-	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: green;
+	opacity: 0.2;
+	display: none;
+}
+
+.panel {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	height: 100%;
 	background-color: white;
-	border: 1px solid black;
-	border-radius: 3px;
-}	
+	.content {
+		position: absolute;
+		box-sizing: border-box;
+		left: 0;
+		top: 0;
+		padding: 1em;
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		.css & {
+			font-family: monospace;
+			white-space: pre;
+			tab-size: 4;
+		}
+	}
+	.close {
+		position: fixed;
+		right: 0;
+		top: 0.5em;
+		height: 1em;
+		width: 2em;
+	}
+}
 
 </style>
-
-<!-- <script type="module" src="./fontlist.js"></script> -->
-
-<!-- <h2>figma-colrv1</h2> -->
 
 <!-- NEW CONTROLS (start) -->
 <div class="controls-new">
@@ -342,8 +363,8 @@ h2 { /* for Axes and Palettes headings */
 			<input type="text" value="" placeholder="Search emoji">
 		</div>
 
-		<div id="emoji-picker" class="emoji-mode" style="border: 1px solid red; background-color: yellow;">
-			<div id="emoji-type">
+		<div class="emoji-picker">
+			<div class="emoji-type">
 				<div class="emoji-group-icon">schedule</div>
 				<div class="emoji-group-icon default">mood</div>
 				<div class="emoji-group-icon">emoji_people</div>
@@ -358,7 +379,7 @@ h2 { /* for Axes and Palettes headings */
 
 			<h2 class="emoji-group">Heading</h2>		
 
-			<div id="emoji-main">
+			<div class="emoji-main">
 				<div class="emoji-grid"></div>
 				<div class="emoji-variants-grid"></div>
 			</div>		
@@ -406,12 +427,12 @@ h2 { /* for Axes and Palettes headings */
 	</div>
 
 	<div class="common" style="padding-top: 14px;">
-		<div>
+		<div class="show-panel info">
 			<span class="icon-wrap"><div class="icon" style="font-size: 24px; padding-top: 12px;">info</div></span>
 		</div>
 
 		<div style="margin: 0 -4px 0 20px;">
-			<button class="button" style="margin-bottom: -4px;">
+			<button class="button show-panel css" style="margin-bottom: -4px;">
 				<span class="icon-wrap"><div class="icon">code</div></span>
 				<span>Show CSS</span>
 			</button>
@@ -420,7 +441,24 @@ h2 { /* for Axes and Palettes headings */
 	</div>
 	<!-- joint controls end -->
 
-	<div id="css"></div>
+	<div class="panel info">
+		<div class="content">
+			<h3>COLRv1 plugin</h3>
+			<p>This Figma plugin allows color fonts to be used in Figma, specifically fonts in the COLR format. Both COLRv0 (flat colour) and COLRv1 (includes gradients and compositing) versions are supported.</p>
+			<p>Preloaded emoji fonts:</p>
+			<ul class="font-list emoji"></ul>
+			<p>Preloaded text fonts:</p>
+			<ul class="font-list text"></ul>
+			<hr>
+			<p>The project is maintained at <a href="https://github.com/Lorp/figma-colrv1">GitHub: Figma-COLRv1 plugin</a>. Please raise any issues there.</p>		
+		</div>
+		<div class="close"><span class="icon">cancel</span></div>
+	</div>
+
+	<div class="panel css">
+		<div class="content"></div>
+		<div class="close"><span class="icon">cancel</span></div>
+	</div>
 	
 
 </div>
@@ -429,7 +467,8 @@ h2 { /* for Axes and Palettes headings */
 
 
 </div>
-<!-- <script type="module" src="dist/fontlist.js"></script> -->
+
+<div class="dropzone"></div>
 
 <script type="module">
 
@@ -441,13 +480,16 @@ function QA (selector, root=document) {
 	return root.querySelectorAll(selector);
 }
 
-function EL (tag, attrs, props={}, style={}) {
+function EL (tag, attrs, props, style) {
 	let el = document.createElement(tag);
-	el.attr(attrs);
-	for (const prop in props)
-		el[prop] = props[prop];
-	for (const prop in style)
-		el.style[prop] = style[prop];
+	if (attrs)
+		el.attr(attrs);
+	if (props)
+		for (const prop in props)
+			el[prop] = props[prop];
+	if (style)
+		for (const prop in style)
+			el.style[prop] = style[prop];
 	return el;
 }
 
@@ -457,11 +499,13 @@ Element.prototype.attr = function(attrs) {
 	}
 }
 
+console.log(".controls.emoji");
+
 const GLOBAL = {
 	emojiSVGs: {}, // store all the svgs: should be emptied on font change
 	emojiVariants: {}, // string keys indexing an array of variant strings (key is only present if there are variant strings, so no empty arrays)
 	emojiVariantsDelay: 650, // ms
-	emojiPerPageCount: 63, // 9 columns, 6 rows is the initial load for each emoji group
+	emojiPerPageCount: 63, // 9 columns, 7 rows is the initial load for each emoji group
 	emojiGroupLookup: { // these property names are strings that GSUB to icons from Material Symbols
 		schedule: -1,
 		mood: 0,
@@ -474,11 +518,11 @@ const GLOBAL = {
 		glyphs: 7,
 		emoji_flags: 8,
 	},
-	emojiPickerUsesSystemFont: false,
 	uiReady: true,
 	fontList: [],
 	fontSizes: [6,7,8,9,10,11,12,14,16,18,20,24,28,36,48,60,72],
 	axisDefaultOverrides: { wdth: 100, wght: 400, ital: 0, opsz: 12 },
+	timers: {},
 };
 
 // run this when the UI is ready
@@ -502,7 +546,7 @@ function changeFontSize(e) {
 	if (e.target.classList.contains("dropdown-item")) {
 		inputEl.value = e.target.textContent;
 	}
-	inputEl.value = parseFloat(inputEl.value) + "px"; // sanitize input in case it is typed by user
+	inputEl.value = Math.abs(parseFloat(inputEl.value)) + "px"; // sanitize input in case it is typed by user
 	dropdownEl.style.display = "none";
 	updateRendering();
 }
@@ -600,6 +644,10 @@ function changeInstance(e) {
 // - does NOT populate the "current" child element with any content
 function populateSelects() {
 
+	function hideAllDropdowns() {
+		QA(".dropdown").forEach(dropdownEl => dropdownEl.style.display = "none");
+	}
+
 	const familySelectEmojiEl = Q(".controls.emoji .font .family.select");
 	const familySelectTextEl = Q(".controls.text .font .family.select");
 
@@ -611,7 +659,8 @@ function populateSelects() {
 				const dropDownEl = Q(".dropdown", selectEl); // selectEl’s context is preserved
 				if (dropDownEl) {
 					dropDownEl.style.display = "block"; // display the dropdown
-					dropDownEl.onmouseleave = () => dropDownEl.style.display = "none"; // hide the dropdown
+					//dropDownEl.onmouseleave = () => dropDownEl.style.display = "none"; // hide the dropdown
+					dropDownEl.onmouseleave = () => hideAllDropdowns(); // hide the dropdown
 				}				
 			};
 		}
@@ -625,6 +674,8 @@ function populateSelects() {
 					dropDownEl.append(sizeChoiceEl);
 			});
 		}
+
+		selectEl.onmouseleave = () => hideAllDropdowns();
 	});
 
 	// populate the dropdown with initial font families
@@ -704,6 +755,8 @@ function axisDefaultOverride(axis) {
 
 function populateInstances() {
 	// populate instances from fvar table
+	console.log("populateInstances()", GLOBAL.fvar?.instances.length);
+	console.log(GLOBAL.fvar?.instances)
 	const instancesSelect = Q(`.controls.${GLOBAL.mode} .style.select`);
 	const currentEl = Q(".current", instancesSelect);
 	const dropdownEl = Q(".dropdown", instancesSelect);
@@ -761,17 +814,6 @@ function axisInput(e) {
 	updateRendering();
 }
 
-
-// EVENT: change mode text/emoji
-QA(".mode").forEach(el => {
-	el.onclick = changeMode;
-});
-
-// EVENT: type text into the text box
-Q(".text-input input").oninput = updateRendering;
-
-
-
 function getCurrentAxisValues() {
 	const fvs = {};
 	const axisEls = QA(`.axis-controls .axis`);
@@ -801,10 +843,18 @@ function updateRendering(figmaNodeId) {
 
 	// update CSS for user to copy
 	let css = "@font-face {\n\tfont-family: \"" + GLOBAL.fontFamily + "\";\n\tsrc: url(\"" + GLOBAL.fontURL + "\");\n}\n\n";
-	css += ".myClass {\nfont-family: \"" + GLOBAL.fontFamily + "\";\n\n}\n"
+	css += ".myClass {\n\tfont-family: \"" + GLOBAL.fontFamily + "\";\n\n}\n"
 
-	Q("#css").value = css;
+	Q(".panel.css .content").textContent = css;
 }
+
+// EVENT: change mode text/emoji
+QA(".mode").forEach(el => {
+	el.onclick = changeMode;
+});
+
+// EVENT: type text into the text box
+Q(".text-input input").oninput = updateRendering;
 
 // add event so we change group when we click on a group icon
 QA(".emoji-group-icon").forEach(el => {
@@ -812,14 +862,46 @@ QA(".emoji-group-icon").forEach(el => {
 });
 
 
+QA(".show-panel").forEach(el => {
+	console.log("setting up panel");
+	if (el.classList.contains("info"))
+		el.dataset.panelName = "info";
+	else if (el.classList.contains("css"))
+		el.dataset.panelName = "css";
+
+	if (el.dataset.panelName) {
+		const panelEl = Q(`.panel.${el.dataset.panelName}`);
+		el.onclick = e => {
+			console.log("clicked panel");
+			panelEl.style.top = "0";
+			panelEl.style.display = "block";
+		};
+
+		const closeEl = Q(".close", panelEl);
+		closeEl.onclick = e => {
+			panelEl.style.top = "100%";
+			panelEl.style.display = "none";
+		};
+	}
+});
+
 // drag-drop a font file [NEW]
 // - assume all drag-drop fonts are text fonts, not emoji
-Q(".controls-new").ondragover = e => {
+Q("body").ondragover = e => {
 	e.preventDefault();
+	Q(".dropzone").style.display = "block";
 };
 
-Q(".controls-new").ondrop = e => {
+Q("body").ondragend = e => {
+	console.log("dragend")
 	e.preventDefault();
+	Q(".dropzone").style.display = "none";
+};
+
+Q(".dropzone").ondrop = e => {
+	console.log("drop")
+	e.preventDefault();
+	Q(".dropzone").style.display = "none";
 
 	const file = e.dataTransfer.files[0];
 	file.arrayBuffer().then(arrayBuffer => {
@@ -831,27 +913,25 @@ Q(".controls-new").ondrop = e => {
 			string += String.fromCharCode(uint8Arr[i]);
 		}
 
-
-		// Create a Uint8Array
-		//const uint8Arr = new Uint8Array([72, 101, 108, 108, 111]);
-
-		// Use TextDecoder to convert to a string
-		// const decoder = new TextDecoder();
-		// const string = decoder.decode(uint8Arr);
-
-		console.log(string); // Output: "Hello"
-
-
 		const message = {
 			type: "font-upload",
 			// fontData: btoa(String.fromCharCode(...new Uint8Array(arrayBuffer))), // this works for short blobs but gives error "Maximum call stack size exceeded" for longer ones, hence the for loop above
 			fontData: btoa(string), // base64 encoding of the ArrayBuffer
 		}
 		parent.postMessage({ pluginMessage: message }, "*");
+
+		// TODO add the new font to the menu
+
 	});
 
 };
 
+// dispatch a ping message so we can check latency
+setInterval(() => {
+	const id = Math.round(Math.random() * 10000000);
+	GLOBAL.timers[id] = {start: Date.now(), label: "ping"};
+	parent.postMessage({ pluginMessage: { type: "ping", id: id } }, "*");
+}, 10000);
 
 
 // receive messages from the plugin code
@@ -860,9 +940,15 @@ onmessage = (e) => {
 	console.log("UI received message");
 
 	const msg = e.data.pluginMessage;
-	console.log(msg);
+	//console.log(msg);
 
 	switch (msg.type) {
+
+		case "pong": {
+			console.log(`Timer [${GLOBAL.timers[msg.id].label}]`, Date.now() - GLOBAL.timers[msg.id].start, "ms");
+			GLOBAL.timers[msg.id] = undefined;
+			break;
+		}
 
 		case "init": {
 			console.log("Got init message");
@@ -870,16 +956,40 @@ onmessage = (e) => {
 			break;
 		}
 
+		case "error": {
+			if (msg.message) {
+				alert (msg.message);
+			}
+			break;
+		}
+
 		case "names": {
 			console.log("names switch");
 			alert ("names")
-
 			break;
 		}
 
 		case "font-list": {
 			GLOBAL.fontList.push(...msg.fontList);
 			populateSelects();
+
+			// update content for info panel dynamically
+			["text", "emoji"].forEach(mode => {
+				let fontListHTML = "";
+				GLOBAL.fontList.filter(font => font.attributes.includes(mode)).forEach(font => {
+					let entry = font.name;
+					if (font.website) {
+						entry = `<a href="${font.website}" target="_blank">${font.name}</a>`;
+					}
+					["COLRv0", "COLRv1"].forEach(format => {
+						if (font.attributes.includes(format)) {
+							entry += ` (${format})`;
+						}
+					});
+					fontListHTML += `<li>${entry}</li>`;
+				});
+				Q(`.panel.info .content .font-list.${mode}`).innerHTML = fontListHTML;
+			});
 			break;
 		}
 
@@ -966,7 +1076,8 @@ onmessage = (e) => {
 		case "emoji-svgs": {
 
 			// now place all the default svgs in the panel
-			const emojiGrid = Q("#emoji-main .emoji-grid");
+			const emojiGrid = Q(".emoji-main .emoji-grid");
+			const startTime = Date.now();
 			if (msg.emojiType >= 0 && msg.emojiType < GLOBAL.emojiMetadata.length) {
 				const emojiGroup = GLOBAL.emojiMetadata[msg.emojiType]; // 0-based index into the defined groups
 				Object.assign(GLOBAL.emojiSVGs, msg.svgs); // merge new svgs with existing svgs (we could check this array in advance, since the svgs may be cached already)
@@ -988,6 +1099,8 @@ onmessage = (e) => {
 			else {
 				console.log("Error: emojiType out of range");
 			}
+			const endTime = Date.now();
+			console.log("Time to render emojis:", endTime - startTime, "ms");
 			break;
 		}
 	}
@@ -1078,23 +1191,6 @@ function emojiChangeGroup(e) {
 	const message = { type: "fetch-emojis", emojiType: emojiGroupId, startIndex: 0, count: GLOBAL.emojiPerPageCount, includeAlternates: false };
 	parent.postMessage({ pluginMessage: message }, "*");
 
-
-
-	// GLOBAL.emojiMetadata.forEach(emojiGroup => {
-	// 	emojiGroup.emoji.forEach(emojiChar
-
-	console.log(GLOBAL.emojiMetadata[0].emoji[0]);
-	console.log("GLOBAL.emojiMetadata[0].emoji[0]");
-
-	parent.postMessage({ pluginMessage: { type: "fetch-emojis", emojiStrings: [
-		String.fromCodePoint(...GLOBAL.emojiMetadata[0].emoji[0].base),
-		String.fromCodePoint(...GLOBAL.emojiMetadata[0].emoji[3].base),
-	], includeAlternates: true } }, "*");
-
-
-
-
-
 	// set the group title
 	Q("h2.emoji-group").innerText = GLOBAL.emojiMetadata[emojiGroupId].group;
 
@@ -1113,3 +1209,5 @@ function emojiChangeGroup(e) {
 
 
 </script>
+
+

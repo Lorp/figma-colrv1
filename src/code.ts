@@ -31,7 +31,6 @@ fonts.forEach((font:any) => {
 });
 
 
-
 // GLOBAL object
 // - TODO: include font, fontList, defaults
 const GLOBAL:any = {
@@ -68,15 +67,14 @@ figma.ui.onmessage = msg => {
 
 	switch (msg.type) {
 
-		case "font-upload": {
-			console.log("font-upload message received");
+		case "ping": {
+			figma.ui.postMessage({type: "pong", id: msg.id});
+			break;
+		}
 
+		case "font-upload": {
 			// de-base64 the font file
 			let binary = BufferPolyfill.from(msg.fontData, "base64");
-
-			//let binaryString = atob(msg.fontData);
-			console.log("is this an arrayBuffer?")
-			//console.log(binary)
 			const options:any = {
 				fontFace: "DragDrop",
 				allGlyphs: true,
@@ -90,8 +88,6 @@ figma.ui.onmessage = msg => {
 
 		case "fetch-emojis": {
 
-			console.log("fetch-emojis message received")
-			console.log(msg);
 			const emojiSVGs: {[key: string]: string} = {}; // we return an object of SVGs indexed by the string that invokes the emoji (the UI already knows about the arrangement of emojis)
 			
 			// we return an object of SVGs indexed by string
@@ -134,8 +130,10 @@ figma.ui.onmessage = msg => {
 
 			// the request is for emojis by group, possibly with nonzero startIndex
 			else if (msg.emojiType !== undefined) {
+				const startTime = Date.now();
 				const startIndex:number = msg.startIndex || 0;
 				const count:number = msg.count || 1000; // 1000 is sanity check
+
 				for (let i:number = startIndex; i < startIndex + count && i < emojiMetadata[msg.emojiType].emoji.length; i++) {
 					const emojiChar:any = emojiMetadata[msg.emojiType].emoji[i];
 					const str: string = String.fromCodePoint(...emojiChar.base);
@@ -144,6 +142,8 @@ figma.ui.onmessage = msg => {
 						emojiChar.alternates.forEach((alternate:any) => strings.push(String.fromCodePoint(...alternate))) // get the alternate strings as well
 					strings.forEach(str => emojiSVGs[str] = instance.renderText({text: str, fontSize: 24, format: "svg"})); // render all the strings to svg, store the svg strings in the emojiSVGs object
 				}
+
+				const endTime = Date.now();
 				figma.ui.postMessage({type: "emoji-svgs", emojiType: msg.emojiType, svgs: emojiSVGs, startIndex: startIndex});
 			}
 
@@ -154,17 +154,15 @@ figma.ui.onmessage = msg => {
 			const foundFont = fonts.find((font:any) => font.name === msg.name);
 
 			if (foundFont) {
-				console.log("Font font " + foundFont.name)
 				const url = foundFont.dataUrl || foundFont.url;
 				if (!url) break;
 
+				const startLoadURL = Date.now();
 				fetch(url)
 				.then(response => {
-					console.log("Loaded response: ", response);
 					return response.arrayBuffer();
 				})
 				.then(arrayBuffer => {
-					console.log(`File loaded (${arrayBuffer.byteLength} bytes)`);
 					const options = {
 						fontFace: msg.name,
 						allGlyphs: true,
@@ -176,15 +174,14 @@ figma.ui.onmessage = msg => {
 					// load the font, decompress it if necessary
 					const fingerprint = new DataView(arrayBuffer, 0, 4).getUint32(0);
 					let fontBuffer;
+
 					if (fingerprint === SAMSAGLOBAL.fingerprints.WOFF2) { // does the fingerprint indicate WOFF2?
-						console.log("WOFF2 font detected");
 						fontBuffer = new SamsaBuffer(arrayBuffer).decodeWOFF2({ // if woff2, convert to ttf here
 							bufferObject: BufferPolyfill, // Samsa doesn’t know about Buffer, so we pass it in
 							brotliDecompress: brotliDecompressFunction, // Samsa doesn’t know about Brotli, so we pass it in the decompress function
 							ignoreInstructions: true,
 							ignoreChecksums: true,
 						});
-						console.log(`WOFF2 font decompressed to TTF (${fontBuffer.byteLength} bytes)`);
 						// TODO: check it really is a TTF!
 					}
 					else {
@@ -194,7 +191,6 @@ figma.ui.onmessage = msg => {
 					// make a SamsaFont object from the uncompressed ttf
 					// - font is a global variable (TODO: have it as GLOBAL.font?)
 					font = new SamsaFont(fontBuffer, options);
-					console.log("TTF font loaded");
 					
 					// signal to the UI that we’ve got the font, by sending its names, fvar, CPAL
 					// - TODO: send these all as one message?
@@ -299,14 +295,12 @@ function setupFontFromArrayBuffer(arrayBuffer:any, msg:any, options:any) {
 	const fingerprint = new DataView(arrayBuffer, 0, 4).getUint32(0);
 	let fontBuffer;
 	if (fingerprint === SAMSAGLOBAL.fingerprints.WOFF2) { // does the fingerprint indicate WOFF2?
-		console.log("WOFF2 font detected");
 		fontBuffer = new SamsaBuffer(arrayBuffer).decodeWOFF2({ // if woff2, convert to ttf here
 			bufferObject: BufferPolyfill, // Samsa doesn’t know about Buffer, so we pass it in
 			brotliDecompress: brotliDecompressFunction, // Samsa doesn’t know about Brotli, so we pass it in the decompress function
 			ignoreInstructions: true,
 			ignoreChecksums: true,
 		});
-		console.log(`WOFF2 font decompressed to TTF (${fontBuffer.byteLength} bytes)`);
 		// TODO: check it really is a TTF!
 	}
 	else {
@@ -316,31 +310,34 @@ function setupFontFromArrayBuffer(arrayBuffer:any, msg:any, options:any) {
 	// make a SamsaFont object from the uncompressed ttf
 	// - font is a global variable (TODO: have it as GLOBAL.font?)
 	font = new SamsaFont(fontBuffer, options);
-	console.log("TTF font loaded");
+	if (font && font.tables["glyf"]) {
 	
-	// signal to the UI that we’ve got the font, by sending its names, fvar, CPAL
-	// - TODO: send these all as one message?
-	figma.ui.postMessage({type: "font-fetched"});
-
-	// variable font?
-	if (font.fvar && font.fvar.axisCount) {
-		font.fvar.axes.forEach((axis:any) => {
-			axis.name = font.names[axis.axisNameID];
-		});
-		figma.ui.postMessage({type: "fvar", fvar: { instances: font.fvar.instances, axes: font.fvar.axes}});	
-	}
-
-	// color font?
-	if (font.CPAL && (!msg.excludes || !msg.excludes.includes("CPAL"))) { // we might not need CPAL at the front end
-		font.CPAL.hexColors = {}; // must use an object here... (sparse arrays in JSON are HUGE!)
-		font.CPAL.palettes.forEach((palette:any) => {
-			palette.colors.forEach((color:number) => {
-				font.CPAL.hexColors[color] = font.hexColorFromU32(color);
+		// signal to the UI that we’ve got the font, by sending its names, fvar, CPAL
+		// - TODO: send these all as one message?
+		figma.ui.postMessage({type: "font-fetched"});
+	
+		// variable font?
+		if (font.fvar && font.fvar.axisCount) {
+			font.fvar.axes.forEach((axis:any) => {
+				axis.name = font.names[axis.axisNameID];
 			});
-		});
-		figma.ui.postMessage({type: "CPAL", CPAL: { colors: font.CPAL.colors, palettes: font.CPAL.palettes, hexColors: font.CPAL.hexColors}});
+			figma.ui.postMessage({type: "fvar", fvar: { instances: font.fvar.instances, axes: font.fvar.axes}});	
+		}
+	
+		// color font?
+		if (font.CPAL && (!msg.excludes || !msg.excludes.includes("CPAL"))) { // we might not need CPAL at the front end
+			font.CPAL.hexColors = {}; // must use an object here... (sparse arrays in JSON are HUGE!)
+			font.CPAL.palettes.forEach((palette:any) => {
+				palette.colors.forEach((color:number) => {
+					font.CPAL.hexColors[color] = font.hexColorFromU32(color);
+				});
+			});
+			figma.ui.postMessage({type: "CPAL", CPAL: { colors: font.CPAL.colors, palettes: font.CPAL.palettes, hexColors: font.CPAL.hexColors}});
+		}
+	
+		figma.ui.postMessage({type: "font-data-delivered"});	
 	}
-
-	figma.ui.postMessage({type: "font-data-delivered"});
-
+	else {
+		figma.ui.postMessage({type: "error", message: "Invalid font"});	
+	}
 }
