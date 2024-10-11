@@ -3,9 +3,12 @@
 *.log.*
 node_modules/*
 
+# macOS
+.DS_Store
+
+# parcel
+.parcel-cache/*
+
 # other
 package-lock.json
 src/code.js
-
-# macOS
-.DS_Store

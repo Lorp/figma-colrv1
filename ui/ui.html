@@ -1,0 +1,138 @@
+<!-- note on importing CSS https://github.com/parcel-bundler/parcel/discussions/5076 -->
+<style>@import "./ui.css";</style>
+
+<!-- NEW CONTROLS (start) -->
+<div class="controls-new">
+
+	<div class="mode-select">
+		<div class="mode emoji"><span class="icon-wrap"><div class="icon">mood</div></span> Emoji</div>
+		<div class="mode text"><span class="icon-wrap"><div class="icon">insert_text</div></span> Text</div>
+	</div>
+
+	<!-- EMOJI CONTROLS start -->
+	<div class="controls emoji">
+
+		<div class="font">
+
+			<!-- <div class="size">12px</div><div class="icon">arrow_drop_down</div> -->
+
+			<div class="size select"><input class="current" value="24px"><div class="dropdown"></div></div>
+			<div class="family select"><input class="current" readonly><div class="dropdown"></div></div>
+			<div class="style select"><input class="current" readonly><div class="dropdown"></div></div>
+	
+		</div>
+	
+		<div class="search">
+			<input type="text" value="" placeholder="Search emoji">
+		</div>
+
+		<div class="emoji-picker">
+			<div class="emoji-type">
+				<div class="emoji-group-icon">schedule</div>
+				<div class="emoji-group-icon default">mood</div>
+				<div class="emoji-group-icon">emoji_people</div>
+				<div class="emoji-group-icon">emoji_nature</div>
+				<div class="emoji-group-icon">emoji_food_beverage</div>
+				<div class="emoji-group-icon">emoji_transportation</div>
+				<div class="emoji-group-icon">emoji_events</div>
+				<div class="emoji-group-icon">emoji_objects</div>
+				<div class="emoji-group-icon">glyphs</div>
+				<div class="emoji-group-icon">emoji_flags</div>
+			</div>
+
+			<h2 class="emoji-group">Heading</h2>		
+
+			<div class="emoji-main">
+				<div class="emoji-grid"></div>
+				<div class="emoji-variants-grid"></div>
+			</div>		
+		</div>
+	
+
+	</div>
+	<!-- EMOJI CONTROLS end -->
+
+	<!-- TEXT CONTROLS start -->
+	<div class="controls text">
+
+		<div class="font">
+
+			<!-- <div class="size">12px</div><div class="icon">arrow_drop_down</div> -->
+			<div class="size select"><input class="current" value="24px"><div class="dropdown"></div></div>
+			<div class="family select"><input class="current" readonly><div class="dropdown"></div></div>
+			<div class="style select"><input class="current" readonly><div class="dropdown"></div></div>
+
+		</div>
+	
+		<div class="axes">
+			<h2><span class="icon-wrap"><div class="icon" style="top: -3px; font-size: 1.625em;">custom_typography</div></span> Axes</h2>
+			<div class="axis-controls">
+				<!-- <div class="axis"> -->
+				<!-- <div class="axis"> -->
+			</div>
+		</div>
+
+		<div class="palettes">
+			<h2><span class="icon-wrap"><div class="icon">palette</div></span> Palettes</h2>
+			<div class="palette-controls">
+				<!-- <div class="palette"> -->
+				<!-- <div class="palette"> -->
+			</div>
+		</div>
+
+	</div>
+	<!-- TEXT CONTROLS end -->
+
+
+	<!-- joint controls start -->
+	<div class="text-input">
+		<input type="text" value="" placeholder="Text will update as you type">
+	</div>
+
+	<div class="common" style="padding-top: 14px;">
+		<div class="show-panel info">
+			<span class="icon-wrap"><div class="icon" style="font-size: 24px; padding-top: 12px;">info</div></span>
+		</div>
+
+		<div style="margin: 0 -4px 0 20px;">
+			<button class="button show-panel css" style="margin-bottom: -4px;">
+				<span class="icon-wrap"><div class="icon">code</div></span>
+				<span>Show CSS</span>
+			</button>
+		</div>
+		
+	</div>
+	<!-- joint controls end -->
+
+	<div class="panel info">
+		<div class="content">
+			<h3>COLRv1 plugin</h3>
+			<p>This Figma plugin allows color fonts to be used in Figma, specifically fonts in the COLR format. Both COLRv0 (flat colour) and COLRv1 (includes gradients and compositing) versions are supported.</p>
+			<p>Preloaded emoji fonts:</p>
+			<ul class="font-list emoji"></ul>
+			<p>Preloaded text fonts:</p>
+			<ul class="font-list text"></ul>
+			<hr>
+			<p>The project is maintained at <a href="https://github.com/Lorp/figma-colrv1">GitHub: Figma-COLRv1 plugin</a>. Please raise any issues there.</p>		
+		</div>
+		<div class="close"><span class="icon">cancel</span></div>
+	</div>
+
+	<div class="panel css">
+		<div class="content"></div>
+		<div class="close"><span class="icon">cancel</span></div>
+	</div>
+	
+
+</div>
+
+<!-- NEW CONTROLS (end) -->
+
+
+</div>
+
+<div class="dropzone"></div>
+
+<script type="module">
+import "./ui.js";
+</script>
