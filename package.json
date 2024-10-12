@@ -10,7 +10,7 @@
 	},
 	"targets": {
 		"ui": {
-			"source": "./ui/ui.html",
+			"source": "./src/ui.html",
 			"engines": {
 				"browsers": "> 0.25%, not dead"
 			},
