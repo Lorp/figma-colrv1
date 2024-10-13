@@ -1,8 +1,8 @@
 "use strict";
 
 // data-url: pseudo-protocol triggers Parcel to inline the file as a (large) base64-encoded string
-import emojiColrBase64String from "data-url:./fonts/NotoColorEmoji-COLRv1.woff2"; // Noto Color Emoji 15.1
-import emojiMonoBase64String from "data-url:./fonts/NotoEmoji-VariableFont_wght.woff2";
+import dataUrlEmojiColr from "data-url:./fonts/NotoColorEmoji-COLRv1.woff2"; // Noto Color Emoji 15.1
+import dataUrlEmojiMono from "data-url:./fonts/NotoEmoji-VariableFont_wght.woff2";
 
 const fonts = [
 	{
@@ -66,13 +66,13 @@ const fonts = [
 		version: "15.1",
 		website: "https://fonts.google.com/noto/specimen/Noto+Color+Emoji",
 		priority: 1, // makes this the default emoji font
-		dataUrl: emojiColrBase64String,
+		url: dataUrlEmojiColr,
 	},
 	{
 		name: "Noto Emoji",
 		attributes: ["emoji"],
 		website: "https://fonts.google.com/noto/specimen/Noto+Emoji",
-		dataUrl: emojiMonoBase64String,
+		url: dataUrlEmojiMono,
 	},
 ];
 

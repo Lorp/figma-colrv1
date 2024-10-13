@@ -152,13 +152,8 @@ figma.ui.onmessage = msg => {
 
 		case "fetch-font-by-name": {
 			const foundFont = fonts.find((font:any) => font.name === msg.name);
-
-			if (foundFont) {
-				const url = foundFont.dataUrl || foundFont.url;
-				if (!url) break;
-
-				const startLoadURL = Date.now();
-				fetch(url)
+			if (foundFont?.url) {
+				fetch(foundFont.url)
 				.then(response => {
 					return response.arrayBuffer();
 				})
