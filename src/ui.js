@@ -219,7 +219,7 @@ function changeFontFamily(e) {
 
 				// make a SamsaFont object from the uncompressed ttf
 				// - font is a global variable (TODO: have it as GLOBAL.font?)
-				GLOBAL.font = new SamsaFont(fontBuffer);
+				GLOBAL.font = new SamsaFont(fontBuffer, options);
 
 				console.log("-----------------");
 				console.log(family);
@@ -237,6 +237,7 @@ function changeFontFamily(e) {
 				populateAxes();
 				populatePalettes();
 				populateInstances();
+				updateRendering();
 
 				if (foundFont.attributes.includes("emoji")) {
 					Q(".emoji-group-icon.default").dispatchEvent(new Event("click")); // trigger a rendering of the default emoji group
