@@ -1,3 +1,13 @@
+// this brings the fonts into the browser directly
+// - to use the fonts this way, we must set GLOBAL.fontsLocation = "frontend"
+const { fonts } = require("./fonts.js"); // list of fonts, some embedded as base64
+const { SamsaFont, SamsaGlyph, SamsaInstance, SamsaBuffer, SAMSAGLOBAL } = require ("samsa-core");
+const { emojiMetadata } = require("./emoji_ordering.js"); // emoji definitions and ordering
+const BufferWrapper = require("buffer");
+const BufferPolyfill = BufferWrapper.Buffer;
+const brotliDecompressFunction = require("../node_modules/brotli/decompress");
+
+
 function Q (selector, root=document) {
 	return root.querySelector(selector);
 }
@@ -26,6 +36,8 @@ Element.prototype.attr = function(attrs) {
 }
 
 const GLOBAL = {
+	fontsLocation: "frontend",
+	emojiMetadata: emojiMetadata,
 	emojiSVGs: {}, // store all the svgs: should be emptied on font change
 	emojiVariants: {}, // string keys indexing an array of variant strings (key is only present if there are variant strings, so no empty arrays)
 	emojiVariantsDelay: 650, // ms
@@ -43,11 +55,30 @@ const GLOBAL = {
 		emoji_flags: 8,
 	},
 	uiReady: true,
-	fontList: [],
+	//fontList: [],
+	fontList: fonts,
 	fontSizes: [6,7,8,9,10,11,12,14,16,18,20,24,28,36,48,60,72],
 	axisDefaultOverrides: { wdth: 100, wght: 400, ital: 0, opsz: 12 },
 	timers: {},
+	font: null
 };
+
+
+// set up emoji ordering (new 2024-10-31)
+// - we can replace the message handler that deals with this data coming from the plugin
+GLOBAL.emojiVariants = {};
+GLOBAL.emojiMetadata.forEach(emojiGroup => {
+	emojiGroup.emoji.forEach(emojiChar => {
+		if (emojiChar.alternates.length > 0) {
+			const str = String.fromCodePoint(...emojiChar.base);
+			GLOBAL.emojiVariants[str] = [];
+			emojiChar.alternates.forEach(variant => {
+				GLOBAL.emojiVariants[str].push(String.fromCodePoint(...variant));
+			});
+		}
+	});
+});
+
 
 // run this when the UI is ready
 function initUI() {
@@ -76,13 +107,24 @@ function changeFontSize(e) {
 }
 
 function changePaletteColor(e) {
-	const message = {
-		type: "palette-edit",
-		paletteId: e.target.dataset.paletteId,
-		entryId: e.target.dataset.entryId,
-		color: e.target.value,
+	const hexColor = e.target.value;
+	const paletteId = parseInt(e.target.dataset.paletteId);
+	const entryId = parseInt(e.target.dataset.entryId);
+	if (GLOBAL.fontsLocation === "frontend") {
+		const palette = GLOBAL.CPAL.palettes[paletteId];
+		const u32Color = SamsaFont.prototype.u32FromHexColor(hexColor);
+		GLOBAL.CPAL.hexColors[u32Color] = hexColor; // this object happily grows
+		palette.colors[entryId] = u32Color;
 	}
-	parent.postMessage({ pluginMessage: message }, "*");
+	else {
+		const message = {
+			type: "palette-edit",
+			paletteId: paletteId,
+			entryId: entryId,
+			color: hexColor,
+		}
+		parent.postMessage({ pluginMessage: message }, "*");
+	}
 	updateRendering();
 }
 
@@ -137,11 +179,87 @@ function changeFontFamily(e) {
 			if (a.name > b.name) return 1;
 			return 0;
 		});
-		const font = filteredFonts[0];
 		family = filteredFonts[0].name;
 	}
-		
-	parent.postMessage({ pluginMessage: { type: 'fetch-font-by-name', name: family } }, "*");
+	
+
+	if (GLOBAL.fontsLocation === "frontend") {
+		// load in frontend
+		const foundFont = GLOBAL.fontList.find(font => font.name === family);
+		if (foundFont?.url) {
+			fetch(foundFont.url)
+			.then(response => {
+				return response.arrayBuffer();
+			})
+			.then(arrayBuffer => {
+				const options = {
+					fontFace: "TEMP",
+					allGlyphs: true,
+					allTVTs: true,
+				};
+
+				//fontSetupFromArrayBuffer(arrayBuffer)
+
+				// load the font, decompress it if necessary
+				const fingerprint = new DataView(arrayBuffer, 0, 4).getUint32(0);
+				let fontBuffer;
+
+				if (fingerprint === SAMSAGLOBAL.fingerprints.WOFF2) { // does the fingerprint indicate WOFF2?
+					fontBuffer = new SamsaBuffer(arrayBuffer).decodeWOFF2({ // if woff2, convert to ttf here
+						bufferObject: BufferPolyfill, // Samsa doesn’t know about Buffer, so we pass it in
+						brotliDecompress: brotliDecompressFunction, // Samsa doesn’t know about Brotli, so we pass it in the decompress function
+						ignoreInstructions: true,
+						ignoreChecksums: true,
+					});
+					// TODO: check it really is a TTF!
+				}
+				else {
+					fontBuffer = new SamsaBuffer(arrayBuffer);
+				}
+
+				// make a SamsaFont object from the uncompressed ttf
+				// - font is a global variable (TODO: have it as GLOBAL.font?)
+				GLOBAL.font = new SamsaFont(fontBuffer);
+
+				console.log("-----------------");
+				console.log(family);
+				console.log("-----------------");
+
+				GLOBAL.fvar = GLOBAL.font.fvar;
+				GLOBAL.CPAL = GLOBAL.font.CPAL;
+				if (GLOBAL.CPAL) {
+					GLOBAL.CPAL.hexColors = {};
+					for (const palette of GLOBAL.CPAL.palettes)
+						for (const color of palette.colors)
+							GLOBAL.CPAL.hexColors[color] = GLOBAL.font.hexColorFromU32(color);
+				}	
+
+				populateAxes();
+				populatePalettes();
+				populateInstances();
+
+				if (foundFont.attributes.includes("emoji")) {
+					Q(".emoji-group-icon.default").dispatchEvent(new Event("click")); // trigger a rendering of the default emoji group
+				}
+
+			});
+		}
+		else {
+			console.log("Font not found");
+		}
+	}
+	else { // backend font loading
+		parent.postMessage({ pluginMessage: { type: 'fetch-font-by-name', name: family } }, "*");
+	}
+	
+
+
+
+
+
+
+
+
 
 	Q(`.controls.${GLOBAL.mode} .font .family.select .current`).value = family; // set the current font family
 	
@@ -183,7 +301,6 @@ function populateSelects() {
 				const dropDownEl = Q(".dropdown", selectEl); // selectEl’s context is preserved
 				if (dropDownEl) {
 					dropDownEl.style.display = "block"; // display the dropdown
-					//dropDownEl.onmouseleave = () => dropDownEl.style.display = "none"; // hide the dropdown
 					dropDownEl.onmouseleave = () => hideAllDropdowns(); // hide the dropdown
 				}				
 			};
@@ -285,6 +402,9 @@ function populateInstances() {
 	const currentEl = Q(".current", instancesSelect);
 	const dropdownEl = Q(".dropdown", instancesSelect);
 	currentEl.value = "Default";
+
+	console.log(GLOBAL.fvar?.instances);
+
 	if (!GLOBAL.fvar?.instances.length || GLOBAL.mode === "emoji") {
 		currentEl.onclick = null; // disable the instances select for emoji and fonts with 0 instances
 	}
@@ -349,13 +469,11 @@ function getCurrentAxisValues() {
 
 function updateRendering(figmaNodeId) {
 
-	console.log(`.controls.${GLOBAL.mode} .size .current`);
-	console.log(Q(`.controls.${GLOBAL.mode} .size .current`));
-
 	const options = {
 		fvs: getCurrentAxisValues(),
 		text: Q(".text-input input").value,
 		fontSize: parseFloat(Q(`.controls.${GLOBAL.mode} .size .current`).value), // font size input
+		format: "svg",
 	}
 	if (GLOBAL.CPAL) {
 		const paletteEl = Q(`input[name="palette-id"]:checked`);
@@ -363,11 +481,19 @@ function updateRendering(figmaNodeId) {
 			options.paletteId = paletteEl.value;
 		}
 	}
-	parent.postMessage({ pluginMessage: { type: 'render', options: options } }, '*');
 
+	if (GLOBAL.fontsLocation === "frontend" && GLOBAL.font) {
+		const instance = new SamsaInstance(GLOBAL.font, options.fvs); // make instance
+		const svg = instance.renderText(options); // render text
+		parent.postMessage({ pluginMessage: { type: "render", svg: svg } }, "*"); // send svg to the plugin for placing as is
+	}
+	else {
+		parent.postMessage({ pluginMessage: { type: 'render', options: options } }, '*'); // send text and font spec to the plugin for rendering
+	}
+		
 	// update CSS for user to copy
 	let css = "@font-face {\n\tfont-family: \"" + GLOBAL.fontFamily + "\";\n\tsrc: url(\"" + GLOBAL.fontURL + "\");\n}\n\n";
-	css += ".myClass {\n\tfont-family: \"" + GLOBAL.fontFamily + "\";\n\n}\n"
+	css += ".myClass {\n\tfont-family: \"" + GLOBAL.fontFamily + "\";\n\n}\n";
 
 	Q(".panel.css .content").textContent = css;
 }
@@ -477,6 +603,30 @@ onmessage = (e) => {
 		case "init": {
 			console.log("Got init message");
 			console.log(msg);
+			if (GLOBAL.fontsLocation !== "frontend") {
+				GLOBAL.fontList.push(...msg.fontList);
+			}
+
+			populateSelects();
+
+			// update content for info panel dynamically
+			["text", "emoji"].forEach(mode => {
+				let fontListHTML = "";
+				GLOBAL.fontList.filter(font => font.attributes.includes(mode)).forEach(font => {
+					let entry = font.name;
+					if (font.website) {
+						entry = `<a href="${font.website}" target="_blank">${font.name}</a>`;
+					}
+					["COLRv0", "COLRv1"].forEach(format => {
+						if (font.attributes.includes(format)) {
+							entry += ` (${format})`;
+						}
+					});
+					fontListHTML += `<li>${entry}</li>`;
+				});
+				Q(`.panel.info .content .font-list.${mode}`).innerHTML = fontListHTML;
+			});
+
 			break;
 		}
 
@@ -494,7 +644,10 @@ onmessage = (e) => {
 		}
 
 		case "font-list": {
-			GLOBAL.fontList.push(...msg.fontList);
+			if (GLOBAL.fontsLocation !== "frontend") {
+				GLOBAL.fontList.push(...msg.fontList);
+			}
+
 			populateSelects();
 
 			// update content for info panel dynamically
@@ -603,19 +756,26 @@ onmessage = (e) => {
 			const emojiGrid = Q(".emoji-main .emoji-grid");
 			const startTime = Date.now();
 			if (msg.emojiType >= 0 && msg.emojiType < GLOBAL.emojiMetadata.length) {
+
 				const emojiGroup = GLOBAL.emojiMetadata[msg.emojiType]; // 0-based index into the defined groups
 				Object.assign(GLOBAL.emojiSVGs, msg.svgs); // merge new svgs with existing svgs (we could check this array in advance, since the svgs may be cached already)
 				if (msg.startIndex === 0) {
-					// we’ve got the first "page" of this group’s emojis, so immediately fetch the rest!
-					const message = { type: "fetch-emojis", emojiType: msg.emojiType, startIndex: GLOBAL.emojiPerPageCount, includeAlternates: false };
-					parent.postMessage({ pluginMessage: message }, "*");
 					emojiGrid.innerHTML = ""; // clear the grid if we’re starting from the beginning
+					parent.postMessage({ pluginMessage: { // we’ve got the first "page" of this group’s emojis, so immediately fetch the rest!
+						type: "fetch-emojis",
+						emojiType: msg.emojiType,
+						startIndex: GLOBAL.emojiPerPageCount,
+						includeAlternates: false,
+					} }, "*");
 				}
+				emojiPopulate(msg);
+				/*
 				emojiGroup.emoji.forEach(emojiChar => {
 					const str = String.fromCodePoint(...emojiChar.base); // get the string we need
 					if (msg.svgs[str]) // conditional as we retrieve them in batches
 						emojiInsertIntoContainer(emojiGrid, str, msg.svgs[str]);
 				});
+				*/
 			}
 			else if (msg.emojiStrings) {
 				Object.assign(GLOBAL.emojiSVGs, msg.svgs); // merge new svgs with existing svgs
@@ -708,12 +868,33 @@ function emojiChangeGroup(e) {
 
 	// reset scroll position
 	const emojiGrid = Q(".emoji-grid");
-	emojiGrid.scrollTop = "0px";
+	emojiGrid.scrollTop = "0px"; // reset scroll position
 
 	// fetch emojis for the requested group
 	// - the response will be a message of type "emoji-svgs", with string keys and svg values
-	const message = { type: "fetch-emojis", emojiType: emojiGroupId, startIndex: 0, count: GLOBAL.emojiPerPageCount, includeAlternates: false };
-	parent.postMessage({ pluginMessage: message }, "*");
+	const message = { type: "fetch-emojis", emojiType: emojiGroupId, startIndex: 0, includeAlternates: false };
+
+	if (GLOBAL.fontsLocation === "frontend") {
+		const emojiSVGs = renderEmojis(message);
+		const emojiGrid = Q(".emoji-main .emoji-grid");
+		if (message.emojiType >= 0 && message.emojiType < GLOBAL.emojiMetadata.length) {
+
+			const emojiGroup = GLOBAL.emojiMetadata[message.emojiType]; // 0-based index into the defined groups
+			Object.assign(GLOBAL.emojiSVGs, emojiSVGs); // merge new svgs with existing svgs (we could check this array in advance, since the svgs may be cached already)
+			if (!message.startIndex) {
+				emojiGrid.innerHTML = ""; // clear the grid if we’re starting from the beginning
+			}
+			emojiGroup.emoji.forEach(emojiChar => {
+				const str = String.fromCodePoint(...emojiChar.base); // get the string we need
+				if (emojiSVGs[str]) // conditional as we retrieve them in batches
+					emojiInsertIntoContainer(emojiGrid, str, emojiSVGs[str]);
+			});
+		}
+	}
+	else {
+		message.count = GLOBAL.emojiPerPageCount;
+		parent.postMessage({ pluginMessage: message }, "*");
+	}
 
 	// set the group title
 	Q("h2.emoji-group").innerText = GLOBAL.emojiMetadata[emojiGroupId].group;
@@ -729,4 +910,112 @@ function emojiChangeGroup(e) {
 			el_.classList.remove("selected");
 		}
 	});
+}
+
+function emojiPopulate(options) {
+
+}
+
+
+function renderEmojis(msg) {
+
+	const emojiSVGs = {};
+	const instance = new SamsaInstance(GLOBAL.font, {});
+	
+
+	// the request is for specific emojis
+	if (msg.emojiStrings && Array.isArray(msg.emojiStrings)) {
+		msg.emojiStrings.forEach(emojiString => {
+
+			// find the relevant emojiChar
+			let foundEmojiChar = false;
+			for (const group in emojiMetadata) {
+				const emojiGroup = emojiMetadata[group].emoji;
+				for (const e in emojiGroup) {
+					const emojiChar = emojiGroup[e];					
+					const str = String.fromCodePoint(...emojiChar.base);
+					if (str === emojiString) {
+						const strings = [];
+						if (msg.getBases)
+							strings.push(emojiString);
+						if (msg.getAlternates)
+							emojiChar.alternates.forEach(alternate => strings.push(String.fromCodePoint(...alternate))) // get the alternate strings as well
+						strings.forEach(str => emojiSVGs[str] = instance.renderText({text: str, fontSize: 24, format: "svg"})); // render all the strings to svg, store the svg strings in the emojiSVGs object
+
+						// figma.ui.postMessage({type: "emoji-svgs", emojiStrings: true, svgs: emojiSVGs }); // send the SVG strings back to the frontend
+						foundEmojiChar = true;
+						break;
+					}
+				}
+				if (foundEmojiChar)
+					break;
+			}
+
+			if (!foundEmojiChar) {
+				console.log("emoji not found: ", emojiString);
+			}
+		});
+	}
+
+	// the request is for emojis by group, possibly with nonzero startIndex
+	else if (msg.emojiType !== undefined) {
+		const startIndex = msg.startIndex || 0;
+		const count = msg.count || 1000; // 1000 is sanity check
+
+		for (let i = startIndex; i < startIndex + count && i < emojiMetadata[msg.emojiType].emoji.length; i++) {
+			const emojiChar = emojiMetadata[msg.emojiType].emoji[i];
+			const str = String.fromCodePoint(...emojiChar.base);
+			const strings = [str];
+			if (msg.getAlternates)
+				emojiChar.alternates.forEach(alternate => strings.push(String.fromCodePoint(...alternate))) // get the alternate strings as well
+			strings.forEach(str => emojiSVGs[str] = instance.renderText({text: str, fontSize: 24, format: "svg"})); // render all the strings to svg, store the svg strings in the emojiSVGs object
+		}
+
+		//figma.ui.postMessage({type: "emoji-svgs", emojiType: msg.emojiType, svgs: emojiSVGs, startIndex: startIndex});
+	}
+
+	return emojiSVGs;
+
+}
+
+
+
+// we should use this for drag-drop as well as normal load
+function setupFontFromArrayBuffer(arrayBuffer, msg, options) {
+
+	// load the font, decompress it if necessary
+	const fingerprint = new DataView(arrayBuffer, 0, 4).getUint32(0);
+	let fontBuffer;
+	if (fingerprint === SAMSAGLOBAL.fingerprints.WOFF2) { // does the fingerprint indicate WOFF2?
+		fontBuffer = new SamsaBuffer(arrayBuffer).decodeWOFF2({ // if woff2, convert to ttf here
+			bufferObject: BufferPolyfill, // Samsa doesn’t know about Buffer, so we pass it in
+			brotliDecompress: brotliDecompressFunction, // Samsa doesn’t know about Brotli, so we pass it in the decompress function
+			ignoreInstructions: true,
+			ignoreChecksums: true,
+		});
+		// TODO: check it really is a TTF!
+	}
+	else {
+		fontBuffer = new SamsaBuffer(arrayBuffer);
+	}
+
+	// make a SamsaFont object from the uncompressed ttf
+	const font = new SamsaFont(fontBuffer, options);
+	if (font && font.tables["glyf"]) {
+	
+		// color font? assign a hexColor for each CPAL color
+		if (font.CPAL && (!msg.excludes || !msg.excludes.includes("CPAL"))) { // we might not need CPAL at the front end
+			font.CPAL.hexColors = {}; // must use an object here... (sparse arrays in JSON are HUGE!)
+			font.CPAL.palettes.forEach(palette => {
+				palette.colors.forEach(color => {
+					font.CPAL.hexColors[color] = font.hexColorFromU32(color);
+				});
+			});
+		}
+	}
+	else {
+		console.log("error");
+	}
+
+	return font;
 }

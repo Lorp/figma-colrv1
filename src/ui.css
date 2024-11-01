@@ -40,8 +40,7 @@ h2 {
 	&.emoji-group {
 		font-size: 11px;
 		text-transform: uppercase;
-		padding-top: 7px;
-		padding-bottom: 7px;
+		padding: 7px 0 7px 5px;
 	}
 }
 
